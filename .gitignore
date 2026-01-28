@@ -1,0 +1,17 @@
+# Research notes - internal only, not published
+research-notes/
+
+# Results can be large
+results/raw/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS
+.DS_Store
+
+# Editor
+*.swp
+*.swo

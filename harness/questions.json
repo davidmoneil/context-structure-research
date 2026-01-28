@@ -1,0 +1,48 @@
+[
+  {
+    "id": "NAV-001",
+    "question": "Who is the current CEO of Soong-Daystrom Industries?",
+    "type": "navigation",
+    "difficulty": "easy",
+    "ground_truth": {
+      "exact_answer": "Dr. Maya Chen",
+      "acceptable_variants": ["Maya Chen", "Dr. Chen"],
+      "source_files": ["organization/executives.md"]
+    },
+    "notes": "Basic fact retrieval - should be easy for all structures"
+  },
+  {
+    "id": "NAV-002",
+    "question": "In what year was Soong-Daystrom Industries founded?",
+    "type": "navigation",
+    "difficulty": "easy",
+    "ground_truth": {
+      "exact_answer": "2089",
+      "source_files": ["history/founding.md"]
+    }
+  },
+  {
+    "id": "XREF-001",
+    "question": "Which department does the Project Prometheus team report to, and who leads that department?",
+    "type": "cross-reference",
+    "difficulty": "medium",
+    "ground_truth": {
+      "exact_answer": "Research & Development, led by Dr. James Okonkwo (CTO)",
+      "partial_credit_keywords": ["R&D", "Research", "Okonkwo", "CTO"],
+      "source_files": ["projects/prometheus.md", "organization/departments.md", "organization/executives.md"]
+    },
+    "notes": "Requires connecting project to department to leadership"
+  },
+  {
+    "id": "DEPTH-001",
+    "question": "Based on the company's R&D budget allocation and current project portfolio, what strategic priorities can you infer about Soong-Daystrom's direction?",
+    "type": "depth",
+    "difficulty": "hard",
+    "ground_truth": {
+      "exact_answer": "Focus on next-generation AI consciousness (Project Prometheus) and industrial automation expansion (Project Atlas), indicating a dual strategy of advancing core AI technology while expanding market applications",
+      "partial_credit_keywords": ["consciousness", "AI", "industrial", "automation", "Prometheus", "Atlas", "strategic"],
+      "source_files": ["financial/budget.md", "projects/prometheus.md", "projects/atlas.md"]
+    },
+    "notes": "Requires synthesis of financial data, project details, and strategic inference"
+  }
+]

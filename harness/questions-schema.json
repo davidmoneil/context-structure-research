@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Test Questions Schema",
+  "description": "Schema for context structure research test questions",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "question", "type", "difficulty", "ground_truth"],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^(NAV|XREF|DEPTH)-[0-9]{3}$",
+        "description": "Question ID: NAV=navigation, XREF=cross-reference, DEPTH=depth understanding"
+      },
+      "question": {
+        "type": "string",
+        "description": "The question to ask Claude"
+      },
+      "type": {
+        "type": "string",
+        "enum": ["navigation", "cross-reference", "depth"],
+        "description": "Question category"
+      },
+      "difficulty": {
+        "type": "string",
+        "enum": ["easy", "medium", "hard"],
+        "description": "Expected difficulty level"
+      },
+      "ground_truth": {
+        "type": "object",
+        "required": ["exact_answer"],
+        "properties": {
+          "exact_answer": {
+            "type": "string",
+            "description": "The correct answer"
+          },
+          "acceptable_variants": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "Alternative acceptable phrasings"
+          },
+          "partial_credit_keywords": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "Keywords that earn partial credit if present"
+          },
+          "source_files": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "Files containing the answer (for validation)"
+          }
+        }
+      },
+      "notes": {
+        "type": "string",
+        "description": "Additional context for evaluators"
+      }
+    }
+  }
+}
