@@ -1,0 +1,35 @@
+=== Building V6-V5.5 (2-sentence + keywords) with Claude ===
+Start: Fri Jan 30 03:03:45 PM MST 2026
+[flat-v6] Processing 276 files...
+[deep-v6] Processing 276 files...
+[flat-v6] Progress: 20/276
+[deep-v6] Progress: 20/276
+[flat-v6] Progress: 40/276
+[deep-v6] Progress: 40/276
+[flat-v6] Progress: 60/276
+[deep-v6] Progress: 60/276
+[flat-v6] Progress: 80/276
+[deep-v6] Progress: 80/276
+[flat-v6] Progress: 100/276
+[deep-v6] Progress: 100/276
+[flat-v6] Progress: 120/276
+[deep-v6] Progress: 120/276
+[flat-v6] Progress: 140/276
+[deep-v6] Progress: 140/276
+[flat-v6] Progress: 160/276
+[deep-v6] Progress: 160/276
+[flat-v6] Progress: 180/276
+[deep-v6] Progress: 180/276
+[flat-v6] Progress: 200/276
+[deep-v6] Progress: 200/276
+[flat-v6] Progress: 220/276
+[deep-v6] Progress: 220/276
+[flat-v6] Progress: 240/276
+[deep-v6] Progress: 240/276
+[flat-v6] Progress: 260/276
+[deep-v6] Progress: 260/276
+[flat-v6] Complete - 27475 words in index
+[deep-v6] Complete - 27644 words in index
+
+=== V6-V5.5 Build Complete ===
+End: Fri Jan 30 03:06:28 PM MST 2026

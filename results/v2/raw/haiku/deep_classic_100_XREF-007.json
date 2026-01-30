@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-007",
+  "question": "What positions report directly to Dr. James Okonkwo?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":23628,\"duration_api_ms\":23029,\"num_turns\":3,\"result\":\"Based on the executives.md file, I can confidently answer the question:\\n\\n{\\\"answer\\\": [\\\"VP Research\\\", \\\"VP Product Development\\\", \\\"VP Engineering\\\", \\\"Chief Scientist\\\"], \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep/company/structure/leadership/executives.md\\\"]}\\n\\nThe sources confirm that Dr. James Okonkwo, as the Chief Technology Officer, has four direct reports: \\n1. VP Research \\n2. VP Product Development (Dr. Ahmed Hassan)\\n3. VP Engineering (Jennifer Morrison)\\n4. Chief Scientist\\n\\nNote that while Dr. Ahmed Hassan and Jennifer Morrison are specifically named, the specific individuals for the VP Research and Chief Scientist roles are not explicitly identified in the provided documents.\",\"session_id\":\"729eb7a5-4c09-437b-9bcd-f76603ac3800\",\"total_cost_usd\":0.03445546,\"usage\":{\"input_tokens\":11,\"cache_creation_input_tokens\":5598,\"cache_read_input_tokens\":63017,\"output_tokens\":419,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":5598,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":140,\"outputTokens\":1287,\"cacheReadInputTokens\":35013,\"cacheCreationInputTokens\":9644,\"webSearchRequests\":0,\"costUSD\":0.0221313,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":11,\"outputTokens\":419,\"cacheReadInputTokens\":63017,\"cacheCreationInputTokens\":5598,\"webSearchRequests\":0,\"costUSD\":0.01232416,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"e92d251c-923a-45d8-be01-f3b9659a5f80\"}",
+  "expected_answer": "VP Research, VP Product Development, VP Engineering, Chief Scientist",
+  "metadata": {
+    "duration_seconds": 25.152760127,
+    "timestamp": "2026-01-29T20:25:47-07:00"
+  }
+}

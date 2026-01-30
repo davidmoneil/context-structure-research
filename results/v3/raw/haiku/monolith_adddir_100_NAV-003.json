@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-003",
+  "question": "What is the total budget for Project Prometheus?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "monolith",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":4103,\"duration_api_ms\":6106,\"num_turns\":1,\"result\":\"{\\\"answer\\\": \\\"$2.4 billion\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/projects/prometheus\\\"]}\\n\\nThe Project Prometheus document specifically states under the \\\"Project Overview\\\" section that the total budget for the project is $2.4 billion, with the budget allocated across multiple phases from 2123-2126.\",\"session_id\":\"c1ab022a-b9bb-42f1-b987-779d5252865f\",\"total_cost_usd\":0.16476748,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":162360,\"cache_read_input_tokens\":18976,\"output_tokens\":76,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":162360,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":92,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000583,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":76,\"cacheReadInputTokens\":18976,\"cacheCreationInputTokens\":162360,\"webSearchRequests\":0,\"costUSD\":0.16418448,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"be40f371-4551-4e40-9a20-b146d6bed9ae\"}",
+  "expected_answer": "$2.4 billion",
+  "metadata": {
+    "duration_seconds": 29.525812920,
+    "timestamp": "2026-01-30T06:59:19-07:00"
+  }
+}

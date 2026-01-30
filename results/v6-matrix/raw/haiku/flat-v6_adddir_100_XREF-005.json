@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-005",
+  "question": "Which pilot customer signed a contract for Project Atlas, and what is the contract value?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "flat-v6",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":27801,\"duration_api_ms\":28868,\"num_turns\":2,\"result\":\"Based on the detailed search results, I'll provide the answer in the requested JSON format:\\n\\n```json\\n{\\n    \\\"answer\\\": \\\"Rio Tinto signed the pilot contract for Project Atlas, with an initial contract value of $47 million for 4 Atlas A1 units deployed in mining operations\\\",\\n    \\\"confidence\\\": \\\"high\\\",\\n    \\\"sources_used\\\": [\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source/projects/atlas.md\\\",\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source/customers/case-studies.md\\\",\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source/financial/quarterly-report-q3-2124.md\\\"\\n    ]\\n}\\n```\\n\\nThe key details are:\\n- Pilot Customer: Rio Tinto (mining industry)\\n- Initial Contract Value: $47 million\\n- Contract Details: 4 Atlas A1 units for autonomous mining operations\\n- Deployment Phase: Q1 2123 with plans for expansion\",\"session_id\":\"b63bd814-1fbb-4342-a607-8f8a04eb820d\",\"total_cost_usd\":0.054909700000000006,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3834,\"cache_read_input_tokens\":40585,\"output_tokens\":388,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3834,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":174,\"outputTokens\":2184,\"cacheReadInputTokens\":79873,\"cacheCreationInputTokens\":21752,\"webSearchRequests\":0,\"costUSD\":0.0462713,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":388,\"cacheReadInputTokens\":40585,\"cacheCreationInputTokens\":3834,\"webSearchRequests\":0,\"costUSD\":0.008638400000000001,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"bfea7a7b-bec7-41d2-9278-d405c84fbe3f\"}",
+  "expected_answer": "Rio Tinto, $47 million",
+  "metadata": {
+    "duration_seconds": 28.963156824,
+    "timestamp": "2026-01-30T15:20:44-07:00"
+  }
+}

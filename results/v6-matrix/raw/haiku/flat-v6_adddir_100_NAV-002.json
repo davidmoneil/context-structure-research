@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-002",
+  "question": "In what year was Soong-Daystrom Industries founded?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "flat-v6",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":4260,\"duration_api_ms\":5696,\"num_turns\":1,\"result\":\"I apologize, but based on the provided context, I cannot definitively determine the year Soong-Daystrom Industries was founded. \\n\\n{\\\"answer\\\": null, \\\"confidence\\\": \\\"low\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/.claude/CLAUDE.md\\\", \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/flat-v6/CLAUDE.md\\\"]}\\n\\nThe context provides background about Soong-Daystrom as a fictional company created for research purposes, but does not specify its founding year. The files mention key leadership like Dr. Maya Chen (CEO) and Dr. Amara Okonkwo (CTO), and list some products and research programs, but do not include a founding date.\\n\\nTo get the precise founding year, I would recommend checking the `research-notes/canon.md` file mentioned in the first CLAUDE.md, which is described as the \\\"authoritative source\\\" for facts about the company.\",\"session_id\":\"61b851d0-bd86-4c30-9cd2-3076e9c02b8e\",\"total_cost_usd\":0.005186560000000001,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":2271,\"cache_read_input_tokens\":18377,\"output_tokens\":230,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2271,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":143,\"outputTokens\":76,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000523,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":230,\"cacheReadInputTokens\":18377,\"cacheCreationInputTokens\":2271,\"webSearchRequests\":0,\"costUSD\":0.004663560000000001,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"545834a1-22ea-40fb-94f6-50b585f4fe2e\"}",
+  "expected_answer": "2089",
+  "metadata": {
+    "duration_seconds": 5.714768081,
+    "timestamp": "2026-01-30T15:15:55-07:00"
+  }
+}

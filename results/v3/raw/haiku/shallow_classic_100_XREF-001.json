@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-001",
+  "question": "Which department does the Project Prometheus team report to, and who leads that department?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "shallow",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":13488,\"duration_api_ms\":13551,\"num_turns\":3,\"result\":\"<function_calls>\\n<invoke name=\\\"Read\\\">\\n<parameter name=\\\"file_path\\\">/home/davidmoneil/Code/context-structure-research/soong-daystrom/shallow/organization/departments.md</parameter>\\n</invoke>\",\"session_id\":\"4da550af-9990-4907-9106-13546394e65c\",\"total_cost_usd\":0.09541383999999999,\"usage\":{\"input_tokens\":13,\"cache_creation_input_tokens\":77158,\"cache_read_input_tokens\":207068,\"output_tokens\":268,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":77158,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":97,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000608,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":13,\"outputTokens\":268,\"cacheReadInputTokens\":207068,\"cacheCreationInputTokens\":77158,\"webSearchRequests\":0,\"costUSD\":0.09480583999999999,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"af4e2da5-d260-42d4-82fd-4c46f0877b8d\"}",
+  "expected_answer": "Research & Development, led by Dr. James Okonkwo (CTO)",
+  "metadata": {
+    "duration_seconds": 15.702660692,
+    "timestamp": "2026-01-30T07:23:27-07:00"
+  }
+}

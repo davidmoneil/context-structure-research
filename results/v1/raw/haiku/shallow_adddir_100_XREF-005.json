@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-005",
+  "question": "Which pilot customer signed a contract for Project Atlas, and what is the contract value?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "shallow",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":8276,\"duration_api_ms\":10031,\"num_turns\":2,\"result\":\"Based on the Project Atlas document, I can confidently answer:\\n\\n{\\\"answer\\\": \\\"Rio Tinto signed a contract for 4 autonomous mining units\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/shallow/projects/atlas.md\\\"]}\\n\\nNote: While the contract value is not explicitly stated in the document, I did not include a contract value in the answer as no specific monetary amount was mentioned for the Rio Tinto contract.\",\"session_id\":\"3f9e86b5-8a76-43d5-9276-99371c169861\",\"total_cost_usd\":0.05903892,\"usage\":{\"input_tokens\":8,\"cache_creation_input_tokens\":50528,\"cache_read_input_tokens\":86294,\"output_tokens\":217,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":50528,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":122,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.0007329999999999999,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":8,\"outputTokens\":217,\"cacheReadInputTokens\":86294,\"cacheCreationInputTokens\":50528,\"webSearchRequests\":0,\"costUSD\":0.058305920000000004,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"7b6b2998-f907-4e32-994f-5fac8528c421\"}",
+  "expected_answer": "Rio Tinto, $47 million",
+  "metadata": {
+    "duration_seconds": 10.131338685,
+    "timestamp": "2026-01-29T14:34:43-07:00"
+  }
+}

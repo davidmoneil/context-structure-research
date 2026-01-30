@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-006",
+  "question": "What is the relationship between Project Hermes and Project Prometheus?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "very-deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":31215,\"duration_api_ms\":31462,\"num_turns\":2,\"result\":\"Based on the comprehensive exploration, I can provide the following answer:\\n\\n{\\n    \\\"answer\\\": \\\"Project Hermes is a communication AI system that provides a multi-modal interaction layer, specifically designed to integrate with and enable human interaction with Project Prometheus's consciousness architecture. They are deeply interdependent, with Hermes providing communication and emotional intelligence capabilities that complement Prometheus's core consciousness platform. The two projects are collaboratively aligned for a unified system deployment in Phase 3 (Q1 2025 - Q2 2025), sharing resources, technical foundations, and key personnel.\\\",\\n    \\\"confidence\\\": \\\"high\\\",\\n    \\\"sources_used\\\": [\\n        \\\"/soong-daystrom/company/initiatives/research/active-projects/hermes.md\\\",\\n        \\\"/soong-daystrom/company/initiatives/research/active-projects/prometheus.md\\\",\\n        \\\"/soong-daystrom/company/people/hr/employee-directory/team-prometheus.md\\\"\\n    ]\\n}\",\"session_id\":\"f0f531c9-989a-4ede-b800-444a283fc601\",\"total_cost_usd\":0.05264274,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":4138,\"cache_read_input_tokens\":40743,\"output_tokens\":380,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":4138,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":10959,\"outputTokens\":2146,\"cacheReadInputTokens\":54057,\"cacheCreationInputTokens\":13300,\"webSearchRequests\":0,\"costUSD\":0.0437197,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":380,\"cacheReadInputTokens\":40743,\"cacheCreationInputTokens\":4138,\"webSearchRequests\":0,\"costUSD\":0.00892304,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"57447931-f002-4d79-bd23-355b1286c88c\"}",
+  "expected_answer": "Project Hermes provides the communication interface/emotional layer that will integrate with Project Prometheus; Prometheus has a dependency on Hermes for Phase 3/4",
+  "metadata": {
+    "duration_seconds": 32.435246957,
+    "timestamp": "2026-01-30T07:59:12-07:00"
+  }
+}

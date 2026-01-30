@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-010",
+  "question": "Where is the Project Prometheus team located?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep-v5-v5.5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":15728,\"duration_api_ms\":16249,\"num_turns\":2,\"result\":\"Based on the search results, I'll provide the answer in the requested JSON format:\\n\\n{\\n    \\\"answer\\\": \\\"Building 7, San Francisco Secure Lab (with a remote team component in Singapore)\\\",\\n    \\\"confidence\\\": \\\"high\\\",\\n    \\\"sources_used\\\": [\\n        \\\"/soong-daystrom/deep-v5-v5.5/company/people/directory/team-prometheus.md\\\",\\n        \\\"/soong-daystrom/deep-v5-v5.5/company/records/meetings/prometheus-weekly-2024-10-21.md\\\"\\n    ]\\n}\",\"session_id\":\"1afd4831-d757-455e-a429-95027bab9a73\",\"total_cost_usd\":0.027394240000000004,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3269,\"cache_read_input_tokens\":40968,\"output_tokens\":277,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3269,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":140,\"outputTokens\":926,\"cacheReadInputTokens\":36767,\"cacheCreationInputTokens\":9030,\"webSearchRequests\":0,\"costUSD\":0.0197342,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":277,\"cacheReadInputTokens\":40968,\"cacheCreationInputTokens\":3269,\"webSearchRequests\":0,\"costUSD\":0.00766004,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"be5b7168-a9e5-443f-a724-ca9600186186\"}",
+  "expected_answer": "San Francisco Secure Lab (Building 7)",
+  "metadata": {
+    "duration_seconds": 17.027306475,
+    "timestamp": "2026-01-30T14:39:27-07:00"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-002",
+  "question": "In what year was Soong-Daystrom Industries founded?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep-v5-v5.5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":3739,\"duration_api_ms\":5555,\"num_turns\":1,\"result\":\"I apologize, but I cannot confidently answer this question. While the context provides an overview of the Soong-Daystrom Industries documentation structure, it does not contain the specific founding year of the company. \\n\\nI'll respond in the requested JSON format:\\n\\n{\\\"answer\\\": null, \\\"confidence\\\": \\\"low\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v5-v5.5/CLAUDE.md\\\", \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source/CLAUDE.md\\\"]}\\n\\nTo find the founding year, I would need to explore the files in the suggested directories like `@company/background/` or `@company/structure/`. Would you like me to search for the founding year in those locations?\",\"session_id\":\"e99c3ec9-109a-4970-b7cf-13aa96ebe5b2\",\"total_cost_usd\":0.00549832,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":2626,\"cache_read_input_tokens\":19174,\"output_tokens\":192,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2626,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":89,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.0005679999999999999,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":192,\"cacheReadInputTokens\":19174,\"cacheCreationInputTokens\":2626,\"webSearchRequests\":0,\"costUSD\":0.00493032,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"dc08f211-e6b0-4e90-9c0e-d7d678cadbc7\"}",
+  "expected_answer": "2089",
+  "metadata": {
+    "duration_seconds": 5.005919485,
+    "timestamp": "2026-01-30T14:36:21-07:00"
+  }
+}

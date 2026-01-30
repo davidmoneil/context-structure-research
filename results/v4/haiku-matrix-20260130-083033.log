@@ -1,0 +1,1610 @@
+Haiku Matrix Run - Fri Jan 30 08:30:33 AM MST 2026
+Total tests: 230
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    classic
+  Question:   NAV-001 (navigation)
+
+[1;33mQuestion:[0m
+  Who is the current CEO of Soong-Daystrom Industries?
+
+[1;33mExpected Answer:[0m
+  Dr. Maya Chen
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Classic (cd into structure directory)
+  Directory: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":488,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"9f222d33-b842-431e-9fdf-09609494d987","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"be149827-cd36-4290-8ae9-65d371c53e12"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 119.324595146s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No exact match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_classic_100_NAV-001.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    classic
+  Question:   NAV-002 (navigation)
+
+[1;33mQuestion:[0m
+  In what year was Soong-Daystrom Industries founded?
+
+[1;33mExpected Answer:[0m
+  2089
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Classic (cd into structure directory)
+  Directory: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":592,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"cf523b6e-4444-45b8-9a9e-585d6352151d","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"bab5014d-f60e-4703-b9d9-87d1a8bc9304"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 120.841471299s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No exact match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_classic_100_NAV-002.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    classic
+  Question:   NAV-003 (navigation)
+
+[1;33mQuestion:[0m
+  What is the total budget for Project Prometheus?
+
+[1;33mExpected Answer:[0m
+  $2.4 billion
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Classic (cd into structure directory)
+  Directory: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":476,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"fc0235b4-6a39-4091-8573-1980de18a6e4","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"0eaed752-90ff-4827-b721-cd8be2d689f2"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 126.665729465s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No exact match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_classic_100_NAV-003.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    classic
+  Question:   NAV-004 (navigation)
+
+[1;33mQuestion:[0m
+  How many employees does Soong-Daystrom Industries have?
+
+[1;33mExpected Answer:[0m
+  12,847
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Classic (cd into structure directory)
+  Directory: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":741,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"c4136e0a-3f35-4ceb-8abd-87a70d405e52","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"9193cfe9-5446-44ec-80e9-8d80de4b73da"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 119.450897950s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No exact match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_classic_100_NAV-004.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    classic
+  Question:   NAV-005 (navigation)
+
+[1;33mQuestion:[0m
+  What is the price of the PCS-500 Companion Elite?
+
+[1;33mExpected Answer:[0m
+  $47,000
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Classic (cd into structure directory)
+  Directory: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":515,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"06326689-a9b4-495f-9f0a-f9e81e00a57f","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"1230a0c3-ea37-4281-95e2-21475d3a54c7"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 124.640239738s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No exact match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_classic_100_NAV-005.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    classic
+  Question:   NAV-006 (navigation)
+
+[1;33mQuestion:[0m
+  Who leads the AI Safety team at Soong-Daystrom?
+
+[1;33mExpected Answer:[0m
+  Dr. Marcus Thompson
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Classic (cd into structure directory)
+  Directory: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":496,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"631f1c0e-87c9-41d3-96b1-004f0176f5e9","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"a7603846-e244-4c7a-ab81-4373e13b7791"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 95.953681340s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No exact match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_classic_100_NAV-006.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    classic
+  Question:   NAV-007 (navigation)
+
+[1;33mQuestion:[0m
+  What was the Q3 2124 revenue for Soong-Daystrom?
+
+[1;33mExpected Answer:[0m
+  $12.4 billion
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Classic (cd into structure directory)
+  Directory: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":655,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"8cbe819e-9328-4995-ae39-b559c7f7c17a","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"29e914aa-77fb-4cd3-8614-a40a06b71151"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 83.524051836s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No exact match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_classic_100_NAV-007.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    classic
+  Question:   NAV-008 (navigation)
+
+[1;33mQuestion:[0m
+  What is the current consciousness indicator score for Project Prometheus?
+
+[1;33mExpected Answer:[0m
+  0.72
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Classic (cd into structure directory)
+  Directory: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":363,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"bf49d358-e474-4614-bb61-357cb29278e6","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"9412ab8e-587a-4cf9-b555-300d6aa2d1f1"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 83.511567495s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No exact match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_classic_100_NAV-008.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    classic
+  Question:   NAV-009 (navigation)
+
+[1;33mQuestion:[0m
+  How much did Soong-Daystrom pay to acquire NeuroSync Labs?
+
+[1;33mExpected Answer:[0m
+  $8.2 billion
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Classic (cd into structure directory)
+  Directory: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":401,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"e1e1e6cd-ca04-4cbe-a104-3fa44c9a986d","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"952c60e7-fc87-481b-96b4-9fd95a64f86e"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 83.058668261s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No exact match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_classic_100_NAV-009.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    classic
+  Question:   NAV-010 (navigation)
+
+[1;33mQuestion:[0m
+  Where is the Project Prometheus team located?
+
+[1;33mExpected Answer:[0m
+  San Francisco Secure Lab (Building 7)
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Classic (cd into structure directory)
+  Directory: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":467,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"1afdf460-e1bc-4fcf-a05e-57bae45e3abf","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"f089f3f6-0ca4-4434-ad3d-f51e553eff5d"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 83.122444327s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No exact match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_classic_100_NAV-010.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    classic
+  Question:   XREF-001 (cross-reference)
+
+[1;33mQuestion:[0m
+  Which department does the Project Prometheus team report to, and who leads that department?
+
+[1;33mExpected Answer:[0m
+  Research & Development, led by Dr. James Okonkwo (CTO)
+
+[1;33mPartial Credit Keywords:[0m
+  R&D, Research, Okonkwo, CTO
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Classic (cd into structure directory)
+  Directory: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":356,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"958a1467-e9b9-409c-b516-c5bcce24cffe","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"2d85833d-544d-43da-9bd4-e6fac74c8b7d"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 82.857567280s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_classic_100_XREF-001.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    classic
+  Question:   XREF-002 (cross-reference)
+
+[1;33mQuestion:[0m
+  Who is the executive sponsor of Project Atlas, and what is their role?
+
+[1;33mExpected Answer:[0m
+  Marcus Williams, Chief Operating Officer (COO)
+
+[1;33mPartial Credit Keywords:[0m
+  Marcus Williams, COO, Operations
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Classic (cd into structure directory)
+  Directory: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":650,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"6068a971-0d89-4575-b55b-590072ccaec3","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"dac53526-aa13-42ac-918b-27950909c093"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 82.949052064s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_classic_100_XREF-002.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    classic
+  Question:   XREF-003 (cross-reference)
+
+[1;33mQuestion:[0m
+  How does Dr. Wei Zhang's background relate to the NIM product line?
+
+[1;33mExpected Answer:[0m
+  Dr. Wei Zhang came from NeuroSync Labs (acquired 2120) and leads neural architecture development, which is the core technology behind the Neural Interface Modules
+
+[1;33mPartial Credit Keywords:[0m
+  NeuroSync, acquisition, neural, NIM, interface
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Classic (cd into structure directory)
+  Directory: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":378,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"6f7d762a-c8f2-4312-982e-9df52b4923a5","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"b39b3be6-6d70-4a5a-bb00-feddcfc58400"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 83.127986269s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_classic_100_XREF-003.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    classic
+  Question:   XREF-004 (cross-reference)
+
+[1;33mQuestion:[0m
+  What decision was made in the October 2124 board meeting regarding AI safety research funding?
+
+[1;33mExpected Answer:[0m
+  The board approved a $10 million external AI safety research fund
+
+[1;33mPartial Credit Keywords:[0m
+  $10 million, 10M, safety, research, fund, approved
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Classic (cd into structure directory)
+  Directory: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":1029,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"e14bc2ef-3dde-4246-ab60-74ccdace4d7b","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"0d1f5cb0-9fd7-4080-a650-0ca154909ca9"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 90.501557304s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_classic_100_XREF-004.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    classic
+  Question:   XREF-005 (cross-reference)
+
+[1;33mQuestion:[0m
+  Which pilot customer signed a contract for Project Atlas, and what is the contract value?
+
+[1;33mExpected Answer:[0m
+  Rio Tinto, $47 million
+
+[1;33mPartial Credit Keywords:[0m
+  Rio Tinto, 47, million
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Classic (cd into structure directory)
+  Directory: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":374,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"db8d0042-f9e2-4874-8076-6be165d549e1","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"e05c6e45-068b-4d0c-9be5-4da98a28ce3f"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 82.832951663s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_classic_100_XREF-005.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    classic
+  Question:   XREF-006 (cross-reference)
+
+[1;33mQuestion:[0m
+  What is the relationship between Project Hermes and Project Prometheus?
+
+[1;33mExpected Answer:[0m
+  Project Hermes provides the communication interface/emotional layer that will integrate with Project Prometheus; Prometheus has a dependency on Hermes for Phase 3/4
+
+[1;33mPartial Credit Keywords:[0m
+  communication, integration, emotional, dependency, interface
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Classic (cd into structure directory)
+  Directory: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":453,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"9b759246-e9e0-4c24-9139-60a16869811e","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"29f86f7d-66c4-4947-9fab-742ba54143d7"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 83.193266406s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_classic_100_XREF-006.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    classic
+  Question:   XREF-007 (cross-reference)
+
+[1;33mQuestion:[0m
+  What positions report directly to Dr. James Okonkwo?
+
+[1;33mExpected Answer:[0m
+  VP Research, VP Product Development, VP Engineering, Chief Scientist
+
+[1;33mPartial Credit Keywords:[0m
+  VP, Research, Product Development, Engineering
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Classic (cd into structure directory)
+  Directory: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":424,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"98fda879-f03f-4548-b0f7-d62f0e4fa6d4","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"343dbd80-9810-4169-86d7-6f7f5ab24378"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 82.966248574s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_classic_100_XREF-007.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    classic
+  Question:   XREF-008 (cross-reference)
+
+[1;33mQuestion:[0m
+  How did the NeuroSync acquisition impact the NIM revenue trajectory?
+
+[1;33mExpected Answer:[0m
+  NIM revenue grew from $712M in 9 months post-acquisition (2120) to $7.2B in 2124, representing rapid growth enabled by NeuroSync's technology
+
+[1;33mPartial Credit Keywords:[0m
+  growth, billion, NeuroSync, acquisition, technology
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Classic (cd into structure directory)
+  Directory: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":423,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"135a16a3-df79-415b-bfa2-dd060bb91e32","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"d59638fb-ac32-4c35-af0c-ab501938b5d4"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 83.240467451s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_classic_100_XREF-008.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    classic
+  Question:   DEPTH-001 (depth)
+
+[1;33mQuestion:[0m
+  Based on the company's R&D budget allocation and current project portfolio, what strategic priorities can you infer about Soong-Daystrom's direction?
+
+[1;33mExpected Answer:[0m
+  Focus on next-generation AI consciousness (Project Prometheus) and industrial automation expansion (Project Atlas), indicating a dual strategy of advancing core AI technology while expanding market applications
+
+[1;33mPartial Credit Keywords:[0m
+  consciousness, AI, industrial, automation, Prometheus, Atlas, strategic
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Classic (cd into structure directory)
+  Directory: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":477,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"eaebcb22-86b5-478b-977c-727595318c30","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"7867dd29-a0da-4a88-9ab2-5ad5973f9f32"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 86.288331178s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_classic_100_DEPTH-001.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    classic
+  Question:   DEPTH-002 (depth)
+
+[1;33mQuestion:[0m
+  What ethical concerns might arise from Project Prometheus, and how is the company addressing them?
+
+[1;33mExpected Answer:[0m
+  Concerns include consciousness emergence ethics, moral status of AI, termination ethics. Addressed via: AI Ethics Advisory Board, ATLAS-Safe constraint system, enhanced oversight framework, external ethics partnerships (Stanford AI Ethics Center)
+
+[1;33mPartial Credit Keywords:[0m
+  consciousness, ethics, safety, ATLAS-Safe, oversight, board
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Classic (cd into structure directory)
+  Directory: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":317,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"041c9970-49d2-4e70-8bc7-5c45f3d6102b","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"27425b5c-cc2c-4111-be09-c7996160746f"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 83.491001551s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_classic_100_DEPTH-002.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    classic
+  Question:   DEPTH-003 (depth)
+
+[1;33mQuestion:[0m
+  Analyze the company's product revenue mix and explain what it suggests about their market positioning.
+
+[1;33mExpected Answer:[0m
+  PCS leads at $19.8B (consumer companion robots), IAP second at $16.4B (industrial automation), NIM growing fast at $7.2B (healthcare focus), SCE at $3.9B (enterprise AI platform). This suggests a diversified approach spanning consumer, industrial, and enterprise markets with healthcare as emerging growth driver
+
+[1;33mPartial Credit Keywords:[0m
+  PCS, consumer, IAP, industrial, NIM, healthcare, diversified
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Classic (cd into structure directory)
+  Directory: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":329,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"ca503b4e-ab7a-437f-941a-911373daf4cd","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"433d778c-9665-4f53-84f1-90bf73c72b0d"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 83.282175944s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_classic_100_DEPTH-003.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    classic
+  Question:   DEPTH-004 (depth)
+
+[1;33mQuestion:[0m
+  What risks does the company face with Project Prometheus, and what mitigations are in place?
+
+[1;33mExpected Answer:[0m
+  Key risks: consciousness emergence instability (ATLAS-Safe constraints, kill switch), regulatory delays (proactive engagement), talent attrition (retention bonuses), budget overrun (phase gates). Safety team of 42 led by Dr. Marcus Thompson
+
+[1;33mPartial Credit Keywords:[0m
+  instability, regulatory, safety, ATLAS-Safe, kill switch, retention
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Classic (cd into structure directory)
+  Directory: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":338,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"0ebf813c-3a2a-4793-9a05-3a56eef62182","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"3a1885c5-34d6-4dd3-b749-eda29d07adb2"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 82.943853538s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_classic_100_DEPTH-004.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    classic
+  Question:   DEPTH-005 (depth)
+
+[1;33mQuestion:[0m
+  How has CEO Dr. Maya Chen's background influenced the company's strategic direction?
+
+[1;33mExpected Answer:[0m
+  Her background as CTO of NeuroSync Labs (neural interface company) led to the 2120 acquisition, expansion into neural interfaces (NIM product line), and focus on consciousness research (Project Prometheus). This shifted the company from pure robotics to human-AI integration
+
+[1;33mPartial Credit Keywords:[0m
+  NeuroSync, neural, acquisition, consciousness, integration
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Classic (cd into structure directory)
+  Directory: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":409,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"020441a5-b04f-4898-82cf-fcd22c689856","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"58c1b2d6-c651-4e70-bf04-d5a2b9f14dd1"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 83.057494206s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_classic_100_DEPTH-005.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    adddir
+  Question:   NAV-001 (navigation)
+
+[1;33mQuestion:[0m
+  Who is the current CEO of Soong-Daystrom Industries?
+
+[1;33mExpected Answer:[0m
+  Dr. Maya Chen
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Add-dir (load from project root)
+  Add-dir: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":733,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"7110f994-db0e-4894-b3fb-22310d5cd94b","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"5cd15de2-11ed-404e-b8e2-9125933fd98a"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 86.321301484s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No exact match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_adddir_100_NAV-001.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    adddir
+  Question:   NAV-002 (navigation)
+
+[1;33mQuestion:[0m
+  In what year was Soong-Daystrom Industries founded?
+
+[1;33mExpected Answer:[0m
+  2089
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Add-dir (load from project root)
+  Add-dir: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":673,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"6350ca69-5bdd-4e2a-9062-751d5f764e24","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"06b855d1-4ee1-4d49-ad1a-a2972a7ccb09"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 83.089863108s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No exact match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_adddir_100_NAV-002.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    adddir
+  Question:   NAV-003 (navigation)
+
+[1;33mQuestion:[0m
+  What is the total budget for Project Prometheus?
+
+[1;33mExpected Answer:[0m
+  $2.4 billion
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Add-dir (load from project root)
+  Add-dir: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":370,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"fe2ba003-d391-422b-aa9f-284a346126dc","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"6992589f-3ef5-44ae-a4dc-6a5508ce3aac"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 82.786528654s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No exact match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_adddir_100_NAV-003.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    adddir
+  Question:   NAV-004 (navigation)
+
+[1;33mQuestion:[0m
+  How many employees does Soong-Daystrom Industries have?
+
+[1;33mExpected Answer:[0m
+  12,847
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Add-dir (load from project root)
+  Add-dir: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":601,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"9cbed5a7-c7a9-4bc6-85ad-eea6151ced56","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"004f8983-ec95-474c-81a2-d52e5add824e"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 83.003414435s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No exact match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_adddir_100_NAV-004.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    adddir
+  Question:   NAV-005 (navigation)
+
+[1;33mQuestion:[0m
+  What is the price of the PCS-500 Companion Elite?
+
+[1;33mExpected Answer:[0m
+  $47,000
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Add-dir (load from project root)
+  Add-dir: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":425,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"68337fe0-3fa7-404c-a3d8-4a254ecb675d","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"0583cc75-3268-47ee-867f-e140330a2e45"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 82.986734186s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No exact match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_adddir_100_NAV-005.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    adddir
+  Question:   NAV-006 (navigation)
+
+[1;33mQuestion:[0m
+  Who leads the AI Safety team at Soong-Daystrom?
+
+[1;33mExpected Answer:[0m
+  Dr. Marcus Thompson
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Add-dir (load from project root)
+  Add-dir: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":343,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"4a5449e8-5608-4357-9d7a-3490bf5b3e07","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"9fdab26a-98cf-416d-a0ac-f8b94e3037d7"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 82.974367424s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No exact match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_adddir_100_NAV-006.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    adddir
+  Question:   NAV-007 (navigation)
+
+[1;33mQuestion:[0m
+  What was the Q3 2124 revenue for Soong-Daystrom?
+
+[1;33mExpected Answer:[0m
+  $12.4 billion
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Add-dir (load from project root)
+  Add-dir: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":391,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"6d42daae-e9bf-4516-ad19-c80bd230ac6f","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"d9c42bb9-9e9b-451f-9078-5741c5573682"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 82.726782839s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No exact match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_adddir_100_NAV-007.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    adddir
+  Question:   NAV-008 (navigation)
+
+[1;33mQuestion:[0m
+  What is the current consciousness indicator score for Project Prometheus?
+
+[1;33mExpected Answer:[0m
+  0.72
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Add-dir (load from project root)
+  Add-dir: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":596,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"00097d30-4b8f-400e-9889-e81d7eaddb24","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"ec57c207-ae58-4608-82c2-733fe3d123fc"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 83.138142573s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No exact match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_adddir_100_NAV-008.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    adddir
+  Question:   NAV-009 (navigation)
+
+[1;33mQuestion:[0m
+  How much did Soong-Daystrom pay to acquire NeuroSync Labs?
+
+[1;33mExpected Answer:[0m
+  $8.2 billion
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Add-dir (load from project root)
+  Add-dir: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":740,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"6c8e77b6-f3cb-4bf0-ac26-8442102de750","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"860a32ec-4f68-4aae-89d4-b5f7f036ee3e"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 85.888582844s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No exact match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_adddir_100_NAV-009.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    adddir
+  Question:   NAV-010 (navigation)
+
+[1;33mQuestion:[0m
+  Where is the Project Prometheus team located?
+
+[1;33mExpected Answer:[0m
+  San Francisco Secure Lab (Building 7)
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Add-dir (load from project root)
+  Add-dir: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":670,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"9452d4cf-449b-4bec-b173-077f168b5f98","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"e6b7d87d-5cfc-474b-b9ce-301ed48af02e"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 83.615071111s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No exact match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_adddir_100_NAV-010.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    adddir
+  Question:   XREF-001 (cross-reference)
+
+[1;33mQuestion:[0m
+  Which department does the Project Prometheus team report to, and who leads that department?
+
+[1;33mExpected Answer:[0m
+  Research & Development, led by Dr. James Okonkwo (CTO)
+
+[1;33mPartial Credit Keywords:[0m
+  R&D, Research, Okonkwo, CTO
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Add-dir (load from project root)
+  Add-dir: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":417,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"8c813d8f-4d35-4757-97ed-455284cefc83","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"cc6f58c1-60b4-4637-b63d-3c03e0ee4d7c"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 83.745280040s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_adddir_100_XREF-001.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    adddir
+  Question:   XREF-002 (cross-reference)
+
+[1;33mQuestion:[0m
+  Who is the executive sponsor of Project Atlas, and what is their role?
+
+[1;33mExpected Answer:[0m
+  Marcus Williams, Chief Operating Officer (COO)
+
+[1;33mPartial Credit Keywords:[0m
+  Marcus Williams, COO, Operations
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Add-dir (load from project root)
+  Add-dir: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":593,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"dbab4339-b96c-49fb-9376-2d730e57f7da","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"c42277ef-29a0-4d41-b3c5-9892ea06c755"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 83.946870194s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_adddir_100_XREF-002.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    adddir
+  Question:   XREF-003 (cross-reference)
+
+[1;33mQuestion:[0m
+  How does Dr. Wei Zhang's background relate to the NIM product line?
+
+[1;33mExpected Answer:[0m
+  Dr. Wei Zhang came from NeuroSync Labs (acquired 2120) and leads neural architecture development, which is the core technology behind the Neural Interface Modules
+
+[1;33mPartial Credit Keywords:[0m
+  NeuroSync, acquisition, neural, NIM, interface
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Add-dir (load from project root)
+  Add-dir: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":345,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"be3566ef-1af6-4106-920a-d171658eaba2","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"31054f91-34bd-4df0-89b7-6cc09eef0ddc"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 83.199640171s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_adddir_100_XREF-003.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    adddir
+  Question:   XREF-004 (cross-reference)
+
+[1;33mQuestion:[0m
+  What decision was made in the October 2124 board meeting regarding AI safety research funding?
+
+[1;33mExpected Answer:[0m
+  The board approved a $10 million external AI safety research fund
+
+[1;33mPartial Credit Keywords:[0m
+  $10 million, 10M, safety, research, fund, approved
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Add-dir (load from project root)
+  Add-dir: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":357,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"07abdc48-a87b-4670-ba1d-9f5c006e83b5","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"6b3156c0-6652-4ea7-8302-3b344d38bb9c"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 84.835910313s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_adddir_100_XREF-004.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    adddir
+  Question:   XREF-005 (cross-reference)
+
+[1;33mQuestion:[0m
+  Which pilot customer signed a contract for Project Atlas, and what is the contract value?
+
+[1;33mExpected Answer:[0m
+  Rio Tinto, $47 million
+
+[1;33mPartial Credit Keywords:[0m
+  Rio Tinto, 47, million
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Add-dir (load from project root)
+  Add-dir: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":323,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"80bd22d3-eef4-41ae-9698-0f6c4e046cd5","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"bb227adb-97ca-41a8-90bd-bda358ae444f"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 86.089464402s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_adddir_100_XREF-005.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    adddir
+  Question:   XREF-006 (cross-reference)
+
+[1;33mQuestion:[0m
+  What is the relationship between Project Hermes and Project Prometheus?
+
+[1;33mExpected Answer:[0m
+  Project Hermes provides the communication interface/emotional layer that will integrate with Project Prometheus; Prometheus has a dependency on Hermes for Phase 3/4
+
+[1;33mPartial Credit Keywords:[0m
+  communication, integration, emotional, dependency, interface
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Add-dir (load from project root)
+  Add-dir: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":324,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"1c0fd969-b3bc-481d-8f4f-9b90a7aedd66","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"fe37ebce-b4c2-47b2-92fd-ccdcf57a20ec"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 83.575670325s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_adddir_100_XREF-006.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    adddir
+  Question:   XREF-007 (cross-reference)
+
+[1;33mQuestion:[0m
+  What positions report directly to Dr. James Okonkwo?
+
+[1;33mExpected Answer:[0m
+  VP Research, VP Product Development, VP Engineering, Chief Scientist
+
+[1;33mPartial Credit Keywords:[0m
+  VP, Research, Product Development, Engineering
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Add-dir (load from project root)
+  Add-dir: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":true,"duration_ms":346,"duration_api_ms":0,"num_turns":1,"result":"Prompt is too long","session_id":"4b5b8108-166e-480a-bfd0-731e3e832d3a","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0}},"modelUsage":{},"permission_denials":[],"uuid":"5b9373d4-bf8f-4325-8250-e12df8a1565c"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 83.451567584s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/monolith_adddir_100_XREF-007.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  monolith
+  Model:      haiku
+  Loading:    adddir
+  Question:   XREF-008 (cross-reference)
+
+[1;33mQuestion:[0m
+  How did the NeuroSync acquisition impact the NIM revenue trajectory?
+
+[1;33mExpected Answer:[0m
+  NIM revenue grew from $712M in 9 months post-acquisition (2120) to $7.2B in 2124, representing rapid growth enabled by NeuroSync's technology
+
+[1;33mPartial Credit Keywords:[0m
+  growth, billion, NeuroSync, acquisition, technology
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Add-dir (load from project root)
+  Add-dir: /home/davidmoneil/Code/context-structure-research/soong-daystrom/monolith
+

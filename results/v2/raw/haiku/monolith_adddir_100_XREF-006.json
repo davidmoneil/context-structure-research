@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-006",
+  "question": "What is the relationship between Project Hermes and Project Prometheus?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "monolith",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":3769,\"duration_api_ms\":5266,\"num_turns\":1,\"result\":\"{\\n    \\\"answer\\\": \\\"Project Hermes provides the communication and emotional intelligence layer for Project Prometheus, enabling human interaction with the emerging synthetic consciousness system. Hermes integrates with Prometheus by developing an interface that allows for natural language interaction, emotional response, and safe communication with the potentially conscious AI system.\\\",\\n    \\\"confidence\\\": \\\"high\\\", \\n    \\\"sources_used\\\": [\\n        \\\"/projects/hermes\\\", \\n        \\\"/projects/prometheus\\\"\\n    ]\\n}\",\"session_id\":\"073ac76e-8eb1-4368-b161-4e049e750482\",\"total_cost_usd\":0.08743508,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":85073,\"cache_read_input_tokens\":18971,\"output_tokens\":106,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":85073,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":59,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000418,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":106,\"cacheReadInputTokens\":18971,\"cacheCreationInputTokens\":85073,\"webSearchRequests\":0,\"costUSD\":0.08701708,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"918f95dc-eda4-444a-b3fb-2f780740e7ee\"}",
+  "expected_answer": "Project Hermes provides the communication interface/emotional layer that will integrate with Project Prometheus; Prometheus has a dependency on Hermes for Phase 3/4",
+  "metadata": {
+    "duration_seconds": 16.593346622,
+    "timestamp": "2026-01-29T19:50:47-07:00"
+  }
+}

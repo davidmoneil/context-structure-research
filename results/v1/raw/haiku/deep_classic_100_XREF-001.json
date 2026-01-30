@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-001",
+  "question": "Which department does the Project Prometheus team report to, and who leads that department?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":31990,\"duration_api_ms\":31342,\"num_turns\":3,\"result\":\"I'll provide the JSON directly in my response:\\n\\n```json\\n{\\n    \\\"answer\\\": \\\"Project Prometheus reports to the Research & Development (R&D) department, which is led by Dr. James Okonkwo (CTO)\\\",\\n    \\\"confidence\\\": \\\"high\\\", \\n    \\\"sources_used\\\": [\\n        \\\"/company/structure/departments/departments.md\\\",\\n        \\\"/company/initiatives/projects/prometheus.md\\\",\\n        \\\"/company/structure/leadership/executives.md\\\"\\n    ]\\n}\\n```\\n\\nThe answer is based on a thorough exploration of multiple files in the Soong-Daystrom Industries documentation, specifically focusing on the organizational structure, project details, and leadership information. The confidence is high due to consistent cross-referencing of multiple sources.\",\"session_id\":\"2d264cf9-d123-4694-a309-83a70c358b36\",\"total_cost_usd\":0.047392170000000004,\"usage\":{\"input_tokens\":12,\"cache_creation_input_tokens\":3781,\"cache_read_input_tokens\":63104,\"output_tokens\":504,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3781,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":5444,\"outputTokens\":1433,\"cacheReadInputTokens\":52995,\"cacheCreationInputTokens\":14903,\"webSearchRequests\":0,\"costUSD\":0.03653725,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":12,\"outputTokens\":504,\"cacheReadInputTokens\":63104,\"cacheCreationInputTokens\":3781,\"webSearchRequests\":0,\"costUSD\":0.01085492,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[{\"tool_name\":\"Write\",\"tool_use_id\":\"toolu_01Gq5ZRUCz9KSjyNo7xPiFcN\",\"tool_input\":{\"file_path\":\"/tmp/project_prometheus_answer.json\",\"content\":\"{\\n    \\\"answer\\\": \\\"Project Prometheus reports to the Research & Development (R&D) department, which is led by Dr. James Okonkwo (CTO)\\\",\\n    \\\"confidence\\\": \\\"high\\\",\\n    \\\"sources_used\\\": [\\n        \\\"/company/structure/departments/departments.md\\\",\\n        \\\"/company/initiatives/projects/prometheus.md\\\",\\n        \\\"/company/structure/leadership/executives.md\\\"\\n    ]\\n}\"}}],\"uuid\":\"a2b9d12f-4b1e-4a4b-b6e9-c79af7f84bdb\"}",
+  "expected_answer": "Research & Development, led by Dr. James Okonkwo (CTO)",
+  "metadata": {
+    "duration_seconds": 33.600522340,
+    "timestamp": "2026-01-29T14:40:40-07:00"
+  }
+}

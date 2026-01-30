@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-010",
+  "question": "Where is the Project Prometheus team located?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep-v6-v5.5",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":4229,\"duration_api_ms\":6618,\"num_turns\":1,\"result\":\"I apologize, but I cannot confidently answer this specific question from the provided context. While the context mentions Project Prometheus as one of the research programs, there are no details about its team's physical location. \\n\\nI'll respond in the requested JSON format:\\n\\n```json\\n{\\n    \\\"answer\\\": null, \\n    \\\"confidence\\\": \\\"low\\\", \\n    \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v6-v5.5/CLAUDE.md\\\"]\\n}\\n```\\n\\nThe context only lists Prometheus as a research program without providing any location information. To find the precise location of the Project Prometheus team, I would need to explore other files in the knowledge base, particularly in the `employees/` or `projects/` directories.\",\"session_id\":\"6366b939-7fcd-439e-a28b-84a607b865cb\",\"total_cost_usd\":0.00523156,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":2312,\"cache_read_input_tokens\":18402,\"output_tokens\":183,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2312,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":143,\"outputTokens\":114,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000713,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":183,\"cacheReadInputTokens\":18402,\"cacheCreationInputTokens\":2312,\"webSearchRequests\":0,\"costUSD\":0.00451856,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"0962c068-be5e-4325-8aa1-a6724f8aa5fd\"}",
+  "expected_answer": "San Francisco Secure Lab (Building 7)",
+  "metadata": {
+    "duration_seconds": 5.733831760,
+    "timestamp": "2026-01-30T16:02:14-07:00"
+  }
+}

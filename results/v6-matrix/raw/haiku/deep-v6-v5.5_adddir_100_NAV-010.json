@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-010",
+  "question": "Where is the Project Prometheus team located?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep-v6-v5.5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":2472,\"duration_api_ms\":4084,\"num_turns\":1,\"result\":\"I apologize, but I cannot confidently answer this specific question from the provided context. The context provides an overview of Soong-Daystrom Industries, mentioning Prometheus as a research program, but does not specify the team's physical location.\\n\\n{\\\"answer\\\": null, \\\"confidence\\\": \\\"low\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v6-v5.5/CLAUDE.md\\\"]}\",\"session_id\":\"75b46a3f-36bc-4339-bc43-4ed5f0e839e6\",\"total_cost_usd\":0.0056488400000000005,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":3014,\"cache_read_input_tokens\":18643,\"output_tokens\":112,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3014,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":143,\"outputTokens\":110,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000693,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":112,\"cacheReadInputTokens\":18643,\"cacheCreationInputTokens\":3014,\"webSearchRequests\":0,\"costUSD\":0.00495584,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"a7468d64-389c-4347-9efd-83cae1720aee\"}",
+  "expected_answer": "San Francisco Secure Lab (Building 7)",
+  "metadata": {
+    "duration_seconds": 3.937321462,
+    "timestamp": "2026-01-30T16:09:46-07:00"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-007",
+  "question": "What was the Q3 2124 revenue for Soong-Daystrom?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep-v6",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":3745,\"duration_api_ms\":5944,\"num_turns\":1,\"result\":\"{\\\"answer\\\": \\\"Unable to determine\\\", \\\"confidence\\\": \\\"low\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v6/CLAUDE.md\\\", \\\"/home/davidmoneil/Code/context-structure-research/CLAUDE.md\\\"]}\\n\\nI cannot find specific Q3 2124 revenue information in the provided context. While the context mentions Soong-Daystrom Industries as a fictional company and indicates there are financial documents, no specific revenue details are visible in the summaries I've been given. To definitively answer this, I would need to explore the `financial/` directory mentioned in the deep-v6 CLAUDE.md, but that is not directly accessible from the current context.\",\"session_id\":\"bc05c1ed-82f0-4a6d-a1fd-b68c0308c131\",\"total_cost_usd\":0.005239560000000001,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":2318,\"cache_read_input_tokens\":18377,\"output_tokens\":174,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2318,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":143,\"outputTokens\":122,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000753,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":174,\"cacheReadInputTokens\":18377,\"cacheCreationInputTokens\":2318,\"webSearchRequests\":0,\"costUSD\":0.0044865600000000005,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"b9153d8b-12f2-4ccf-82c8-d2d506830b53\"}",
+  "expected_answer": "$12.4 billion",
+  "metadata": {
+    "duration_seconds": 5.135910151,
+    "timestamp": "2026-01-30T15:32:56-07:00"
+  }
+}

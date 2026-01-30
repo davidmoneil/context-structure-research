@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-002",
+  "question": "Who is the executive sponsor of Project Atlas, and what is their role?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "flat-v6-v5.5",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":61472,\"duration_api_ms\":61797,\"num_turns\":3,\"result\":\"{\\n    \\\"answer\\\": \\\"Dr. Maya Chen (CEO) is the ultimate executive sponsor of Project Atlas, with strategic oversight and final accountability. Dr. James Okonkwo (CTO) provides technical leadership, while Marcus Williams (COO) handles operational execution.\\\",\\n    \\\"confidence\\\": \\\"high\\\",\\n    \\\"sources_used\\\": [\\n        \\\"projects-atlas-infrastructure.md\\\",\\n        \\\"organization-executives.md\\\",\\n        \\\"meetings-product-reviews.md\\\",\\n        \\\"governance-board-charter.md\\\"\\n    ]\\n}\",\"session_id\":\"f6f4fbd3-335a-4d2f-8e5f-bd29dce8835c\",\"total_cost_usd\":0.14038410999999998,\"usage\":{\"input_tokens\":10,\"cache_creation_input_tokens\":3939,\"cache_read_input_tokens\":61046,\"output_tokens\":374,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3939,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":1436,\"outputTokens\":3225,\"cacheReadInputTokens\":281560,\"cacheCreationInputTokens\":44795,\"webSearchRequests\":0,\"costUSD\":0.10171075,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":25,\"outputTokens\":910,\"cacheReadInputTokens\":100167,\"cacheCreationInputTokens\":27000,\"webSearchRequests\":0,\"costUSD\":0.038673360000000004,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"7b1770d4-dea4-45ab-8e7f-ab0781730c42\"}",
+  "expected_answer": "Marcus Williams, Chief Operating Officer (COO)",
+  "metadata": {
+    "duration_seconds": 62.807221778,
+    "timestamp": "2026-01-30T15:43:54-07:00"
+  }
+}

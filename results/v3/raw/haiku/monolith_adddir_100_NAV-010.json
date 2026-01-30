@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-010",
+  "question": "Where is the Project Prometheus team located?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "monolith",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":4287,\"duration_api_ms\":5585,\"num_turns\":1,\"result\":\"{\\n    \\\"answer\\\": \\\"The Project Prometheus team is located in Building 7, a secure underground research facility at the San Francisco headquarters with Level 4+ security clearance\\\", \\n    \\\"confidence\\\": \\\"high\\\", \\n    \\\"sources_used\\\": [\\n        \\\"technical / architecture.md\\\", \\n        \\\"technical / security-protocols.md\\\",\\n        \\\"organization / facilities.md\\\"\\n    ]\\n}\",\"session_id\":\"43945fe8-5eb3-4a72-8119-0acf3dc16bcf\",\"total_cost_usd\":0.16461348,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":162359,\"cache_read_input_tokens\":18976,\"output_tokens\":94,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":162359,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":47,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.00035800000000000003,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":94,\"cacheReadInputTokens\":18976,\"cacheCreationInputTokens\":162359,\"webSearchRequests\":0,\"costUSD\":0.16425548,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"b508978f-81a5-4298-9248-d6992d5fe238\"}",
+  "expected_answer": "San Francisco Secure Lab (Building 7)",
+  "metadata": {
+    "duration_seconds": 51.238065584,
+    "timestamp": "2026-01-30T07:03:35-07:00"
+  }
+}

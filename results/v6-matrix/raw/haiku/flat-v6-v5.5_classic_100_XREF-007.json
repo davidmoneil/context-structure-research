@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-007",
+  "question": "What positions report directly to Dr. James Okonkwo?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "flat-v6-v5.5",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":18348,\"duration_api_ms\":20160,\"num_turns\":2,\"result\":\"Based on the exploration results, I'll provide the answer in the requested JSON format:\\n\\n{\\\"answer\\\": [\\\"Dr. Yuki Tanaka (SVP Advanced Research)\\\", \\\"Dr. Ahmed Hassan (VP Product Development)\\\", \\\"Dr. Sarah Mitchell (VP Engineering, Austin)\\\"], \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/flat-v6-v5.5/employees-leadership-bios.md\\\", \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/flat-v6-v5.5/organization-executives.md\\\", \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/flat-v6-v5.5/employees-key-personnel.md\\\", \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/flat-v6-v5.5/organization-departments.md\\\"]}\",\"session_id\":\"e280a6f1-4cc8-4dd3-8ac6-1c8379ae7661\",\"total_cost_usd\":0.041567620000000007,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3009,\"cache_read_input_tokens\":39079,\"output_tokens\":394,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3009,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":160,\"outputTokens\":1205,\"cacheReadInputTokens\":37232,\"cacheCreationInputTokens\":19154,\"webSearchRequests\":0,\"costUSD\":0.033850700000000004,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":394,\"cacheReadInputTokens\":39079,\"cacheCreationInputTokens\":3009,\"webSearchRequests\":0,\"costUSD\":0.00771692,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"9f8131f9-3947-4b30-95c0-b44182d459d1\"}",
+  "expected_answer": "VP Research, VP Product Development, VP Engineering, Chief Scientist",
+  "metadata": {
+    "duration_seconds": 19.708909129,
+    "timestamp": "2026-01-30T15:46:43-07:00"
+  }
+}

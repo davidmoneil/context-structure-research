@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-001",
+  "question": "Which department does the Project Prometheus team report to, and who leads that department?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "very-deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":55450,\"duration_api_ms\":50570,\"num_turns\":3,\"result\":\"Here's the JSON response to your specific question:\\n\\n{\\\"answer\\\": \\\"Project Prometheus reports to the Research & Development (R&D) department's Advanced Research Division, which is led by Dr. James Okonkwo (CTO), with Dr. Yuki Tanaka serving as the Division Director.\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\n    \\\"@soong-daystrom/company/initiatives/research/active-projects/prometheus.md\\\",\\n    \\\"@soong-daystrom/company/structure/organization/departments/departments.md\\\",\\n    \\\"@soong-daystrom/company/structure/leadership/executive-team/executives.md\\\"\\n]}\",\"session_id\":\"34271db2-136c-477b-ab2b-8673c21bb8da\",\"total_cost_usd\":0.08306685,\"usage\":{\"input_tokens\":10,\"cache_creation_input_tokens\":4479,\"cache_read_input_tokens\":63884,\"output_tokens\":416,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":4479,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":1455,\"outputTokens\":2150,\"cacheReadInputTokens\":90621,\"cacheCreationInputTokens\":20951,\"webSearchRequests\":0,\"costUSD\":0.04745585000000001,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":23,\"outputTokens\":1158,\"cacheReadInputTokens\":115395,\"cacheCreationInputTokens\":21729,\"webSearchRequests\":0,\"costUSD\":0.035611,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"e87a59a5-60d2-4c2a-9f96-f90399cb6061\"}",
+  "expected_answer": "Research & Development, led by Dr. James Okonkwo (CTO)",
+  "metadata": {
+    "duration_seconds": 57.160086672,
+    "timestamp": "2026-01-30T10:52:49-07:00"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-004",
+  "question": "What decision was made in the October 2124 board meeting regarding AI safety research funding?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep-v6",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":18667,\"duration_api_ms\":20355,\"num_turns\":2,\"result\":\"Based on the exploration results, I'll provide the answer in the requested JSON format:\\n\\n```json\\n{\\n    \\\"answer\\\": \\\"The board approved a $10M external AI safety research fund, establishing a dedicated consciousness ethics sub-committee and increasing transparency in AI capabilities communication.\\\",\\n    \\\"confidence\\\": \\\"high\\\",\\n    \\\"sources_used\\\": [\\n        \\\"/soong-daystrom/_source/meetings/board-q3-2124.md\\\",\\n        \\\"/soong-daystrom/_source-v6/meetings/board-q3-2124.md\\\"\\n    ]\\n}\\n```\\n\\nThe response is high-confidence because it comes directly from the board meeting minutes, provides specific details about the funding decision, and includes context about the decision-making process.\",\"session_id\":\"d4dbd5fe-a5ea-4b3c-bbbe-57eb521fa82a\",\"total_cost_usd\":0.03830143,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":2898,\"cache_read_input_tokens\":39071,\"output_tokens\":301,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2898,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":160,\"outputTokens\":1165,\"cacheReadInputTokens\":43144,\"cacheCreationInputTokens\":16615,\"webSearchRequests\":0,\"costUSD\":0.031068149999999996,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":301,\"cacheReadInputTokens\":39071,\"cacheCreationInputTokens\":2898,\"webSearchRequests\":0,\"costUSD\":0.00723328,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"bdc58ceb-44c3-40ad-8b98-2c79bd556d41\"}",
+  "expected_answer": "The board approved a $10 million external AI safety research fund",
+  "metadata": {
+    "duration_seconds": 20.081963182,
+    "timestamp": "2026-01-30T15:35:01-07:00"
+  }
+}

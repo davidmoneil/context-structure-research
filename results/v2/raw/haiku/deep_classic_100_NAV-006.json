@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-006",
+  "question": "Who leads the AI Safety team at Soong-Daystrom?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":31102,\"duration_api_ms\":28825,\"num_turns\":2,\"result\":\"Based on the exploration results, I can confidently answer the question:\\n\\n{\\\"answer\\\": \\\"Dr. Marcus Thompson\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/company/people/directory/directory-rnd.md\\\", \\\"/company/people/directory/key-personnel.md\\\", \\\"/company/structure/departments/departments.md\\\"]}\\n\\nThe key details are that Dr. Marcus Thompson is the Director of Safety & Alignment, leading the AI Safety team at Soong-Daystrom Industries. He has a background from Anthropic and holds a Ph.D. in Machine Learning from UC Berkeley. His team consists of 42-89 researchers focused on AI safety, constraint systems, and ethical AI development.\",\"session_id\":\"9592578e-3b67-4ee1-9d8b-37e6ab6a5700\",\"total_cost_usd\":0.053154810000000004,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3479,\"cache_read_input_tokens\":40592,\"output_tokens\":298,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3479,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":317,\"outputTokens\":1716,\"cacheReadInputTokens\":83001,\"cacheCreationInputTokens\":22427,\"webSearchRequests\":0,\"costUSD\":0.04523085,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":298,\"cacheReadInputTokens\":40592,\"cacheCreationInputTokens\":3479,\"webSearchRequests\":0,\"costUSD\":0.00792396,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"6503ee67-0f61-4cbf-be50-855fc57603be\"}",
+  "expected_answer": "Dr. Marcus Thompson",
+  "metadata": {
+    "duration_seconds": 32.839059200,
+    "timestamp": "2026-01-29T20:20:43-07:00"
+  }
+}

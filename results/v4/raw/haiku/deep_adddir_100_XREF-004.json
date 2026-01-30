@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-004",
+  "question": "What decision was made in the October 2124 board meeting regarding AI safety research funding?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":28914,\"duration_api_ms\":26768,\"num_turns\":2,\"result\":\"Based on the search results, I can now provide a structured JSON response:\\n\\n{\\\"answer\\\": \\\"The board unanimously approved a $10M external AI safety research fund, responding to recommendations from the AI Ethics Advisory Board to establish enhanced oversight for consciousness research and address potential regulatory gaps in autonomous systems.\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/soong-daystrom/deep/company/records/meetings/board-q3-2124.md\\\"]}\",\"session_id\":\"4afcff65-b34a-4d10-98ad-935ba375a9e1\",\"total_cost_usd\":0.060901569999999995,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3350,\"cache_read_input_tokens\":40669,\"output_tokens\":257,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3350,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":1611,\"outputTokens\":1932,\"cacheReadInputTokens\":86172,\"cacheCreationInputTokens\":26701,\"webSearchRequests\":0,\"costUSD\":0.05326445,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":257,\"cacheReadInputTokens\":40669,\"cacheCreationInputTokens\":3350,\"webSearchRequests\":0,\"costUSD\":0.00763712,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"6eec82f0-3205-420d-860b-fd9246765d92\"}",
+  "expected_answer": "The board approved a $10 million external AI safety research fund",
+  "metadata": {
+    "duration_seconds": 30.932056267,
+    "timestamp": "2026-01-30T10:39:06-07:00"
+  }
+}

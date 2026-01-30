@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-006",
+  "question": "Who leads the AI Safety team at Soong-Daystrom?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "shallow",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":4228,\"duration_api_ms\":5524,\"num_turns\":1,\"result\":\"{\\n    \\\"answer\\\": \\\"Dr. Marcus Thompson serves as the Director of Safety & Alignment for the AI Safety team, leading a team of 42 researchers focused on AI safety research, constraint systems, and safety protocols.\\\",\\n    \\\"confidence\\\": \\\"high\\\", \\n    \\\"sources_used\\\": [\\n        \\\"soong-daystrom/shallow/employees/directory-rnd.md\\\",\\n        \\\"soong-daystrom/shallow/employees/key-personnel.md\\\",\\n        \\\"soong-daystrom/shallow/projects/prometheus.md\\\"\\n    ]\\n}\",\"session_id\":\"26f388b4-90d8-4f90-8bb9-aaefa67e7e8c\",\"total_cost_usd\":0.05075652,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":48365,\"cache_read_input_tokens\":18964,\"output_tokens\":131,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":48365,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":45,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000348,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":131,\"cacheReadInputTokens\":18964,\"cacheCreationInputTokens\":48365,\"webSearchRequests\":0,\"costUSD\":0.05040852,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"564c7f37-eae2-40b0-bf9a-aa6c23bfb640\"}",
+  "expected_answer": "Dr. Marcus Thompson",
+  "metadata": {
+    "duration_seconds": 6.103439060,
+    "timestamp": "2026-01-29T14:33:42-07:00"
+  }
+}

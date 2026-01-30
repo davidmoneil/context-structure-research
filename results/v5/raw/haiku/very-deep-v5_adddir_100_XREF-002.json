@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-002",
+  "question": "Who is the executive sponsor of Project Atlas, and what is their role?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "very-deep-v5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":39223,\"duration_api_ms\":30388,\"num_turns\":3,\"result\":\"Based on the exploration results, I'll provide the answer in the requested JSON format:\\n\\n```json\\n{\\n    \\\"answer\\\": \\\"Marcus Williams, the Chief Operating Officer (COO) of Soong-Daystrom Industries, is the executive sponsor of Project Atlas.\\\",\\n    \\\"confidence\\\": \\\"high\\\", \\n    \\\"sources_used\\\": [\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source/projects/atlas.md\\\"\\n    ]\\n}\\n```\\n\\nThe high confidence is due to the clear, consistent documentation across multiple research corpus variants, with the primary source being the canonical project file for Project Atlas.\",\"session_id\":\"79d2debc-7487-49b2-8772-20cbcd8794e2\",\"total_cost_usd\":0.08026059,\"usage\":{\"input_tokens\":10,\"cache_creation_input_tokens\":628,\"cache_read_input_tokens\":65623,\"output_tokens\":426,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":628,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":13386,\"outputTokens\":1603,\"cacheReadInputTokens\":100860,\"cacheCreationInputTokens\":32947,\"webSearchRequests\":0,\"costUSD\":0.07267075,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":10,\"outputTokens\":426,\"cacheReadInputTokens\":65623,\"cacheCreationInputTokens\":628,\"webSearchRequests\":0,\"costUSD\":0.0075898400000000005,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"656f465d-4a3f-405d-8dd5-ee0cc06acc5e\"}",
+  "expected_answer": "Marcus Williams, Chief Operating Officer (COO)",
+  "metadata": {
+    "duration_seconds": 40.136176013,
+    "timestamp": "2026-01-30T11:25:57-07:00"
+  }
+}

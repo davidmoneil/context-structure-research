@@ -1,0 +1,17 @@
+{
+  "question_id": "DEPTH-003",
+  "question": "Analyze the company's product revenue mix and explain what it suggests about their market positioning.",
+  "question_type": "depth",
+  "config": {
+    "structure": "flat-v5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":true,\"duration_ms\":585,\"duration_api_ms\":0,\"num_turns\":1,\"result\":\"Prompt is too long\",\"session_id\":\"54478196-ae14-4ea6-b10c-6e617521bd0b\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{},\"permission_denials\":[],\"uuid\":\"2862a186-a32a-4f59-87d2-9a1fec1e7cce\"}",
+  "expected_answer": "PCS leads at $19.8B (consumer companion robots), IAP second at $16.4B (industrial automation), NIM growing fast at $7.2B (healthcare focus), SCE at $3.9B (enterprise AI platform). This suggests a diversified approach spanning consumer, industrial, and enterprise markets with healthcare as emerging growth driver",
+  "metadata": {
+    "duration_seconds": 7.438676519,
+    "timestamp": "2026-01-30T10:44:30-07:00"
+  }
+}

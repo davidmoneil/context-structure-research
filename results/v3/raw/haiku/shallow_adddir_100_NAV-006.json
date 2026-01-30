@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-006",
+  "question": "Who leads the AI Safety team at Soong-Daystrom?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "shallow",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":5485,\"duration_api_ms\":6909,\"num_turns\":1,\"result\":\"{\\n    \\\"answer\\\": \\\"Dr. Marcus Thompson leads the AI Safety team at Soong-Daystrom\\\",\\n    \\\"confidence\\\": \\\"high\\\", \\n    \\\"sources_used\\\": [\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/shallow/employees/directory-rnd.md\\\",\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/shallow/projects/prometheus.md\\\"\\n    ]\\n}\\n\\nThe evidence comes from multiple sources which consistently identify Dr. Marcus Thompson as the Director of Safety & Alignment, both in the R&D employee directory and in the Project Prometheus team structure. His role involves leading AI safety research and developing safety constraint systems like the ATLAS-Safe framework.\",\"session_id\":\"527528df-24a3-4f8d-b5e5-43bae0084f22\",\"total_cost_usd\":0.07750048,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":74860,\"cache_read_input_tokens\":18976,\"output_tokens\":178,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":74860,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":57,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000408,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":178,\"cacheReadInputTokens\":18976,\"cacheCreationInputTokens\":74860,\"webSearchRequests\":0,\"costUSD\":0.07709247999999999,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"9eff7627-a5cf-4dc6-99c8-f6d135b0b699\"}",
+  "expected_answer": "Dr. Marcus Thompson",
+  "metadata": {
+    "duration_seconds": 6.695611973,
+    "timestamp": "2026-01-30T07:26:06-07:00"
+  }
+}

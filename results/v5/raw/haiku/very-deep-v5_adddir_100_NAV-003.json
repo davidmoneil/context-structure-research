@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-003",
+  "question": "What is the total budget for Project Prometheus?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "very-deep-v5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":4242,\"duration_api_ms\":5914,\"num_turns\":1,\"result\":\"I apologize, but I cannot find the specific budget for Project Prometheus in the provided context. The context only describes the structure of the Soong-Daystrom Industries documentation, but does not contain the actual content about the project or its budget.\\n\\n{\\n    \\\"answer\\\": \\\"Budget information for Project Prometheus not found\\\",\\n    \\\"confidence\\\": \\\"low\\\", \\n    \\\"sources_used\\\": [\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/very-deep-v5/CLAUDE.md\\\"\\n    ]\\n}\\n\\nTo find the actual budget, I would need to:\\n1. Check the full content in the directories referenced, particularly @sdi/company/initiatives/research/projects/\\n2. Look for a specific file about Project Prometheus\\n3. Review the financial reports in @sdi/company/finance/accounting/reports/\\n\\nWould you like me to help you locate more information about this project?\",\"session_id\":\"7eed2383-b3fc-4517-b614-fa63a2bb826a\",\"total_cost_usd\":0.00577556,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":2778,\"cache_read_input_tokens\":19027,\"output_tokens\":215,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2778,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":98,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000613,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":215,\"cacheReadInputTokens\":19027,\"cacheCreationInputTokens\":2778,\"webSearchRequests\":0,\"costUSD\":0.00516256,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"88f3ec6e-10d2-4e79-b3e5-76bdabcf91be\"}",
+  "expected_answer": "$2.4 billion",
+  "metadata": {
+    "duration_seconds": 5.297901606,
+    "timestamp": "2026-01-30T11:22:37-07:00"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-003",
+  "question": "What is the total budget for Project Prometheus?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "monolith",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":3837,\"duration_api_ms\":5225,\"num_turns\":1,\"result\":\"{\\\"answer\\\": \\\"$2.4 billion total\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/projects/prometheus\\\", \\\"/technical/architecture\\\"]}\\n\\nThe total budget for Project Prometheus is $2.4 billion, which is broken down into the following phases according to the Project Prometheus document:\\n- Phase 1 (Foundation): $420 million\\n- Phase 2 (Architecture): $680 million\\n- Phase 3 (Integration): $740 million\\n- Phase 4 (Testing): $380 million\\n- Phase 5 (Deployment): $180 million\",\"session_id\":\"81ec822d-1fd4-4313-8e90-10c777cc7c2f\",\"total_cost_usd\":0.08772876,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":85069,\"cache_read_input_tokens\":18992,\"output_tokens\":135,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":85069,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":95,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000598,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":135,\"cacheReadInputTokens\":18992,\"cacheCreationInputTokens\":85069,\"webSearchRequests\":0,\"costUSD\":0.08713076,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"da1891f2-befc-4263-9fe4-934992f79384\"}",
+  "expected_answer": "$2.4 billion",
+  "metadata": {
+    "duration_seconds": 14.236233798,
+    "timestamp": "2026-01-29T19:36:50-07:00"
+  }
+}

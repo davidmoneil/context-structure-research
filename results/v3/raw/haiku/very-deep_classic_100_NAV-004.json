@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-004",
+  "question": "How many employees does Soong-Daystrom Industries have?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "very-deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":18521,\"duration_api_ms\":19193,\"num_turns\":2,\"result\":\"Based on the search results, I can provide the answer in the requested JSON format:\\n\\n{\\\"answer\\\": \\\"12,847\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/very-deep/soong-daystrom/company/people/hr/employee-directory/directory-full.md\\\"]}\",\"session_id\":\"7fdf0339-9bcf-4dd8-a16f-c6803da31e33\",\"total_cost_usd\":0.04729672,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3368,\"cache_read_input_tokens\":40744,\"output_tokens\":278,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3368,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":1444,\"outputTokens\":1278,\"cacheReadInputTokens\":66526,\"cacheCreationInputTokens\":20052,\"webSearchRequests\":0,\"costUSD\":0.0395516,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":278,\"cacheReadInputTokens\":40744,\"cacheCreationInputTokens\":3368,\"webSearchRequests\":0,\"costUSD\":0.0077451199999999994,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[{\"tool_name\":\"Bash\",\"tool_use_id\":\"toolu_01VbZSauwG1hsZrTPHdewsP4\",\"tool_input\":{\"command\":\"find /home/davidmoneil/Code/context-structure-research -name \\\"canon.md\\\" -type f\",\"description\":\"Search for the canonical source document mentioned in CLAUDE.md\"}}],\"uuid\":\"3eed032a-117a-4931-8899-2aa1d801aaab\"}",
+  "expected_answer": "12,847",
+  "metadata": {
+    "duration_seconds": 19.591399624,
+    "timestamp": "2026-01-30T07:54:53-07:00"
+  }
+}

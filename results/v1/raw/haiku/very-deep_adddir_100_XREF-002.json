@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-002",
+  "question": "Who is the executive sponsor of Project Atlas, and what is their role?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "very-deep",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":17686,\"duration_api_ms\":17235,\"num_turns\":2,\"result\":\"Based on the search results, I can confidently provide the following answer:\\n\\n{\\\"answer\\\": \\\"Marcus Williams, the Chief Operating Officer (COO), is the executive sponsor of Project Atlas\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/soong-daystrom/_source/projects/atlas.md\\\", \\\"/soong-daystrom/very-deep/soong-daystrom/company/initiatives/research/active-projects/atlas.md\\\"]}\",\"session_id\":\"4eb2ec92-c7fa-438a-850f-099f88a08698\",\"total_cost_usd\":0.028152820000000002,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3275,\"cache_read_input_tokens\":40674,\"output_tokens\":234,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3275,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":5590,\"outputTokens\":862,\"cacheReadInputTokens\":34873,\"cacheCreationInputTokens\":5836,\"webSearchRequests\":0,\"costUSD\":0.0206823,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":234,\"cacheReadInputTokens\":40674,\"cacheCreationInputTokens\":3275,\"webSearchRequests\":0,\"costUSD\":0.007470520000000001,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"5fc24e94-27d9-481b-8b96-d7fde2dc0005\"}",
+  "expected_answer": "Marcus Williams, Chief Operating Officer (COO)",
+  "metadata": {
+    "duration_seconds": 20.448572834,
+    "timestamp": "2026-01-29T15:12:20-07:00"
+  }
+}

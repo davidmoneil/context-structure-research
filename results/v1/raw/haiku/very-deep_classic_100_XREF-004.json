@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-004",
+  "question": "What decision was made in the October 2124 board meeting regarding AI safety research funding?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "very-deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":12231,\"duration_api_ms\":12040,\"num_turns\":2,\"result\":\"While the context provides a structure for meeting minutes at `@soong-daystrom/company/records/documentation/meeting-minutes/`, I cannot find the specific October 2124 board meeting details. \\n\\n{\\n    \\\"answer\\\": \\\"No information available about the October 2124 board meeting AI safety research funding decision\\\",\\n    \\\"confidence\\\": \\\"low\\\", \\n    \\\"sources_used\\\": []\\n}\\n\\nThe context suggests this is a research project testing Claude's ability to navigate and synthesize information across files. However, in this instance, I cannot locate the specific information requested. To find the answer, I would need access to the actual meeting minutes in the specified directory.\",\"session_id\":\"bd04df6b-5cc2-4328-82d8-06d3273d7f80\",\"total_cost_usd\":0.00773968,\"usage\":{\"input_tokens\":8,\"cache_creation_input_tokens\":2878,\"cache_read_input_tokens\":40716,\"output_tokens\":265,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2878,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":83,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.0005380000000000001,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":8,\"outputTokens\":265,\"cacheReadInputTokens\":40716,\"cacheCreationInputTokens\":2878,\"webSearchRequests\":0,\"costUSD\":0.007201679999999999,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"994ee5c0-8dff-47ee-b8f6-f2cf3780b512\"}",
+  "expected_answer": "The board approved a $10 million external AI safety research fund",
+  "metadata": {
+    "duration_seconds": 13.780169090,
+    "timestamp": "2026-01-29T15:02:23-07:00"
+  }
+}

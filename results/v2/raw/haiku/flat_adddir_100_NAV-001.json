@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-001",
+  "question": "Who is the current CEO of Soong-Daystrom Industries?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "flat",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":28728,\"duration_api_ms\":27938,\"num_turns\":3,\"result\":\"Based on the context, I can confidently answer:\\n\\n{\\\"answer\\\": \\\"Dr. Maya Chen\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"soong-daystrom/flat/organization-executives.md\\\"]}\\n\\nThe details show that Dr. Maya Chen has been the CEO since January 2115, becoming the fifth CEO of Soong-Daystrom Industries after the retirement of founder Dr. Arik Soong III. She has led significant expansions in neural interfaces and synthetic consciousness, growing the company's revenue from $28 billion to $47.3 billion.\",\"session_id\":\"e8071130-4ad7-47be-b546-b76ab57e22d8\",\"total_cost_usd\":0.11001407999999999,\"usage\":{\"input_tokens\":13,\"cache_creation_input_tokens\":89831,\"cache_read_input_tokens\":231046,\"output_tokens\":329,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":89831,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":50,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000373,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":13,\"outputTokens\":329,\"cacheReadInputTokens\":231046,\"cacheCreationInputTokens\":89831,\"webSearchRequests\":0,\"costUSD\":0.10964108,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"84454931-8639-454d-8aff-5e90c1d0860b\"}",
+  "expected_answer": "Dr. Maya Chen",
+  "metadata": {
+    "duration_seconds": 30.788929892,
+    "timestamp": "2026-01-29T20:03:05-07:00"
+  }
+}

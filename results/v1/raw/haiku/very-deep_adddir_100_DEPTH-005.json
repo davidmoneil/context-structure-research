@@ -1,0 +1,17 @@
+{
+  "question_id": "DEPTH-005",
+  "question": "How has CEO Dr. Maya Chen's background influenced the company's strategic direction?",
+  "question_type": "depth",
+  "config": {
+    "structure": "very-deep",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":47495,\"duration_api_ms\":45341,\"num_turns\":2,\"result\":\"Based on the comprehensive search, I'll provide the answer in the requested JSON format:\\n\\n```json\\n{\\n    \\\"answer\\\": \\\"Dr. Maya Chen's neuroscience background has profoundly shaped Soong-Daystrom's strategic direction, transforming the company from a traditional robotics/AI firm to a neural interface pioneer. Her Ph.D. in Cognitive Neuroscience and previous role at NeuroSync Labs directly influenced the $8.2B NeuroSync acquisition, leading to breakthrough Neural Interface Modules (NIM) and the ambitious Project Prometheus. She has strategically positioned the company at the forefront of AI consciousness research, emphasizing safety, ethics, and regulatory compliance while driving significant revenue growth from $28B to $47.3B.\\\",\\n    \\\"confidence\\\": \\\"high\\\",\\n    \\\"sources_used\\\": [\\n        \\\"/soong-daystrom/_source/organization/executives.md\\\",\\n        \\\"/soong-daystrom/_source/history/acquisition-neurosync.md\\\", \\n        \\\"/soong-daystrom/_source/financial/annual-report-2123.md\\\",\\n        \\\"/soong-daystrom/_source/meetings/executive-committee-2024-10-14.md\\\",\\n        \\\"/soong-daystrom/_source/projects/prometheus.md\\\"\\n    ]\\n}\\n```\",\"session_id\":\"5141188a-5b8a-48af-9ae6-6e6fe9b963ef\",\"total_cost_usd\":0.0974633,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":4230,\"cache_read_input_tokens\":40675,\"output_tokens\":454,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":4230,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":15438,\"outputTokens\":2667,\"cacheReadInputTokens\":169797,\"cacheCreationInputTokens\":33924,\"webSearchRequests\":0,\"costUSD\":0.0881577,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":454,\"cacheReadInputTokens\":40675,\"cacheCreationInputTokens\":4230,\"webSearchRequests\":0,\"costUSD\":0.0093056,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"786bbcb6-d53f-4feb-9f7b-e3f1e48c2bb0\"}",
+  "expected_answer": "Her background as CTO of NeuroSync Labs (neural interface company) led to the 2120 acquisition, expansion into neural interfaces (NIM product line), and focus on consciousness research (Project Prometheus). This shifted the company from pure robotics to human-AI integration",
+  "metadata": {
+    "duration_seconds": 49.027670173,
+    "timestamp": "2026-01-29T15:19:39-07:00"
+  }
+}

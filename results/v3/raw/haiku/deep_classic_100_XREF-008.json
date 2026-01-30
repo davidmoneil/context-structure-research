@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-008",
+  "question": "How did the NeuroSync acquisition impact the NIM revenue trajectory?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":28154,\"duration_api_ms\":27088,\"num_turns\":2,\"result\":\"Based on the comprehensive research, I'll provide the answer in the requested JSON format:\\n\\n{\\n    \\\"answer\\\": \\\"The NeuroSync acquisition significantly accelerated NIM revenue trajectory, driving revenue growth from $712M in 2020 to $5.8B in 2023, representing a 715% increase over three years. The acquisition enabled technology integration, created $590M in annual synergies, and expanded NIM's healthcare market penetration with 47% year-over-year growth in that segment.\\\",\\n    \\\"confidence\\\": \\\"high\\\",\\n    \\\"sources_used\\\": [\\n        \\\"/company/background/history/acquisition-neurosync.md\\\",\\n        \\\"/company/finance/reports/annual-report-2123.md\\\",\\n        \\\"/company/finance/reports/quarterly-report-q2-2124.md\\\",\\n        \\\"/company/finance/reports/quarterly-report-q3-2124.md\\\"\\n    ]\\n}\",\"session_id\":\"07561abb-1933-4916-9a60-fbf72330fd15\",\"total_cost_usd\":0.0488237,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3689,\"cache_read_input_tokens\":40605,\"output_tokens\":374,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3689,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":2799,\"outputTokens\":1935,\"cacheReadInputTokens\":35457,\"cacheCreationInputTokens\":19492,\"webSearchRequests\":0,\"costUSD\":0.040384699999999996,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":374,\"cacheReadInputTokens\":40605,\"cacheCreationInputTokens\":3689,\"webSearchRequests\":0,\"costUSD\":0.008439,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"3e3c471e-77ca-4b2f-944c-5d877c77704b\"}",
+  "expected_answer": "NIM revenue grew from $712M in 9 months post-acquisition (2120) to $7.2B in 2124, representing rapid growth enabled by NeuroSync's technology",
+  "metadata": {
+    "duration_seconds": 29.866519521,
+    "timestamp": "2026-01-30T07:35:24-07:00"
+  }
+}

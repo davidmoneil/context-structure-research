@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-001",
+  "question": "Who is the current CEO of Soong-Daystrom Industries?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep-v5-v5.5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":3454,\"duration_api_ms\":5157,\"num_turns\":1,\"result\":\"I apologize, but based on the context provided, I cannot confidently determine the current CEO of Soong-Daystrom Industries. While the context describes the project structure and mentions various document categories, I do not have access to specific information about the company's leadership.\\n\\n{\\\"answer\\\": null, \\\"confidence\\\": \\\"low\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v5-v5.5/CLAUDE.md\\\", \\\"/home/davidmoneil/Code/context-structure-research/harness/questions.json\\\"]}\",\"session_id\":\"66537ef1-0167-438c-b837-06e5a7b4bf9b\",\"total_cost_usd\":0.00828824,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":5828,\"cache_read_input_tokens\":15973,\"output_tokens\":138,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":5828,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":101,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.0006280000000000001,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":138,\"cacheReadInputTokens\":15973,\"cacheCreationInputTokens\":5828,\"webSearchRequests\":0,\"costUSD\":0.0076602400000000005,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"d16ae950-9d2f-432b-9337-886ce06582ef\"}",
+  "expected_answer": "Dr. Maya Chen",
+  "metadata": {
+    "duration_seconds": 4.630992249,
+    "timestamp": "2026-01-30T14:36:16-07:00"
+  }
+}

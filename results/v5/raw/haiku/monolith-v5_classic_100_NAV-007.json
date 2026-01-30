@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-007",
+  "question": "What was the Q3 2124 revenue for Soong-Daystrom?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "monolith-v5",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":true,\"duration_ms\":541,\"duration_api_ms\":0,\"num_turns\":1,\"result\":\"Prompt is too long\",\"session_id\":\"9b989c32-5ace-46c1-9ead-ba283cee7fa1\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{},\"permission_denials\":[],\"uuid\":\"9d1499af-1ec0-45a4-99c8-5df4b58fb62d\"}",
+  "expected_answer": "$12.4 billion",
+  "metadata": {
+    "duration_seconds": 518.333237367,
+    "timestamp": "2026-01-30T10:42:03-07:00"
+  }
+}

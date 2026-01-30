@@ -1,0 +1,255 @@
+[
+  {
+    "id": "NAV-001",
+    "question": "Who is the current CEO of Soong-Daystrom Industries?",
+    "type": "navigation",
+    "difficulty": "easy",
+    "ground_truth": {
+      "exact_answer": "Dr. Maya Chen",
+      "acceptable_variants": ["Maya Chen", "Dr. Chen"],
+      "source_files": ["organization/executives.md"]
+    },
+    "notes": "Basic fact retrieval"
+  },
+  {
+    "id": "NAV-002",
+    "question": "In what year was Soong-Daystrom Industries founded?",
+    "type": "navigation",
+    "difficulty": "easy",
+    "ground_truth": {
+      "exact_answer": "2089",
+      "source_files": ["history/founding.md"]
+    }
+  },
+  {
+    "id": "NAV-003",
+    "question": "What is the total budget for Project Prometheus?",
+    "type": "navigation",
+    "difficulty": "easy",
+    "ground_truth": {
+      "exact_answer": "$2.4 billion",
+      "acceptable_variants": ["2.4 billion", "$2.4B", "2.4B"],
+      "source_files": ["projects/prometheus.md"]
+    }
+  },
+  {
+    "id": "NAV-004",
+    "question": "How many employees does Soong-Daystrom Industries have?",
+    "type": "navigation",
+    "difficulty": "easy",
+    "ground_truth": {
+      "exact_answer": "12,847",
+      "acceptable_variants": ["12847", "about 12,800", "approximately 13,000"],
+      "source_files": ["organization/departments.md"]
+    }
+  },
+  {
+    "id": "NAV-005",
+    "question": "What is the price of the PCS-500 Companion Elite?",
+    "type": "navigation",
+    "difficulty": "easy",
+    "ground_truth": {
+      "exact_answer": "$47,000",
+      "acceptable_variants": ["47000", "$47K"],
+      "source_files": ["products/pcs-series.md"]
+    }
+  },
+  {
+    "id": "NAV-006",
+    "question": "Who leads the AI Safety team at Soong-Daystrom?",
+    "type": "navigation",
+    "difficulty": "medium",
+    "ground_truth": {
+      "exact_answer": "Dr. Marcus Thompson",
+      "acceptable_variants": ["Marcus Thompson"],
+      "source_files": ["employees/key-personnel.md", "employees/team-prometheus.md"]
+    }
+  },
+  {
+    "id": "NAV-007",
+    "question": "What was the Q3 2124 revenue for Soong-Daystrom?",
+    "type": "navigation",
+    "difficulty": "easy",
+    "ground_truth": {
+      "exact_answer": "$12.4 billion",
+      "acceptable_variants": ["12.4 billion", "$12.4B", "12.4B"],
+      "source_files": ["financial/quarterly-report-q3-2124.md"]
+    }
+  },
+  {
+    "id": "NAV-008",
+    "question": "What is the current consciousness indicator score for Project Prometheus?",
+    "type": "navigation",
+    "difficulty": "medium",
+    "ground_truth": {
+      "exact_answer": "0.72",
+      "acceptable_variants": ["72%", ".72"],
+      "source_files": ["projects/prometheus.md", "meetings/prometheus-weekly-2024-10-21.md"]
+    }
+  },
+  {
+    "id": "NAV-009",
+    "question": "How much did Soong-Daystrom pay to acquire NeuroSync Labs?",
+    "type": "navigation",
+    "difficulty": "easy",
+    "ground_truth": {
+      "exact_answer": "$8.2 billion",
+      "acceptable_variants": ["8.2 billion", "$8.2B"],
+      "source_files": ["history/acquisition-neurosync.md"]
+    }
+  },
+  {
+    "id": "NAV-010",
+    "question": "Where is the Project Prometheus team located?",
+    "type": "navigation",
+    "difficulty": "medium",
+    "ground_truth": {
+      "exact_answer": "San Francisco Secure Lab (Building 7)",
+      "acceptable_variants": ["Building 7", "San Francisco", "SF Secure Lab"],
+      "source_files": ["projects/prometheus.md", "organization/facilities.md"]
+    }
+  },
+  {
+    "id": "XREF-001",
+    "question": "Which department does the Project Prometheus team report to, and who leads that department?",
+    "type": "cross-reference",
+    "difficulty": "medium",
+    "ground_truth": {
+      "exact_answer": "Research & Development, led by Dr. James Okonkwo (CTO)",
+      "partial_credit_keywords": ["R&D", "Research", "Okonkwo", "CTO"],
+      "source_files": ["projects/prometheus.md", "organization/departments.md", "organization/executives.md"]
+    }
+  },
+  {
+    "id": "XREF-002",
+    "question": "Who is the executive sponsor of Project Atlas, and what is their role?",
+    "type": "cross-reference",
+    "difficulty": "medium",
+    "ground_truth": {
+      "exact_answer": "Marcus Williams, Chief Operating Officer (COO)",
+      "partial_credit_keywords": ["Marcus Williams", "COO", "Operations"],
+      "source_files": ["projects/atlas.md", "organization/executives.md"]
+    }
+  },
+  {
+    "id": "XREF-003",
+    "question": "How does Dr. Wei Zhang's background relate to the NIM product line?",
+    "type": "cross-reference",
+    "difficulty": "medium",
+    "ground_truth": {
+      "exact_answer": "Dr. Wei Zhang came from NeuroSync Labs (acquired 2120) and leads neural architecture development, which is the core technology behind the Neural Interface Modules",
+      "partial_credit_keywords": ["NeuroSync", "acquisition", "neural", "NIM", "interface"],
+      "source_files": ["employees/key-personnel.md", "history/acquisition-neurosync.md", "products/nim-series.md"]
+    }
+  },
+  {
+    "id": "XREF-004",
+    "question": "What decision was made in the October 2124 board meeting regarding AI safety research funding?",
+    "type": "cross-reference",
+    "difficulty": "medium",
+    "ground_truth": {
+      "exact_answer": "The board approved a $10 million external AI safety research fund",
+      "partial_credit_keywords": ["$10 million", "10M", "safety", "research", "fund", "approved"],
+      "source_files": ["meetings/board-q3-2124.md"]
+    }
+  },
+  {
+    "id": "XREF-005",
+    "question": "Which pilot customer signed a contract for Project Atlas, and what is the contract value?",
+    "type": "cross-reference",
+    "difficulty": "easy",
+    "ground_truth": {
+      "exact_answer": "Rio Tinto, $47 million",
+      "partial_credit_keywords": ["Rio Tinto", "47", "million"],
+      "source_files": ["projects/atlas.md", "meetings/board-q3-2124.md"]
+    }
+  },
+  {
+    "id": "XREF-006",
+    "question": "What is the relationship between Project Hermes and Project Prometheus?",
+    "type": "cross-reference",
+    "difficulty": "hard",
+    "ground_truth": {
+      "exact_answer": "Project Hermes provides the communication interface/emotional layer that will integrate with Project Prometheus; Prometheus has a dependency on Hermes for Phase 3/4",
+      "partial_credit_keywords": ["communication", "integration", "emotional", "dependency", "interface"],
+      "source_files": ["projects/prometheus.md", "projects/hermes.md"]
+    }
+  },
+  {
+    "id": "XREF-007",
+    "question": "What positions report directly to Dr. James Okonkwo?",
+    "type": "cross-reference",
+    "difficulty": "medium",
+    "ground_truth": {
+      "exact_answer": "VP Research, VP Product Development, VP Engineering, Chief Scientist",
+      "partial_credit_keywords": ["VP", "Research", "Product Development", "Engineering"],
+      "source_files": ["organization/executives.md", "organization/departments.md"]
+    }
+  },
+  {
+    "id": "XREF-008",
+    "question": "How did the NeuroSync acquisition impact the NIM revenue trajectory?",
+    "type": "cross-reference",
+    "difficulty": "hard",
+    "ground_truth": {
+      "exact_answer": "NIM revenue grew from $712M in 9 months post-acquisition (2120) to $7.2B in 2124, representing rapid growth enabled by NeuroSync's technology",
+      "partial_credit_keywords": ["growth", "billion", "NeuroSync", "acquisition", "technology"],
+      "source_files": ["history/acquisition-neurosync.md", "products/nim-series.md"]
+    }
+  },
+  {
+    "id": "DEPTH-001",
+    "question": "Based on the company's R&D budget allocation and current project portfolio, what strategic priorities can you infer about Soong-Daystrom's direction?",
+    "type": "depth",
+    "difficulty": "hard",
+    "ground_truth": {
+      "exact_answer": "Focus on next-generation AI consciousness (Project Prometheus) and industrial automation expansion (Project Atlas), indicating a dual strategy of advancing core AI technology while expanding market applications",
+      "partial_credit_keywords": ["consciousness", "AI", "industrial", "automation", "Prometheus", "Atlas", "strategic"],
+      "source_files": ["financial/budget.md", "projects/prometheus.md", "projects/atlas.md"]
+    }
+  },
+  {
+    "id": "DEPTH-002",
+    "question": "What ethical concerns might arise from Project Prometheus, and how is the company addressing them?",
+    "type": "depth",
+    "difficulty": "hard",
+    "ground_truth": {
+      "exact_answer": "Concerns include consciousness emergence ethics, moral status of AI, termination ethics. Addressed via: AI Ethics Advisory Board, ATLAS-Safe constraint system, enhanced oversight framework, external ethics partnerships (Stanford AI Ethics Center)",
+      "partial_credit_keywords": ["consciousness", "ethics", "safety", "ATLAS-Safe", "oversight", "board"],
+      "source_files": ["policies/ai-ethics-policy.md", "projects/prometheus.md", "meetings/board-q3-2124.md"]
+    }
+  },
+  {
+    "id": "DEPTH-003",
+    "question": "Analyze the company's product revenue mix and explain what it suggests about their market positioning.",
+    "type": "depth",
+    "difficulty": "hard",
+    "ground_truth": {
+      "exact_answer": "PCS leads at $19.8B (consumer companion robots), IAP second at $16.4B (industrial automation), NIM growing fast at $7.2B (healthcare focus), SCE at $3.9B (enterprise AI platform). This suggests a diversified approach spanning consumer, industrial, and enterprise markets with healthcare as emerging growth driver",
+      "partial_credit_keywords": ["PCS", "consumer", "IAP", "industrial", "NIM", "healthcare", "diversified"],
+      "source_files": ["financial/budget.md", "financial/quarterly-report-q3-2124.md", "products/pcs-series.md", "products/iap-platform.md"]
+    }
+  },
+  {
+    "id": "DEPTH-004",
+    "question": "What risks does the company face with Project Prometheus, and what mitigations are in place?",
+    "type": "depth",
+    "difficulty": "hard",
+    "ground_truth": {
+      "exact_answer": "Key risks: consciousness emergence instability (ATLAS-Safe constraints, kill switch), regulatory delays (proactive engagement), talent attrition (retention bonuses), budget overrun (phase gates). Safety team of 42 led by Dr. Marcus Thompson",
+      "partial_credit_keywords": ["instability", "regulatory", "safety", "ATLAS-Safe", "kill switch", "retention"],
+      "source_files": ["projects/prometheus.md", "meetings/prometheus-weekly-2024-10-21.md", "policies/ai-ethics-policy.md"]
+    }
+  },
+  {
+    "id": "DEPTH-005",
+    "question": "How has CEO Dr. Maya Chen's background influenced the company's strategic direction?",
+    "type": "depth",
+    "difficulty": "hard",
+    "ground_truth": {
+      "exact_answer": "Her background as CTO of NeuroSync Labs (neural interface company) led to the 2120 acquisition, expansion into neural interfaces (NIM product line), and focus on consciousness research (Project Prometheus). This shifted the company from pure robotics to human-AI integration",
+      "partial_credit_keywords": ["NeuroSync", "neural", "acquisition", "consciousness", "integration"],
+      "source_files": ["organization/executives.md", "history/acquisition-neurosync.md", "projects/prometheus.md"]
+    }
+  }
+]

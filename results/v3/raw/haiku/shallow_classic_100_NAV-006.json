@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-006",
+  "question": "Who leads the AI Safety team at Soong-Daystrom?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "shallow",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":4366,\"duration_api_ms\":6026,\"num_turns\":1,\"result\":\"{\\n    \\\"answer\\\": \\\"Dr. Marcus Thompson\\\",\\n    \\\"confidence\\\": \\\"high\\\", \\n    \\\"sources_used\\\": [\\n        \\\"@employees/directory-rnd.md\\\",\\n        \\\"@projects/prometheus.md\\\"\\n    ]\\n}\\n\\nThe source documents consistently identify Dr. Marcus Thompson as the Director of Safety & Alignment, specifically mentioning his leadership of the AI Safety team. In the Prometheus project team structure, he leads a team of 42 researchers in the Safety & Alignment group, and in the R&D employee directory, he is listed as the leader of the AI Safety research group.\",\"session_id\":\"61ee7819-9900-4a67-8597-22ee319f3209\",\"total_cost_usd\":0.07758016,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":74860,\"cache_read_input_tokens\":18997,\"output_tokens\":135,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":74860,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":107,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000658,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":135,\"cacheReadInputTokens\":18997,\"cacheCreationInputTokens\":74860,\"webSearchRequests\":0,\"costUSD\":0.07692215999999999,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"ffc65d15-2386-4447-b73b-e2bda36abc6f\"}",
+  "expected_answer": "Dr. Marcus Thompson",
+  "metadata": {
+    "duration_seconds": 6.356619288,
+    "timestamp": "2026-01-30T07:22:48-07:00"
+  }
+}

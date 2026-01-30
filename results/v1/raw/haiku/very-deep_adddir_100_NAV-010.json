@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-010",
+  "question": "Where is the Project Prometheus team located?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "very-deep",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":22719,\"duration_api_ms\":23142,\"num_turns\":2,\"result\":\"Based on the exploration, I can provide the following answer:\\n\\n{\\\"answer\\\": \\\"San Francisco, specifically located in Building 7 at One Soong Plaza, San Francisco, CA 94105, with a remote team component in Singapore\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\n    \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/very-deep/soong-daystrom/company/initiatives/research/active-projects/prometheus.md\\\",\\n    \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/very-deep/soong-daystrom/company/people/hr/employee-directory/team-prometheus.md\\\"\\n]}\",\"session_id\":\"8dab98e5-aac7-4103-8266-29f884803cec\",\"total_cost_usd\":0.03417269,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3364,\"cache_read_input_tokens\":40668,\"output_tokens\":305,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3364,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":9564,\"outputTokens\":1118,\"cacheReadInputTokens\":34969,\"cacheCreationInputTokens\":6143,\"webSearchRequests\":0,\"costUSD\":0.026329650000000003,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":305,\"cacheReadInputTokens\":40668,\"cacheCreationInputTokens\":3364,\"webSearchRequests\":0,\"costUSD\":0.00784304,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"c6987981-b93b-4e18-9f2b-dbde4830a3dd\"}",
+  "expected_answer": "San Francisco Secure Lab (Building 7)",
+  "metadata": {
+    "duration_seconds": 24.418122425,
+    "timestamp": "2026-01-29T15:11:12-07:00"
+  }
+}

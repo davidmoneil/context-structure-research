@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-008",
+  "question": "How did the NeuroSync acquisition impact the NIM revenue trajectory?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "flat-v5-v5.5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":true,\"duration_ms\":417,\"duration_api_ms\":0,\"num_turns\":1,\"result\":\"Prompt is too long\",\"session_id\":\"f008d0e3-1c09-4686-80d0-4b4c7f1a3ae2\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{},\"permission_denials\":[],\"uuid\":\"b82f4f78-dcbc-4d5d-882c-f186c3b8f38a\"}",
+  "expected_answer": "NIM revenue grew from $712M in 9 months post-acquisition (2120) to $7.2B in 2124, representing rapid growth enabled by NeuroSync's technology",
+  "metadata": {
+    "duration_seconds": 5.328661082,
+    "timestamp": "2026-01-30T14:24:32-07:00"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-007",
+  "question": "What positions report directly to Dr. James Okonkwo?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "flat",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":true,\"duration_ms\":403,\"duration_api_ms\":0,\"num_turns\":1,\"result\":\"Prompt is too long\",\"session_id\":\"367bc135-507c-44a4-8ee2-8c8589ccd5fc\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{},\"permission_denials\":[],\"uuid\":\"ca2b5bd1-412c-4200-b05f-c4bfb89789ed\"}",
+  "expected_answer": "VP Research, VP Product Development, VP Engineering, Chief Scientist",
+  "metadata": {
+    "duration_seconds": 2.788067355,
+    "timestamp": "2026-01-30T10:11:42-07:00"
+  }
+}

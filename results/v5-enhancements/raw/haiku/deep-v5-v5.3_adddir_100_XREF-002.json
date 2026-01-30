@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-002",
+  "question": "Who is the executive sponsor of Project Atlas, and what is their role?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep-v5-v5.3",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":23462,\"duration_api_ms\":19669,\"num_turns\":2,\"result\":\"Based on the search results, I can confidently answer your question:\\n\\n{\\\"answer\\\": \\\"Marcus Williams, the Chief Operating Officer (COO) of Soong-Daystrom Industries, is the executive sponsor of Project Atlas. In his role, he provides executive leadership, strategic oversight, and resource allocation for the project.\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/soong-daystrom/_source-v4/projects/atlas.md\\\", \\\"/soong-daystrom/_source-v4/employees/key-personnel.md\\\"]}\",\"session_id\":\"09629c4d-9e32-454e-8a8e-75964cc1ffdb\",\"total_cost_usd\":0.03641025,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3268,\"cache_read_input_tokens\":40800,\"output_tokens\":281,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3268,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":1111,\"outputTokens\":1179,\"cacheReadInputTokens\":58589,\"cacheCreationInputTokens\":12707,\"webSearchRequests\":0,\"costUSD\":0.02874865,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":281,\"cacheReadInputTokens\":40800,\"cacheCreationInputTokens\":3268,\"webSearchRequests\":0,\"costUSD\":0.0076616,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"03c23be7-8486-4fe8-b25b-021d13fad84e\"}",
+  "expected_answer": "Marcus Williams, Chief Operating Officer (COO)",
+  "metadata": {
+    "duration_seconds": 25.581340798,
+    "timestamp": "2026-01-30T12:45:02-07:00"
+  }
+}

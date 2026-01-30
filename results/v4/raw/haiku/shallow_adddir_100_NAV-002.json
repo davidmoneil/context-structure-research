@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-002",
+  "question": "In what year was Soong-Daystrom Industries founded?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "shallow",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":4051,\"duration_api_ms\":5613,\"num_turns\":1,\"result\":\"{\\\"answer\\\": \\\"2089\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/shallow/history/founding.md\\\"]}\\n\\nThe founding date is explicitly stated in the founding document, which notes that Soong-Daystrom Industries was incorporated on March 15, 2089 by Dr. Arik Soong III and Dr. Richard Daystrom Jr.\",\"session_id\":\"d53977f3-e9c1-4930-8e51-45bcd38879d7\",\"total_cost_usd\":0.10242783999999999,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":99851,\"cache_read_input_tokens\":18993,\"output_tokens\":108,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":99851,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":100,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.0006230000000000001,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":108,\"cacheReadInputTokens\":18993,\"cacheCreationInputTokens\":99851,\"webSearchRequests\":0,\"costUSD\":0.10180484,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"95140b2a-2dc6-49ca-a3f0-f65a88074ee0\"}",
+  "expected_answer": "2089",
+  "metadata": {
+    "duration_seconds": 5.573900715,
+    "timestamp": "2026-01-30T10:18:11-07:00"
+  }
+}

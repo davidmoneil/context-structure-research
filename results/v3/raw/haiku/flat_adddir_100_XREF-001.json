@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-001",
+  "question": "Which department does the Project Prometheus team report to, and who leads that department?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "flat",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":5857,\"duration_api_ms\":7912,\"num_turns\":1,\"result\":\"{\\n    \\\"answer\\\": \\\"The Project Prometheus team reports to the Research & Development (R&D) division, which is led by Dr. James Okonkwo, who serves as CTO\\\",\\n    \\\"confidence\\\": \\\"high\\\", \\n    \\\"sources_used\\\": [\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/flat/employees-team-prometheus.md\\\",\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/flat/organization-departments.md\\\"\\n    ]\\n}\",\"session_id\":\"3428ea3c-659e-4e1f-8528-484ab41029fd\",\"total_cost_usd\":0.16758848,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":164800,\"cache_read_input_tokens\":18976,\"output_tokens\":135,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":164800,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":121,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.0007279999999999999,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":135,\"cacheReadInputTokens\":18976,\"cacheCreationInputTokens\":164800,\"webSearchRequests\":0,\"costUSD\":0.16686048,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"7c9f41a2-9b88-41d3-82d0-3e8ee8849c99\"}",
+  "expected_answer": "Research & Development, led by Dr. James Okonkwo (CTO)",
+  "metadata": {
+    "duration_seconds": 9.298067424,
+    "timestamp": "2026-01-30T07:20:07-07:00"
+  }
+}

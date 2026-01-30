@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-002",
+  "question": "In what year was Soong-Daystrom Industries founded?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep-v6",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":3738,\"duration_api_ms\":5335,\"num_turns\":1,\"result\":\"I apologize, but after carefully reviewing the provided context in the CLAUDE.md files, I cannot find a specific founding year for Soong-Daystrom Industries. \\n\\n{\\\"answer\\\": null, \\\"confidence\\\": \\\"low\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v6/CLAUDE.md\\\", \\\"/home/davidmoneil/Code/context-structure-research/.claude/CLAUDE.md\\\"]}\\n\\nThe context provides details about the company's structure, key entities like Dr. Maya Chen and Dr. Amara Okonkwo, and some of their products (ATLAS, ARIA, Nexus), but does not specify the year of founding. This appears to be a fictional company created for a research project on context structure, so the founding year may intentionally be left undefined.\",\"session_id\":\"23ed4c8d-4f23-493e-8f6f-b11d97f33402\",\"total_cost_usd\":0.005294159999999999,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":2313,\"cache_read_input_tokens\":18397,\"output_tokens\":196,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2313,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":143,\"outputTokens\":116,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000723,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":196,\"cacheReadInputTokens\":18397,\"cacheCreationInputTokens\":2313,\"webSearchRequests\":0,\"costUSD\":0.0045711599999999995,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"f4a12196-37f6-46da-bec9-f9f33f192bbd\"}",
+  "expected_answer": "2089",
+  "metadata": {
+    "duration_seconds": 5.045715617,
+    "timestamp": "2026-01-30T15:24:12-07:00"
+  }
+}

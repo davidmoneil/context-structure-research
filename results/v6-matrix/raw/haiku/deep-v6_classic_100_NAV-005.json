@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-005",
+  "question": "What is the price of the PCS-500 Companion Elite?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep-v6",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":2987,\"duration_api_ms\":4959,\"num_turns\":1,\"result\":\"{\\\"answer\\\": \\\"Unknown\\\", \\\"confidence\\\": \\\"low\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v6/CLAUDE.md\\\"]}\\n\\nThe provided context does not contain any specific information about the PCS-500 Companion Elite or its pricing. While the context describes Soong-Daystrom Industries as a fictional robotics and AI company with various directories, there are no details about this specific product or its price. To find such information, I would need access to additional files or sources not currently available in the given context.\",\"session_id\":\"b8f5b2c8-efd4-4d68-97d7-d8fc6af58582\",\"total_cost_usd\":0.00507816,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":2313,\"cache_read_input_tokens\":18397,\"output_tokens\":137,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2313,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":143,\"outputTokens\":120,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.0007430000000000001,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":137,\"cacheReadInputTokens\":18397,\"cacheCreationInputTokens\":2313,\"webSearchRequests\":0,\"costUSD\":0.00433516,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"a859c42e-d3c4-4d7d-92ff-a46c21012031\"}",
+  "expected_answer": "$47,000",
+  "metadata": {
+    "duration_seconds": 4.188907569,
+    "timestamp": "2026-01-30T15:24:57-07:00"
+  }
+}

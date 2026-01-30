@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-007",
+  "question": "What positions report directly to Dr. James Okonkwo?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "flat",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":22097,\"duration_api_ms\":20814,\"num_turns\":4,\"result\":\"Based on the information from the organization-departments.md and organization-executives.md files, I can provide the following answer:\\n\\n{\\n    \\\"answer\\\": \\\"VP Research, VP Product Development, VP Engineering, Chief Scientist\\\",\\n    \\\"confidence\\\": \\\"high\\\", \\n    \\\"sources_used\\\": [\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/flat/organization-executives.md\\\",\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/flat/organization-departments.md\\\"\\n    ]\\n}\",\"session_id\":\"303a8a1f-9271-4f5d-9f7d-f351a686366b\",\"total_cost_usd\":0.21764972,\"usage\":{\"input_tokens\":18,\"cache_creation_input_tokens\":169492,\"cache_read_input_tokens\":573054,\"output_tokens\":454,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":169492,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":72,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.00048300000000000003,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":18,\"outputTokens\":454,\"cacheReadInputTokens\":573054,\"cacheCreationInputTokens\":169492,\"webSearchRequests\":0,\"costUSD\":0.21716671999999998,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"bf69f0e8-804e-4f2b-a65a-26ce8911174f\"}",
+  "expected_answer": "VP Research, VP Product Development, VP Engineering, Chief Scientist",
+  "metadata": {
+    "duration_seconds": 25.376809689,
+    "timestamp": "2026-01-30T07:16:16-07:00"
+  }
+}

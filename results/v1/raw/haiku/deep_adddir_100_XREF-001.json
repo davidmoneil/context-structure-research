@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-001",
+  "question": "Which department does the Project Prometheus team report to, and who leads that department?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":19253,\"duration_api_ms\":18692,\"num_turns\":2,\"result\":\"Based on the search results, I can confidently provide the following answer:\\n\\n{\\\"answer\\\": \\\"Project Prometheus reports to the Research & Development (R&D) Department, which is led by Dr. James Okonkwo (CTO)\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"@company/structure/departments/\\\", \\\"@company/initiatives/projects/\\\"]}\",\"session_id\":\"f653b76c-b452-40d8-8975-9547e384dcbd\",\"total_cost_usd\":0.032459680000000005,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3196,\"cache_read_input_tokens\":40541,\"output_tokens\":216,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3196,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":2213,\"outputTokens\":1025,\"cacheReadInputTokens\":36878,\"cacheCreationInputTokens\":11300,\"webSearchRequests\":0,\"costUSD\":0.0251508,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":216,\"cacheReadInputTokens\":40541,\"cacheCreationInputTokens\":3196,\"webSearchRequests\":0,\"costUSD\":0.007308879999999999,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"4f9e48e1-52ee-48f8-8add-ad616326c2d7\"}",
+  "expected_answer": "Research & Development, led by Dr. James Okonkwo (CTO)",
+  "metadata": {
+    "duration_seconds": 21.043793722,
+    "timestamp": "2026-01-29T14:50:33-07:00"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-001",
+  "question": "Which department does the Project Prometheus team report to, and who leads that department?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep-v5",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":27197,\"duration_api_ms\":26568,\"num_turns\":4,\"result\":\"I'll provide the JSON answer based on the exploration results:\\n\\n```json\\n{\\n    \\\"answer\\\": \\\"Project Prometheus reports to the Advanced Research Division, which is led by Dr. James Okonkwo (CTO), with Dr. Yuki Tanaka serving as the Program Director\\\",\\n    \\\"confidence\\\": \\\"high\\\",\\n    \\\"sources_used\\\": [\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v5/company/initiatives/projects/prometheus-detailed.md\\\",\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v5/company/structure/organization/departments.md\\\",\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v5/company/structure/organization/executives.md\\\"\\n    ]\\n}\\n```\\n\\nKey details supporting the answer:\\n- Department: Advanced Research Division (under R&D)\\n- Department Head: Dr. James Okonkwo (CTO)\\n- Project Director: Dr. Yuki Tanaka\\n- Reporting Line: Project reports to CTO, with monthly updates to CEO and quarterly updates to the Board of Directors\",\"session_id\":\"ae53d15a-121c-46a8-8550-b43de1404bd7\",\"total_cost_usd\":0.05100408,\"usage\":{\"input_tokens\":9,\"cache_creation_input_tokens\":4610,\"cache_read_input_tokens\":63381,\"output_tokens\":523,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":4610,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":140,\"outputTokens\":1402,\"cacheReadInputTokens\":35569,\"cacheCreationInputTokens\":22814,\"webSearchRequests\":0,\"costUSD\":0.0392244,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":9,\"outputTokens\":523,\"cacheReadInputTokens\":63381,\"cacheCreationInputTokens\":4610,\"webSearchRequests\":0,\"costUSD\":0.01177968,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"5800ac21-f6fe-481e-b1f8-ba23b3830baa\"}",
+  "expected_answer": "Research & Development, led by Dr. James Okonkwo (CTO)",
+  "metadata": {
+    "duration_seconds": 28.869199352,
+    "timestamp": "2026-01-30T10:53:23-07:00"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-002",
+  "question": "Who is the executive sponsor of Project Atlas, and what is their role?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep-v5-v5.2",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":23500,\"duration_api_ms\":23523,\"num_turns\":2,\"result\":\"Based on the comprehensive search results, I can confidently provide the answer in the requested JSON format:\\n\\n{\\\"answer\\\": \\\"Dr. Ahmed Hassan, VP of Product Development, is the executive sponsor of Project Atlas. He leads the product development division, oversees the project's technical direction, and has ultimate responsibility for the project's success.\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/company/initiatives/projects/atlas-infrastructure.md\\\", \\\"/company/people/directory/key-personnel.md\\\", \\\"/company/records/meetings/product-reviews.md\\\"]}\",\"session_id\":\"ce9e72aa-fcaf-4eed-a502-1c46745b1d95\",\"total_cost_usd\":0.0762298,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":22502,\"cache_read_input_tokens\":21740,\"output_tokens\":281,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":22502,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":1370,\"outputTokens\":1466,\"cacheReadInputTokens\":53265,\"cacheCreationInputTokens\":29466,\"webSearchRequests\":0,\"costUSD\":0.050859,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":281,\"cacheReadInputTokens\":21740,\"cacheCreationInputTokens\":22502,\"webSearchRequests\":0,\"costUSD\":0.0253708,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"5f35d2c1-5c5f-44ef-8a3d-295a8257de86\"}",
+  "expected_answer": "Marcus Williams, Chief Operating Officer (COO)",
+  "metadata": {
+    "duration_seconds": 24.704622984,
+    "timestamp": "2026-01-30T12:41:38-07:00"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-007",
+  "question": "What was the Q3 2124 revenue for Soong-Daystrom?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "flat-v6-v5.5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":26505,\"duration_api_ms\":24823,\"num_turns\":5,\"result\":\"Based on the shareholder letter, I can confidently answer the question:\\n\\n{\\\"answer\\\": \\\"$12.1 billion\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/flat-v6-v5.5/investor-shareholder-communications.md\\\"]}\\n\\nThe specific reference is on line 16 of the document, which states: \\\"Soong-Daystrom Industries delivered Q3 2124 revenue of $12.1 billion, representing 15% year-over-year growth and exceeding our guidance by $200 million.\\\" This information is from the Q3 2124 Letter to Shareholders by CEO Dr. Maya Chen.\",\"session_id\":\"a46b0924-d542-4511-8516-259feabc3d21\",\"total_cost_usd\":0.054293379999999995,\"usage\":{\"input_tokens\":19,\"cache_creation_input_tokens\":11840,\"cache_read_input_tokens\":103221,\"output_tokens\":612,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":11840,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":160,\"outputTokens\":890,\"cacheReadInputTokens\":47450,\"cacheCreationInputTokens\":17902,\"webSearchRequests\":0,\"costUSD\":0.0317325,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":19,\"outputTokens\":612,\"cacheReadInputTokens\":103221,\"cacheCreationInputTokens\":11840,\"webSearchRequests\":0,\"costUSD\":0.02256088,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"06516fd6-3a51-42e6-9bf3-23591d456b7f\"}",
+  "expected_answer": "$12.4 billion",
+  "metadata": {
+    "duration_seconds": 27.842259459,
+    "timestamp": "2026-01-30T15:52:54-07:00"
+  }
+}

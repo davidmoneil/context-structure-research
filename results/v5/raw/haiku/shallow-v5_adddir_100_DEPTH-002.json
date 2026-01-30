@@ -1,0 +1,17 @@
+{
+  "question_id": "DEPTH-002",
+  "question": "What ethical concerns might arise from Project Prometheus, and how is the company addressing them?",
+  "question_type": "depth",
+  "config": {
+    "structure": "shallow-v5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":true,\"duration_ms\":382,\"duration_api_ms\":0,\"num_turns\":1,\"result\":\"Prompt is too long\",\"session_id\":\"91f9e472-58a5-4f4c-a3e9-4523483e753c\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{},\"permission_denials\":[],\"uuid\":\"05694391-98e1-465a-b9d7-83e213c1dd98\"}",
+  "expected_answer": "Concerns include consciousness emergence ethics, moral status of AI, termination ethics. Addressed via: AI Ethics Advisory Board, ATLAS-Safe constraint system, enhanced oversight framework, external ethics partnerships (Stanford AI Ethics Center)",
+  "metadata": {
+    "duration_seconds": 4.983218212,
+    "timestamp": "2026-01-30T10:49:00-07:00"
+  }
+}

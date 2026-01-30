@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-006",
+  "question": "Who leads the AI Safety team at Soong-Daystrom?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "very-deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":23856,\"duration_api_ms\":28161,\"num_turns\":2,\"result\":\"Based on the exploration results, I can confidently provide the answer:\\n\\n{\\\"answer\\\": \\\"Dr. Marcus Thompson\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"@soong-daystrom/company/structure/leadership/executive-team/\\\", \\\"@soong-daystrom/company/people/hr/employee-directory/\\\"]}\\n\\nThe sources confirm Dr. Thompson as the Director of Safety & Alignment, leading the AI Safety team at Soong-Daystrom Industries. His extensive background in AI safety research and leadership makes him a highly credible lead for this critical team.\",\"session_id\":\"809613dd-0cad-4096-8c12-48095bfededf\",\"total_cost_usd\":0.04950699,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3447,\"cache_read_input_tokens\":40713,\"output_tokens\":268,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3447,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":6741,\"outputTokens\":1638,\"cacheReadInputTokens\":69881,\"cacheCreationInputTokens\":15845,\"webSearchRequests\":0,\"costUSD\":0.04172535,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":268,\"cacheReadInputTokens\":40713,\"cacheCreationInputTokens\":3447,\"webSearchRequests\":0,\"costUSD\":0.007781639999999999,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"07b65976-c788-4552-b7ab-a7d85cb3cb0b\"}",
+  "expected_answer": "Dr. Marcus Thompson",
+  "metadata": {
+    "duration_seconds": 25.576600902,
+    "timestamp": "2026-01-29T14:59:08-07:00"
+  }
+}

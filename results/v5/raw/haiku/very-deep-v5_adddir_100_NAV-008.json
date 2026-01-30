@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-008",
+  "question": "What is the current consciousness indicator score for Project Prometheus?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "very-deep-v5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":23773,\"duration_api_ms\":21050,\"num_turns\":2,\"result\":\"Based on the exploration results, I can provide the answer in the requested JSON format:\\n\\n{\\\"answer\\\": \\\"0.94\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/sdi/company/initiatives/research/projects/prometheus-detailed.md\\\"]}\\n\\nThe answer comes directly from the detailed Project Prometheus documentation, with high confidence due to the comprehensive and specific information found in the source file. The consciousness indicator score is precisely 0.94, representing a near-human consciousness threshold for the project.\",\"session_id\":\"ccccb20f-6f17-4624-b13e-353657dca375\",\"total_cost_usd\":0.05430011999999999,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3518,\"cache_read_input_tokens\":40834,\"output_tokens\":257,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3518,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":147,\"outputTokens\":1358,\"cacheReadInputTokens\":83198,\"cacheCreationInputTokens\":24980,\"webSearchRequests\":0,\"costUSD\":0.0464818,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":257,\"cacheReadInputTokens\":40834,\"cacheCreationInputTokens\":3518,\"webSearchRequests\":0,\"costUSD\":0.00781832,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"7fd75758-9eb4-4b4c-bb07-7dadb0c55643\"}",
+  "expected_answer": "0.72",
+  "metadata": {
+    "duration_seconds": 24.831322417,
+    "timestamp": "2026-01-30T11:24:19-07:00"
+  }
+}

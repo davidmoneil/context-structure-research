@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-007",
+  "question": "What positions report directly to Dr. James Okonkwo?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "flat",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":7741,\"duration_api_ms\":9555,\"num_turns\":2,\"result\":\"Based on the file, I can confidently answer that Dr. James Okonkwo's direct reports are:\\n1. VP Research\\n2. VP Product Development\\n3. VP Engineering\\n4. Chief Scientist\\n\\n{\\n    \\\"answer\\\": \\\"VP Research, VP Product Development, VP Engineering, Chief Scientist\\\",\\n    \\\"confidence\\\": \\\"high\\\",\\n    \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/flat/organization-executives.md\\\"]\\n}\",\"session_id\":\"330dbd57-f01f-4b3d-a746-1d177cc33020\",\"total_cost_usd\":0.05883324,\"usage\":{\"input_tokens\":8,\"cache_creation_input_tokens\":50492,\"cache_read_input_tokens\":86298,\"output_tokens\":217,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":50492,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":88,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.0005629999999999999,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":8,\"outputTokens\":217,\"cacheReadInputTokens\":86298,\"cacheCreationInputTokens\":50492,\"webSearchRequests\":0,\"costUSD\":0.05827024,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"6c8ac8d2-ded9-4c23-b561-07876845bd7c\"}",
+  "expected_answer": "VP Research, VP Product Development, VP Engineering, Chief Scientist",
+  "metadata": {
+    "duration_seconds": 10.106950732,
+    "timestamp": "2026-01-29T14:21:52-07:00"
+  }
+}

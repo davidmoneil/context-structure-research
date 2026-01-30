@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-004",
+  "question": "What decision was made in the October 2124 board meeting regarding AI safety research funding?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "flat",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":8903,\"duration_api_ms\":10068,\"num_turns\":2,\"result\":\"Based on the board meeting minutes, I can confidently answer:\\n\\n{\\\"answer\\\": \\\"The board approved a $10 million fund for external AI safety research\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"meetings-board-q3-2124.md\\\"]}\\n\\nThe specific details can be found in the AI Ethics Advisory Board Report section (lines 134-140), where the board resolved to \\\"Fund external AI safety research ($10M proposed)\\\" and formally approved the $10M external AI safety research fund.\",\"session_id\":\"40d3f546-901d-42d0-8be2-bde44fe4c422\",\"total_cost_usd\":0.10063732,\"usage\":{\"input_tokens\":8,\"cache_creation_input_tokens\":89230,\"cache_read_input_tokens\":124449,\"output_tokens\":213,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":89230,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":94,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000593,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":8,\"outputTokens\":213,\"cacheReadInputTokens\":124449,\"cacheCreationInputTokens\":89230,\"webSearchRequests\":0,\"costUSD\":0.10004431999999999,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"c4aea247-ef33-44b7-a7c5-53b9cb269eb0\"}",
+  "expected_answer": "The board approved a $10 million external AI safety research fund",
+  "metadata": {
+    "duration_seconds": 11.015294839,
+    "timestamp": "2026-01-29T19:58:14-07:00"
+  }
+}

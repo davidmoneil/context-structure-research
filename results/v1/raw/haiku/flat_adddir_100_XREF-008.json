@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-008",
+  "question": "How did the NeuroSync acquisition impact the NIM revenue trajectory?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "flat",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":20318,\"duration_api_ms\":18031,\"num_turns\":5,\"result\":\"Based on the documents, I can confidently answer:\\n\\n{\\n    \\\"answer\\\": \\\"The NeuroSync acquisition dramatically accelerated NIM revenue, growing from $712M in 2020 to an estimated $7.2B in 2024, with a peak growth rate of 153% in 2021. The acquisition enabled Soong-Daystrom to launch multiple NIM product lines (Medical, Research, Education) and capture 67% market share in neural interfaces.\\\",\\n    \\\"confidence\\\": \\\"high\\\",\\n    \\\"sources_used\\\": [\\n        \\\"history-acquisition-neurosync.md\\\",\\n        \\\"products-nim-series.md\\\"\\n    ]\\n}\",\"session_id\":\"8ec711b3-e089-48d2-985f-f62faf349b31\",\"total_cost_usd\":0.07963619999999999,\"usage\":{\"input_tokens\":23,\"cache_creation_input_tokens\":53712,\"cache_read_input_tokens\":291135,\"output_tokens\":518,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":53712,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":84,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000543,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":23,\"outputTokens\":518,\"cacheReadInputTokens\":291135,\"cacheCreationInputTokens\":53712,\"webSearchRequests\":0,\"costUSD\":0.0790932,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"6291da0d-a8cb-4d97-8512-41af5bccddb5\"}",
+  "expected_answer": "NIM revenue grew from $712M in 9 months post-acquisition (2120) to $7.2B in 2124, representing rapid growth enabled by NeuroSync's technology",
+  "metadata": {
+    "duration_seconds": 22.170088798,
+    "timestamp": "2026-01-29T14:27:46-07:00"
+  }
+}

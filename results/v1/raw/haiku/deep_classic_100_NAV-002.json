@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-002",
+  "question": "In what year was Soong-Daystrom Industries founded?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":17579,\"duration_api_ms\":16908,\"num_turns\":3,\"result\":\"Based on the founding.md file, I can confidently answer:\\n\\n{\\\"answer\\\": \\\"2089\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep/company/background/history/founding.md\\\"]}\\n\\nKey details:\\n- The company was incorporated on March 15, 2089\\n- Founders Dr. Arik Soong III and Dr. Richard Daystrom Jr. decided to start the company on November 14, 2088\\n- First incorporated in Delaware in 2089\",\"session_id\":\"90ff0f28-508e-4df2-95bf-10feada41c11\",\"total_cost_usd\":0.02132118,\"usage\":{\"input_tokens\":11,\"cache_creation_input_tokens\":4782,\"cache_read_input_tokens\":62501,\"output_tokens\":362,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":4782,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":135,\"outputTokens\":488,\"cacheReadInputTokens\":34548,\"cacheCreationInputTokens\":3242,\"webSearchRequests\":0,\"costUSD\":0.010082299999999999,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":11,\"outputTokens\":362,\"cacheReadInputTokens\":62501,\"cacheCreationInputTokens\":4782,\"webSearchRequests\":0,\"costUSD\":0.01123888,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"26c25614-7eb2-48fe-afd5-9865d76c3dcb\"}",
+  "expected_answer": "2089",
+  "metadata": {
+    "duration_seconds": 19.371693364,
+    "timestamp": "2026-01-29T14:37:00-07:00"
+  }
+}

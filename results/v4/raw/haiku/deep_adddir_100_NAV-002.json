@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-002",
+  "question": "In what year was Soong-Daystrom Industries founded?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":4918,\"duration_api_ms\":6164,\"num_turns\":1,\"result\":\"I apologize, but I cannot confidently answer this question based on the provided context. While the context describes the structure of the Soong-Daystrom Industries documentation and provides details about how the files are organized, it does not contain the actual founding year of the company.\\n\\n{\\n    \\\"answer\\\": null, \\n    \\\"confidence\\\": \\\"low\\\", \\n    \\\"sources_used\\\": [\\n        \\\"/home/davidmoneil/Code/context-structure-research/.claude/CLAUDE.md\\\",\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep/CLAUDE.md\\\"\\n    ]\\n}\\n\\nTo find the founding year, I would need to explore the files in the `@company/background/history/` directory, which are not currently visible in the provided context. The instructions suggest that the authoritative source might be in `research-notes/canon.md`, but that file is not currently available for me to read.\",\"session_id\":\"48f9d3d5-386a-473a-a87c-5d0803ea446f\",\"total_cost_usd\":0.00538884,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":2611,\"cache_read_input_tokens\":18993,\"output_tokens\":217,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2611,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":53,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000388,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":217,\"cacheReadInputTokens\":18993,\"cacheCreationInputTokens\":2611,\"webSearchRequests\":0,\"costUSD\":0.0050008399999999995,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"1090078d-151a-4025-9659-7deabe57f661\"}",
+  "expected_answer": "2089",
+  "metadata": {
+    "duration_seconds": 6.504347052,
+    "timestamp": "2026-01-30T10:33:25-07:00"
+  }
+}

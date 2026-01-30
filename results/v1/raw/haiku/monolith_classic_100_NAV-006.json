@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-006",
+  "question": "Who leads the AI Safety team at Soong-Daystrom?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "monolith",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":4282,\"duration_api_ms\":5904,\"num_turns\":1,\"result\":\"{\\n    \\\"answer\\\": \\\"Dr. Marcus Thompson\\\",\\n    \\\"confidence\\\": \\\"high\\\", \\n    \\\"sources_used\\\": [\\\"/company-documentation.md\\\"]\\n}\\n\\nThe context clearly indicates that Dr. Marcus Thompson is the Director of Safety & Alignment in the AI Safety Group, which is part of the Advanced Research Division. His specific details include:\\n- Employee ID: SDI-2156\\n- Location: San Francisco HQ\\n- Team Size: 42 researchers\\n- Background: Former research scientist at OpenAI and Director of AI Safety at Anthropic\",\"session_id\":\"519844e5-7743-4665-bf18-46e274fe4c53\",\"total_cost_usd\":0.04898804,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":46150,\"cache_read_input_tokens\":18983,\"output_tokens\":126,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":46150,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":138,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.0008129999999999999,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":126,\"cacheReadInputTokens\":18983,\"cacheCreationInputTokens\":46150,\"webSearchRequests\":0,\"costUSD\":0.048175039999999995,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"81ae398e-f6dc-4e78-9857-a524d391633b\"}",
+  "expected_answer": "Dr. Marcus Thompson",
+  "metadata": {
+    "duration_seconds": 8.681836392,
+    "timestamp": "2026-01-29T14:12:23-07:00"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "DEPTH-001",
+  "question": "Based on the company's R&D budget allocation and current project portfolio, what strategic priorities can you infer about Soong-Daystrom's direction?",
+  "question_type": "depth",
+  "config": {
+    "structure": "very-deep-v5",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":4475,\"duration_api_ms\":6245,\"num_turns\":1,\"result\":\"I apologize, but I cannot fabricate details about Soong-Daystrom's strategic priorities or R&D budget allocation. While the context provides a structural overview of the company's documentation, it does not contain the specific details needed to answer this question. The provided CLAUDE.md files only show the documentation structure, not the actual content.\\n\\nI'll respond in the requested JSON format:\\n\\n{\\\"answer\\\": \\\"Insufficient information to determine strategic priorities\\\", \\\"confidence\\\": \\\"low\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/very-deep-v5/CLAUDE.md\\\"]}\\n\\nTo properly answer this question, I would need access to the actual content in the referenced directories, particularly:\\n- @sdi/company/initiatives/research/projects/\\n- @sdi/company/finance/accounting/reports/\\n- @sdi/company/engineering/tech/docs/\",\"session_id\":\"9ba63ff1-623b-4b01-ab2b-a5192d980b6d\",\"total_cost_usd\":0.005767119999999999,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":2802,\"cache_read_input_tokens\":19059,\"output_tokens\":210,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2802,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":95,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000598,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":210,\"cacheReadInputTokens\":19059,\"cacheCreationInputTokens\":2802,\"webSearchRequests\":0,\"costUSD\":0.005169119999999999,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"844407b6-4c83-4a3b-b3f8-d1ecc012083f\"}",
+  "expected_answer": "Focus on next-generation AI consciousness (Project Prometheus) and industrial automation expansion (Project Atlas), indicating a dual strategy of advancing core AI technology while expanding market applications",
+  "metadata": {
+    "duration_seconds": 5.669819298,
+    "timestamp": "2026-01-30T11:19:34-07:00"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-004",
+  "question": "How many employees does Soong-Daystrom Industries have?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "flat",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":10562,\"duration_api_ms\":10243,\"num_turns\":3,\"result\":\"I found the exact number of employees in the HR Metrics section of the organization-departments.md file. \\n\\n{\\\"answer\\\": 12,847, \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"organization-departments.md\\\"]}\",\"session_id\":\"25c2d029-9d39-4341-a1e6-d1bd5a08df05\",\"total_cost_usd\":0.06441948,\"usage\":{\"input_tokens\":13,\"cache_creation_input_tokens\":50834,\"cache_read_input_tokens\":153726,\"output_tokens\":226,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":50834,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":50,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000373,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":13,\"outputTokens\":226,\"cacheReadInputTokens\":153726,\"cacheCreationInputTokens\":50834,\"webSearchRequests\":0,\"costUSD\":0.06404648,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"e0ee0882-5d88-4431-9821-a27172dfd95c\"}",
+  "expected_answer": "12,847",
+  "metadata": {
+    "duration_seconds": 12.463593633,
+    "timestamp": "2026-01-29T14:19:51-07:00"
+  }
+}

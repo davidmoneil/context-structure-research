@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-008",
+  "question": "What is the current consciousness indicator score for Project Prometheus?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":4309,\"duration_api_ms\":5731,\"num_turns\":1,\"result\":\"I apologize, but I cannot confidently answer this specific question based on the context provided. While I see a structured context for Soong-Daystrom Industries with references to project locations, I do not have access to the actual content that would reveal details about Project Prometheus or its consciousness indicator score.\\n\\nHere's my response in the requested JSON format:\\n\\n{\\\"answer\\\": \\\"No information available\\\", \\\"confidence\\\": \\\"low\\\", \\\"sources_used\\\": []}\\n\\nI recommend checking the specific project documentation in the `/soong-daystrom/` directory or the `research-notes/canon.md` file mentioned as the authoritative source of facts. Without direct access to those contents, I cannot provide the specific detail you're seeking.\",\"session_id\":\"00241bd7-2cff-4ce8-841e-3496160fad13\",\"total_cost_usd\":0.0053157199999999995,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":2608,\"cache_read_input_tokens\":19004,\"output_tokens\":158,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2608,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":86,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.0005530000000000001,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":158,\"cacheReadInputTokens\":19004,\"cacheCreationInputTokens\":2608,\"webSearchRequests\":0,\"costUSD\":0.00476272,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"56445dc0-82ca-40c7-9986-3adf9c83a5f2\"}",
+  "expected_answer": "0.72",
+  "metadata": {
+    "duration_seconds": 6.261355596,
+    "timestamp": "2026-01-30T10:35:58-07:00"
+  }
+}

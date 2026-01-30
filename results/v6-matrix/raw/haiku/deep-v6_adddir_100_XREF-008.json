@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-008",
+  "question": "How did the NeuroSync acquisition impact the NIM revenue trajectory?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep-v6",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":1979,\"duration_api_ms\":3696,\"num_turns\":1,\"result\":\"{\\\"answer\\\": \\\"Unable to determine. No specific information about the NeuroSync acquisition or NIM revenue trajectory was found in the provided context.\\\", \\\"confidence\\\": \\\"low\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/.claude/CLAUDE.md\\\", \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v6/CLAUDE.md\\\"]}\",\"session_id\":\"05aee2ae-ce1c-4cdb-9b93-9cbcb4c30a64\",\"total_cost_usd\":0.00484856,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":2313,\"cache_read_input_tokens\":18377,\"output_tokens\":100,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2313,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":143,\"outputTokens\":104,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000663,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":100,\"cacheReadInputTokens\":18377,\"cacheCreationInputTokens\":2313,\"webSearchRequests\":0,\"costUSD\":0.00418556,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"9953f2cf-21d5-4418-a46e-e03492a66f7b\"}",
+  "expected_answer": "NIM revenue grew from $712M in 9 months post-acquisition (2120) to $7.2B in 2124, representing rapid growth enabled by NeuroSync's technology",
+  "metadata": {
+    "duration_seconds": 3.391339469,
+    "timestamp": "2026-01-30T15:36:06-07:00"
+  }
+}

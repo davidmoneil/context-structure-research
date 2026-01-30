@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-001",
+  "question": "Which department does the Project Prometheus team report to, and who leads that department?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":16358,\"duration_api_ms\":15646,\"num_turns\":2,\"result\":\"Based on the search results, I can confidently answer the question:\\n\\n{\\\"answer\\\": \\\"Project Prometheus reports to the Research & Development (R&D) Department, led by Dr. James Okonkwo (CTO), with the specific Advanced Research Division headed by Dr. Yuki Tanaka\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"@company/structure/departments/\\\", \\\"@company/initiatives/projects/\\\"]}\",\"session_id\":\"84a62670-d29e-404b-b5c9-794d92ab1d80\",\"total_cost_usd\":0.02652924,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3195,\"cache_read_input_tokens\":40593,\"output_tokens\":239,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3195,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":140,\"outputTokens\":1001,\"cacheReadInputTokens\":35052,\"cacheCreationInputTokens\":8380,\"webSearchRequests\":0,\"costUSD\":0.019125200000000002,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":239,\"cacheReadInputTokens\":40593,\"cacheCreationInputTokens\":3195,\"webSearchRequests\":0,\"costUSD\":0.00740404,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"d23424af-e3e8-4f1c-9b19-ff04a0925d40\"}",
+  "expected_answer": "Research & Development, led by Dr. James Okonkwo (CTO)",
+  "metadata": {
+    "duration_seconds": 18.022341067,
+    "timestamp": "2026-01-29T20:22:30-07:00"
+  }
+}

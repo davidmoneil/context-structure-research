@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-007",
+  "question": "What positions report directly to Dr. James Okonkwo?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "shallow",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":13701,\"duration_api_ms\":13391,\"num_turns\":3,\"result\":\"Based on the information from the executives.md file, I can now answer your question:\\n\\n{\\\"answer\\\": \\\"VP Research, VP Product Development, VP Engineering, Chief Scientist\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/shallow/organization/executives.md\\\"]}\",\"session_id\":\"87d83b87-33d9-4f1e-837d-db46beac3810\",\"total_cost_usd\":0.12540504,\"usage\":{\"input_tokens\":11,\"cache_creation_input_tokens\":102984,\"cache_read_input_tokens\":257653,\"output_tokens\":283,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":102984,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":109,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000668,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":11,\"outputTokens\":283,\"cacheReadInputTokens\":257653,\"cacheCreationInputTokens\":102984,\"webSearchRequests\":0,\"costUSD\":0.12473704,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"f1f22038-4dfa-444a-9a10-84412fc2c4fd\"}",
+  "expected_answer": "VP Research, VP Product Development, VP Engineering, Chief Scientist",
+  "metadata": {
+    "duration_seconds": 15.741441491,
+    "timestamp": "2026-01-30T10:20:32-07:00"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-004",
+  "question": "What decision was made in the October 2124 board meeting regarding AI safety research funding?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "flat",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":3751,\"duration_api_ms\":5567,\"num_turns\":1,\"result\":\"{\\\"answer\\\": \\\"The board approved a $10 million investment in external AI safety research\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"meetings-board-q3-2124.md\\\"]}\",\"session_id\":\"6afaa91f-7572-44c2-8daa-1388637c6a28\",\"total_cost_usd\":0.16708848,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":164802,\"cache_read_input_tokens\":18976,\"output_tokens\":47,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":164802,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":91,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000578,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":47,\"cacheReadInputTokens\":18976,\"cacheCreationInputTokens\":164802,\"webSearchRequests\":0,\"costUSD\":0.16651048000000002,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"9921f396-a2ca-4d0f-8618-15dd1658c541\"}",
+  "expected_answer": "The board approved a $10 million external AI safety research fund",
+  "metadata": {
+    "duration_seconds": 6.732344024,
+    "timestamp": "2026-01-30T07:20:31-07:00"
+  }
+}

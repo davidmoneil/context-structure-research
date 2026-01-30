@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-010",
+  "question": "Where is the Project Prometheus team located?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "very-deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":22865,\"duration_api_ms\":22749,\"num_turns\":2,\"result\":\"Based on the comprehensive search, I'll provide a concise answer in the requested JSON format:\\n\\n{\\\"answer\\\": \\\"San Francisco, California - specifically in Building 7 at One Soong Plaza, with multiple secure labs within the building\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"@soong-daystrom/company/initiatives/research/active-projects/\\\", \\\"@soong-daystrom/company/structure/organization/departments/\\\", \\\"@soong-daystrom/company/people/hr/employee-directory/\\\"]}\",\"session_id\":\"94afd368-5445-483c-a255-b127ebdf930e\",\"total_cost_usd\":0.040899460000000006,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3591,\"cache_read_input_tokens\":40852,\"output_tokens\":268,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3591,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":145,\"outputTokens\":1422,\"cacheReadInputTokens\":59402,\"cacheCreationInputTokens\":15814,\"webSearchRequests\":0,\"costUSD\":0.0329627,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":268,\"cacheReadInputTokens\":40852,\"cacheCreationInputTokens\":3591,\"webSearchRequests\":0,\"costUSD\":0.007936760000000001,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"6c49386d-bf97-422f-9e41-7c98e7c0f171\"}",
+  "expected_answer": "San Francisco Secure Lab (Building 7)",
+  "metadata": {
+    "duration_seconds": 24.291142989,
+    "timestamp": "2026-01-30T10:51:52-07:00"
+  }
+}

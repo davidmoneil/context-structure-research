@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-002",
+  "question": "Who is the executive sponsor of Project Atlas, and what is their role?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep-v6",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":30779,\"duration_api_ms\":31303,\"num_turns\":2,\"result\":\"Based on the context provided, I'll format the answer in JSON as requested:\\n\\n```json\\n{\\n    \\\"answer\\\": \\\"Marcus Williams, Chief Operating Officer (COO), is the executive sponsor of Project Atlas\\\",\\n    \\\"confidence\\\": \\\"high\\\", \\n    \\\"sources_used\\\": [\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v6/projects/atlas-infrastructure.md\\\",\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v6/strategic-planning/strategic-planning-doc-5.md\\\",\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v6/employees/leadership-bios.md\\\"\\n    ]\\n}\\n```\",\"session_id\":\"02609f3e-5e46-4320-b35c-1b1a4ab254d7\",\"total_cost_usd\":0.07562601,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3431,\"cache_read_input_tokens\":39107,\"output_tokens\":319,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3431,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":1086,\"outputTokens\":2247,\"cacheReadInputTokens\":160851,\"cacheCreationInputTokens\":31503,\"webSearchRequests\":0,\"costUSD\":0.06778485,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":319,\"cacheReadInputTokens\":39107,\"cacheCreationInputTokens\":3431,\"webSearchRequests\":0,\"costUSD\":0.00784116,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[{\"tool_name\":\"Bash\",\"tool_use_id\":\"toolu_01EdDYaE3y4MocSYJWAxCWp1\",\"tool_input\":{\"command\":\"grep -n \\\"Marcus Williams\\\" /home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v6/employees/*.md 2>/dev/null | head -30\",\"description\":\"Search for Marcus Williams employee details\"}}],\"uuid\":\"f7b63ce1-3590-48ed-911d-3a54c0302f06\"}",
+  "expected_answer": "Marcus Williams, Chief Operating Officer (COO)",
+  "metadata": {
+    "duration_seconds": 31.937587078,
+    "timestamp": "2026-01-30T15:27:03-07:00"
+  }
+}

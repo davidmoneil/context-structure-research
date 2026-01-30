@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-004",
+  "question": "How many employees does Soong-Daystrom Industries have?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep-v6",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":18594,\"duration_api_ms\":19738,\"num_turns\":2,\"result\":\"Based on the comprehensive search, I'll provide the answer in the requested JSON format:\\n\\n{\\\"answer\\\": \\\"12,847\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\n    \\\"employees/directory-full.md\\\", \\n    \\\"investor/shareholder-communications.md\\\", \\n    \\\"meetings/executive-committee.md\\\", \\n    \\\"organization/departments.md\\\",\\n    \\\"financial/quarterly-report-q2-2124.md\\\"\\n]}\",\"session_id\":\"108ece75-9a8d-456c-9f75-154a651f68a3\",\"total_cost_usd\":0.04108836,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":2938,\"cache_read_input_tokens\":39107,\"output_tokens\":261,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2938,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":165,\"outputTokens\":1353,\"cacheReadInputTokens\":61697,\"cacheCreationInputTokens\":16698,\"webSearchRequests\":0,\"costUSD\":0.033972199999999994,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":261,\"cacheReadInputTokens\":39107,\"cacheCreationInputTokens\":2938,\"webSearchRequests\":0,\"costUSD\":0.00711616,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"1d6ae4e6-ba08-46ca-9ca8-2b6785b1c670\"}",
+  "expected_answer": "12,847",
+  "metadata": {
+    "duration_seconds": 19.739644015,
+    "timestamp": "2026-01-30T15:24:53-07:00"
+  }
+}

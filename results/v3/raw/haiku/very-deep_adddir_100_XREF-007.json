@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-007",
+  "question": "What positions report directly to Dr. James Okonkwo?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "very-deep",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":19277,\"duration_api_ms\":19511,\"num_turns\":2,\"result\":\"Based on the exploration results, I'll provide the answer in the requested JSON format:\\n\\n```json\\n{\\n    \\\"answer\\\": [\\n        \\\"Dr. Yuki Tanaka (Senior Vice President, Advanced Research)\\\",\\n        \\\"Dr. Ahmed Hassan (Vice President, Product Development)\\\", \\n        \\\"Jennifer Morrison (Director, Engineering Division)\\\",\\n        \\\"Chief Scientist (role listed, but specific individual not named)\\\"\\n    ],\\n    \\\"confidence\\\": \\\"high\\\",\\n    \\\"sources_used\\\": [\\n        \\\"/soong-daystrom/_source/organization/executives.md\\\",\\n        \\\"/soong-daystrom/_source/organization/departments.md\\\",\\n        \\\"/soong-daystrom/_source/employees/key-personnel.md\\\"\\n    ]\\n}\\n```\\n\\nThe sources confirm that these four individuals directly report to Dr. James Okonkwo in his role as Chief Technology Officer at Soong-Daystrom Industries.\",\"session_id\":\"e8c0ba8a-dd62-49a1-b098-e8497fb068c9\",\"total_cost_usd\":0.032868560000000005,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3498,\"cache_read_input_tokens\":40697,\"output_tokens\":369,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3498,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":140,\"outputTokens\":1116,\"cacheReadInputTokens\":37607,\"cacheCreationInputTokens\":12122,\"webSearchRequests\":0,\"costUSD\":0.0246332,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":369,\"cacheReadInputTokens\":40697,\"cacheCreationInputTokens\":3498,\"webSearchRequests\":0,\"costUSD\":0.00823536,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"70683ad4-f9a8-414a-adb1-7c21fe57cbf7\"}",
+  "expected_answer": "VP Research, VP Product Development, VP Engineering, Chief Scientist",
+  "metadata": {
+    "duration_seconds": 20.908754514,
+    "timestamp": "2026-01-30T08:10:41-07:00"
+  }
+}

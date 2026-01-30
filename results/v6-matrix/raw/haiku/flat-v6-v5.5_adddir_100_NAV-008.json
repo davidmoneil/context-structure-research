@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-008",
+  "question": "What is the current consciousness indicator score for Project Prometheus?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "flat-v6-v5.5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":3370,\"duration_api_ms\":5355,\"num_turns\":1,\"result\":\"I apologize, but I cannot find the specific information about a \\\"consciousness indicator score\\\" for Project Prometheus in the provided context. The context gives a high-level overview of the project structure and some basic information about Soong-Daystrom Industries, but does not provide details about specific project metrics or consciousness scores.\\n\\n{\\n    \\\"answer\\\": \\\"No information available about Project Prometheus consciousness indicator score\\\",\\n    \\\"confidence\\\": \\\"low\\\", \\n    \\\"sources_used\\\": [\\n        \\\"/home/davidmoneil/Code/context-structure-research/.claude/CLAUDE.md\\\",\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/flat-v6-v5.5/CLAUDE.md\\\"\\n    ]\\n}\",\"session_id\":\"4e3ed762-7688-4b93-8a48-34ddd113ce2e\",\"total_cost_usd\":0.00520456,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":2273,\"cache_read_input_tokens\":18377,\"output_tokens\":174,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2273,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":143,\"outputTokens\":124,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000763,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":174,\"cacheReadInputTokens\":18377,\"cacheCreationInputTokens\":2273,\"webSearchRequests\":0,\"costUSD\":0.00444156,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"db42ad08-f1f8-4574-93ae-d0ad34ba8a73\"}",
+  "expected_answer": "0.72",
+  "metadata": {
+    "duration_seconds": 4.850992511,
+    "timestamp": "2026-01-30T15:52:59-07:00"
+  }
+}

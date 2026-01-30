@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-008",
+  "question": "What is the current consciousness indicator score for Project Prometheus?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep-v6",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":2964,\"duration_api_ms\":4839,\"num_turns\":1,\"result\":\"{\\\"answer\\\": null, \\\"confidence\\\": \\\"low\\\", \\\"sources_used\\\": []}\\n\\nI apologize, but I cannot find any specific information about the consciousness indicator score for Project Prometheus in the provided context. The context provides an overview of the Soong-Daystrom Industries knowledge base structure and mentions Project Prometheus as one of their research programs, but does not provide any details about a consciousness indicator score. To get this specific information, I would need access to additional documents or sources within the knowledge base that are not currently visible to me.\",\"session_id\":\"02d99850-0f4c-40b7-b366-7fab1f891721\",\"total_cost_usd\":0.004845159999999999,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":2310,\"cache_read_input_tokens\":18397,\"output_tokens\":117,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2310,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":143,\"outputTokens\":90,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000593,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":117,\"cacheReadInputTokens\":18397,\"cacheCreationInputTokens\":2310,\"webSearchRequests\":0,\"costUSD\":0.00425216,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"8edef86b-f77c-43fb-9b9f-f918c93fc1bd\"}",
+  "expected_answer": "0.72",
+  "metadata": {
+    "duration_seconds": 4.231163495,
+    "timestamp": "2026-01-30T15:25:32-07:00"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-001",
+  "question": "Which department does the Project Prometheus team report to, and who leads that department?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "flat",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":15086,\"duration_api_ms\":14658,\"num_turns\":4,\"result\":\"Based on the context, I can confidently answer:\\n\\n{\\\"answer\\\": \\\"The Project Prometheus team reports to the Research & Development department, which is led by Dr. James Okonkwo (CTO). Specifically, the project is part of the Advanced Research Division, directed by Dr. Yuki Tanaka.\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"projects-prometheus.md\\\", \\\"organization-departments.md\\\"]}\",\"session_id\":\"ae585d17-d888-477c-9a20-a48e1f6778a6\",\"total_cost_usd\":0.07257756,\"usage\":{\"input_tokens\":18,\"cache_creation_input_tokens\":52755,\"cache_read_input_tokens\":223077,\"output_tokens\":351,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":52755,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":87,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000558,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":18,\"outputTokens\":351,\"cacheReadInputTokens\":223077,\"cacheCreationInputTokens\":52755,\"webSearchRequests\":0,\"costUSD\":0.07201956,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"64fefd40-bafa-4a68-abc6-79316982833e\"}",
+  "expected_answer": "Research & Development, led by Dr. James Okonkwo (CTO)",
+  "metadata": {
+    "duration_seconds": 17.078653423,
+    "timestamp": "2026-01-29T14:20:55-07:00"
+  }
+}

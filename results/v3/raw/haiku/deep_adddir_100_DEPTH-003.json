@@ -1,0 +1,17 @@
+{
+  "question_id": "DEPTH-003",
+  "question": "Analyze the company's product revenue mix and explain what it suggests about their market positioning.",
+  "question_type": "depth",
+  "config": {
+    "structure": "deep",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":62919,\"duration_api_ms\":57804,\"num_turns\":4,\"result\":\"Based on this comprehensive analysis, I'll provide the JSON-formatted response:\\n\\n{\\\"answer\\\": \\\"Soong-Daystrom's product revenue mix reveals a strategic transition from a consumer robotics company to a multi-segment AI consciousness technology provider. The revenue breakdown shows four key segments: Positronic Companion Series (43.5%), Industrial Automation Platform (35.2%), Neural Interface Modules (13.9%), and Synthetic Consciousness Engine (7.4%). The mix suggests a deliberate strategy of maintaining a stable consumer robotics base while aggressively expanding into high-growth markets like healthcare and industrial automation, underpinned by their unique consciousness technology. The Neural Interface Modules segment, with 49% YoY growth, represents their most dynamic market positioning, indicating a future-oriented approach focused on advanced AI and human-machine interfaces.\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/soong-daystrom/_source/financial/annual-report-2123.md\\\"]}\",\"session_id\":\"eae0807c-ea8e-4eb5-88a4-8cf5fcde9e0c\",\"total_cost_usd\":0.14566565999999997,\"usage\":{\"input_tokens\":14,\"cache_creation_input_tokens\":9365,\"cache_read_input_tokens\":90022,\"output_tokens\":623,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":9365,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":25006,\"outputTokens\":3783,\"cacheReadInputTokens\":120547,\"cacheCreationInputTokens\":56496,\"webSearchRequests\":0,\"costUSD\":0.12659569999999998,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":14,\"outputTokens\":623,\"cacheReadInputTokens\":90022,\"cacheCreationInputTokens\":9365,\"webSearchRequests\":0,\"costUSD\":0.01906996,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"1e507777-6469-4d3b-844b-a0d946ac5c2b\"}",
+  "expected_answer": "PCS leads at $19.8B (consumer companion robots), IAP second at $16.4B (industrial automation), NIM growing fast at $7.2B (healthcare focus), SCE at $3.9B (enterprise AI platform). This suggests a diversified approach spanning consumer, industrial, and enterprise markets with healthcare as emerging growth driver",
+  "metadata": {
+    "duration_seconds": 64.701479790,
+    "timestamp": "2026-01-30T07:52:20-07:00"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-004",
+  "question": "What decision was made in the October 2124 board meeting regarding AI safety research funding?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "very-deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":24451,\"duration_api_ms\":28631,\"num_turns\":2,\"result\":\"Based on the exploration, I'll provide the answer in the requested JSON format:\\n\\n{\\n    \\\"answer\\\": \\\"The board approved $10M in funding for external AI safety research during the October 24, 2124 Board of Directors Meeting, as recommended by the AI Ethics Advisory Board. The funding was specifically aimed at supporting external AI safety research and addressing potential regulatory gaps in autonomous systems.\\\",\\n    \\\"confidence\\\": \\\"high\\\",\\n    \\\"sources_used\\\": [\\n        \\\"/soong-daystrom/company/records/documentation/meeting-minutes/board-q3-2124.md\\\"\\n    ]\\n}\",\"session_id\":\"fccc97b6-5b89-4ad0-bf32-c2cfe6409e83\",\"total_cost_usd\":0.04498803999999999,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3521,\"cache_read_input_tokens\":40748,\"output_tokens\":282,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3521,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":7549,\"outputTokens\":1810,\"cacheReadInputTokens\":61771,\"cacheCreationInputTokens\":11438,\"webSearchRequests\":0,\"costUSD\":0.0370736,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":282,\"cacheReadInputTokens\":40748,\"cacheCreationInputTokens\":3521,\"webSearchRequests\":0,\"costUSD\":0.00791444,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[{\"tool_name\":\"Glob\",\"tool_use_id\":\"toolu_01MZrHBj9prACH8BZzte9T9n\",\"tool_input\":{\"pattern\":\"soong-daystrom/very-deep/company/records/**/*\",\"path\":\"/home/davidmoneil/Code/context-structure-research\"}}],\"uuid\":\"ec88df51-514d-48fe-b47c-e7ef3e3cb50c\"}",
+  "expected_answer": "The board approved a $10 million external AI safety research fund",
+  "metadata": {
+    "duration_seconds": 25.450326509,
+    "timestamp": "2026-01-30T07:58:23-07:00"
+  }
+}

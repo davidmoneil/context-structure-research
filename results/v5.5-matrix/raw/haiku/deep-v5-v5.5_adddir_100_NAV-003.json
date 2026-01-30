@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-003",
+  "question": "What is the total budget for Project Prometheus?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep-v5-v5.5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":29167,\"duration_api_ms\":30057,\"num_turns\":2,\"result\":\"Based on the comprehensive exploration, I can confidently answer the budget question:\\n\\n{\\\"answer\\\": \\\"$2.4 billion total budget across 5 project phases\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\n    \\\"/soong-daystrom/deep-v5-v5.5/company/finance/reports/budget.md\\\",\\n    \\\"/soong-daystrom/_source/projects/prometheus.md\\\",\\n    \\\"/soong-daystrom/deep-v5-v5.5/company/finance/reports/capital-allocation.md\\\"\\n]}\",\"session_id\":\"67217e5b-88a6-4bff-ba91-714709f190e1\",\"total_cost_usd\":0.06843692,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3981,\"cache_read_input_tokens\":40969,\"output_tokens\":279,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3981,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":154,\"outputTokens\":2173,\"cacheReadInputTokens\":96778,\"cacheCreationInputTokens\":31488,\"webSearchRequests\":0,\"costUSD\":0.06005680000000001,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":279,\"cacheReadInputTokens\":40969,\"cacheCreationInputTokens\":3981,\"webSearchRequests\":0,\"costUSD\":0.00838012,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"e31ab6ac-522c-4d17-9966-531a5562cde8\"}",
+  "expected_answer": "$2.4 billion",
+  "metadata": {
+    "duration_seconds": 30.226313292,
+    "timestamp": "2026-01-30T14:36:51-07:00"
+  }
+}

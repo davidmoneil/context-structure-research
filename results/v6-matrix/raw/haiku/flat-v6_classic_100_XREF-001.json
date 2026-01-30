@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-001",
+  "question": "Which department does the Project Prometheus team report to, and who leads that department?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "flat-v6",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":18906,\"duration_api_ms\":20406,\"num_turns\":2,\"result\":\"Based on the comprehensive search results, I can confidently provide the following answer:\\n\\n{\\n    \\\"answer\\\": \\\"Project Prometheus reports to the Research & Development (R&D) Department, which is led by Dr. James Okonkwo (CTO)\\\",\\n    \\\"confidence\\\": \\\"high\\\",\\n    \\\"sources_used\\\": [\\n        \\\"projects-prometheus-detailed.md\\\",\\n        \\\"employees-team-prometheus.md\\\",\\n        \\\"organization-departments.md\\\"\\n    ]\\n}\",\"session_id\":\"69c53938-ef9b-44c8-a0c3-56c9e47ea473\",\"total_cost_usd\":0.05048985,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3664,\"cache_read_input_tokens\":40625,\"output_tokens\":242,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3664,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":160,\"outputTokens\":1482,\"cacheReadInputTokens\":36985,\"cacheCreationInputTokens\":25067,\"webSearchRequests\":0,\"costUSD\":0.042602249999999994,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":242,\"cacheReadInputTokens\":40625,\"cacheCreationInputTokens\":3664,\"webSearchRequests\":0,\"costUSD\":0.0078876,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"9c360423-afb6-4974-afa6-f9267f95018d\"}",
+  "expected_answer": "Research & Development, led by Dr. James Okonkwo (CTO)",
+  "metadata": {
+    "duration_seconds": 20.157336186,
+    "timestamp": "2026-01-30T15:09:55-07:00"
+  }
+}

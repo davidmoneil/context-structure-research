@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-002",
+  "question": "In what year was Soong-Daystrom Industries founded?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "flat-v6-v5.5",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":22456,\"duration_api_ms\":23880,\"num_turns\":2,\"result\":\"Based on the search results, I can confidently provide the answer:\\n\\n{\\\"answer\\\": \\\"2089\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"history-founding.md\\\", \\\"history-founding-story.md\\\"]}\\n\\nThe high confidence comes from multiple consistent sources documenting the founding year, with specific details about the company's incorporation in 2089.\",\"session_id\":\"508f2ce7-5c71-4e38-aedd-639fd591f26e\",\"total_cost_usd\":0.04772925,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":2811,\"cache_read_input_tokens\":39080,\"output_tokens\":232,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2811,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":175,\"outputTokens\":1418,\"cacheReadInputTokens\":129370,\"cacheCreationInputTokens\":16525,\"webSearchRequests\":0,\"costUSD\":0.040858250000000006,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":232,\"cacheReadInputTokens\":39080,\"cacheCreationInputTokens\":2811,\"webSearchRequests\":0,\"costUSD\":0.0068709999999999995,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[{\"tool_name\":\"Glob\",\"tool_use_id\":\"toolu_01LnPgBcH7FsGPmRfyKA4QqU\",\"tool_input\":{\"pattern\":\"**/canon.md\",\"path\":\"/home/davidmoneil/Code/context-structure-research\"}},{\"tool_name\":\"Bash\",\"tool_use_id\":\"toolu_01V4SsxUuLMQepLpYic6o5xh\",\"tool_input\":{\"command\":\"find /home/davidmoneil/Code/context-structure-research -name \\\"canon.md\\\" 2>/dev/null | head -20\",\"description\":\"Find the canon.md file location\"}}],\"uuid\":\"3c220c0f-eb01-4af5-828e-9b1afddeafbc\"}",
+  "expected_answer": "2089",
+  "metadata": {
+    "duration_seconds": 23.835342929,
+    "timestamp": "2026-01-30T15:38:55-07:00"
+  }
+}

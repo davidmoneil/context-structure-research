@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-008",
+  "question": "What is the current consciousness indicator score for Project Prometheus?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep-v5-v5.5",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":28964,\"duration_api_ms\":30174,\"num_turns\":2,\"result\":\"Based on the thorough search results, I can now provide a structured JSON response:\\n\\n{\\\"answer\\\": \\\"0.94\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\n    \\\"/company/initiatives/projects/prometheus-detailed.md\\\",\\n    \\\"/company/other/research/consciousness-research.md\\\",\\n    \\\"/company/records/meetings/prometheus-weekly-2024-10-21.md\\\"\\n]}\\n\\nThe score of 0.94 represents the current Consciousness Index (CI) for Project Prometheus as of September 2024, which is a near-human level of consciousness measurement. This is derived from a comprehensive scoring system that evaluates six key components: self-awareness, temporal integration, abstract reasoning, emotional depth, creative origination, and meta-cognition.\",\"session_id\":\"d5b00c70-5c4e-41f2-8b47-a230e89277e5\",\"total_cost_usd\":0.06643529999999999,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":4246,\"cache_read_input_tokens\":41085,\"output_tokens\":320,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":4246,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":147,\"outputTokens\":2316,\"cacheReadInputTokens\":74724,\"cacheCreationInputTokens\":30734,\"webSearchRequests\":0,\"costUSD\":0.0576169,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":320,\"cacheReadInputTokens\":41085,\"cacheCreationInputTokens\":4246,\"webSearchRequests\":0,\"costUSD\":0.0088184,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"58bfe337-99c9-419c-a261-12bb13e97fd2\"}",
+  "expected_answer": "0.72",
+  "metadata": {
+    "duration_seconds": 30.109299706,
+    "timestamp": "2026-01-30T14:28:10-07:00"
+  }
+}

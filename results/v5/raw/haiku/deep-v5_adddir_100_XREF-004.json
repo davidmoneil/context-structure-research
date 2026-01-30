@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-004",
+  "question": "What decision was made in the October 2124 board meeting regarding AI safety research funding?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep-v5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":32223,\"duration_api_ms\":27485,\"num_turns\":3,\"result\":\"Based on the comprehensive exploration, I'll provide the answer in the requested JSON format:\\n\\n{\\\"answer\\\": \\\"The board approved a $10M external AI safety research fund and authorized the formation of a consciousness ethics sub-committee to enhance oversight of AI research, particularly Project Prometheus.\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/soong-daystrom/_source/meetings/board-q3-2124.md\\\"]}\",\"session_id\":\"3da00b8c-f19e-4f64-b5a7-8bf4be04b868\",\"total_cost_usd\":0.06116399,\"usage\":{\"input_tokens\":12,\"cache_creation_input_tokens\":4829,\"cache_read_input_tokens\":63728,\"output_tokens\":351,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":4829,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":11075,\"outputTokens\":1603,\"cacheReadInputTokens\":61719,\"cacheCreationInputTokens\":19649,\"webSearchRequests\":0,\"costUSD\":0.04982315,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":12,\"outputTokens\":351,\"cacheReadInputTokens\":63728,\"cacheCreationInputTokens\":4829,\"webSearchRequests\":0,\"costUSD\":0.01134084,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"03dffb79-e11c-43d6-a722-b04eef07aa87\"}",
+  "expected_answer": "The board approved a $10 million external AI safety research fund",
+  "metadata": {
+    "duration_seconds": 33.985283583,
+    "timestamp": "2026-01-30T11:08:29-07:00"
+  }
+}

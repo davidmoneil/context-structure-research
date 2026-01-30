@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-010",
+  "question": "Where is the Project Prometheus team located?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "flat",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":2162,\"duration_api_ms\":3572,\"num_turns\":1,\"result\":\"{\\n    \\\"answer\\\": \\\"San Francisco Secure Lab (Building 7)\\\", \\n    \\\"confidence\\\": \\\"high\\\",\\n    \\\"sources_used\\\": [\\\"projects-prometheus.md\\\"]\\n}\",\"session_id\":\"3a0ca37c-b7da-4244-8763-68d85aa8a3c7\",\"total_cost_usd\":0.050339880000000004,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":48331,\"cache_read_input_tokens\":18981,\"output_tokens\":45,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":48331,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":37,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000308,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":45,\"cacheReadInputTokens\":18981,\"cacheCreationInputTokens\":48331,\"webSearchRequests\":0,\"costUSD\":0.05003188,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"dd3ef398-7da7-40a8-9f84-22fad71c3c6d\"}",
+  "expected_answer": "San Francisco Secure Lab (Building 7)",
+  "metadata": {
+    "duration_seconds": 4.161156751,
+    "timestamp": "2026-01-29T14:20:38-07:00"
+  }
+}

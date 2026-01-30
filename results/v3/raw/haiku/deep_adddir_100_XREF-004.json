@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-004",
+  "question": "What decision was made in the October 2124 board meeting regarding AI safety research funding?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":43104,\"duration_api_ms\":43941,\"num_turns\":4,\"result\":\"Based on the thorough exploration, I can confidently answer the question:\\n\\n{\\\"answer\\\": \\\"The board approved a $10 million external AI safety research fund during the October 24, 2124 board meeting, as recommended by the AI Ethics Advisory Board\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/soong-daystrom/flat/meetings-board-q3-2124.md\\\", \\\"/soong-daystrom/flat/research-consciousness-research.md\\\"]}\",\"session_id\":\"e0e2b798-967d-4dcc-8b16-b58dfd6874dd\",\"total_cost_usd\":0.26363204999999995,\"usage\":{\"input_tokens\":17,\"cache_creation_input_tokens\":6320,\"cache_read_input_tokens\":89445,\"output_tokens\":447,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":6320,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":5216,\"outputTokens\":2316,\"cacheReadInputTokens\":103851,\"cacheCreationInputTokens\":176939,\"webSearchRequests\":0,\"costUSD\":0.24835485,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":17,\"outputTokens\":447,\"cacheReadInputTokens\":89445,\"cacheCreationInputTokens\":6320,\"webSearchRequests\":0,\"costUSD\":0.015277199999999998,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"3b9d0afc-6bd3-40ca-ac93-9aedcd24ee08\"}",
+  "expected_answer": "The board approved a $10 million external AI safety research fund",
+  "metadata": {
+    "duration_seconds": 44.530052722,
+    "timestamp": "2026-01-30T07:46:25-07:00"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-001",
+  "question": "Who is the current CEO of Soong-Daystrom Industries?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "flat-v6",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":1863,\"duration_api_ms\":1847,\"num_turns\":1,\"result\":\"{\\\"answer\\\": \\\"Dr. Maya Chen\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/flat-v6/CLAUDE.md\\\"]}\",\"session_id\":\"fe90dba4-4374-4202-9bd1-71d87d82230c\",\"total_cost_usd\":0.00672704,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":5266,\"cache_read_input_tokens\":15383,\"output_tokens\":57,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":5266,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":57,\"cacheReadInputTokens\":15383,\"cacheCreationInputTokens\":5266,\"webSearchRequests\":0,\"costUSD\":0.00672704,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"142a6db0-dbca-4902-8b28-c3bbd5de4296\"}",
+  "expected_answer": "Dr. Maya Chen",
+  "metadata": {
+    "duration_seconds": 3.268626059,
+    "timestamp": "2026-01-30T15:15:50-07:00"
+  }
+}

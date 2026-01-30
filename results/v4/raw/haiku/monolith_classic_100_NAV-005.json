@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-005",
+  "question": "What is the price of the PCS-500 Companion Elite?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "monolith",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":true,\"duration_ms\":515,\"duration_api_ms\":0,\"num_turns\":1,\"result\":\"Prompt is too long\",\"session_id\":\"06326689-a9b4-495f-9f0a-f9e81e00a57f\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{},\"permission_denials\":[],\"uuid\":\"1230a0c3-ea37-4281-95e2-21475d3a54c7\"}",
+  "expected_answer": "$47,000",
+  "metadata": {
+    "duration_seconds": 124.640239738,
+    "timestamp": "2026-01-30T08:40:44-07:00"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-002",
+  "question": "Who is the executive sponsor of Project Atlas, and what is their role?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "flat-v6-v5.5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":28178,\"duration_api_ms\":28941,\"num_turns\":6,\"result\":\"{\\n    \\\"answer\\\": \\\"Dr. Ahmed Hassan, VP Product Development, is listed as the Technical Authority for Project Atlas\\\",\\n    \\\"confidence\\\": \\\"high\\\", \\n    \\\"sources_used\\\": [\\\"projects-atlas-infrastructure.md\\\"]\\n}\\n\\nI noticed that the Task tool's result differs from the document I directly read. In the projects-atlas-infrastructure.md file (line 8), Dr. Ahmed Hassan is listed as the \\\"Technical Authority\\\" for Project Atlas. There's no explicit mention of an executive sponsor in the document I reviewed.\\n\\nThe document provides several key details about Project Atlas, including:\\n- Total budget: $890 million\\n- Duration: Q2 2122 - Q1 2125 (3 years)\\n- Projected annual revenue: $9.4 billion by 2127\\n- Program Manager: Robert Chen (line 7)\\n- Technical Authority: Dr. Ahmed Hassan (line 8)\\n\\nMy JSON response reflects the most accurate information I could find based on the direct source document, with high confidence.\",\"session_id\":\"af26d088-20df-4a43-9d1e-87cb7de25e39\",\"total_cost_usd\":0.04159623,\"usage\":{\"input_tokens\":23,\"cache_creation_input_tokens\":14021,\"cache_read_input_tokens\":145481,\"output_tokens\":896,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":14021,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":158,\"outputTokens\":464,\"cacheReadInputTokens\":35976,\"cacheCreationInputTokens\":5007,\"webSearchRequests\":0,\"costUSD\":0.01233435,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":23,\"outputTokens\":896,\"cacheReadInputTokens\":145481,\"cacheCreationInputTokens\":14021,\"webSearchRequests\":0,\"costUSD\":0.02926188,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"88116b5b-def5-4b7d-8613-1d839bb45419\"}",
+  "expected_answer": "Marcus Williams, Chief Operating Officer (COO)",
+  "metadata": {
+    "duration_seconds": 29.468104665,
+    "timestamp": "2026-01-30T15:54:31-07:00"
+  }
+}

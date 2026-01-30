@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-006",
+  "question": "What is the relationship between Project Hermes and Project Prometheus?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep-v5-v5.5",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":50099,\"duration_api_ms\":51990,\"num_turns\":2,\"result\":\"Based on the comprehensive search, I'll provide the answer in the requested JSON format:\\n\\n```json\\n{\\n    \\\"answer\\\": \\\"Project Hermes and Project Prometheus are deeply interconnected research initiatives developing complementary AI technologies. Hermes focuses on advanced communication AI systems, while Prometheus aims to create Artificial General Intelligence (AGI). They are being integrated to provide a sophisticated communication interface for a potentially conscious AI system, with shared strategic goals, technical integration, and overlapping personnel across both projects.\\\",\\n    \\\"confidence\\\": \\\"high\\\",\\n    \\\"sources_used\\\": [\\n        \\\"/company/initiatives/projects/hermes-logistics.md\\\",\\n        \\\"/company/initiatives/projects/prometheus-detailed.md\\\",\\n        \\\"/company/records/meetings/prometheus-weekly-2024-10-21.md\\\",\\n        \\\"/company/finance/reports/annual-report-2123.md\\\",\\n        \\\"/company/finance/reports/capital-allocation.md\\\",\\n        \\\"/company/people/directory/team-prometheus.md\\\"\\n    ]\\n}\\n```\",\"session_id\":\"da02b2ea-ce29-41b9-b1e3-91ba06827de3\",\"total_cost_usd\":0.09260546,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3980,\"cache_read_input_tokens\":41087,\"output_tokens\":401,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3980,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":1246,\"outputTokens\":3483,\"cacheReadInputTokens\":253104,\"cacheCreationInputTokens\":31806,\"webSearchRequests\":0,\"costUSD\":0.0837289,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":401,\"cacheReadInputTokens\":41087,\"cacheCreationInputTokens\":3980,\"webSearchRequests\":0,\"costUSD\":0.00887656,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[{\"tool_name\":\"Glob\",\"tool_use_id\":\"toolu_01Lvqq33Rx9tugV4Q2cB6cWm\",\"tool_input\":{\"pattern\":\"**/*.md\",\"path\":\"/home/davidmoneil/Code/context-structure-research/soong-daystrom\"}},{\"tool_name\":\"Bash\",\"tool_use_id\":\"toolu_01At9yzgVrhu1VTXZJk25oQ5\",\"tool_input\":{\"command\":\"find /home/davidmoneil/Code/context-structure-research/soong-daystrom -name \\\"*.md\\\" -type f | head -20\",\"description\":\"Find markdown files in the soong-daystrom directory\"}},{\"tool_name\":\"Bash\",\"tool_use_id\":\"toolu_013nKhXFnF6wGuaMpe6Ro3a5\",\"tool_input\":{\"command\":\"ls -la /home/davidmoneil/Code/context-structure-research/soong-daystrom/\",\"description\":\"List contents of soong-daystrom directory\"}}],\"uuid\":\"ed559c0a-ad03-45b1-945e-9f925b454f67\"}",
+  "expected_answer": "Project Hermes provides the communication interface/emotional layer that will integrate with Project Prometheus; Prometheus has a dependency on Hermes for Phase 3/4",
+  "metadata": {
+    "duration_seconds": 51.355349448,
+    "timestamp": "2026-01-30T14:32:01-07:00"
+  }
+}

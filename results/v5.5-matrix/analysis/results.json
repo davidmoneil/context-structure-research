@@ -1,0 +1,1965 @@
+{
+  "summary": {
+    "overall": {
+      "total_tests": 92,
+      "average_score": 0.9491304347826086,
+      "exact_matches": 83,
+      "variant_matches": 0
+    },
+    "by_structure": {
+      "deep-v5-v5.5": 0.8982608695652174,
+      "flat-v5-v5.5": 1.0
+    },
+    "by_model": {
+      "haiku": 0.9491304347826086
+    },
+    "by_loading_method": {
+      "adddir": 0.9609316770186335,
+      "classic": 0.9373291925465839
+    },
+    "by_question_type": {
+      "cross-reference": 0.925625,
+      "depth": 0.885,
+      "navigation": 1.0
+    }
+  },
+  "loading_comparison": {
+    "comparisons": [
+      {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "question": "NAV-004",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "question": "NAV-005",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "question": "NAV-003",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "question": "XREF-006",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "question": "XREF-001",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "question": "DEPTH-003",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "question": "XREF-007",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "question": "NAV-007",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "question": "NAV-001",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "question": "NAV-008",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "question": "DEPTH-004",
+        "classic_score": 0.6,
+        "adddir_score": 0.6,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "question": "DEPTH-005",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "question": "DEPTH-002",
+        "classic_score": 1.0,
+        "adddir_score": 0.7,
+        "difference": -0.30000000000000004,
+        "winner": "classic"
+      },
+      {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "question": "XREF-004",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "question": "XREF-005",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "question": "XREF-008",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "question": "XREF-003",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "question": "NAV-006",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "question": "DEPTH-001",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "question": "NAV-010",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "question": "XREF-002",
+        "classic_score": 0.0,
+        "adddir_score": 1.0,
+        "difference": 1.0,
+        "winner": "adddir"
+      },
+      {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "question": "NAV-003",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "question": "NAV-007",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "question": "NAV-009",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "question": "NAV-001",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "question": "NAV-002",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "question": "NAV-008",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "question": "NAV-005",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "question": "NAV-004",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "question": "DEPTH-004",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "question": "XREF-006",
+        "classic_score": 0.45999999999999996,
+        "adddir_score": 0.45999999999999996,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "question": "DEPTH-003",
+        "classic_score": 0.3571428571428571,
+        "adddir_score": 0.44285714285714284,
+        "difference": 0.08571428571428574,
+        "winner": "adddir"
+      },
+      {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "question": "DEPTH-005",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "question": "DEPTH-002",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "question": "XREF-004",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "question": "XREF-001",
+        "classic_score": 0.7,
+        "adddir_score": 1.0,
+        "difference": 0.30000000000000004,
+        "winner": "adddir"
+      },
+      {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "question": "XREF-007",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "question": "NAV-010",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "question": "XREF-002",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "question": "XREF-005",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "question": "NAV-009",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "question": "XREF-008",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "question": "XREF-003",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "question": "NAV-002",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "question": "NAV-006",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      },
+      {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "question": "DEPTH-001",
+        "classic_score": 1.0,
+        "adddir_score": 1.0,
+        "difference": 0.0,
+        "winner": "tie"
+      }
+    ],
+    "summary": {
+      "adddir_wins": 3,
+      "classic_wins": 1,
+      "ties": 42,
+      "total_comparisons": 46
+    }
+  },
+  "scores": [
+    {
+      "question_id": "NAV-008",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-010",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-003",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-007",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "XREF-007",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-004",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "XREF-007",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-009",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "DEPTH-005",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-010",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-007",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-010",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "XREF-006",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 0.45999999999999996,
+      "exact_match": false,
+      "variant_match": false,
+      "keyword_matches": [
+        "communication",
+        "integration",
+        "interface"
+      ],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Keyword matches: ['communication', 'integration', 'interface']"
+    },
+    {
+      "question_id": "DEPTH-005",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-003",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "DEPTH-004",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 0.6,
+      "exact_match": false,
+      "variant_match": false,
+      "keyword_matches": [
+        "instability",
+        "regulatory",
+        "safety",
+        "ATLAS-Safe",
+        "kill switch"
+      ],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Keyword matches: ['instability', 'regulatory', 'safety', 'ATLAS-Safe', 'kill switch']"
+    },
+    {
+      "question_id": "NAV-009",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "XREF-006",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "XREF-002",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 0.0,
+      "exact_match": false,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "No match found"
+    },
+    {
+      "question_id": "NAV-005",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "XREF-003",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-005",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-008",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-010",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-002",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "XREF-001",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-006",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "XREF-001",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 0.7,
+      "exact_match": false,
+      "variant_match": false,
+      "keyword_matches": [
+        "R&D",
+        "Research",
+        "Okonkwo",
+        "CTO"
+      ],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Keyword matches: ['R&D', 'Research', 'Okonkwo', 'CTO']"
+    },
+    {
+      "question_id": "XREF-005",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-008",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "DEPTH-003",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "DEPTH-004",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "XREF-003",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-003",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-002",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "XREF-002",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "DEPTH-002",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 0.7,
+      "exact_match": false,
+      "variant_match": false,
+      "keyword_matches": [
+        "consciousness",
+        "ethics",
+        "safety",
+        "ATLAS-Safe",
+        "oversight",
+        "board"
+      ],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Keyword matches: ['consciousness', 'ethics', 'safety', 'ATLAS-Safe', 'oversight', 'board']"
+    },
+    {
+      "question_id": "XREF-001",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "XREF-006",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 0.45999999999999996,
+      "exact_match": false,
+      "variant_match": false,
+      "keyword_matches": [
+        "communication",
+        "emotional",
+        "dependency"
+      ],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Keyword matches: ['communication', 'emotional', 'dependency']"
+    },
+    {
+      "question_id": "XREF-008",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "DEPTH-001",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "XREF-007",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-002",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "XREF-005",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-009",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-008",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "XREF-001",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-005",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "XREF-008",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-004",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-006",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "XREF-002",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-001",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "DEPTH-002",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "DEPTH-001",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "DEPTH-004",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-004",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "XREF-004",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "XREF-008",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "XREF-003",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "XREF-005",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "DEPTH-003",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 0.3571428571428571,
+      "exact_match": false,
+      "variant_match": false,
+      "keyword_matches": [
+        "consumer",
+        "industrial",
+        "diversified"
+      ],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Keyword matches: ['consumer', 'industrial', 'diversified']"
+    },
+    {
+      "question_id": "XREF-005",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "XREF-004",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "DEPTH-002",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-001",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-007",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-004",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "XREF-007",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "XREF-004",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-005",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "DEPTH-001",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-003",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-006",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-001",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "DEPTH-001",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "DEPTH-004",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 0.6,
+      "exact_match": false,
+      "variant_match": false,
+      "keyword_matches": [
+        "instability",
+        "regulatory",
+        "safety",
+        "ATLAS-Safe",
+        "kill switch"
+      ],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Keyword matches: ['instability', 'regulatory', 'safety', 'ATLAS-Safe', 'kill switch']"
+    },
+    {
+      "question_id": "DEPTH-005",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "XREF-006",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-001",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-002",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "DEPTH-003",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 0.44285714285714284,
+      "exact_match": false,
+      "variant_match": false,
+      "keyword_matches": [
+        "PCS",
+        "consumer",
+        "IAP",
+        "industrial"
+      ],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Keyword matches: ['PCS', 'consumer', 'IAP', 'industrial']"
+    },
+    {
+      "question_id": "XREF-002",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "DEPTH-002",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-006",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "XREF-004",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "XREF-008",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-007",
+      "config": {
+        "structure": "deep-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "DEPTH-003",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "NAV-009",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "adddir",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "DEPTH-005",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    },
+    {
+      "question_id": "XREF-003",
+      "config": {
+        "structure": "flat-v5-v5.5",
+        "model": "haiku",
+        "loading_method": "classic",
+        "load_percent": 100
+      },
+      "points": 1.0,
+      "exact_match": true,
+      "variant_match": false,
+      "keyword_matches": [],
+      "confidence": "unknown",
+      "sources_cited": [],
+      "reasoning": "Exact match found"
+    }
+  ]
+}

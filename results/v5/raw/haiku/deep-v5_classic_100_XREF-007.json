@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-007",
+  "question": "What positions report directly to Dr. James Okonkwo?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep-v5",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":20222,\"duration_api_ms\":19427,\"num_turns\":2,\"result\":\"Based on the comprehensive search, I can now provide a structured JSON response:\\n\\n{\\\"answer\\\": [\\\"VP Research (Dr. Yuki Tanaka)\\\", \\\"VP Product Development (Dr. Ahmed Hassan)\\\", \\\"VP Engineering (Dr. Sarah Mitchell)\\\", \\\"Chief Scientist\\\"], \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/company/structure/organization/executives.md\\\", \\\"/company/structure/organization/departments.md\\\", \\\"/company/people/directory/key-personnel.md\\\"]}\",\"session_id\":\"36452ea9-d930-42c2-ad3a-a65e81bc9b3d\",\"total_cost_usd\":0.03908817,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3414,\"cache_read_input_tokens\":40734,\"output_tokens\":257,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3414,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":140,\"outputTokens\":1217,\"cacheReadInputTokens\":35631,\"cacheCreationInputTokens\":17275,\"webSearchRequests\":0,\"costUSD\":0.03138185,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":257,\"cacheReadInputTokens\":40734,\"cacheCreationInputTokens\":3414,\"webSearchRequests\":0,\"costUSD\":0.00770632,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"909e1e06-02f7-4962-87e4-eeebb795366a\"}",
+  "expected_answer": "VP Research, VP Product Development, VP Engineering, Chief Scientist",
+  "metadata": {
+    "duration_seconds": 21.867022078,
+    "timestamp": "2026-01-30T10:56:40-07:00"
+  }
+}

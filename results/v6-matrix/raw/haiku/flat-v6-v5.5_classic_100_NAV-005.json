@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-005",
+  "question": "What is the price of the PCS-500 Companion Elite?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "flat-v6-v5.5",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":17058,\"duration_api_ms\":19099,\"num_turns\":2,\"result\":\"Based on the search results, I can confidently provide the answer:\\n\\n{\\\"answer\\\": \\\"$47,000\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"flat-v6-v5.5/products-pcs-500-companion-overview.md\\\"]}\\n\\nThe price is specifically listed as 47,000 Federation Credits (equivalent to $47,000) for the PCS-500 Companion Elite, Soong-Daystrom Industries' ultra-premium companion robot product. The pricing is precise and comes from a comprehensive product overview document.\",\"session_id\":\"1d3dba75-8d8e-4bb1-822b-1de7b3355562\",\"total_cost_usd\":0.0472433,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":2894,\"cache_read_input_tokens\":39080,\"output_tokens\":259,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2894,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":160,\"outputTokens\":1066,\"cacheReadInputTokens\":39413,\"cacheCreationInputTokens\":24600,\"webSearchRequests\":0,\"costUSD\":0.0401813,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":259,\"cacheReadInputTokens\":39080,\"cacheCreationInputTokens\":2894,\"webSearchRequests\":0,\"costUSD\":0.007061999999999999,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"56950045-052e-4359-b187-4a367938d634\"}",
+  "expected_answer": "$47,000",
+  "metadata": {
+    "duration_seconds": 18.331568377,
+    "timestamp": "2026-01-30T15:40:22-07:00"
+  }
+}

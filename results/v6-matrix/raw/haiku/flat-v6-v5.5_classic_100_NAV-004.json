@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-004",
+  "question": "How many employees does Soong-Daystrom Industries have?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "flat-v6-v5.5",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":33893,\"duration_api_ms\":37570,\"num_turns\":3,\"result\":\"Based on the comprehensive employee directory, I can confidently provide the following response:\\n\\n{\\\"answer\\\": 12847, \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/flat-v6-v5.5/employees-directory-full.md\\\"]}\\n\\nThe number is explicitly stated on line 7 of the employee directory document: \\\"**Total Employees**: 12,847\\\" as of October 2124. The document breaks down the workforce across various departments, including R&D (2,847), Operations (4,128), Sales & Marketing (1,847), Finance (847), Human Resources (423), Legal (187), and Information Technology (567).\",\"session_id\":\"00c27c54-2edc-4d6d-a502-81816a359c7a\",\"total_cost_usd\":0.06760899000000001,\"usage\":{\"input_tokens\":11,\"cache_creation_input_tokens\":10302,\"cache_read_input_tokens\":60733,\"output_tokens\":413,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":10302,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":1461,\"outputTokens\":2657,\"cacheReadInputTokens\":106378,\"cacheCreationInputTokens\":20323,\"webSearchRequests\":0,\"costUSD\":0.05078755000000001,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":11,\"outputTokens\":413,\"cacheReadInputTokens\":60733,\"cacheCreationInputTokens\":10302,\"webSearchRequests\":0,\"costUSD\":0.01682144,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"5c4e22c0-df07-46b0-ab3d-b512a7dc842d\"}",
+  "expected_answer": "12,847",
+  "metadata": {
+    "duration_seconds": 35.201831931,
+    "timestamp": "2026-01-30T15:40:04-07:00"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-004",
+  "question": "What decision was made in the October 2124 board meeting regarding AI safety research funding?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "very-deep",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":22302,\"duration_api_ms\":20613,\"num_turns\":2,\"result\":\"Based on the exploration, I can now provide the answer in the requested JSON format:\\n\\n{\\\"answer\\\": \\\"The Soong-Daystrom board approved $10 million in external AI safety research funding in their October 24, 2124 meeting, along with authorizing a new consciousness ethics sub-committee\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/soong-daystrom/_source/meetings/board-q3-2124.md\\\"]}\",\"session_id\":\"92173382-4dc1-418f-9129-57bc5a9ec8d6\",\"total_cost_usd\":0.03400706,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3367,\"cache_read_input_tokens\":40702,\"output_tokens\":250,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3367,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":3582,\"outputTokens\":1134,\"cacheReadInputTokens\":52613,\"cacheCreationInputTokens\":9492,\"webSearchRequests\":0,\"costUSD\":0.0263783,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":250,\"cacheReadInputTokens\":40702,\"cacheCreationInputTokens\":3367,\"webSearchRequests\":0,\"costUSD\":0.00762876,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"6782b247-45e5-4f0d-a387-81ffb3c1f3a6\"}",
+  "expected_answer": "The board approved a $10 million external AI safety research fund",
+  "metadata": {
+    "duration_seconds": 23.983308868,
+    "timestamp": "2026-01-30T08:09:23-07:00"
+  }
+}

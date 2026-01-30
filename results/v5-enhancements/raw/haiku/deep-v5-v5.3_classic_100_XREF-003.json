@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-003",
+  "question": "How does Dr. Wei Zhang's background relate to the NIM product line?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep-v5-v5.3",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":30607,\"duration_api_ms\":29141,\"num_turns\":2,\"result\":\"Based on the comprehensive search results, I can now provide a concise answer:\\n\\n{\\n    \\\"answer\\\": \\\"Dr. Wei Zhang is the inventor of the core neural encoding algorithm for the NIM product line, serving as Director of Neural Interface Research. He joined Soong-Daystrom through the NeuroSync acquisition in 2120, bringing breakthrough neural interface technology that now dominates the market with 67% market share and $7.2 billion in revenue.\\\",\\n    \\\"confidence\\\": \\\"high\\\",\\n    \\\"sources_used\\\": [\\n        \\\"/company/people/directory/research-scientists.md\\\",\\n        \\\"/company/offerings/products/nim-series.md\\\",\\n        \\\"/company/people/directory/leadership-bios.md\\\"\\n    ]\\n}\",\"session_id\":\"63e9c522-0405-4ccd-a177-04024374b49a\",\"total_cost_usd\":0.075263,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3804,\"cache_read_input_tokens\":40855,\"output_tokens\":323,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3804,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":147,\"outputTokens\":2066,\"cacheReadInputTokens\":84885,\"cacheCreationInputTokens\":38342,\"webSearchRequests\":0,\"costUSD\":0.066893,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":323,\"cacheReadInputTokens\":40855,\"cacheCreationInputTokens\":3804,\"webSearchRequests\":0,\"costUSD\":0.00837,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"8514588f-381e-4dc0-b8f3-d39d0c69f416\"}",
+  "expected_answer": "Dr. Wei Zhang came from NeuroSync Labs (acquired 2120) and leads neural architecture development, which is the core technology behind the Neural Interface Modules",
+  "metadata": {
+    "duration_seconds": 31.806183152,
+    "timestamp": "2026-01-30T12:42:10-07:00"
+  }
+}

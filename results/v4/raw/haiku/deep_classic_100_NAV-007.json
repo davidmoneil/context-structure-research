@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-007",
+  "question": "What was the Q3 2124 revenue for Soong-Daystrom?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":16092,\"duration_api_ms\":16622,\"num_turns\":2,\"result\":\"Based on the detailed financial report I found, I can provide the following answer:\\n\\n{\\n    \\\"answer\\\": \\\"12.4 billion dollars\\\",\\n    \\\"confidence\\\": \\\"high\\\", \\n    \\\"sources_used\\\": [\\\"/company/finance/reports/quarterly-report-q3-2124.md\\\"]\\n}\",\"session_id\":\"fb7762d9-3a9d-4cb2-8d4b-6875f20d3667\",\"total_cost_usd\":0.02494944,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3257,\"cache_read_input_tokens\":40648,\"output_tokens\":219,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3257,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":138,\"outputTokens\":933,\"cacheReadInputTokens\":37785,\"cacheCreationInputTokens\":7182,\"webSearchRequests\":0,\"costUSD\":0.017558999999999998,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":219,\"cacheReadInputTokens\":40648,\"cacheCreationInputTokens\":3257,\"webSearchRequests\":0,\"costUSD\":0.007390439999999999,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"7b6bee65-5ee2-438e-a009-b99ca675cf66\"}",
+  "expected_answer": "$12.4 billion",
+  "metadata": {
+    "duration_seconds": 17.615293421,
+    "timestamp": "2026-01-30T10:24:53-07:00"
+  }
+}

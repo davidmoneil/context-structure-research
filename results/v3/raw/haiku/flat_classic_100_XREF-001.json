@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-001",
+  "question": "Which department does the Project Prometheus team report to, and who leads that department?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "flat",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":5577,\"duration_api_ms\":7226,\"num_turns\":1,\"result\":\"{\\n    \\\"answer\\\": \\\"The Project Prometheus team reports to the Research & Development (R&D) division, which is led by Dr. James Okonkwo, the CTO of Soong-Daystrom Industries.\\\", \\n    \\\"confidence\\\": \\\"high\\\",\\n    \\\"sources_used\\\": [\\n        \\\"/soong-daystrom/flat/organization-departments.md\\\",\\n        \\\"/soong-daystrom/flat/projects-prometheus.md\\\",\\n        \\\"/soong-daystrom/flat/employees-team-prometheus.md\\\"\\n    ]\\n}\",\"session_id\":\"b73c5b22-d809-4ca4-a536-4c8103f40767\",\"total_cost_usd\":0.16725716,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":164800,\"cache_read_input_tokens\":18997,\"output_tokens\":133,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":164800,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":56,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000403,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":133,\"cacheReadInputTokens\":18997,\"cacheCreationInputTokens\":164800,\"webSearchRequests\":0,\"costUSD\":0.16685416,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"e40907ee-0dc3-4d22-bc08-123b24541fd1\"}",
+  "expected_answer": "Research & Development, led by Dr. James Okonkwo (CTO)",
+  "metadata": {
+    "duration_seconds": 7.408303137,
+    "timestamp": "2026-01-30T07:15:11-07:00"
+  }
+}

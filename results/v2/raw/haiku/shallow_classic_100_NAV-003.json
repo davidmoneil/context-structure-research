@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-003",
+  "question": "What is the total budget for Project Prometheus?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "shallow",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":2872,\"duration_api_ms\":4112,\"num_turns\":1,\"result\":\"{\\n    \\\"answer\\\": \\\"$2.4 billion\\\", \\n    \\\"confidence\\\": \\\"high\\\", \\n    \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/shallow/projects/prometheus.md\\\"]\\n}\",\"session_id\":\"c7b8917a-a220-4f92-8209-c23334bcc319\",\"total_cost_usd\":0.0622756,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":60067,\"cache_read_input_tokens\":18990,\"output_tokens\":66,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":60067,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":60,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.00042300000000000004,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":66,\"cacheReadInputTokens\":18990,\"cacheCreationInputTokens\":60067,\"webSearchRequests\":0,\"costUSD\":0.0618526,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"b45eb4c5-9fa7-45a7-b946-f549f94d0dd6\"}",
+  "expected_answer": "$2.4 billion",
+  "metadata": {
+    "duration_seconds": 4.645650137,
+    "timestamp": "2026-01-29T20:11:52-07:00"
+  }
+}

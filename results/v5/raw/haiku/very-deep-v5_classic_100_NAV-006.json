@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-006",
+  "question": "Who leads the AI Safety team at Soong-Daystrom?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "very-deep-v5",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":22506,\"duration_api_ms\":24551,\"num_turns\":2,\"result\":\"Based on the comprehensive search results, I can confidently answer the question:\\n\\n{\\\"answer\\\": \\\"Dr. Marcus Thompson leads the AI Safety team at Soong-Daystrom Industries as the Director of AI Safety Research\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/sdi/company/people/hr/employees/research-scientists.md\\\", \\\"/sdi/company/people/hr/employees/key-personnel.md\\\", \\\"/sdi/company/initiatives/research/projects/prometheus-detailed.md\\\"]}\",\"session_id\":\"1ed11275-7beb-43e4-bc98-f590a62cfe67\",\"total_cost_usd\":0.06006301000000001,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3758,\"cache_read_input_tokens\":40902,\"output_tokens\":262,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3758,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":1828,\"outputTokens\":1761,\"cacheReadInputTokens\":50050,\"cacheCreationInputTokens\":29073,\"webSearchRequests\":0,\"costUSD\":0.051979250000000005,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":262,\"cacheReadInputTokens\":40902,\"cacheCreationInputTokens\":3758,\"webSearchRequests\":0,\"costUSD\":0.00808376,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"4e7b9756-fa86-4a9c-b5e8-18fc8fb99b62\"}",
+  "expected_answer": "Dr. Marcus Thompson",
+  "metadata": {
+    "duration_seconds": 23.454700967,
+    "timestamp": "2026-01-30T11:13:48-07:00"
+  }
+}

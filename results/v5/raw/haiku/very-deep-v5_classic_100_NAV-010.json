@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-010",
+  "question": "Where is the Project Prometheus team located?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "very-deep-v5",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":29168,\"duration_api_ms\":31501,\"num_turns\":2,\"result\":\"Based on the detailed exploration, I can confidently answer the location of the Project Prometheus team:\\n\\n{\\\"answer\\\": \\\"San Francisco headquarters, underground facility adjacent to main campus (Building 7 - Prometheus Secure Research Facility)\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/sdi/company/operations/global/regions/north-america.md\\\", \\\"/sdi/company/initiatives/research/projects/prometheus-detailed.md\\\"]}\",\"session_id\":\"ff754f41-5b30-4d5e-ae94-94e6e65dd519\",\"total_cost_usd\":0.062349009999999996,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":1368,\"cache_read_input_tokens\":43672,\"output_tokens\":241,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":1368,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":1289,\"outputTokens\":2252,\"cacheReadInputTokens\":61374,\"cacheCreationInputTokens\":30265,\"webSearchRequests\":0,\"costUSD\":0.056517649999999996,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":241,\"cacheReadInputTokens\":43672,\"cacheCreationInputTokens\":1368,\"webSearchRequests\":0,\"costUSD\":0.00583136,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"71047438-7b19-4343-b2bf-f043034fee17\"}",
+  "expected_answer": "San Francisco Secure Lab (Building 7)",
+  "metadata": {
+    "duration_seconds": 30.314265299,
+    "timestamp": "2026-01-30T11:15:23-07:00"
+  }
+}

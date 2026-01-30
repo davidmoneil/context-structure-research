@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-002",
+  "question": "In what year was Soong-Daystrom Industries founded?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "very-deep",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":20697,\"duration_api_ms\":18416,\"num_turns\":4,\"result\":\"I apologize for the continued errors. Based on the context provided, I cannot find a definitive founding year for Soong-Daystrom Industries. The context appears to be a template for a fictional research project about context structures, and while it mentions Soong-Daystrom Industries as a fictional company, it does not specify its founding year.\\n\\nTherefore, I will respond:\\n\\n{\\\"answer\\\": null, \\\"confidence\\\": \\\"low\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/very-deep/CLAUDE.md\\\"]}\",\"session_id\":\"f4f1fd4d-bcd9-4060-b044-f6bf9c67df89\",\"total_cost_usd\":0.022158840000000006,\"usage\":{\"input_tokens\":19,\"cache_creation_input_tokens\":3295,\"cache_read_input_tokens\":84913,\"output_tokens\":546,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3295,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":2500,\"outputTokens\":641,\"cacheReadInputTokens\":22716,\"cacheCreationInputTokens\":1516,\"webSearchRequests\":0,\"costUSD\":0.009871600000000001,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":19,\"outputTokens\":546,\"cacheReadInputTokens\":84913,\"cacheCreationInputTokens\":3295,\"webSearchRequests\":0,\"costUSD\":0.01228724,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"7183904e-f7c1-49ad-a65e-1337cdc10652\"}",
+  "expected_answer": "2089",
+  "metadata": {
+    "duration_seconds": 22.083098406,
+    "timestamp": "2026-01-30T11:00:13-07:00"
+  }
+}

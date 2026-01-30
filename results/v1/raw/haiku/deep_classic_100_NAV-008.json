@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-008",
+  "question": "What is the current consciousness indicator score for Project Prometheus?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":19782,\"duration_api_ms\":19290,\"num_turns\":2,\"result\":\"Based on the exploration results, I can provide a structured answer:\\n\\n{\\\"answer\\\": \\\"0.72\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/company/initiatives/projects/prometheus.md\\\", \\\"prometheus-weekly-2024-10-21.md\\\"]}\\n\\nThe answer is sourced from the Project Prometheus documentation, which shows a current Consciousness Indicator Score of 0.72, targeting a goal of >0.87. The score is tracked through multiple sub-indicators, with the team showing improvement in most areas.\",\"session_id\":\"38d1f84d-f5fb-4ea2-bd23-709f3bb4e4b1\",\"total_cost_usd\":0.029535000000000002,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3171,\"cache_read_input_tokens\":40570,\"output_tokens\":249,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3171,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":145,\"outputTokens\":986,\"cacheReadInputTokens\":52118,\"cacheCreationInputTokens\":9464,\"webSearchRequests\":0,\"costUSD\":0.0221168,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":249,\"cacheReadInputTokens\":40570,\"cacheCreationInputTokens\":3171,\"webSearchRequests\":0,\"costUSD\":0.007418200000000001,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"a6c21a8e-874e-4030-a7b9-b6f19d16f82b\"}",
+  "expected_answer": "0.72",
+  "metadata": {
+    "duration_seconds": 21.362603388,
+    "timestamp": "2026-01-29T14:39:19-07:00"
+  }
+}

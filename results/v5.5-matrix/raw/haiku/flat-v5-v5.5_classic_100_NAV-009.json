@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-009",
+  "question": "How much did Soong-Daystrom pay to acquire NeuroSync Labs?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "flat-v5-v5.5",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":true,\"duration_ms\":390,\"duration_api_ms\":0,\"num_turns\":1,\"result\":\"Prompt is too long\",\"session_id\":\"323c80c2-34b2-4d0f-a7f0-0678d8081e89\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{},\"permission_denials\":[],\"uuid\":\"7660d16a-58ba-4545-a071-9d7449048b65\"}",
+  "expected_answer": "$8.2 billion",
+  "metadata": {
+    "duration_seconds": 5.328095190,
+    "timestamp": "2026-01-30T14:18:38-07:00"
+  }
+}

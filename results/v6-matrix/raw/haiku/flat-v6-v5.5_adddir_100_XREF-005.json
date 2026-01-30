@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-005",
+  "question": "Which pilot customer signed a contract for Project Atlas, and what is the contract value?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "flat-v6-v5.5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":23202,\"duration_api_ms\":27780,\"num_turns\":2,\"result\":\"Based on the comprehensive search, I can provide the following JSON response:\\n\\n{\\\"answer\\\": \\\"Rio Tinto, with an initial contract value of $47 million for 4 autonomous mining robots\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source/projects/atlas.md\\\", \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source/customers/case-studies.md\\\"]}\",\"session_id\":\"e84d352f-f119-44cd-a018-00ca7e1781b0\",\"total_cost_usd\":0.05377196,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":2958,\"cache_read_input_tokens\":39032,\"output_tokens\":251,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2958,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":2440,\"outputTokens\":1666,\"cacheReadInputTokens\":129143,\"cacheCreationInputTokens\":18398,\"webSearchRequests\":0,\"costUSD\":0.0466818,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":251,\"cacheReadInputTokens\":39032,\"cacheCreationInputTokens\":2958,\"webSearchRequests\":0,\"costUSD\":0.00709016,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"16e813ec-ac02-4bd0-a487-41194ae70446\"}",
+  "expected_answer": "Rio Tinto, $47 million",
+  "metadata": {
+    "duration_seconds": 24.563635484,
+    "timestamp": "2026-01-30T15:56:05-07:00"
+  }
+}

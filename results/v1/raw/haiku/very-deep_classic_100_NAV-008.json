@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-008",
+  "question": "What is the current consciousness indicator score for Project Prometheus?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "very-deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":19033,\"duration_api_ms\":19752,\"num_turns\":2,\"result\":\"Based on the comprehensive exploration, I can confidently provide the answer in the requested JSON format:\\n\\n{\\\"answer\\\": \\\"0.72\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/soong-daystrom/company/initiatives/research/active-projects/prometheus.md\\\"]}\\n\\nThe answer is precise, representing the current Consciousness Indicator Score (CIT Score) for Project Prometheus as of the most recent meeting on October 21, 2124. The high confidence stems from the detailed documentation found in the project's research files.\",\"session_id\":\"e7758b9e-14d2-4294-bcb2-83e690947665\",\"total_cost_usd\":0.03185262,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3450,\"cache_read_input_tokens\":40709,\"output_tokens\":251,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3450,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":4447,\"outputTokens\":1248,\"cacheReadInputTokens\":36093,\"cacheCreationInputTokens\":7872,\"webSearchRequests\":0,\"costUSD\":0.0241363,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":251,\"cacheReadInputTokens\":40709,\"cacheCreationInputTokens\":3450,\"webSearchRequests\":0,\"costUSD\":0.00771632,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"0c69c457-b572-42c5-a717-85e5e89519b5\"}",
+  "expected_answer": "0.72",
+  "metadata": {
+    "duration_seconds": 20.601322018,
+    "timestamp": "2026-01-29T14:59:50-07:00"
+  }
+}

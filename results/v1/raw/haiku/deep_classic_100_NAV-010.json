@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-010",
+  "question": "Where is the Project Prometheus team located?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":24114,\"duration_api_ms\":22973,\"num_turns\":3,\"result\":\"Based on the comprehensive information found, I can provide a precise answer:\\n\\n{\\\"answer\\\": \\\"San Francisco Secure Lab (Building 7)\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\n    \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep/company/initiatives/projects/prometheus.md\\\",\\n    \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep/company/people/directory/team-prometheus.md\\\"\\n]}\\n\\nThe details confirm that Project Prometheus is located in San Francisco, specifically in Building 7's Secure Lab, with a total team of 187 full-time employees across five key departments. The project requires a minimum Level 4 security clearance for team members.\",\"session_id\":\"26596952-1e64-4f04-b0a0-f543ace991b8\",\"total_cost_usd\":0.03217954,\"usage\":{\"input_tokens\":11,\"cache_creation_input_tokens\":5280,\"cache_read_input_tokens\":62888,\"output_tokens\":411,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":5280,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":2891,\"outputTokens\":1089,\"cacheReadInputTokens\":34922,\"cacheCreationInputTokens\":6710,\"webSearchRequests\":0,\"costUSD\":0.020215700000000003,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":11,\"outputTokens\":411,\"cacheReadInputTokens\":62888,\"cacheCreationInputTokens\":5280,\"webSearchRequests\":0,\"costUSD\":0.01196384,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"f9555426-612b-496d-95d7-41c85ff4f5cd\"}",
+  "expected_answer": "San Francisco Secure Lab (Building 7)",
+  "metadata": {
+    "duration_seconds": 25.889389441,
+    "timestamp": "2026-01-29T14:40:06-07:00"
+  }
+}

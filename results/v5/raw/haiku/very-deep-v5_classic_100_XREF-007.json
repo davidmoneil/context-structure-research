@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-007",
+  "question": "What positions report directly to Dr. James Okonkwo?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "very-deep-v5",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":20694,\"duration_api_ms\":20545,\"num_turns\":3,\"result\":\"Based on the information found, I can confidently answer:\\n\\n{\\\"answer\\\": [\\\"VP Research\\\", \\\"VP Product Development\\\", \\\"VP Engineering\\\", \\\"Chief Scientist\\\"], \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/sdi/company/structure/leadership/org/executives.md\\\"]}\\n\\nThe source clearly states in line 44 that Dr. James Okonkwo (CTO) has four direct reports: VP Research, VP Product Development, VP Engineering, and Chief Scientist. The information is found in the executives.md file, which provides a detailed organizational structure of Soong-Daystrom Industries.\",\"session_id\":\"70e9e56a-ec6a-4b7d-8339-f772e4ae8292\",\"total_cost_usd\":0.02622184,\"usage\":{\"input_tokens\":11,\"cache_creation_input_tokens\":2820,\"cache_read_input_tokens\":66173,\"output_tokens\":398,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2820,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":140,\"outputTokens\":965,\"cacheReadInputTokens\":35372,\"cacheCreationInputTokens\":6404,\"webSearchRequests\":0,\"costUSD\":0.0165072,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":11,\"outputTokens\":398,\"cacheReadInputTokens\":66173,\"cacheCreationInputTokens\":2820,\"webSearchRequests\":0,\"costUSD\":0.00971464,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"0dea5125-7726-496d-809c-e12ff6ec83a5\"}",
+  "expected_answer": "VP Research, VP Product Development, VP Engineering, Chief Scientist",
+  "metadata": {
+    "duration_seconds": 21.782939192,
+    "timestamp": "2026-01-30T11:19:10-07:00"
+  }
+}

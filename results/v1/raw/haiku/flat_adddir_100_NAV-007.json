@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-007",
+  "question": "What was the Q3 2124 revenue for Soong-Daystrom?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "flat",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":8123,\"duration_api_ms\":9931,\"num_turns\":2,\"result\":\"Based on the quarterly financial report, I can confidently answer your question:\\n\\n{\\\"answer\\\": \\\"$12.4 billion\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"financial-quarterly-report-q3-2124.md\\\"]}\\n\\nThe report clearly states in both the Executive Summary and the Income Statement Summary that Soong-Daystrom's Q3 2124 revenue was $12.4 billion, representing a 15.2% year-over-year growth.\",\"session_id\":\"e755a1d9-eff4-4c12-82f2-11ee1f689d12\",\"total_cost_usd\":0.059333000000000004,\"usage\":{\"input_tokens\":8,\"cache_creation_input_tokens\":50984,\"cache_read_input_tokens\":86270,\"output_tokens\":222,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":50984,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":86,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.0005530000000000001,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":8,\"outputTokens\":222,\"cacheReadInputTokens\":86270,\"cacheCreationInputTokens\":50984,\"webSearchRequests\":0,\"costUSD\":0.058780000000000006,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"fb5f0cf9-cb9f-4b2f-ac44-12cd4a1ade19\"}",
+  "expected_answer": "$12.4 billion",
+  "metadata": {
+    "duration_seconds": 10.094694206,
+    "timestamp": "2026-01-29T14:25:26-07:00"
+  }
+}

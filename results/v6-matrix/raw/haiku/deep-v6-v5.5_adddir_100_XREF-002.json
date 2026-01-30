@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-002",
+  "question": "Who is the executive sponsor of Project Atlas, and what is their role?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep-v6-v5.5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":2976,\"duration_api_ms\":4674,\"num_turns\":1,\"result\":\"Based on the provided context, I do not have enough specific information to confidently identify the executive sponsor of Project Atlas or their exact role. While the context mentions Dr. Maya Chen (CEO) and Dr. Amara Okonkwo (CTO), and lists ATLAS as a main product, there are no details connecting these individuals directly to Project Atlas's sponsorship.\\n\\n{\\n    \\\"answer\\\": \\\"Unable to determine executive sponsor with the provided context\\\",\\n    \\\"confidence\\\": \\\"low\\\", \\n    \\\"sources_used\\\": [\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v6-v5.5/CLAUDE.md\\\"\\n    ]\\n}\",\"session_id\":\"cfa17110-572a-47d3-926d-7326007a5741\",\"total_cost_usd\":0.00583184,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":3020,\"cache_read_input_tokens\":18643,\"output_tokens\":160,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3020,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":143,\"outputTokens\":107,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000678,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":160,\"cacheReadInputTokens\":18643,\"cacheCreationInputTokens\":3020,\"webSearchRequests\":0,\"costUSD\":0.00515384,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"8661ea57-c2f9-402f-b92a-a45dd20021a0\"}",
+  "expected_answer": "Marcus Williams, Chief Operating Officer (COO)",
+  "metadata": {
+    "duration_seconds": 4.266703180,
+    "timestamp": "2026-01-30T16:10:27-07:00"
+  }
+}

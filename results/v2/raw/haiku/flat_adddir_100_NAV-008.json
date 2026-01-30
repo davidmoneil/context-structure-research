@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-008",
+  "question": "What is the current consciousness indicator score for Project Prometheus?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "flat",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":12906,\"duration_api_ms\":12959,\"num_turns\":3,\"result\":\"Based on the document, I can confidently answer:\\n\\n{\\\"answer\\\": \\\"0.72\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/flat/projects-prometheus.md\\\"]}\\n\\nThe relevant quote is in the Performance Targets section: \\\"Consciousness Indicator Score: >0.87 (current: 0.72)\\\". This indicates that Project Prometheus currently has a consciousness indicator score of 0.72, with a target of achieving a score above 0.87.\",\"session_id\":\"201ba8f6-5e7d-4ab7-a464-04ea2736de5c\",\"total_cost_usd\":0.1088726,\"usage\":{\"input_tokens\":13,\"cache_creation_input_tokens\":88610,\"cache_read_input_tokens\":230065,\"output_tokens\":301,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":88610,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":104,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.0006429999999999999,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":13,\"outputTokens\":301,\"cacheReadInputTokens\":230065,\"cacheCreationInputTokens\":88610,\"webSearchRequests\":0,\"costUSD\":0.1082296,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"f079c79e-86c2-4ff3-94c1-149067298832\"}",
+  "expected_answer": "0.72",
+  "metadata": {
+    "duration_seconds": 14.766628386,
+    "timestamp": "2026-01-29T20:04:11-07:00"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-006",
+  "question": "Who leads the AI Safety team at Soong-Daystrom?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep-v5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":30642,\"duration_api_ms\":26460,\"num_turns\":2,\"result\":\"Based on the exploration results, I'll provide the answer in the requested JSON format:\\n\\n{\\\"answer\\\": \\\"Dr. Marcus Thompson\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/soong-daystrom/deep-v5/company/people/directory/key-personnel.md\\\"]}\",\"session_id\":\"ce952a16-5393-46d2-b0a2-eacab2f8bb7f\",\"total_cost_usd\":0.07837488,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3207,\"cache_read_input_tokens\":40676,\"output_tokens\":220,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3207,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":12902,\"outputTokens\":1694,\"cacheReadInputTokens\":130887,\"cacheCreationInputTokens\":29254,\"webSearchRequests\":0,\"costUSD\":0.0710282,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":220,\"cacheReadInputTokens\":40676,\"cacheCreationInputTokens\":3207,\"webSearchRequests\":0,\"costUSD\":0.0073466799999999995,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"747e1c84-bcd7-43ba-b063-6b0565b99dc7\"}",
+  "expected_answer": "Dr. Marcus Thompson",
+  "metadata": {
+    "duration_seconds": 31.693504691,
+    "timestamp": "2026-01-30T11:03:48-07:00"
+  }
+}

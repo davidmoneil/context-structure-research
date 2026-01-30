@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-004",
+  "question": "How many employees does Soong-Daystrom Industries have?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":23901,\"duration_api_ms\":20647,\"num_turns\":2,\"result\":\"Based on the comprehensive search, I can provide the answer in the requested JSON format:\\n\\n{\\\"answer\\\": \\\"12,847\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\n    \\\"/soong-daystrom/_source/employees/directory-full.md\\\",\\n    \\\"/soong-daystrom/deep/company/people/directory/directory-full.md\\\",\\n    \\\"/soong-daystrom/flat/employees-directory-full.md\\\",\\n    \\\"/soong-daystrom/shallow/employees/directory-full.md\\\",\\n    \\\"/soong-daystrom/very-deep/soong-daystrom/company/people/hr/employee-directory/directory-full.md\\\",\\n    \\\"/soong-daystrom/monolith/company-documentation.md\\\"\\n]}\",\"session_id\":\"98b86a3c-342a-4e21-babf-dc8506ea2c75\",\"total_cost_usd\":0.06435859,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3267,\"cache_read_input_tokens\":40563,\"output_tokens\":337,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3267,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":17726,\"outputTokens\":1138,\"cacheReadInputTokens\":52632,\"cacheCreationInputTokens\":22251,\"webSearchRequests\":0,\"costUSD\":0.05649295,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":337,\"cacheReadInputTokens\":40563,\"cacheCreationInputTokens\":3267,\"webSearchRequests\":0,\"costUSD\":0.00786564,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"e1d10a2b-c30e-42ed-8ac6-4af04fb67e97\"}",
+  "expected_answer": "12,847",
+  "metadata": {
+    "duration_seconds": 25.580401377,
+    "timestamp": "2026-01-30T07:41:21-07:00"
+  }
+}

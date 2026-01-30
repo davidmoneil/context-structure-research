@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-002",
+  "question": "In what year was Soong-Daystrom Industries founded?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "very-deep",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":16026,\"duration_api_ms\":16259,\"num_turns\":2,\"result\":\"Based on the exploration results, I can now provide the answer in the requested JSON format:\\n\\n{\\\"answer\\\": \\\"2089\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\n    \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/very-deep/soong-daystrom/company/background/corporate-history/timeline/founding.md\\\",\\n    \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/very-deep/soong-daystrom/company/background/corporate-history/timeline/milestones.md\\\"\\n]}\",\"session_id\":\"66dbc765-5aa5-489c-b2fb-e3b4d80c723b\",\"total_cost_usd\":0.026927020000000003,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3296,\"cache_read_input_tokens\":40674,\"output_tokens\":290,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3296,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":1482,\"outputTokens\":943,\"cacheReadInputTokens\":35845,\"cacheCreationInputTokens\":7544,\"webSearchRequests\":0,\"costUSD\":0.0192115,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":290,\"cacheReadInputTokens\":40674,\"cacheCreationInputTokens\":3296,\"webSearchRequests\":0,\"costUSD\":0.007715520000000001,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"c7c08a5d-1708-470f-99c6-08c9a6d94559\"}",
+  "expected_answer": "2089",
+  "metadata": {
+    "duration_seconds": 17.623237688,
+    "timestamp": "2026-01-29T15:07:57-07:00"
+  }
+}

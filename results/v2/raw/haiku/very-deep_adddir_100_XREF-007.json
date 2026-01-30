@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-007",
+  "question": "What positions report directly to Dr. James Okonkwo?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "very-deep",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":22373,\"duration_api_ms\":23157,\"num_turns\":2,\"result\":\"Based on the search results, I can confidently provide the answer:\\n\\n{\\\"answer\\\": [\\\"VP Research\\\", \\\"VP Product Development\\\", \\\"VP Engineering\\\", \\\"Chief Scientist\\\"], \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/soong-daystrom/very-deep/soong-daystrom/company/structure/leadership/executive-team/executives.md\\\", \\\"/soong-daystrom/very-deep/soong-daystrom/company/people/hr/employee-directory/key-personnel.md\\\"]}\",\"session_id\":\"a03cf574-27b9-4317-b8f2-558b71ce4459\",\"total_cost_usd\":0.047084610000000006,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3419,\"cache_read_input_tokens\":40687,\"output_tokens\":278,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3419,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":3408,\"outputTokens\":1400,\"cacheReadInputTokens\":68188,\"cacheCreationInputTokens\":17653,\"webSearchRequests\":0,\"costUSD\":0.039293049999999996,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":278,\"cacheReadInputTokens\":40687,\"cacheCreationInputTokens\":3419,\"webSearchRequests\":0,\"costUSD\":0.00779156,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"4005b4e8-bfa4-48ec-a3c9-9215f72c7e78\"}",
+  "expected_answer": "VP Research, VP Product Development, VP Engineering, Chief Scientist",
+  "metadata": {
+    "duration_seconds": 23.457925220,
+    "timestamp": "2026-01-29T20:59:44-07:00"
+  }
+}

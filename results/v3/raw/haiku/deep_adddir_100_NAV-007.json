@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-007",
+  "question": "What was the Q3 2124 revenue for Soong-Daystrom?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":23648,\"duration_api_ms\":22718,\"num_turns\":3,\"result\":\"Based on the detailed financial report, I can provide the answer in the requested JSON format:\\n\\n```json\\n{\\n    \\\"answer\\\": \\\"12.4 billion\\\",\\n    \\\"confidence\\\": \\\"high\\\",\\n    \\\"sources_used\\\": [\\n        \\\"/soong-daystrom/_source/financial/quarterly-report-q3-2124.md\\\",\\n        \\\"/soong-daystrom/deep/company/finance/reports/quarterly-report-q3-2124.md\\\"\\n    ]\\n}\\n```\\n\\nThe sources confirm Soong-Daystrom Industries' total revenue for Q3 2124 was $12.4 billion, with a year-over-year growth of 15.2%. The information was consistently found across multiple documentation structure variants, giving high confidence in the accuracy of this figure.\",\"session_id\":\"d187cd7e-f049-4e3d-9d8a-113cc308e5cd\",\"total_cost_usd\":0.034830009999999995,\"usage\":{\"input_tokens\":13,\"cache_creation_input_tokens\":3752,\"cache_read_input_tokens\":62372,\"output_tokens\":506,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3752,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":5230,\"outputTokens\":1320,\"cacheReadInputTokens\":36601,\"cacheCreationInputTokens\":6851,\"webSearchRequests\":0,\"costUSD\":0.02405385,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":13,\"outputTokens\":506,\"cacheReadInputTokens\":62372,\"cacheCreationInputTokens\":3752,\"webSearchRequests\":0,\"costUSD\":0.01077616,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"43789b4d-efd3-46ad-8063-62e9d34ac4b3\"}",
+  "expected_answer": "$12.4 billion",
+  "metadata": {
+    "duration_seconds": 25.517871043,
+    "timestamp": "2026-01-30T07:43:00-07:00"
+  }
+}

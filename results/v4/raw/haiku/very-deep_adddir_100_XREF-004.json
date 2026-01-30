@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-004",
+  "question": "What decision was made in the October 2124 board meeting regarding AI safety research funding?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "very-deep",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":26632,\"duration_api_ms\":22888,\"num_turns\":3,\"result\":\"Based on the exploration results, I can confidently answer the question:\\n\\n{\\\"answer\\\": \\\"The board approved a $10M external AI safety research fund and authorized the formation of a consciousness ethics sub-committee\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source/meetings/board-q3-2124.md\\\"]}\",\"session_id\":\"e52fe45a-5c65-45f9-9799-1b9d548534be\",\"total_cost_usd\":0.03627256,\"usage\":{\"input_tokens\":13,\"cache_creation_input_tokens\":3502,\"cache_read_input_tokens\":62782,\"output_tokens\":356,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3502,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":2820,\"outputTokens\":1100,\"cacheReadInputTokens\":54711,\"cacheCreationInputTokens\":10018,\"webSearchRequests\":0,\"costUSD\":0.0263136,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":13,\"outputTokens\":356,\"cacheReadInputTokens\":62782,\"cacheCreationInputTokens\":3502,\"webSearchRequests\":0,\"costUSD\":0.00995896,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"a9d7d446-9768-4d6b-97ea-422e923328bf\"}",
+  "expected_answer": "The board approved a $10 million external AI safety research fund",
+  "metadata": {
+    "duration_seconds": 28.275191747,
+    "timestamp": "2026-01-30T11:05:32-07:00"
+  }
+}

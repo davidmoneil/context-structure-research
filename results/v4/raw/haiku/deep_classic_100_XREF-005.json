@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-005",
+  "question": "Which pilot customer signed a contract for Project Atlas, and what is the contract value?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":23797,\"duration_api_ms\":22801,\"num_turns\":2,\"result\":\"Based on the comprehensive search results, I can confidently provide the answer in the requested JSON format:\\n\\n{\\\"answer\\\": \\\"Rio Tinto, a mining industry company, signed a $47 million contract for 4 Atlas A1 Mining Configuration units\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\n    \\\"company/initiatives/projects/atlas.md\\\",\\n    \\\"Quarterly Reports (Q2 and Q3 2124)\\\",\\n    \\\"Board Meeting Minutes (Q3 2124)\\\",\\n    \\\"Executive Committee Meeting Minutes\\\"\\n]}\",\"session_id\":\"f0c63f1f-b219-4a29-a0c0-5a71ee485520\",\"total_cost_usd\":0.04939605,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3295,\"cache_read_input_tokens\":40645,\"output_tokens\":273,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3295,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":4351,\"outputTokens\":1386,\"cacheReadInputTokens\":62721,\"cacheCreationInputTokens\":19359,\"webSearchRequests\":0,\"costUSD\":0.04175185,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":273,\"cacheReadInputTokens\":40645,\"cacheCreationInputTokens\":3295,\"webSearchRequests\":0,\"costUSD\":0.0076442,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"761effb5-9bbe-4d8a-998d-2a25e74e2571\"}",
+  "expected_answer": "Rio Tinto, $47 million",
+  "metadata": {
+    "duration_seconds": 25.501599779,
+    "timestamp": "2026-01-30T10:28:06-07:00"
+  }
+}

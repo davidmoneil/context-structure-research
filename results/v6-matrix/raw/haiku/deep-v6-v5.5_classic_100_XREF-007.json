@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-007",
+  "question": "What positions report directly to Dr. James Okonkwo?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep-v6-v5.5",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":2578,\"duration_api_ms\":4860,\"num_turns\":1,\"result\":\"I apologize, but I cannot confidently answer this specific question based on the provided context. The context mentions an \\\"Amara Okonkwo\\\" as the CTO, but does not mention a \\\"James Okonkwo\\\" or provide an organizational hierarchy that would show direct reports. \\n\\n{\\\"answer\\\": \\\"Unknown\\\", \\\"confidence\\\": \\\"low\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v6-v5.5/CLAUDE.md\\\"]}\",\"session_id\":\"d6f6aa86-7dab-4b00-8e90-8d8afd46da90\",\"total_cost_usd\":0.00500156,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":2317,\"cache_read_input_tokens\":18402,\"output_tokens\":123,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2317,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":143,\"outputTokens\":115,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000718,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":123,\"cacheReadInputTokens\":18402,\"cacheCreationInputTokens\":2317,\"webSearchRequests\":0,\"costUSD\":0.0042835600000000005,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"f76d2362-1ce0-4a51-9961-63ba79f5a9b6\"}",
+  "expected_answer": "VP Research, VP Product Development, VP Engineering, Chief Scientist",
+  "metadata": {
+    "duration_seconds": 4.170240476,
+    "timestamp": "2026-01-30T16:05:21-07:00"
+  }
+}

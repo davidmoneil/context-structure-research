@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-006",
+  "question": "Who leads the AI Safety team at Soong-Daystrom?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep-v5-v5.5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":27064,\"duration_api_ms\":27249,\"num_turns\":2,\"result\":\"Based on the comprehensive search results, I'll provide the answer in the requested JSON format:\\n\\n{\\\"answer\\\": \\\"Dr. Marcus Thompson\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source/employees/directory-full.md\\\", \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source/employees/team-prometheus.md\\\", \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source/employees/key-personnel.md\\\"]}\",\"session_id\":\"7867f1e0-fc8a-45a3-9c01-d0fc86eea9ff\",\"total_cost_usd\":0.06176165,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3853,\"cache_read_input_tokens\":40975,\"output_tokens\":273,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3853,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":3910,\"outputTokens\":2062,\"cacheReadInputTokens\":87218,\"cacheCreationInputTokens\":24473,\"webSearchRequests\":0,\"costUSD\":0.05353305,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":273,\"cacheReadInputTokens\":40975,\"cacheCreationInputTokens\":3853,\"webSearchRequests\":0,\"costUSD\":0.0082286,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"2d2c7294-e38d-4be7-aa28-a340d022b071\"}",
+  "expected_answer": "Dr. Marcus Thompson",
+  "metadata": {
+    "duration_seconds": 28.105532749,
+    "timestamp": "2026-01-30T14:37:58-07:00"
+  }
+}

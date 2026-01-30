@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-007",
+  "question": "What positions report directly to Dr. James Okonkwo?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "flat-v6",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":20806,\"duration_api_ms\":22972,\"num_turns\":2,\"result\":\"Based on the comprehensive search results, I can provide a precise answer:\\n\\n{\\\"answer\\\": [\\\"VP Research\\\", \\\"VP Product Development (Dr. Ahmed Hassan)\\\", \\\"VP Engineering (Jennifer Morrison)\\\", \\\"Chief Scientist\\\"], \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/soong-daystrom/_source/organization/executives.md\\\", \\\"/soong-daystrom/_source/organization/departments.md\\\"]}\",\"session_id\":\"1a1f177a-463a-4938-be16-67ca36153a9e\",\"total_cost_usd\":0.038496510000000005,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3371,\"cache_read_input_tokens\":40582,\"output_tokens\":253,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3371,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":1161,\"outputTokens\":1620,\"cacheReadInputTokens\":65241,\"cacheCreationInputTokens\":12061,\"webSearchRequests\":0,\"costUSD\":0.030861350000000003,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":253,\"cacheReadInputTokens\":40582,\"cacheCreationInputTokens\":3371,\"webSearchRequests\":0,\"costUSD\":0.00763516,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"195ace15-082c-4037-9167-332051726ac1\"}",
+  "expected_answer": "VP Research, VP Product Development, VP Engineering, Chief Scientist",
+  "metadata": {
+    "duration_seconds": 22.242762440,
+    "timestamp": "2026-01-30T15:21:38-07:00"
+  }
+}

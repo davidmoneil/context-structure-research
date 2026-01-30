@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-004",
+  "question": "What decision was made in the October 2124 board meeting regarding AI safety research funding?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "shallow",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":3258,\"duration_api_ms\":4855,\"num_turns\":1,\"result\":\"{\\\"answer\\\": \\\"The board approved a $10 million fund for external AI safety research\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/shallow/meetings/board-q3-2124.md\\\"]}\",\"session_id\":\"d8fa54cf-5b1e-4d2c-8f90-f719daeb266c\",\"total_cost_usd\":0.07723216,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":74863,\"cache_read_input_tokens\":18997,\"output_tokens\":71,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":74863,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":88,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.0005629999999999999,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":71,\"cacheReadInputTokens\":18997,\"cacheCreationInputTokens\":74863,\"webSearchRequests\":0,\"costUSD\":0.07666916,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"bfa9e09b-bac9-488b-ba6c-2005a9627c36\"}",
+  "expected_answer": "The board approved a $10 million external AI safety research fund",
+  "metadata": {
+    "duration_seconds": 5.220420566,
+    "timestamp": "2026-01-30T07:23:45-07:00"
+  }
+}

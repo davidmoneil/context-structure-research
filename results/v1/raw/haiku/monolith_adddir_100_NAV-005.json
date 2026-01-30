@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-005",
+  "question": "What is the price of the PCS-500 Companion Elite?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "monolith",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":2119,\"duration_api_ms\":3570,\"num_turns\":1,\"result\":\"{\\n    \\\"answer\\\": \\\"$47,000\\\",\\n    \\\"confidence\\\": \\\"high\\\",\\n    \\\"sources_used\\\": [\\\"/products/pcs-series\\\"]\\n}\",\"session_id\":\"9a5a99da-2b43-4b28-aec6-4792af8be95f\",\"total_cost_usd\":0.04837152,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":46149,\"cache_read_input_tokens\":18964,\"output_tokens\":40,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":46149,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":84,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000543,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":40,\"cacheReadInputTokens\":18964,\"cacheCreationInputTokens\":46149,\"webSearchRequests\":0,\"costUSD\":0.04782852,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"94f074c5-064f-41f8-9835-5ffc622f05d4\"}",
+  "expected_answer": "$47,000",
+  "metadata": {
+    "duration_seconds": 7.545560805,
+    "timestamp": "2026-01-29T14:16:28-07:00"
+  }
+}

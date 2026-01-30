@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-006",
+  "question": "Who leads the AI Safety team at Soong-Daystrom?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "flat-v6",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":19317,\"duration_api_ms\":19397,\"num_turns\":2,\"result\":\"Based on the search results, I can provide the following answer:\\n\\n{\\\"answer\\\": \\\"Dr. Marcus Thompson\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/research-notes/canon.md\\\"]}\\n\\nThe search revealed that Dr. Marcus Thompson holds the title of Director of Safety & Alignment at Soong-Daystrom Industries, leading the 42-person AI Safety team. The information comes from the canonical source document and is consistent across different document structure variants, giving high confidence in the accuracy of this answer.\",\"session_id\":\"ddbdcca9-d21a-46c2-b580-76325a54db04\",\"total_cost_usd\":0.03358477,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3124,\"cache_read_input_tokens\":40584,\"output_tokens\":262,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3124,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":3242,\"outputTokens\":1064,\"cacheReadInputTokens\":53522,\"cacheCreationInputTokens\":9797,\"webSearchRequests\":0,\"costUSD\":0.02616045,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":262,\"cacheReadInputTokens\":40584,\"cacheCreationInputTokens\":3124,\"webSearchRequests\":0,\"costUSD\":0.00742432,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"84778c78-386f-4d94-bde1-21b677db9988\"}",
+  "expected_answer": "Dr. Marcus Thompson",
+  "metadata": {
+    "duration_seconds": 20.640808724,
+    "timestamp": "2026-01-30T15:17:18-07:00"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-003",
+  "question": "What is the total budget for Project Prometheus?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep-v5",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":29961,\"duration_api_ms\":29658,\"num_turns\":2,\"result\":\"Based on the comprehensive search results, I can confidently provide the budget information:\\n\\n{\\n    \\\"answer\\\": \\\"2.4 billion USD (total project budget from 2121-2126, with $740 million allocated for Phase 3 in FY 2124)\\\",\\n    \\\"confidence\\\": \\\"high\\\",\\n    \\\"sources_used\\\": [\\n        \\\"/company/finance/reports/budget.md\\\",\\n        \\\"/company/finance/reports/capital-allocation.md\\\",\\n        \\\"/company/initiatives/projects/prometheus-detailed.md\\\",\\n        \\\"/company/finance/reports/investor-presentations.md\\\"\\n    ]\\n}\",\"session_id\":\"631f5750-c0e2-482a-93dd-ba71067a4506\",\"total_cost_usd\":0.0857192,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":4044,\"cache_read_input_tokens\":40730,\"output_tokens\":270,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":4044,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":29120,\"outputTokens\":2422,\"cacheReadInputTokens\":49487,\"cacheCreationInputTokens\":24922,\"webSearchRequests\":0,\"costUSD\":0.0773312,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":270,\"cacheReadInputTokens\":40730,\"cacheCreationInputTokens\":4044,\"webSearchRequests\":0,\"costUSD\":0.008388,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"622f0b28-30b4-445c-9cdc-13a5f9086c7b\"}",
+  "expected_answer": "$2.4 billion",
+  "metadata": {
+    "duration_seconds": 31.024196979,
+    "timestamp": "2026-01-30T10:50:25-07:00"
+  }
+}

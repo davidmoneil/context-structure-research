@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-007",
+  "question": "What positions report directly to Dr. James Okonkwo?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep-v6-v5.5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":419815,\"duration_api_ms\":53861,\"num_turns\":2,\"result\":\"Based on the search results, I can now provide a concise answer in the requested JSON format:\\n\\n{\\n    \\\"answer\\\": \\\"[Dr. Ahmed Hassan (VP Product Development), Jennifer Morrison (VP Engineering), Dr. Wei Zhang (Chief Scientist)]\\\",\\n    \\\"confidence\\\": \\\"high\\\",\\n    \\\"sources_used\\\": [\\n        \\\"/soong-daystrom/_source/organization/executives.md\\\",\\n        \\\"/soong-daystrom/_source/organization/departments.md\\\"\\n    ]\\n}\",\"session_id\":\"cc16efff-b071-47b8-8f56-40787dbc07d1\",\"total_cost_usd\":0.13557407,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":21809,\"cache_read_input_tokens\":20699,\"output_tokens\":271,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":21809,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":15880,\"outputTokens\":5008,\"cacheReadInputTokens\":225708,\"cacheCreationInputTokens\":38023,\"webSearchRequests\":0,\"costUSD\":0.11101955,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":271,\"cacheReadInputTokens\":20699,\"cacheCreationInputTokens\":21809,\"webSearchRequests\":0,\"costUSD\":0.024554519999999996,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"a7c3afa6-28f1-44d2-824f-5774e6659bee\"}",
+  "expected_answer": "VP Research, VP Product Development, VP Engineering, Chief Scientist",
+  "metadata": {
+    "duration_seconds": 421.162123716,
+    "timestamp": "2026-01-30T16:25:42-07:00"
+  }
+}

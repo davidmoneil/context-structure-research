@@ -1,0 +1,4 @@
+usage: evaluator.py [-h] [--questions QUESTIONS] [--output OUTPUT]
+                    [--format {markdown,json,both}] [--verbose]
+                    results_dir
+evaluator.py: error: unrecognized arguments: v3

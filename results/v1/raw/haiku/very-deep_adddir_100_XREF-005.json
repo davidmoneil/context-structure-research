@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-005",
+  "question": "Which pilot customer signed a contract for Project Atlas, and what is the contract value?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "very-deep",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":33093,\"duration_api_ms\":34384,\"num_turns\":3,\"result\":\"{\\n    \\\"answer\\\": \\\"Rio Tinto signed a contract for 4 Project Atlas units, with a contract value of $47 million\\\",\\n    \\\"confidence\\\": \\\"high\\\", \\n    \\\"sources_used\\\": [\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source/projects/atlas.md\\\",\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source/meetings/board-q3-2124.md\\\"\\n    ]\\n}\",\"session_id\":\"78b6851a-4a59-46cf-9de5-488fa4364b76\",\"total_cost_usd\":0.053520689999999996,\"usage\":{\"input_tokens\":11,\"cache_creation_input_tokens\":4325,\"cache_read_input_tokens\":63823,\"output_tokens\":384,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":4325,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":5847,\"outputTokens\":2204,\"cacheReadInputTokens\":49918,\"cacheCreationInputTokens\":16549,\"webSearchRequests\":0,\"costUSD\":0.04254505,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":11,\"outputTokens\":384,\"cacheReadInputTokens\":63823,\"cacheCreationInputTokens\":4325,\"webSearchRequests\":0,\"costUSD\":0.010975640000000002,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"dbf7a036-d9ff-4135-a939-159c4b7af139\"}",
+  "expected_answer": "Rio Tinto, $47 million",
+  "metadata": {
+    "duration_seconds": 34.797250393,
+    "timestamp": "2026-01-29T15:13:50-07:00"
+  }
+}

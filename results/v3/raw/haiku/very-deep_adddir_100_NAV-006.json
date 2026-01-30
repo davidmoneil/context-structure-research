@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-006",
+  "question": "Who leads the AI Safety team at Soong-Daystrom?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "very-deep",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":24560,\"duration_api_ms\":24432,\"num_turns\":2,\"result\":\"Based on the exploration results, I can confidently answer the question:\\n\\n{\\\"answer\\\": \\\"Dr. Marcus Thompson leads the AI Safety team at Soong-Daystrom\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\n    \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source/employees/directory-rnd.md\\\",\\n    \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/very-deep/soong-daystrom/company/people/hr/employee-directory/directory-rnd.md\\\"\\n]}\",\"session_id\":\"5146ba79-7c49-4c7d-aeb5-8cda568ee652\",\"total_cost_usd\":0.04654207,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3749,\"cache_read_input_tokens\":40699,\"output_tokens\":287,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3749,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":1515,\"outputTokens\":1639,\"cacheReadInputTokens\":56073,\"cacheCreationInputTokens\":18453,\"webSearchRequests\":0,\"costUSD\":0.03838355,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":287,\"cacheReadInputTokens\":40699,\"cacheCreationInputTokens\":3749,\"webSearchRequests\":0,\"costUSD\":0.008158519999999999,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"ea7191fc-356d-46dc-a651-0ace6b6b5f22\"}",
+  "expected_answer": "Dr. Marcus Thompson",
+  "metadata": {
+    "duration_seconds": 25.827658195,
+    "timestamp": "2026-01-30T08:06:11-07:00"
+  }
+}

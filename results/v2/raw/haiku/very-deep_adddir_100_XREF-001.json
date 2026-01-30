@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-001",
+  "question": "Which department does the Project Prometheus team report to, and who leads that department?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "very-deep",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":66123,\"duration_api_ms\":62784,\"num_turns\":3,\"result\":\"I'll now provide the answer in the requested JSON format:\\n\\n```json\\n{\\n    \\\"answer\\\": \\\"Project Prometheus reports to the Research & Development (R&D) Department, specifically the Advanced Research Division, which is led by Dr. James Okonkwo (CTO). The project's direct program director is Dr. Yuki Tanaka, who serves as the SVP of Advanced Research.\\\",\\n    \\\"confidence\\\": \\\"high\\\",\\n    \\\"sources_used\\\": [\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source/projects/prometheus.md\\\",\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source/employees/team-prometheus.md\\\",\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source/organization/departments.md\\\"\\n    ]\\n}\\n```\",\"session_id\":\"f5fc0521-b5aa-4864-9e98-30ae058bc860\",\"total_cost_usd\":0.16316626999999997,\"usage\":{\"input_tokens\":10,\"cache_creation_input_tokens\":4742,\"cache_read_input_tokens\":63844,\"output_tokens\":466,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":4742,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":5939,\"outputTokens\":2050,\"cacheReadInputTokens\":85688,\"cacheCreationInputTokens\":18686,\"webSearchRequests\":0,\"costUSD\":0.0481153,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":10,\"outputTokens\":466,\"cacheReadInputTokens\":63844,\"cacheCreationInputTokens\":4742,\"webSearchRequests\":0,\"costUSD\":0.01172152,\"contextWindow\":200000,\"maxOutputTokens\":8192},\"claude-sonnet-4-5-20250929\":{\"inputTokens\":2902,\"outputTokens\":1143,\"cacheReadInputTokens\":56174,\"cacheCreationInputTokens\":16167,\"webSearchRequests\":0,\"costUSD\":0.10332944999999999,\"contextWindow\":200000,\"maxOutputTokens\":64000}},\"permission_denials\":[],\"uuid\":\"6a49bf33-d8cd-4b94-9f05-93ebfa1e1c3c\"}",
+  "expected_answer": "Research & Development, led by Dr. James Okonkwo (CTO)",
+  "metadata": {
+    "duration_seconds": 67.084777661,
+    "timestamp": "2026-01-29T20:57:02-07:00"
+  }
+}

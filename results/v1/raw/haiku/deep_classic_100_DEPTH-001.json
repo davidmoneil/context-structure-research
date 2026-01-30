@@ -1,0 +1,17 @@
+{
+  "question_id": "DEPTH-001",
+  "question": "Based on the company's R&D budget allocation and current project portfolio, what strategic priorities can you infer about Soong-Daystrom's direction?",
+  "question_type": "depth",
+  "config": {
+    "structure": "deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":32746,\"duration_api_ms\":31785,\"num_turns\":2,\"result\":\"Based on the comprehensive exploration, I'll provide the JSON-formatted response:\\n\\n{\\\"answer\\\": \\\"Soong-Daystrom is prioritizing three strategic areas: (1) Artificial General Intelligence (AGI) research through Project Prometheus, receiving the highest investment of $2.4B, signaling a long-term commitment to consciousness development; (2) Industrial automation and robotics via Project Atlas, focusing on high-value sectors like mining and disaster response; and (3) Advanced AI communication systems through Project Hermes, emphasizing natural human-AI interaction. The company demonstrates a balanced approach of ambitious moonshot research, near-term commercial applications, and a strong commitment to AI safety and ethical development.\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/company/initiatives/projects/prometheus.md\\\", \\\"/company/initiatives/projects/atlas.md\\\", \\\"/company/initiatives/projects/hermes.md\\\"]}\",\"session_id\":\"26c0d187-d86a-4e8c-a139-efd2f6329291\",\"total_cost_usd\":0.044354960000000006,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":4125,\"cache_read_input_tokens\":40592,\"output_tokens\":344,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":4125,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":6798,\"outputTokens\":2173,\"cacheReadInputTokens\":34905,\"cacheCreationInputTokens\":11558,\"webSearchRequests\":0,\"costUSD\":0.035601,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":344,\"cacheReadInputTokens\":40592,\"cacheCreationInputTokens\":4125,\"webSearchRequests\":0,\"costUSD\":0.00875396,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"495524f1-07b3-47ff-9bdf-71628c4b01ef\"}",
+  "expected_answer": "Focus on next-generation AI consciousness (Project Prometheus) and industrial automation expansion (Project Atlas), indicating a dual strategy of advancing core AI technology while expanding market applications",
+  "metadata": {
+    "duration_seconds": 34.632069039,
+    "timestamp": "2026-01-29T14:44:13-07:00"
+  }
+}

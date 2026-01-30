@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-005",
+  "question": "What is the price of the PCS-500 Companion Elite?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "very-deep",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":49242,\"duration_api_ms\":37791,\"num_turns\":5,\"result\":\"Based on the comprehensive search, I can confidently provide the following answer:\\n\\n{\\\"answer\\\": \\\"$47,000\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\n    \\\"soong-daystrom/_source-v5/products/pcs-series.md\\\",\\n    \\\"soong-daystrom/_source-v5/financial/annual-report-2123.md\\\", \\n    \\\"soong-daystrom/_source-v5/financial/quarterly-report-q2-2124.md\\\",\\n    \\\"soong-daystrom/_source-v5/investor/shareholder-communications.md\\\",\\n    \\\"soong-daystrom/_source-v5/competitors/market-analysis.md\\\"\\n]}\",\"session_id\":\"6c07231a-7172-4b2b-867b-e97db5b4469f\",\"total_cost_usd\":0.1055835,\"usage\":{\"input_tokens\":16,\"cache_creation_input_tokens\":4851,\"cache_read_input_tokens\":107795,\"output_tokens\":605,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":4851,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":171,\"outputTokens\":2387,\"cacheReadInputTokens\":138351,\"cacheCreationInputTokens\":50988,\"webSearchRequests\":0,\"costUSD\":0.08967610000000001,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":16,\"outputTokens\":605,\"cacheReadInputTokens\":107795,\"cacheCreationInputTokens\":4851,\"webSearchRequests\":0,\"costUSD\":0.015907400000000002,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"95d1f38e-c866-4423-93b8-519a2b265456\"}",
+  "expected_answer": "$47,000",
+  "metadata": {
+    "duration_seconds": 50.250690163,
+    "timestamp": "2026-01-30T11:01:50-07:00"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-007",
+  "question": "What was the Q3 2124 revenue for Soong-Daystrom?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep-v5",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":24464,\"duration_api_ms\":23882,\"num_turns\":3,\"result\":\"Based on the comprehensive quarterly report, I can confidently provide the answer:\\n\\n{\\\"answer\\\": \\\"$12.4 billion\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/company/finance/reports/quarterly-report-q3-2124.md\\\"]}\\n\\nKey verifications:\\n- The revenue is explicitly stated on line 5 and line 19 of the report\\n- Detailed breakdown shows total revenue of $12.4B for Q3 2124\\n- Year-over-year growth of 15.2% from $10.8B in Q3 2123\\n- The report provides a comprehensive breakdown of revenue by segment and geography\",\"session_id\":\"bf69fd53-b1b0-43dc-a169-e3428def87bc\",\"total_cost_usd\":0.05639844,\"usage\":{\"input_tokens\":11,\"cache_creation_input_tokens\":6055,\"cache_read_input_tokens\":63208,\"output_tokens\":422,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":6055,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":140,\"outputTokens\":1207,\"cacheReadInputTokens\":35200,\"cacheCreationInputTokens\":27116,\"webSearchRequests\":0,\"costUSD\":0.043590000000000004,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":11,\"outputTokens\":422,\"cacheReadInputTokens\":63208,\"cacheCreationInputTokens\":6055,\"webSearchRequests\":0,\"costUSD\":0.01280844,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"bb21baee-04a8-428b-ae0f-e02c9a78075d\"}",
+  "expected_answer": "$12.4 billion",
+  "metadata": {
+    "duration_seconds": 26.301747277,
+    "timestamp": "2026-01-30T10:51:55-07:00"
+  }
+}

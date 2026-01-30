@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-007",
+  "question": "What positions report directly to Dr. James Okonkwo?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep-v5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":17361,\"duration_api_ms\":18244,\"num_turns\":2,\"result\":\"Based on the exploration results, I can confidently provide the answer in the requested JSON format:\\n\\n{\\\"answer\\\": [\\\"Dr. Yuki Tanaka (SVP Advanced Research)\\\", \\\"Dr. Ahmed Hassan (VP Product Development)\\\", \\\"Dr. Sarah Mitchell (VP Engineering, Austin)\\\", \\\"Chief Scientist\\\"], \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"@company/structure/\\\", \\\"@company/people/executives.md\\\"]}\",\"session_id\":\"001d76fd-a39b-493c-b10e-75d88c7fde23\",\"total_cost_usd\":0.04366422,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3262,\"cache_read_input_tokens\":40674,\"output_tokens\":263,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3262,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":140,\"outputTokens\":1112,\"cacheReadInputTokens\":38007,\"cacheCreationInputTokens\":21272,\"webSearchRequests\":0,\"costUSD\":0.0360907,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":263,\"cacheReadInputTokens\":40674,\"cacheCreationInputTokens\":3262,\"webSearchRequests\":0,\"costUSD\":0.007573519999999999,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"7b9057f5-f79b-4e74-9a1f-af582b90827a\"}",
+  "expected_answer": "VP Research, VP Product Development, VP Engineering, Chief Scientist",
+  "metadata": {
+    "duration_seconds": 19.010336791,
+    "timestamp": "2026-01-30T11:10:11-07:00"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-003",
+  "question": "What is the total budget for Project Prometheus?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep-v6",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":19983,\"duration_api_ms\":22213,\"num_turns\":2,\"result\":\"Based on the detailed exploration, I can provide the following answer:\\n\\n{\\\"answer\\\": \\\"2,400,000,000\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v6/financial/project-prometheus-budget.md\\\"]}\\n\\nThe answer is precise, representing the total budget of $2.4 billion allocated to Project Prometheus over five years (2121-2126). The budget is broken down into five phases, with a comprehensive allocation across different categories like personnel, equipment, facilities, and external partners.\",\"session_id\":\"8ec34a1e-069a-408e-8764-3b18258fa218\",\"total_cost_usd\":0.05500341,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3349,\"cache_read_input_tokens\":39102,\"output_tokens\":274,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3349,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":160,\"outputTokens\":1694,\"cacheReadInputTokens\":34734,\"cacheCreationInputTokens\":28257,\"webSearchRequests\":0,\"costUSD\":0.04742465,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":274,\"cacheReadInputTokens\":39102,\"cacheCreationInputTokens\":3349,\"webSearchRequests\":0,\"costUSD\":0.00757876,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"d152fc51-e20e-4a38-876d-2c25d92f79e6\"}",
+  "expected_answer": "$2.4 billion",
+  "metadata": {
+    "duration_seconds": 21.192069970,
+    "timestamp": "2026-01-30T15:24:33-07:00"
+  }
+}

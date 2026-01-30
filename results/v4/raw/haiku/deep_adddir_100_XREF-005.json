@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-005",
+  "question": "Which pilot customer signed a contract for Project Atlas, and what is the contract value?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":178746,\"duration_api_ms\":31831,\"num_turns\":3,\"result\":\"Based on the search results, I'll provide the answer in the requested JSON format:\\n\\n{\\\"answer\\\": \\\"Rio Tinto, with a contract value of $47 million\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/soong-daystrom/_source/projects/atlas.md\\\", \\\"/research-notes/canon.md\\\"]}\",\"session_id\":\"1ddc45f8-8a31-4cf7-b3b2-240a492e0674\",\"total_cost_usd\":0.07126552999999998,\"usage\":{\"input_tokens\":10,\"cache_creation_input_tokens\":3312,\"cache_read_input_tokens\":62481,\"output_tokens\":330,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3312,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":3402,\"outputTokens\":1892,\"cacheReadInputTokens\":120938,\"cacheCreationInputTokens\":29337,\"webSearchRequests\":0,\"costUSD\":0.061627049999999996,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":10,\"outputTokens\":330,\"cacheReadInputTokens\":62481,\"cacheCreationInputTokens\":3312,\"webSearchRequests\":0,\"costUSD\":0.00963848,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"1f4baa9a-7261-4495-8369-6fea8fe29253\"}",
+  "expected_answer": "Rio Tinto, $47 million",
+  "metadata": {
+    "duration_seconds": 180.453932950,
+    "timestamp": "2026-01-30T10:42:07-07:00"
+  }
+}

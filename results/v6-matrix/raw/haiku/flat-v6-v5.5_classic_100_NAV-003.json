@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-003",
+  "question": "What is the total budget for Project Prometheus?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "flat-v6-v5.5",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":32032,\"duration_api_ms\":33451,\"num_turns\":2,\"result\":\"Based on the comprehensive analysis, I'll provide the budget information in the requested JSON format:\\n\\n{\\\"answer\\\": \\\"2.4 billion USD\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\n    \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/flat-v6-v5.5/projects-prometheus-detailed.md\\\",\\n    \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/flat-v6-v5.5/financial-budget.md\\\"\\n]}\\n\\nKey details:\\n- Total budget: $2.4 billion over 5 years (2121-2126)\\n- Broken down into 5 phases with varying allocations\\n- Current (Phase 3) budget is $740 million\\n- Projected 10-year return of $24.4 billion (917% ROI)\\n\\nWould you like me to elaborate on any specific aspect of the Project Prometheus budget?\",\"session_id\":\"ea10cf36-f1e5-4bfa-8312-eb4a15bce230\",\"total_cost_usd\":0.0629335,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3899,\"cache_read_input_tokens\":39075,\"output_tokens\":371,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3899,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":167,\"outputTokens\":2530,\"cacheReadInputTokens\":71869,\"cacheCreationInputTokens\":27532,\"webSearchRequests\":0,\"costUSD\":0.0544189,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":371,\"cacheReadInputTokens\":39075,\"cacheCreationInputTokens\":3899,\"webSearchRequests\":0,\"costUSD\":0.0085146,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"d877fadf-6afd-441f-a082-8443549c13db\"}",
+  "expected_answer": "$2.4 billion",
+  "metadata": {
+    "duration_seconds": 33.389045834,
+    "timestamp": "2026-01-30T15:39:28-07:00"
+  }
+}

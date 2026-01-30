@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-001",
+  "question": "Who is the current CEO of Soong-Daystrom Industries?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "very-deep",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":17775,\"duration_api_ms\":18135,\"num_turns\":2,\"result\":\"Based on the exploration results, I'll provide the answer in the requested JSON format:\\n\\n{\\\"answer\\\": \\\"Dr. Maya Chen\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\n    \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source/organization/executives.md\\\",\\n    \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep/company/structure/leadership/executives.md\\\", \\n    \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/very-deep/soong-daystrom/company/structure/leadership/executive-team/executives.md\\\"\\n]}\",\"session_id\":\"cf36fd3d-0a9a-4922-8649-098cbbe24ca2\",\"total_cost_usd\":0.02818132,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3361,\"cache_read_input_tokens\":40699,\"output_tokens\":304,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3361,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":140,\"outputTokens\":1002,\"cacheReadInputTokens\":35553,\"cacheCreationInputTokens\":9310,\"webSearchRequests\":0,\"costUSD\":0.0203428,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":304,\"cacheReadInputTokens\":40699,\"cacheCreationInputTokens\":3361,\"webSearchRequests\":0,\"costUSD\":0.00783852,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"22b8a2c2-8ce1-44fe-b327-d2c94a28122a\"}",
+  "expected_answer": "Dr. Maya Chen",
+  "metadata": {
+    "duration_seconds": 18.783787470,
+    "timestamp": "2026-01-30T08:04:43-07:00"
+  }
+}

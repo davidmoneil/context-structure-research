@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-007",
+  "question": "What positions report directly to Dr. James Okonkwo?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":22656,\"duration_api_ms\":21873,\"num_turns\":3,\"result\":\"Based on the evidence from the executives.md file, I can confidently provide the following answer:\\n\\n{\\\"answer\\\": [\\\"VP Research\\\", \\\"VP Product Development\\\", \\\"VP Engineering\\\", \\\"Chief Scientist\\\"], \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep/company/structure/leadership/executives.md\\\"]}\\n\\nThe answer is directly sourced from line 44 of the executives.md file, which explicitly lists Dr. James Okonkwo's direct reports as the VP Research, VP Product Development, VP Engineering, and Chief Scientist.\",\"session_id\":\"fc2d3635-081c-419c-b13f-10380347e49d\",\"total_cost_usd\":0.02850915,\"usage\":{\"input_tokens\":11,\"cache_creation_input_tokens\":5442,\"cache_read_input_tokens\":62835,\"output_tokens\":405,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":5442,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":369,\"outputTokens\":952,\"cacheReadInputTokens\":34613,\"cacheCreationInputTokens\":6257,\"webSearchRequests\":0,\"costUSD\":0.01641155,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":11,\"outputTokens\":405,\"cacheReadInputTokens\":62835,\"cacheCreationInputTokens\":5442,\"webSearchRequests\":0,\"costUSD\":0.0120976,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"711669c4-0f02-4793-a74f-d8740a5bdd49\"}",
+  "expected_answer": "VP Research, VP Product Development, VP Engineering, Chief Scientist",
+  "metadata": {
+    "duration_seconds": 24.109425702,
+    "timestamp": "2026-01-29T14:42:59-07:00"
+  }
+}

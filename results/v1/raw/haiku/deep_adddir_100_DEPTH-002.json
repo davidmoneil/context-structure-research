@@ -1,0 +1,17 @@
+{
+  "question_id": "DEPTH-002",
+  "question": "What ethical concerns might arise from Project Prometheus, and how is the company addressing them?",
+  "question_type": "depth",
+  "config": {
+    "structure": "deep",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":48453,\"duration_api_ms\":46137,\"num_turns\":3,\"result\":\"{\\n    \\\"answer\\\": \\\"Project Prometheus raises critical ethical concerns around AGI consciousness emergence, including potential moral status, safety risks, and unintended system behaviors. Soong-Daystrom is addressing these through: (1) ATLAS-Safe constraint system with 847 core safety constraints, (2) dedicated 42-person Safety & Alignment team, (3) mandatory quarterly ethics reviews by an external advisory board, (4) explicit framework for system termination, and (5) a $10M external AI safety research fund. The project maintains a 'kill switch' mechanism and classifies the research under the highest oversight tier to mitigate risks of uncontrolled consciousness development.\\\",\\n    \\\"confidence\\\": \\\"high\\\", \\n    \\\"sources_used\\\": [\\n        \\\"/soong-daystrom/_source/projects/prometheus.md\\\",\\n        \\\"/soong-daystrom/_source/policies/ai-ethics-policy.md\\\", \\n        \\\"/soong-daystrom/_source/meetings/prometheus-weekly-2024-10-21.md\\\",\\n        \\\"/soong-daystrom/_source/meetings/board-q3-2124.md\\\"\\n    ]\\n}\",\"session_id\":\"9fb0f969-8db5-45bc-ac0e-3731fe6c296e\",\"total_cost_usd\":0.08186450999999999,\"usage\":{\"input_tokens\":10,\"cache_creation_input_tokens\":4126,\"cache_read_input_tokens\":63375,\"output_tokens\":525,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":4126,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":6810,\"outputTokens\":1987,\"cacheReadInputTokens\":83870,\"cacheCreationInputTokens\":19927,\"webSearchRequests\":0,\"costUSD\":0.050040749999999995,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":22,\"outputTokens\":856,\"cacheReadInputTokens\":90552,\"cacheCreationInputTokens\":21138,\"webSearchRequests\":0,\"costUSD\":0.03182376,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"828fc4cf-f6e6-4f7f-8224-aa4575aa28a9\"}",
+  "expected_answer": "Concerns include consciousness emergence ethics, moral status of AI, termination ethics. Addressed via: AI Ethics Advisory Board, ATLAS-Safe constraint system, enhanced oversight framework, external ethics partnerships (Stanford AI Ethics Center)",
+  "metadata": {
+    "duration_seconds": 50.097830326,
+    "timestamp": "2026-01-29T14:55:20-07:00"
+  }
+}

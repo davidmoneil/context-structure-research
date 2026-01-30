@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-010",
+  "question": "Where is the Project Prometheus team located?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep-v6",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":3116,\"duration_api_ms\":5623,\"num_turns\":1,\"result\":\"I apologize, but I cannot confidently answer this question based on the provided context. The context documents provide an overview of Soong-Daystrom Industries and mention Project Prometheus as one of their research programs, but do not specify the location of the Prometheus team.\\n\\n{\\\"answer\\\": null, \\\"confidence\\\": \\\"low\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v6/CLAUDE.md\\\"]}\\n\\nIf you would like me to find more specific information about the Prometheus team's location, I would need access to additional documentation or context files that might contain those details.\",\"session_id\":\"2d6180c0-e3d2-479b-8102-8a6da898530e\",\"total_cost_usd\":0.0054021600000000005,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":2307,\"cache_read_input_tokens\":18397,\"output_tokens\":147,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2307,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":143,\"outputTokens\":178,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.001033,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":147,\"cacheReadInputTokens\":18397,\"cacheCreationInputTokens\":2307,\"webSearchRequests\":0,\"costUSD\":0.00436916,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"32c8214a-4951-4b2c-9810-9fd3a5ed206a\"}",
+  "expected_answer": "San Francisco Secure Lab (Building 7)",
+  "metadata": {
+    "duration_seconds": 4.398388530,
+    "timestamp": "2026-01-30T15:26:02-07:00"
+  }
+}

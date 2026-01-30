@@ -1,0 +1,226 @@
+===================================================
+  Context Structure Research - Haiku V5 Matrix
+  (Skipping monolith - exceeds context limit)
+===================================================
+
+Configuration:
+  Structures: flat-v5 shallow-v5 deep-v5 very-deep-v5
+  Loading: classic adddir
+  Questions: 23
+  Total tests: 184
+  Results dir: /home/davidmoneil/Code/context-structure-research/results/v5/raw
+
+Log file: /home/davidmoneil/Code/context-structure-research/results/v5/haiku-matrix-20260130-103834.log
+
+Starting at Fri Jan 30 10:38:34 AM MST 2026
+---------------------------------------------------
+
+[flat-v5 / classic]
+  [  1/184] flat-v5      classic NAV-001    (ETA: ? min)... ✓
+  [  2/184] flat-v5      classic NAV-002    (ETA: 27 min)... ✓
+  [  3/184] flat-v5      classic NAV-003    (ETA: 27 min)... ✓
+  [  4/184] flat-v5      classic NAV-004    (ETA: 24 min)... ✓
+  [  5/184] flat-v5      classic NAV-005    (ETA: 23 min)... ✓
+  [  6/184] flat-v5      classic NAV-006    (ETA: 23 min)... ✓
+  [  7/184] flat-v5      classic NAV-007    (ETA: 23 min)... ✓
+  [  8/184] flat-v5      classic NAV-008    (ETA: 23 min)... ✓
+  [  9/184] flat-v5      classic NAV-009    (ETA: 23 min)... ✓
+  [ 10/184] flat-v5      classic NAV-010    (ETA: 23 min)... ✓
+  [ 11/184] flat-v5      classic XREF-001   (ETA: 23 min)... ✓
+  [ 12/184] flat-v5      classic XREF-002   (ETA: 22 min)... ✓
+  [ 13/184] flat-v5      classic XREF-003   (ETA: 22 min)... ✓
+  [ 14/184] flat-v5      classic XREF-004   (ETA: 22 min)... ✓
+  [ 15/184] flat-v5      classic XREF-005   (ETA: 22 min)... ✓
+  [ 16/184] flat-v5      classic XREF-006   (ETA: 22 min)... ✓
+  [ 17/184] flat-v5      classic XREF-007   (ETA: 22 min)... ✓
+  [ 18/184] flat-v5      classic XREF-008   (ETA: 22 min)... ✓
+  [ 19/184] flat-v5      classic DEPTH-001  (ETA: 22 min)... ✓
+  [ 20/184] flat-v5      classic DEPTH-002  (ETA: 21 min)... ✓
+  [ 21/184] flat-v5      classic DEPTH-003  (ETA: 21 min)... ✓
+  [ 22/184] flat-v5      classic DEPTH-004  (ETA: 21 min)... ✓
+  [ 23/184] flat-v5      classic DEPTH-005  (ETA: 21 min)... ✓
+
+[flat-v5 / adddir]
+  [ 24/184] flat-v5      adddir  NAV-001    (ETA: 21 min)... ✓
+  [ 25/184] flat-v5      adddir  NAV-002    (ETA: 21 min)... ✓
+  [ 26/184] flat-v5      adddir  NAV-003    (ETA: 21 min)... ✓
+  [ 27/184] flat-v5      adddir  NAV-004    (ETA: 20 min)... ✓
+  [ 28/184] flat-v5      adddir  NAV-005    (ETA: 20 min)... ✓
+  [ 29/184] flat-v5      adddir  NAV-006    (ETA: 20 min)... ✓
+  [ 30/184] flat-v5      adddir  NAV-007    (ETA: 20 min)... ✓
+  [ 31/184] flat-v5      adddir  NAV-008    (ETA: 20 min)... ✓
+  [ 32/184] flat-v5      adddir  NAV-009    (ETA: 20 min)... ✓
+  [ 33/184] flat-v5      adddir  NAV-010    (ETA: 20 min)... ✓
+  [ 34/184] flat-v5      adddir  XREF-001   (ETA: 20 min)... ✓
+  [ 35/184] flat-v5      adddir  XREF-002   (ETA: 19 min)... ✓
+  [ 36/184] flat-v5      adddir  XREF-003   (ETA: 19 min)... ✓
+  [ 37/184] flat-v5      adddir  XREF-004   (ETA: 19 min)... ✓
+  [ 38/184] flat-v5      adddir  XREF-005   (ETA: 19 min)... ✓
+  [ 39/184] flat-v5      adddir  XREF-006   (ETA: 19 min)... ✓
+  [ 40/184] flat-v5      adddir  XREF-007   (ETA: 19 min)... ✓
+  [ 41/184] flat-v5      adddir  XREF-008   (ETA: 19 min)... ✓
+  [ 42/184] flat-v5      adddir  DEPTH-001  (ETA: 18 min)... ✓
+  [ 43/184] flat-v5      adddir  DEPTH-002  (ETA: 18 min)... ✓
+  [ 44/184] flat-v5      adddir  DEPTH-003  (ETA: 18 min)... ✓
+  [ 45/184] flat-v5      adddir  DEPTH-004  (ETA: 18 min)... ✓
+  [ 46/184] flat-v5      adddir  DEPTH-005  (ETA: 18 min)... ✓
+
+[shallow-v5 / classic]
+  [ 47/184] shallow-v5   classic NAV-001    (ETA: 18 min)... ✓
+  [ 48/184] shallow-v5   classic NAV-002    (ETA: 18 min)... ✓
+  [ 49/184] shallow-v5   classic NAV-003    (ETA: 18 min)... ✓
+  [ 50/184] shallow-v5   classic NAV-004    (ETA: 17 min)... ✓
+  [ 51/184] shallow-v5   classic NAV-005    (ETA: 17 min)... ✓
+  [ 52/184] shallow-v5   classic NAV-006    (ETA: 17 min)... ✓
+  [ 53/184] shallow-v5   classic NAV-007    (ETA: 17 min)... ✓
+  [ 54/184] shallow-v5   classic NAV-008    (ETA: 17 min)... ✓
+  [ 55/184] shallow-v5   classic NAV-009    (ETA: 17 min)... ✓
+  [ 56/184] shallow-v5   classic NAV-010    (ETA: 17 min)... ✓
+  [ 57/184] shallow-v5   classic XREF-001   (ETA: 16 min)... ✓
+  [ 58/184] shallow-v5   classic XREF-002   (ETA: 16 min)... ✓
+  [ 59/184] shallow-v5   classic XREF-003   (ETA: 16 min)... ✓
+  [ 60/184] shallow-v5   classic XREF-004   (ETA: 16 min)... ✓
+  [ 61/184] shallow-v5   classic XREF-005   (ETA: 14 min)... ✓
+  [ 62/184] shallow-v5   classic XREF-006   (ETA: 14 min)... ✓
+  [ 63/184] shallow-v5   classic XREF-007   (ETA: 14 min)... ✓
+  [ 64/184] shallow-v5   classic XREF-008   (ETA: 14 min)... ✓
+  [ 65/184] shallow-v5   classic DEPTH-001  (ETA: 13 min)... ✓
+  [ 66/184] shallow-v5   classic DEPTH-002  (ETA: 13 min)... ✓
+  [ 67/184] shallow-v5   classic DEPTH-003  (ETA: 13 min)... ✓
+  [ 68/184] shallow-v5   classic DEPTH-004  (ETA: 13 min)... ✓
+  [ 69/184] shallow-v5   classic DEPTH-005  (ETA: 13 min)... ✓
+
+[shallow-v5 / adddir]
+  [ 70/184] shallow-v5   adddir  NAV-001    (ETA: 13 min)... ✓
+  [ 71/184] shallow-v5   adddir  NAV-002    (ETA: 13 min)... ✓
+  [ 72/184] shallow-v5   adddir  NAV-003    (ETA: 13 min)... ✓
+  [ 73/184] shallow-v5   adddir  NAV-004    (ETA: 12 min)... ✓
+  [ 74/184] shallow-v5   adddir  NAV-005    (ETA: 12 min)... ✓
+  [ 75/184] shallow-v5   adddir  NAV-006    (ETA: 12 min)... ✓
+  [ 76/184] shallow-v5   adddir  NAV-007    (ETA: 12 min)... ✓
+  [ 77/184] shallow-v5   adddir  NAV-008    (ETA: 12 min)... ✓
+  [ 78/184] shallow-v5   adddir  NAV-009    (ETA: 12 min)... ✓
+  [ 79/184] shallow-v5   adddir  NAV-010    (ETA: 12 min)... ✓
+  [ 80/184] shallow-v5   adddir  XREF-001   (ETA: 12 min)... ✓
+  [ 81/184] shallow-v5   adddir  XREF-002   (ETA: 12 min)... ✓
+  [ 82/184] shallow-v5   adddir  XREF-003   (ETA: 11 min)... ✓
+  [ 83/184] shallow-v5   adddir  XREF-004   (ETA: 11 min)... ✓
+  [ 84/184] shallow-v5   adddir  XREF-005   (ETA: 11 min)... ✓
+  [ 85/184] shallow-v5   adddir  XREF-006   (ETA: 11 min)... ✓
+  [ 86/184] shallow-v5   adddir  XREF-007   (ETA: 11 min)... ✓
+  [ 87/184] shallow-v5   adddir  XREF-008   (ETA: 11 min)... ✓
+  [ 88/184] shallow-v5   adddir  DEPTH-001  (ETA: 11 min)... ✓
+  [ 89/184] shallow-v5   adddir  DEPTH-002  (ETA: 11 min)... ✓
+  [ 90/184] shallow-v5   adddir  DEPTH-003  (ETA: 10 min)... ✓
+  [ 91/184] shallow-v5   adddir  DEPTH-004  (ETA: 10 min)... ✓
+  [ 92/184] shallow-v5   adddir  DEPTH-005  (ETA: 9 min)... ✓
+
+[deep-v5 / classic]
+  [ 93/184] deep-v5      classic NAV-001    (ETA: 9 min)... ✓
+  [ 94/184] deep-v5      classic NAV-002    (ETA: 10 min)... ✓
+  [ 95/184] deep-v5      classic NAV-003    (ETA: 10 min)... ✓
+  [ 96/184] deep-v5      classic NAV-004    (ETA: 10 min)... ✓
+  [ 97/184] deep-v5      classic NAV-005    (ETA: 10 min)... ✓
+  [ 98/184] deep-v5      classic NAV-006    (ETA: 10 min)... ✓
+  [ 99/184] deep-v5      classic NAV-007    (ETA: 9 min)... ✓
+  [100/184] deep-v5      classic NAV-008    (ETA: 11 min)... ✓
+  [101/184] deep-v5      classic NAV-009    (ETA: 11 min)... ✓
+  [102/184] deep-v5      classic NAV-010    (ETA: 10 min)... ✓
+  [103/184] deep-v5      classic XREF-001   (ETA: 10 min)... ✓
+  [104/184] deep-v5      classic XREF-002   (ETA: 10 min)... ✓
+  [105/184] deep-v5      classic XREF-003   (ETA: 10 min)... ✓
+  [106/184] deep-v5      classic XREF-004   (ETA: 11 min)... ✓
+  [107/184] deep-v5      classic XREF-005   (ETA: 11 min)... ✓
+  [108/184] deep-v5      classic XREF-006   (ETA: 11 min)... ✓
+  [109/184] deep-v5      classic XREF-007   (ETA: 11 min)... ✓
+  [110/184] deep-v5      classic XREF-008   (ETA: 11 min)... ✓
+  [111/184] deep-v5      classic DEPTH-001  (ETA: 12 min)... ✓
+  [112/184] deep-v5      classic DEPTH-002  (ETA: 12 min)... ✓
+  [113/184] deep-v5      classic DEPTH-003  (ETA: 11 min)... ✓
+  [114/184] deep-v5      classic DEPTH-004  (ETA: 12 min)... ✓
+  [115/184] deep-v5      classic DEPTH-005  (ETA: 12 min)... ✓
+
+[deep-v5 / adddir]
+  [116/184] deep-v5      adddir  NAV-001    (ETA: 13 min)... ✓
+  [117/184] deep-v5      adddir  NAV-002    (ETA: 13 min)... ✓
+  [118/184] deep-v5      adddir  NAV-003    (ETA: 13 min)... ✓
+  [119/184] deep-v5      adddir  NAV-004    (ETA: 13 min)... ✓
+  [120/184] deep-v5      adddir  NAV-005    (ETA: 12 min)... ✓
+  [121/184] deep-v5      adddir  NAV-006    (ETA: 12 min)... ✓
+  [122/184] deep-v5      adddir  NAV-007    (ETA: 12 min)... ✓
+  [123/184] deep-v5      adddir  NAV-008    (ETA: 12 min)... ✓
+  [124/184] deep-v5      adddir  NAV-009    (ETA: 12 min)... ✓
+  [125/184] deep-v5      adddir  NAV-010    (ETA: 12 min)... ✓
+  [126/184] deep-v5      adddir  XREF-001   (ETA: 12 min)... ✓
+  [127/184] deep-v5      adddir  XREF-002   (ETA: 12 min)... ✓
+  [128/184] deep-v5      adddir  XREF-003   (ETA: 12 min)... ✓
+  [129/184] deep-v5      adddir  XREF-004   (ETA: 11 min)... ✓
+  [130/184] deep-v5      adddir  XREF-005   (ETA: 11 min)... ✓
+  [131/184] deep-v5      adddir  XREF-006   (ETA: 12 min)... ✓
+  [132/184] deep-v5      adddir  XREF-007   (ETA: 12 min)... ✓
+  [133/184] deep-v5      adddir  XREF-008   (ETA: 11 min)... ✓
+  [134/184] deep-v5      adddir  DEPTH-001  (ETA: 11 min)... ✓
+  [135/184] deep-v5      adddir  DEPTH-002  (ETA: 11 min)... ✓
+  [136/184] deep-v5      adddir  DEPTH-003  (ETA: 11 min)... ✓
+  [137/184] deep-v5      adddir  DEPTH-004  (ETA: 10 min)... ✓
+  [138/184] deep-v5      adddir  DEPTH-005  (ETA: 11 min)... ✓
+
+[very-deep-v5 / classic]
+  [139/184] very-deep-v5 classic NAV-001    ... ⏭ (exists)
+  [140/184] very-deep-v5 classic NAV-002    ... ⏭ (exists)
+  [141/184] very-deep-v5 classic NAV-003    ... ⏭ (exists)
+  [142/184] very-deep-v5 classic NAV-004    ... ⏭ (exists)
+  [143/184] very-deep-v5 classic NAV-005    ... ⏭ (exists)
+  [144/184] very-deep-v5 classic NAV-006    ... ⏭ (exists)
+  [145/184] very-deep-v5 classic NAV-007    ... ⏭ (exists)
+  [146/184] very-deep-v5 classic NAV-008    (ETA: 8 min)... ✓
+  [147/184] very-deep-v5 classic NAV-009    (ETA: 8 min)... ✓
+  [148/184] very-deep-v5 classic NAV-010    (ETA: 8 min)... ✓
+  [149/184] very-deep-v5 classic XREF-001   (ETA: 8 min)... ✓
+  [150/184] very-deep-v5 classic XREF-002   (ETA: 7 min)... ✓
+  [151/184] very-deep-v5 classic XREF-003   (ETA: 7 min)... ✓
+  [152/184] very-deep-v5 classic XREF-004   (ETA: 8 min)... ✓
+  [153/184] very-deep-v5 classic XREF-005   (ETA: 7 min)... ✓
+  [154/184] very-deep-v5 classic XREF-006   (ETA: 7 min)... ✓
+  [155/184] very-deep-v5 classic XREF-007   (ETA: 7 min)... ✓
+  [156/184] very-deep-v5 classic XREF-008   (ETA: 7 min)... ✓
+  [157/184] very-deep-v5 classic DEPTH-001  (ETA: 6 min)... ✓
+  [158/184] very-deep-v5 classic DEPTH-002  (ETA: 6 min)... ✓
+  [159/184] very-deep-v5 classic DEPTH-003  (ETA: 6 min)... ✓
+  [160/184] very-deep-v5 classic DEPTH-004  (ETA: 6 min)... ✓
+  [161/184] very-deep-v5 classic DEPTH-005  (ETA: 6 min)... ✓
+
+[very-deep-v5 / adddir]
+  [162/184] very-deep-v5 adddir  NAV-001    (ETA: 5 min)... ✓
+  [163/184] very-deep-v5 adddir  NAV-002    (ETA: 5 min)... ✓
+  [164/184] very-deep-v5 adddir  NAV-003    (ETA: 5 min)... ✓
+  [165/184] very-deep-v5 adddir  NAV-004    (ETA: 5 min)... ✓
+  [166/184] very-deep-v5 adddir  NAV-005    (ETA: 4 min)... ✓
+  [167/184] very-deep-v5 adddir  NAV-006    (ETA: 4 min)... ✓
+  [168/184] very-deep-v5 adddir  NAV-007    (ETA: 4 min)... ✓
+  [169/184] very-deep-v5 adddir  NAV-008    (ETA: 4 min)... ✓
+  [170/184] very-deep-v5 adddir  NAV-009    (ETA: 3 min)... ✓
+  [171/184] very-deep-v5 adddir  NAV-010    (ETA: 3 min)... ✓
+  [172/184] very-deep-v5 adddir  XREF-001   (ETA: 3 min)... ✓
+  [173/184] very-deep-v5 adddir  XREF-002   (ETA: 2 min)... ✓
+  [174/184] very-deep-v5 adddir  XREF-003   (ETA: 2 min)... ✓
+  [175/184] very-deep-v5 adddir  XREF-004   (ETA: 2 min)... ✓
+  [176/184] very-deep-v5 adddir  XREF-005   (ETA: 2 min)... ✓
+  [177/184] very-deep-v5 adddir  XREF-006   (ETA: 1 min)... ✓
+  [178/184] very-deep-v5 adddir  XREF-007   (ETA: 1 min)... ✓
+  [179/184] very-deep-v5 adddir  XREF-008   (ETA: 1 min)... ✓
+  [180/184] very-deep-v5 adddir  DEPTH-001  (ETA: 1 min)... ✓
+  [181/184] very-deep-v5 adddir  DEPTH-002  (ETA: 0 min)... ✓
+  [182/184] very-deep-v5 adddir  DEPTH-003  (ETA: 0 min)... ✓
+  [183/184] very-deep-v5 adddir  DEPTH-004  (ETA: 0 min)... ✓
+  [184/184] very-deep-v5 adddir  DEPTH-005  (ETA: 0 min)... ✓
+
+===================================================
+  Matrix Complete
+===================================================
+  Total: 184
+  Completed: 177
+  Skipped: 7
+  Failed: 0
+  Duration: 53 minutes
+===================================================

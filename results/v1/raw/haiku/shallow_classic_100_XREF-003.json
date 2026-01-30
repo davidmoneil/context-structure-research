@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-003",
+  "question": "How does Dr. Wei Zhang's background relate to the NIM product line?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "shallow",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":4943,\"duration_api_ms\":6733,\"num_turns\":1,\"result\":\"{\\n    \\\"answer\\\": \\\"Dr. Wei Zhang, who was part of NeuroSync Labs before its acquisition by Soong-Daystrom in 2020, became the Director of Neural Architecture and played a key role in developing the Neural Interface Modules (NIM). His background includes a Ph.D. in Neuroscience from Tsinghua University and pioneering work in brain-computer interface algorithms, which directly contributed to the NIM platform's technological foundation.\\\",\\n    \\\"confidence\\\": \\\"high\\\", \\n    \\\"sources_used\\\": [\\n        \\\"@employees/key-personnel.md\\\",\\n        \\\"@history/acquisition-neurosync.md\\\",\\n        \\\"@products/nim-series.md\\\"\\n    ]\\n}\",\"session_id\":\"c82eac85-cb68-4be0-8222-a4f48d99abd4\",\"total_cost_usd\":0.051086879999999994,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":48365,\"cache_read_input_tokens\":18981,\"output_tokens\":162,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":48365,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":86,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.0005530000000000001,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":162,\"cacheReadInputTokens\":18981,\"cacheCreationInputTokens\":48365,\"webSearchRequests\":0,\"costUSD\":0.050533879999999996,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"7276cae4-eac9-4247-bbc9-94f9b9470d24\"}",
+  "expected_answer": "Dr. Wei Zhang came from NeuroSync Labs (acquired 2120) and leads neural architecture development, which is the core technology behind the Neural Interface Modules",
+  "metadata": {
+    "duration_seconds": 6.946746610,
+    "timestamp": "2026-01-29T14:30:45-07:00"
+  }
+}

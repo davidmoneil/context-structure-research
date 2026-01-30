@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-005",
+  "question": "Which pilot customer signed a contract for Project Atlas, and what is the contract value?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep-v6-v5.5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":23846,\"duration_api_ms\":23677,\"num_turns\":2,\"result\":\"Based on the search results, I'll provide the answer in the requested JSON format:\\n\\n{\\n    \\\"answer\\\": \\\"Rio Tinto, with an initial pilot contract value of $47 million for 4 Atlas A1 mining units, with a planned full deployment contract of $124 million for 47 units\\\",\\n    \\\"confidence\\\": \\\"high\\\",\\n    \\\"sources_used\\\": [\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source/projects/atlas.md\\\",\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source/customers/case-studies.md\\\"\\n    ]\\n}\",\"session_id\":\"5aece91f-3f1a-4af2-9c00-003fbad89b95\",\"total_cost_usd\":0.058949640000000005,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3938,\"cache_read_input_tokens\":40313,\"output_tokens\":294,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3938,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":174,\"outputTokens\":1868,\"cacheReadInputTokens\":88285,\"cacheCreationInputTokens\":25810,\"webSearchRequests\":0,\"costUSD\":0.050605,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":294,\"cacheReadInputTokens\":40313,\"cacheCreationInputTokens\":3938,\"webSearchRequests\":0,\"costUSD\":0.00834464,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"c0efdaf1-8e57-44ba-a3b9-c1e7b28b6d35\"}",
+  "expected_answer": "Rio Tinto, $47 million",
+  "metadata": {
+    "duration_seconds": 25.094974756,
+    "timestamp": "2026-01-30T16:18:06-07:00"
+  }
+}

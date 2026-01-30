@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-004",
+  "question": "How many employees does Soong-Daystrom Industries have?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":23724,\"duration_api_ms\":21367,\"num_turns\":2,\"result\":\"Based on the systematic exploration, I can confidently provide the answer:\\n\\n{\\\"answer\\\": 2847, \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/company/people/directory/key-personnel.md\\\", \\\"/company/people/directory/directory-rnd.md\\\", \\\"/company/people/directory/team-prometheus.md\\\"]}\",\"session_id\":\"fe61c741-7942-414f-905b-cbf9bafbd06c\",\"total_cost_usd\":0.042658539999999995,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3496,\"cache_read_input_tokens\":40573,\"output_tokens\":228,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3496,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":6877,\"outputTokens\":1575,\"cacheReadInputTokens\":50871,\"cacheCreationInputTokens\":12128,\"webSearchRequests\":0,\"costUSD\":0.0349991,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":228,\"cacheReadInputTokens\":40573,\"cacheCreationInputTokens\":3496,\"webSearchRequests\":0,\"costUSD\":0.00765944,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"c36f98e6-693c-47b2-90dc-bd37a04f86c9\"}",
+  "expected_answer": "12,847",
+  "metadata": {
+    "duration_seconds": 25.326276989,
+    "timestamp": "2026-01-29T14:37:50-07:00"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-007",
+  "question": "What positions report directly to Dr. James Okonkwo?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep-v6",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":4553,\"duration_api_ms\":6425,\"num_turns\":1,\"result\":\"I'll carefully analyze the provided context to answer this question.\\n\\nAfter a thorough review of the context files, I realize that there is insufficient information to definitively answer what positions report directly to Dr. James Okonkwo. In fact, the context mentions Dr. Amara Okonkwo (CTO) but not a Dr. James Okonkwo. \\n\\nGiven the lack of specific information, I'll provide a response reflecting this:\\n\\n{\\\"answer\\\": \\\"No information available about direct reports to Dr. James Okonkwo\\\", \\\"confidence\\\": \\\"low\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v6/CLAUDE.md\\\", \\\"/home/davidmoneil/Code/context-structure-research/CLAUDE.md\\\"]}\\n\\nThe sources used indicate the context provided does not contain the specific details required to answer the question about Dr. James Okonkwo's direct reports. If more information is needed, additional research or context would be required.\",\"session_id\":\"61d295d1-82a1-40c3-9a63-e44d270a0a4b\",\"total_cost_usd\":0.005435559999999999,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":2312,\"cache_read_input_tokens\":18377,\"output_tokens\":232,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2312,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":143,\"outputTokens\":116,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000723,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":232,\"cacheReadInputTokens\":18377,\"cacheCreationInputTokens\":2312,\"webSearchRequests\":0,\"costUSD\":0.004712559999999999,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"99651d43-819b-4a23-ae59-55f1a617c89e\"}",
+  "expected_answer": "VP Research, VP Product Development, VP Engineering, Chief Scientist",
+  "metadata": {
+    "duration_seconds": 6.005129971,
+    "timestamp": "2026-01-30T15:36:03-07:00"
+  }
+}

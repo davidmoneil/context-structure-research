@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-002",
+  "question": "Who is the executive sponsor of Project Atlas, and what is their role?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "very-deep-v5",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":37699,\"duration_api_ms\":33460,\"num_turns\":2,\"result\":\"Based on the comprehensive search results, I can confidently answer your question:\\n\\n{\\\"answer\\\": \\\"Dr. Ahmed Hassan, who is the VP of Product Development, is the executive sponsor of Project Atlas\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\n    \\\"@sdi/company/initiatives/research/projects/atlas-infrastructure.md\\\",\\n    \\\"@sdi/company/structure/leadership/org/departments.md\\\"\\n]}\",\"session_id\":\"8a64372a-2f3d-4534-ad58-24c41b399c21\",\"total_cost_usd\":0.08284397,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":841,\"cache_read_input_tokens\":43684,\"output_tokens\":308,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":841,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":9244,\"outputTokens\":2465,\"cacheReadInputTokens\":181429,\"cacheCreationInputTokens\":30047,\"webSearchRequests\":0,\"costUSD\":0.07727065,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":308,\"cacheReadInputTokens\":43684,\"cacheCreationInputTokens\":841,\"webSearchRequests\":0,\"costUSD\":0.00557332,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"3b8376dc-e268-4342-9c0c-d1d36cbf8d84\"}",
+  "expected_answer": "Marcus Williams, Chief Operating Officer (COO)",
+  "metadata": {
+    "duration_seconds": 38.661386294,
+    "timestamp": "2026-01-30T11:16:23-07:00"
+  }
+}

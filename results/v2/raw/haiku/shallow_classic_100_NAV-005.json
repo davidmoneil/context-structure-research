@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-005",
+  "question": "What is the price of the PCS-500 Companion Elite?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "shallow",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":2581,\"duration_api_ms\":4159,\"num_turns\":1,\"result\":\"{\\\"answer\\\": \\\"$47,000\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/shallow/products/pcs-series.md\\\"]}\",\"session_id\":\"afaafb7f-d168-4107-9647-321dca87a43d\",\"total_cost_usd\":0.062479599999999996,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":60072,\"cache_read_input_tokens\":18990,\"output_tokens\":57,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":60072,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":107,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000658,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":57,\"cacheReadInputTokens\":18990,\"cacheCreationInputTokens\":60072,\"webSearchRequests\":0,\"costUSD\":0.0618216,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"a16c13b5-8670-45b9-b884-26e2502eba3c\"}",
+  "expected_answer": "$47,000",
+  "metadata": {
+    "duration_seconds": 4.576767287,
+    "timestamp": "2026-01-29T20:12:15-07:00"
+  }
+}

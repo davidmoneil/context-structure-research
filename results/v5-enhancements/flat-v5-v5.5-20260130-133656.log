@@ -1,0 +1,21 @@
+
+[flat-v5-v5.5 / classic]
+  [ 1/10] flat-v5-v5.5         classic XREF-002   ... ✓
+  [ 2/10] flat-v5-v5.5         classic XREF-003   ... ✓
+  [ 3/10] flat-v5-v5.5         classic XREF-006   ... ✓
+  [ 4/10] flat-v5-v5.5         classic DEPTH-004  ... ✓
+  [ 5/10] flat-v5-v5.5         classic DEPTH-005  ... ✓
+
+[flat-v5-v5.5 / adddir]
+  [ 6/10] flat-v5-v5.5         adddir  XREF-002   ... ✓
+  [ 7/10] flat-v5-v5.5         adddir  XREF-003   ... ✓
+  [ 8/10] flat-v5-v5.5         adddir  XREF-006   ... ✓
+  [ 9/10] flat-v5-v5.5         adddir  DEPTH-004  ... ✓
+  [10/10] flat-v5-v5.5         adddir  DEPTH-005  ... ✓
+
+===================================================
+  flat-v5-v5.5 Tests Complete
+===================================================
+  Total: 10
+  Duration: 0 minutes
+===================================================

@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-008",
+  "question": "What is the current consciousness indicator score for Project Prometheus?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "flat-v6",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":4438,\"duration_api_ms\":6604,\"num_turns\":1,\"result\":\"I apologize, but I cannot find the specific information about the consciousness indicator score for Project Prometheus in the provided context. \\n\\n{\\\"answer\\\": null, \\\"confidence\\\": \\\"low\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/.claude/CLAUDE.md\\\", \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/flat-v6/CLAUDE.md\\\"]}\\n\\nThe context provides a high-level overview of Soong-Daystrom Industries and mentions Prometheus as one of their research programs, but does not give any details about a consciousness indicator score. To find this specific information, I would need to:\\n1. Search through the files in the flat directory\\n2. Potentially look into the canonical source at `research-notes/canon.md`\\n\\nWould you like me to perform a more thorough search for this information?\",\"session_id\":\"36b8f8ef-fdb0-4d56-981d-f913da05d931\",\"total_cost_usd\":0.00573676,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":2646,\"cache_read_input_tokens\":18967,\"output_tokens\":202,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2646,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":143,\"outputTokens\":124,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000763,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":202,\"cacheReadInputTokens\":18967,\"cacheCreationInputTokens\":2646,\"webSearchRequests\":0,\"costUSD\":0.00497376,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"569e5d66-16aa-4815-86d7-45cb6ac8dbba\"}",
+  "expected_answer": "0.72",
+  "metadata": {
+    "duration_seconds": 5.733397468,
+    "timestamp": "2026-01-30T15:17:47-07:00"
+  }
+}

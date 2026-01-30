@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-008",
+  "question": "How did the NeuroSync acquisition impact the NIM revenue trajectory?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep-v5-v5.5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":31331,\"duration_api_ms\":34544,\"num_turns\":2,\"result\":\"Based on the detailed exploration, I'll provide the answer in the requested JSON format:\\n\\n{\\n    \\\"answer\\\": \\\"The NeuroSync acquisition dramatically transformed the NIM revenue trajectory, growing from $890M at acquisition in 2019 to $5.8B by 2023, with continued strong growth projected. The acquisition enabled Soong-Daystrom to become a market leader in neural interfaces, with NIM revenues showing 153% growth in 2021 and 133% in 2022.\\\",\\n    \\\"confidence\\\": \\\"high\\\",\\n    \\\"sources_used\\\": [\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source/history/acquisition-neurosync.md\\\",\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v5-v5.5/company/background/history/acquisition-neurosync.md\\\",\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v5-v5.5/company/offerings/products/nim-series.md\\\",\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v5-v5.5/company/finance/reports/segment-analysis.md\\\"\\n    ]\\n}\",\"session_id\":\"c49cd6be-c097-46c0-a173-82823efe7f0e\",\"total_cost_usd\":0.07449818,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":4073,\"cache_read_input_tokens\":40986,\"output_tokens\":471,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":4073,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":1134,\"outputTokens\":2280,\"cacheReadInputTokens\":58627,\"cacheCreationInputTokens\":37488,\"webSearchRequests\":0,\"costUSD\":0.0652567,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":471,\"cacheReadInputTokens\":40986,\"cacheCreationInputTokens\":4073,\"webSearchRequests\":0,\"costUSD\":0.00924148,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"e64083aa-4d0d-45e7-92b0-4d2a28e13ba2\"}",
+  "expected_answer": "NIM revenue grew from $712M in 9 months post-acquisition (2120) to $7.2B in 2124, representing rapid growth enabled by NeuroSync's technology",
+  "metadata": {
+    "duration_seconds": 32.378551120,
+    "timestamp": "2026-01-30T14:43:35-07:00"
+  }
+}

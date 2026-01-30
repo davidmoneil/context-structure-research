@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-008",
+  "question": "What is the current consciousness indicator score for Project Prometheus?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep-v5-v5.5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":25087,\"duration_api_ms\":25335,\"num_turns\":2,\"result\":\"Based on the search results, I can provide the following JSON response:\\n\\n```json\\n{\\n    \\\"answer\\\": \\\"0.72\\\",\\n    \\\"confidence\\\": \\\"high\\\",\\n    \\\"sources_used\\\": [\\n        \\\"/soong-daystrom/_source-v4/projects/prometheus.md\\\",\\n        \\\"/soong-daystrom/_source-v4/research/consciousness-research.md\\\",\\n        \\\"/soong-daystrom/_source-v4/meetings/board-q3-2124.md\\\",\\n        \\\"/soong-daystrom/_source-v4/financial/quarterly-report-q3-2124.md\\\",\\n        \\\"/soong-daystrom/_source-v4/technical/product-specifications.md\\\"\\n    ]\\n}\\n```\\n\\nThe answer is precisely 0.72, which represents the current Consciousness Indicator Score (CIS) for Project Prometheus as of Q3 2124 (October 2024). The confidence is high due to multiple corroborating sources across different document types.\",\"session_id\":\"ac06a447-963e-4141-8824-a5842e86212a\",\"total_cost_usd\":0.05986213,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3479,\"cache_read_input_tokens\":40971,\"output_tokens\":383,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3479,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":5425,\"outputTokens\":1556,\"cacheReadInputTokens\":94916,\"cacheCreationInputTokens\":23097,\"webSearchRequests\":0,\"costUSD\":0.05156785,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":383,\"cacheReadInputTokens\":40971,\"cacheCreationInputTokens\":3479,\"webSearchRequests\":0,\"costUSD\":0.008294280000000001,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"db8e7c22-683c-48eb-9a67-df3eb8a2769e\"}",
+  "expected_answer": "0.72",
+  "metadata": {
+    "duration_seconds": 26.212235002,
+    "timestamp": "2026-01-30T14:38:39-07:00"
+  }
+}

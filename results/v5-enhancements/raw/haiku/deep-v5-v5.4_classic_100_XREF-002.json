@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-002",
+  "question": "Who is the executive sponsor of Project Atlas, and what is their role?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep-v5-v5.4",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":29763,\"duration_api_ms\":25091,\"num_turns\":2,\"result\":\"Based on the exploration results, I'll provide the answer in the requested JSON format:\\n\\n{\\\"answer\\\": \\\"Dr. Ahmed Hassan, VP of Product Development, is the executive sponsor of Project Atlas. He leads the project's technical direction, oversees the 124-person team, and is responsible for the product roadmap and commercialization strategy.\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"@company/initiatives/project-atlas.md\\\", \\\"@company/people/leadership-profiles.md\\\", \\\"@company/engineering/project-roadmaps.md\\\"]}\",\"session_id\":\"c57c4943-994e-43d4-95d3-5c5bc931c580\",\"total_cost_usd\":0.08604259999999998,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":22403,\"cache_read_input_tokens\":21740,\"output_tokens\":260,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":22403,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":154,\"outputTokens\":1656,\"cacheReadInputTokens\":87708,\"cacheCreationInputTokens\":34920,\"webSearchRequests\":0,\"costUSD\":0.0608548,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":260,\"cacheReadInputTokens\":21740,\"cacheCreationInputTokens\":22403,\"webSearchRequests\":0,\"costUSD\":0.0251878,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"24e9e51b-ae23-4a2a-83cf-05dbe994d9b3\"}",
+  "expected_answer": "Marcus Williams, Chief Operating Officer (COO)",
+  "metadata": {
+    "duration_seconds": 30.922705360,
+    "timestamp": "2026-01-30T12:41:44-07:00"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-003",
+  "question": "What is the total budget for Project Prometheus?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep-v5-v5.5",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":30380,\"duration_api_ms\":34793,\"num_turns\":2,\"result\":\"Based on the comprehensive search, I can now provide a precise answer:\\n\\n{\\\"answer\\\": \\\"2,400,000,000\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\n    \\\"@company/finance/reports/budget.md\\\",\\n    \\\"@company/finance/reports/capital-allocation.md\\\", \\n    \\\"@company/initiatives/projects/prometheus-detailed.md\\\"\\n]}\\n\\nThe answer is the total budgeted amount of $2.4 billion for Project Prometheus, spanning 5 phases from 2121 to 2126. The budget is meticulously broken down by phase, with detailed allocations across personnel, equipment, facilities, external partners, and contingency categories.\",\"session_id\":\"979997ac-25ab-4c2f-a479-fea63c272879\",\"total_cost_usd\":0.07027684,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3611,\"cache_read_input_tokens\":41083,\"output_tokens\":297,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3611,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":3397,\"outputTokens\":2213,\"cacheReadInputTokens\":115411,\"cacheCreationInputTokens\":28946,\"webSearchRequests\":0,\"costUSD\":0.0621856,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":297,\"cacheReadInputTokens\":41083,\"cacheCreationInputTokens\":3611,\"webSearchRequests\":0,\"costUSD\":0.00809124,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"f0120be9-c3a0-437d-b01d-974f951a8a20\"}",
+  "expected_answer": "$2.4 billion",
+  "metadata": {
+    "duration_seconds": 31.556145075,
+    "timestamp": "2026-01-30T14:26:16-07:00"
+  }
+}

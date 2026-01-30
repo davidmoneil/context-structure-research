@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-001",
+  "question": "Which department does the Project Prometheus team report to, and who leads that department?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep-v6-v5.5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":35627,\"duration_api_ms\":36634,\"num_turns\":2,\"result\":\"Based on the detailed information found, I can provide the following answer:\\n\\n{\\\"answer\\\": \\\"The Project Prometheus team reports to Dr. Maya Chen (CEO) and Dr. James Okonkwo (CTO), with Dr. Yuki Tanaka serving as the Program Director. While it appears to have significant autonomy, the project is ultimately governed by the executive leadership and an AI Ethics Advisory Board.\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/soong-daystrom/deep-v6-v5.5/CLAUDE.md\\\"]}\\n\\nThe response provides context beyond a simple department, highlighting the complex reporting structure of this highly sensitive AI research project. The team has multiple layers of oversight, including executive sponsors, a program director, and an external ethics board.\",\"session_id\":\"1aedb057-1246-4476-bc14-f6e772ecae61\",\"total_cost_usd\":0.07975079000000002,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":4980,\"cache_read_input_tokens\":40308,\"output_tokens\":353,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":4980,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":160,\"outputTokens\":2538,\"cacheReadInputTokens\":38948,\"cacheCreationInputTokens\":42707,\"webSearchRequests\":0,\"costUSD\":0.07012855,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":353,\"cacheReadInputTokens\":40308,\"cacheCreationInputTokens\":4980,\"webSearchRequests\":0,\"costUSD\":0.00962224,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"35ef7cc9-2ca9-4263-aea9-29c3a8e7451d\"}",
+  "expected_answer": "Research & Development, led by Dr. James Okonkwo (CTO)",
+  "metadata": {
+    "duration_seconds": 36.882373949,
+    "timestamp": "2026-01-30T16:10:23-07:00"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-004",
+  "question": "How many employees does Soong-Daystrom Industries have?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "shallow",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":16359,\"duration_api_ms\":15716,\"num_turns\":4,\"result\":\"I can confidently find the number of employees in two places:\\n\\n1. In the organization/departments.md file (line 164): Total Employees: 12,847\\n2. In the employees/directory-full.md file (line 7): **Total Employees**: 12,847\\n\\nBoth sources agree, and given that this is an official company document, I can provide a high-confidence answer.\\n\\n{\\\"answer\\\": 12847, \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/organization/departments.md\\\", \\\"/employees/directory-full.md\\\"]}\",\"session_id\":\"e6dc88e7-e349-4fef-a856-463843edc61a\",\"total_cost_usd\":0.09247916,\"usage\":{\"input_tokens\":18,\"cache_creation_input_tokens\":69610,\"cache_read_input_tokens\":258797,\"output_tokens\":387,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":69610,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":96,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000603,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":18,\"outputTokens\":387,\"cacheReadInputTokens\":258797,\"cacheCreationInputTokens\":69610,\"webSearchRequests\":0,\"costUSD\":0.09187615999999998,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"947a30eb-10d9-4401-81c8-24d9a838993c\"}",
+  "expected_answer": "12,847",
+  "metadata": {
+    "duration_seconds": 18.298683148,
+    "timestamp": "2026-01-29T20:12:10-07:00"
+  }
+}

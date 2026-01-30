@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-008",
+  "question": "How did the NeuroSync acquisition impact the NIM revenue trajectory?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "monolith",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":48257,\"duration_api_ms\":34416,\"num_turns\":4,\"result\":\"Based on the comprehensive analysis, I can confidently provide the answer:\\n\\n{\\\"answer\\\": \\\"The NeuroSync acquisition dramatically accelerated NIM revenue, driving growth from $890 million pre-acquisition to $7.2 billion by 2024, with key growth drivers including FDA medical approvals, expanded healthcare applications, and strategic product launches of Neural Interface Modules.\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/history/acquisition-neurosync\\\"]}\",\"session_id\":\"404e9558-d44b-4a16-9c58-9c70a98a4f7b\",\"total_cost_usd\":0.27480120999999996,\"usage\":{\"input_tokens\":18,\"cache_creation_input_tokens\":86606,\"cache_read_input_tokens\":331502,\"output_tokens\":450,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":86606,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":6250,\"outputTokens\":1531,\"cacheReadInputTokens\":202919,\"cacheCreationInputTokens\":100531,\"webSearchRequests\":0,\"costUSD\":0.15986065,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":18,\"outputTokens\":450,\"cacheReadInputTokens\":331502,\"cacheCreationInputTokens\":86606,\"webSearchRequests\":0,\"costUSD\":0.11494056,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"0bba0931-4d70-41e5-aed3-7cbf39ed9d93\"}",
+  "expected_answer": "NIM revenue grew from $712M in 9 months post-acquisition (2120) to $7.2B in 2124, representing rapid growth enabled by NeuroSync's technology",
+  "metadata": {
+    "duration_seconds": 59.639133202,
+    "timestamp": "2026-01-29T19:52:50-07:00"
+  }
+}

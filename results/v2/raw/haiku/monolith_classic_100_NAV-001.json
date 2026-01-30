@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-001",
+  "question": "Who is the current CEO of Soong-Daystrom Industries?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "monolith",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":4298,\"duration_api_ms\":5858,\"num_turns\":1,\"result\":\"{\\n    \\\"answer\\\": \\\"Dr. Maya Chen\\\",\\n    \\\"confidence\\\": \\\"high\\\", \\n    \\\"sources_used\\\": [\\n        \\\"/organization/executives\\\", \\n        \\\"/history/milestones\\\",\\n        \\\"/financial/annual-report-2123\\\"\\n    ]\\n}\\n\\nThe context consistently identifies Dr. Maya Chen as the CEO of Soong-Daystrom Industries. She became CEO in January 2115 after the retirement of Dr. Arik Soong III and has led significant growth and strategic initiatives for the company.\",\"session_id\":\"8c275e51-b21d-49b1-8f15-63ee78be8732\",\"total_cost_usd\":0.08758776,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":85006,\"cache_read_input_tokens\":18992,\"output_tokens\":123,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":85006,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":89,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.0005679999999999999,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":123,\"cacheReadInputTokens\":18992,\"cacheCreationInputTokens\":85006,\"webSearchRequests\":0,\"costUSD\":0.08701976,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"74461301-6bbe-427e-94e4-86bed9d2788a\"}",
+  "expected_answer": "Dr. Maya Chen",
+  "metadata": {
+    "duration_seconds": 13.406234882,
+    "timestamp": "2026-01-29T19:36:20-07:00"
+  }
+}

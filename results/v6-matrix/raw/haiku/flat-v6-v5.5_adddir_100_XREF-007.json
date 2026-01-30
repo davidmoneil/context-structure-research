@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-007",
+  "question": "What positions report directly to Dr. James Okonkwo?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "flat-v6-v5.5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":17292,\"duration_api_ms\":18382,\"num_turns\":2,\"result\":\"Based on the search results, I can provide the following answer:\\n\\n{\\\"answer\\\": [\\\"Dr. Yuki Tanaka (SVP Advanced Research)\\\", \\\"Dr. Ahmed Hassan (VP Product Development)\\\", \\\"Dr. Sarah Mitchell (VP Engineering)\\\", \\\"Dr. Chen Wei (VP China R&D)\\\", \\\"Dr. Anil Kapoor (VP Singapore R&D)\\\"], \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"soong-daystrom/flat-v6-v5.5/CLAUDE.md\\\"]}\",\"session_id\":\"d190d68e-88a0-4cf9-8436-a13a3046a910\",\"total_cost_usd\":0.04662937,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3014,\"cache_read_input_tokens\":39029,\"output_tokens\":272,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3014,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":165,\"outputTokens\":1161,\"cacheReadInputTokens\":68082,\"cacheCreationInputTokens\":21297,\"webSearchRequests\":0,\"costUSD\":0.03939945,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":272,\"cacheReadInputTokens\":39029,\"cacheCreationInputTokens\":3014,\"webSearchRequests\":0,\"costUSD\":0.007229920000000001,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"30f2a14b-43ad-4208-9586-c43fc2f7357f\"}",
+  "expected_answer": "VP Research, VP Product Development, VP Engineering, Chief Scientist",
+  "metadata": {
+    "duration_seconds": 18.669601711,
+    "timestamp": "2026-01-30T15:56:52-07:00"
+  }
+}

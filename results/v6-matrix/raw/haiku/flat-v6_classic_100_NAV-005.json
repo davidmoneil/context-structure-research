@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-005",
+  "question": "What is the price of the PCS-500 Companion Elite?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "flat-v6",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":19566,\"duration_api_ms\":20962,\"num_turns\":2,\"result\":\"Based on the comprehensive search, I can confidently provide the answer:\\n\\n{\\n    \\\"answer\\\": \\\"$47,000\\\",\\n    \\\"confidence\\\": \\\"high\\\",\\n    \\\"sources_used\\\": [\\n        \\\"products-pcs-series.md\\\",\\n        \\\"financial-annual-report-2123.md\\\", \\n        \\\"financial-quarterly-report-q2-2124.md\\\",\\n        \\\"competitors-market-analysis.md\\\"\\n    ]\\n}\",\"session_id\":\"26e696d8-b500-47de-b46c-916378d3f2b1\",\"total_cost_usd\":0.03909245,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3111,\"cache_read_input_tokens\":39065,\"output_tokens\":246,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3111,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":161,\"outputTokens\":1422,\"cacheReadInputTokens\":55819,\"cacheCreationInputTokens\":15211,\"webSearchRequests\":0,\"costUSD\":0.031866649999999996,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":246,\"cacheReadInputTokens\":39065,\"cacheCreationInputTokens\":3111,\"webSearchRequests\":0,\"costUSD\":0.007225800000000001,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"277612e2-c36e-4344-a0d7-f4782085e632\"}",
+  "expected_answer": "$47,000",
+  "metadata": {
+    "duration_seconds": 20.849148554,
+    "timestamp": "2026-01-30T15:07:51-07:00"
+  }
+}

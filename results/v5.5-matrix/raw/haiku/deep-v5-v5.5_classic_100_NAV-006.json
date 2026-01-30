@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-006",
+  "question": "Who leads the AI Safety team at Soong-Daystrom?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep-v5-v5.5",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":25742,\"duration_api_ms\":27343,\"num_turns\":2,\"result\":\"Based on the comprehensive search, I can confidently answer:\\n\\n{\\\"answer\\\": \\\"Dr. Marcus Thompson leads the AI Safety team at Soong-Daystrom as the Director of AI Safety Research\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\n    \\\"@company/people/directory/research-scientists.md\\\",\\n    \\\"@company/governance/policies/ai-ethics-policy.md\\\", \\n    \\\"@company/records/meetings/ethics-committee.md\\\",\\n    \\\"@company/engineering/technical/security-protocols.md\\\",\\n    \\\"@company/people/directory/leadership-bios.md\\\"\\n]}\",\"session_id\":\"c96e8b01-5671-4237-9813-1f74f8dc8a80\",\"total_cost_usd\":0.07708076999999999,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3809,\"cache_read_input_tokens\":41089,\"output_tokens\":267,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3809,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":147,\"outputTokens\":1880,\"cacheReadInputTokens\":83903,\"cacheCreationInputTokens\":40779,\"webSearchRequests\":0,\"costUSD\":0.06891105,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":267,\"cacheReadInputTokens\":41089,\"cacheCreationInputTokens\":3809,\"webSearchRequests\":0,\"costUSD\":0.00816972,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"904d7afb-cc1e-4a41-9041-25b874fad5e5\"}",
+  "expected_answer": "Dr. Marcus Thompson",
+  "metadata": {
+    "duration_seconds": 26.953441476,
+    "timestamp": "2026-01-30T14:27:22-07:00"
+  }
+}

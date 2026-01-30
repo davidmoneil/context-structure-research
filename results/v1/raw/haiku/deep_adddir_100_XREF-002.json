@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-002",
+  "question": "Who is the executive sponsor of Project Atlas, and what is their role?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":20100,\"duration_api_ms\":18749,\"num_turns\":2,\"result\":\"Based on the exploration results, I'll provide the answer in the requested JSON format:\\n\\n{\\n    \\\"answer\\\": \\\"Marcus Williams, the Chief Operating Officer (COO), is the executive sponsor of Project Atlas\\\",\\n    \\\"confidence\\\": \\\"high\\\", \\n    \\\"sources_used\\\": [\\n        \\\"@company/initiatives/projects/atlas-overview.md\\\",\\n        \\\"@company/structure/leadership/executive-team.md\\\"\\n    ]\\n}\",\"session_id\":\"d6e5cda5-beaf-488f-a334-32d05c075b0a\",\"total_cost_usd\":0.14753532,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3251,\"cache_read_input_tokens\":40539,\"output_tokens\":245,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3251,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":1404,\"outputTokens\":1015,\"cacheReadInputTokens\":37841,\"cacheCreationInputTokens\":103834,\"webSearchRequests\":0,\"costUSD\":0.1400556,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":245,\"cacheReadInputTokens\":40539,\"cacheCreationInputTokens\":3251,\"webSearchRequests\":0,\"costUSD\":0.0074797200000000005,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"60e1837e-5663-4da1-a599-b2e0081505de\"}",
+  "expected_answer": "Marcus Williams, Chief Operating Officer (COO)",
+  "metadata": {
+    "duration_seconds": 21.722465536,
+    "timestamp": "2026-01-29T14:50:55-07:00"
+  }
+}

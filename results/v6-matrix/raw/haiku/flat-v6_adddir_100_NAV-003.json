@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-003",
+  "question": "What is the total budget for Project Prometheus?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "flat-v6",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":21772,\"duration_api_ms\":24317,\"num_turns\":2,\"result\":\"Based on the search results, I can confidently provide the following answer:\\n\\n{\\\"answer\\\": \\\"2.4 billion USD\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source/financial/budget.md\\\", \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source/projects/prometheus.md\\\"]}\\n\\nThe total budget for Project Prometheus is $2.4 billion, allocated across five phases from 2121 to 2126, with the current Phase 3 having a budget of $740 million.\",\"session_id\":\"87ed0c16-feaf-4dc2-9506-5a9d79cac5ef\",\"total_cost_usd\":0.04782335,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3124,\"cache_read_input_tokens\":39020,\"output_tokens\":298,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3124,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":167,\"outputTokens\":1492,\"cacheReadInputTokens\":66969,\"cacheCreationInputTokens\":20845,\"webSearchRequests\":0,\"costUSD\":0.040380150000000004,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":298,\"cacheReadInputTokens\":39020,\"cacheCreationInputTokens\":3124,\"webSearchRequests\":0,\"costUSD\":0.0074432,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"eb80efe1-67c8-4294-bd06-124d0e0cd759\"}",
+  "expected_answer": "$2.4 billion",
+  "metadata": {
+    "duration_seconds": 23.142295010,
+    "timestamp": "2026-01-30T15:16:19-07:00"
+  }
+}

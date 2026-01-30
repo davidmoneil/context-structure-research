@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-007",
+  "question": "What positions report directly to Dr. James Okonkwo?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep-v5-v5.5",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":17894,\"duration_api_ms\":19322,\"num_turns\":2,\"result\":\"Based on the search results, I'll provide the answer in the requested JSON format:\\n\\n{\\\"answer\\\": [\\\"Dr. Yuki Tanaka (SVP Advanced Research)\\\", \\\"Dr. Ahmed Hassan (VP Product Development)\\\", \\\"Jennifer Morrison (VP Engineering)\\\", \\\"Chief Scientist (name not specified)\\\"], \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\n    \\\"/company/structure/organization/executives.md\\\",\\n    \\\"/company/structure/organization/departments.md\\\", \\n    \\\"/company/people/directory/key-personnel.md\\\",\\n    \\\"/company/people/directory/leadership-bios.md\\\"\\n]}\",\"session_id\":\"a9d6b46f-528b-4461-bb27-0edf3b68d8a0\",\"total_cost_usd\":0.03998386,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3442,\"cache_read_input_tokens\":41087,\"output_tokens\":283,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3442,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":140,\"outputTokens\":1365,\"cacheReadInputTokens\":35973,\"cacheCreationInputTokens\":17244,\"webSearchRequests\":0,\"costUSD\":0.0321173,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":283,\"cacheReadInputTokens\":41087,\"cacheCreationInputTokens\":3442,\"webSearchRequests\":0,\"costUSD\":0.007866560000000002,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"6684ff44-e6f4-4b71-9c85-4f5bbfeb16c4\"}",
+  "expected_answer": "VP Research, VP Product Development, VP Engineering, Chief Scientist",
+  "metadata": {
+    "duration_seconds": 19.093166858,
+    "timestamp": "2026-01-30T14:32:20-07:00"
+  }
+}

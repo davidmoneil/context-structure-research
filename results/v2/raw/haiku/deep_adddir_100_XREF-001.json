@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-001",
+  "question": "Which department does the Project Prometheus team report to, and who leads that department?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":23480,\"duration_api_ms\":22551,\"num_turns\":2,\"result\":\"Based on the comprehensive search, I can now provide a precise answer:\\n\\n{\\\"answer\\\": \\\"Project Prometheus reports to the Research & Development (R&D) department, which is led by Dr. James Okonkwo, the Chief Technology Officer (CTO)\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/soong-daystrom/_source/projects/prometheus.md\\\", \\\"/soong-daystrom/_source/organization/departments.md\\\", \\\"/soong-daystrom/_source/organization/executives.md\\\"]}\",\"session_id\":\"61d572e4-2341-4f5e-ad12-0082d0ea6e75\",\"total_cost_usd\":0.046121350000000005,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3300,\"cache_read_input_tokens\":40555,\"output_tokens\":259,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3300,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":145,\"outputTokens\":1068,\"cacheReadInputTokens\":97066,\"cacheCreationInputTokens\":18675,\"webSearchRequests\":0,\"costUSD\":0.038535349999999996,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":259,\"cacheReadInputTokens\":40555,\"cacheCreationInputTokens\":3300,\"webSearchRequests\":0,\"costUSD\":0.007585999999999999,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"9b40f666-10b4-4854-9e3e-c198767d2996\"}",
+  "expected_answer": "Research & Development, led by Dr. James Okonkwo (CTO)",
+  "metadata": {
+    "duration_seconds": 25.108538533,
+    "timestamp": "2026-01-29T20:33:33-07:00"
+  }
+}

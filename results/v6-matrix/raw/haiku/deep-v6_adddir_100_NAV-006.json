@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-006",
+  "question": "Who leads the AI Safety team at Soong-Daystrom?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep-v6",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":3945,\"duration_api_ms\":5397,\"num_turns\":1,\"result\":\"I'll carefully review the provided context to answer this question.\\n\\n<task_analysis>\\nAfter thoroughly examining the two CLAUDE.md files provided:\\n- The context includes high-level information about Soong-Daystrom Industries\\n- There are details about key leadership like CEO and CTO\\n- However, there is no specific mention of who leads the AI Safety team\\n\\nGiven the lack of explicit information, I cannot confidently identify the AI Safety team leader.\\n</task_analysis>\\n\\n{\\n    \\\"answer\\\": \\\"Unknown\\\",\\n    \\\"confidence\\\": \\\"low\\\", \\n    \\\"sources_used\\\": [\\n        \\\"/home/davidmoneil/Code/context-structure-research/.claude/CLAUDE.md\\\",\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v6/CLAUDE.md\\\"\\n    ]\\n}\",\"session_id\":\"f81c2d5e-3fb3-4e99-bd69-d71a280595be\",\"total_cost_usd\":0.00505256,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":2314,\"cache_read_input_tokens\":18377,\"output_tokens\":197,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2314,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":143,\"outputTokens\":67,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000478,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":197,\"cacheReadInputTokens\":18377,\"cacheCreationInputTokens\":2314,\"webSearchRequests\":0,\"costUSD\":0.00457456,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"122ee1e1-2bf6-4a34-9d6d-4aa3ced32016\"}",
+  "expected_answer": "Dr. Marcus Thompson",
+  "metadata": {
+    "duration_seconds": 5.449693300,
+    "timestamp": "2026-01-30T15:32:51-07:00"
+  }
+}

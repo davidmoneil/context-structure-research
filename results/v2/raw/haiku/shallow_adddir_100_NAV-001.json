@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-001",
+  "question": "Who is the current CEO of Soong-Daystrom Industries?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "shallow",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":12381,\"duration_api_ms\":13990,\"num_turns\":1,\"result\":\"{\\n    \\\"answer\\\": \\\"Dr. Maya Chen\\\", \\n    \\\"confidence\\\": \\\"high\\\", \\n    \\\"sources_used\\\": [\\n        \\\"soong-daystrom/shallow/organization/executives.md\\\",\\n        \\\"soong-daystrom/shallow/history/milestones.md\\\"\\n    ]\\n}\\n\\nThe answer comes from multiple sources that consistently identify Dr. Maya Chen as the CEO. She became CEO in January 2115, following the retirement of founder Dr. Arik Soong III. Her detailed biography can be found in the executives file, which highlights her background and leadership of the company.\",\"session_id\":\"115ae9af-8949-41e2-998f-7c5f8dffe244\",\"total_cost_usd\":0.06248708,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":60073,\"cache_read_input_tokens\":18971,\"output_tokens\":139,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":60073,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":43,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.00033800000000000003,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":139,\"cacheReadInputTokens\":18971,\"cacheCreationInputTokens\":60073,\"webSearchRequests\":0,\"costUSD\":0.06214908,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"b9392e9d-15a6-442c-9b7c-09fa8371e138\"}",
+  "expected_answer": "Dr. Maya Chen",
+  "metadata": {
+    "duration_seconds": 14.219269883,
+    "timestamp": "2026-01-29T20:14:56-07:00"
+  }
+}

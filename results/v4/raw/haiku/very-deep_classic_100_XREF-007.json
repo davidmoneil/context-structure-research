@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-007",
+  "question": "What positions report directly to Dr. James Okonkwo?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "very-deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":21987,\"duration_api_ms\":29106,\"num_turns\":2,\"result\":\"Based on the search results, I'll provide the answer in the requested JSON format:\\n\\n{\\\"answer\\\": \\\"Dr. James Okonkwo's direct reports are: Dr. Yuki Tanaka (VP Research), Dr. Ahmed Hassan (VP Product Development), Jennifer Morrison (VP Engineering), and a Chief Scientist role\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\n    \\\"/soong-daystrom/company/structure/leadership/executive-team/executives.md\\\",\\n    \\\"/soong-daystrom/company/people/hr/employee-directory/key-personnel.md\\\",\\n    \\\"/soong-daystrom/company/people/hr/employee-directory/directory-rnd.md\\\",\\n    \\\"/soong-daystrom/company/structure/organization/departments/departments.md\\\"\\n]}\",\"session_id\":\"681588c3-c318-4f1c-8125-f2d65980cf25\",\"total_cost_usd\":0.05181206000000001,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3649,\"cache_read_input_tokens\":40857,\"output_tokens\":343,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3649,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":3537,\"outputTokens\":2633,\"cacheReadInputTokens\":64049,\"cacheCreationInputTokens\":16328,\"webSearchRequests\":0,\"costUSD\":0.0435169,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":343,\"cacheReadInputTokens\":40857,\"cacheCreationInputTokens\":3649,\"webSearchRequests\":0,\"costUSD\":0.00829516,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[{\"tool_name\":\"Grep\",\"tool_use_id\":\"toolu_01WDC2P3pZxEAEu6A6misW9L\",\"tool_input\":{\"pattern\":\"James Okonkwo\",\"path\":\"/home/davidmoneil/Code/context-structure-research/soong-daystrom\"}}],\"uuid\":\"e265f270-e1b6-467a-850b-00d18df417f8\"}",
+  "expected_answer": "VP Research, VP Product Development, VP Engineering, Chief Scientist",
+  "metadata": {
+    "duration_seconds": 23.573389036,
+    "timestamp": "2026-01-30T10:55:20-07:00"
+  }
+}

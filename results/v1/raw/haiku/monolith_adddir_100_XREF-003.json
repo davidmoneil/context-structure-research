@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-003",
+  "question": "How does Dr. Wei Zhang's background relate to the NIM product line?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "monolith",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":14604,\"duration_api_ms\":14004,\"num_turns\":4,\"result\":\"Based on the sources, I can provide a precise answer:\\n\\n{\\\"answer\\\": \\\"Dr. Wei Zhang was the CTO of NeuroSync Labs before Soong-Daystrom acquired the company in 2020. After the acquisition, he became the Director of Neural Architecture and played a key role in developing the Neural Interface Modules (NIM) product line, bringing his expertise in neural signal processing and brain-computer interface technology directly into the NIM development.\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/soong-daystrom/_source/history/acquisition-neurosync.md\\\"]}\",\"session_id\":\"5252ab20-ebfe-4452-b791-743befc25c3c\",\"total_cost_usd\":0.0707034,\"usage\":{\"input_tokens\":19,\"cache_creation_input_tokens\":51035,\"cache_read_input_tokens\":219140,\"output_tokens\":381,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":51035,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":95,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000598,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":19,\"outputTokens\":381,\"cacheReadInputTokens\":219140,\"cacheCreationInputTokens\":51035,\"webSearchRequests\":0,\"costUSD\":0.0701054,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"d0148e7a-8189-43ed-94eb-30fbf490c994\"}",
+  "expected_answer": "Dr. Wei Zhang came from NeuroSync Labs (acquired 2120) and leads neural architecture development, which is the core technology behind the Neural Interface Modules",
+  "metadata": {
+    "duration_seconds": 18.886070217,
+    "timestamp": "2026-01-29T14:17:38-07:00"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-005",
+  "question": "What is the price of the PCS-500 Companion Elite?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep-v6-v5.5",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":4680,\"duration_api_ms\":7004,\"num_turns\":1,\"result\":\"{\\\"answer\\\": \\\"No information found\\\", \\\"confidence\\\": \\\"low\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v6-v5.5/CLAUDE.md\\\"]}\\n\\nI carefully reviewed the provided context, which includes the project CLAUDE.md for Soong-Daystrom Industries. While the document provides an overview of the company's structure and key entities, there is no specific mention of the PCS-500 Companion Elite or its pricing. The available information is too high-level to determine the price of this specific product.\\n\\nTo find the price, I would recommend:\\n1. Searching through additional documents in the knowledge base\\n2. Checking the `products/` or `customers/` directories if they exist\\n3. Consulting the complete corpus of documents referenced in the context structure research project\",\"session_id\":\"9d2f8271-e5f4-4288-95d6-c944a7d58f09\",\"total_cost_usd\":0.005288560000000001,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":2318,\"cache_read_input_tokens\":18402,\"output_tokens\":197,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2318,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":143,\"outputTokens\":113,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000708,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":197,\"cacheReadInputTokens\":18402,\"cacheCreationInputTokens\":2318,\"webSearchRequests\":0,\"costUSD\":0.004580560000000001,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"22c97a72-85be-4c3b-ab2b-7f54af19b00d\"}",
+  "expected_answer": "$47,000",
+  "metadata": {
+    "duration_seconds": 6.112561197,
+    "timestamp": "2026-01-30T16:01:34-07:00"
+  }
+}

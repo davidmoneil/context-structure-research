@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-003",
+  "question": "What is the total budget for Project Prometheus?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "flat-v6-v5.5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":35052,\"duration_api_ms\":37633,\"num_turns\":2,\"result\":\"Based on the comprehensive search results, I can confidently provide the budget information:\\n\\n{\\\"answer\\\": \\\"$2.4 billion\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\n    \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source/projects/prometheus.md\\\",\\n    \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source-v6/projects/prometheus-detailed.md\\\",\\n    \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source-v6/meetings/board-q2-2124.md\\\",\\n    \\\"/home/davidmoneil/Code/context-structure-research/research-notes/canon.md\\\"\\n]}\",\"session_id\":\"2cef6085-ebd4-4cc2-8023-63f817cd0e74\",\"total_cost_usd\":0.08987990000000001,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3584,\"cache_read_input_tokens\":39025,\"output_tokens\":330,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3584,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":3023,\"outputTokens\":2710,\"cacheReadInputTokens\":215728,\"cacheCreationInputTokens\":34962,\"webSearchRequests\":0,\"costUSD\":0.0818483,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":330,\"cacheReadInputTokens\":39025,\"cacheCreationInputTokens\":3584,\"webSearchRequests\":0,\"costUSD\":0.0080316,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"32a1b4cf-e3f5-4bb0-bd20-3b8feeec705b\"}",
+  "expected_answer": "$2.4 billion",
+  "metadata": {
+    "duration_seconds": 36.658041519,
+    "timestamp": "2026-01-30T15:51:06-07:00"
+  }
+}

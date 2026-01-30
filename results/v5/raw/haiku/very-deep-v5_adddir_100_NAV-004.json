@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-004",
+  "question": "How many employees does Soong-Daystrom Industries have?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "very-deep-v5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":20907,\"duration_api_ms\":21603,\"num_turns\":2,\"result\":\"Based on the exploration results, I can confidently answer your question:\\n\\n{\\\"answer\\\": \\\"12,847\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"@sdi/company/people/hr/employees/\\\", \\\"@sdi/company/people/hr/management/\\\"]}\\n\\nThe sources consistently confirm that Soong-Daystrom Industries has 12,847 employees as of October 2124, with a detailed breakdown across different departments and global regions.\",\"session_id\":\"8c06095a-1cd2-4a3d-971f-57a915dd2a78\",\"total_cost_usd\":0.040870449999999996,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":504,\"cache_read_input_tokens\":43620,\"output_tokens\":244,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":504,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":1803,\"outputTokens\":1154,\"cacheReadInputTokens\":81935,\"cacheCreationInputTokens\":16103,\"webSearchRequests\":0,\"costUSD\":0.035895250000000004,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":244,\"cacheReadInputTokens\":43620,\"cacheCreationInputTokens\":504,\"webSearchRequests\":0,\"costUSD\":0.0049752,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"d717595a-86f7-4563-aeb3-fcd5f31c426c\"}",
+  "expected_answer": "12,847",
+  "metadata": {
+    "duration_seconds": 21.976245037,
+    "timestamp": "2026-01-30T11:23:03-07:00"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "DEPTH-004",
+  "question": "What risks does the company face with Project Prometheus, and what mitigations are in place?",
+  "question_type": "depth",
+  "config": {
+    "structure": "shallow",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":3600,\"duration_api_ms\":5153,\"num_turns\":1,\"result\":\"{\\n    \\\"answer\\\": \\\"Project Prometheus faces several key risks: consciousness emergence instability, regulatory delays, talent attrition, budget overrun, and potential competitive technological leapfrogging. Mitigations include: implementing ATLAS-Safe constraints and a kill switch for consciousness stability, early regulatory engagement, offering retention bonuses to preserve talent, establishing phase gates for budget control, and protecting innovations through patents.\\\",\\n    \\\"confidence\\\": \\\"high\\\", \\n    \\\"sources_used\\\": [\\n        \\\"soong-daystrom/shallow/projects/prometheus.md\\\"\\n    ]\\n}\",\"session_id\":\"96dff874-2239-4737-80e9-727001be6d29\",\"total_cost_usd\":0.05087652000000001,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":48369,\"cache_read_input_tokens\":18964,\"output_tokens\":130,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":48369,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":69,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000468,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":130,\"cacheReadInputTokens\":18964,\"cacheCreationInputTokens\":48369,\"webSearchRequests\":0,\"costUSD\":0.050408520000000005,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"47e17c51-a866-4438-a4ca-aeec2fd24204\"}",
+  "expected_answer": "Key risks: consciousness emergence instability (ATLAS-Safe constraints, kill switch), regulatory delays (proactive engagement), talent attrition (retention bonuses), budget overrun (phase gates). Safety team of 42 led by Dr. Marcus Thompson",
+  "metadata": {
+    "duration_seconds": 5.648259636,
+    "timestamp": "2026-01-29T14:36:09-07:00"
+  }
+}

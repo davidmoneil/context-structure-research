@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-005",
+  "question": "What is the price of the PCS-500 Companion Elite?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep-v6",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":2724,\"duration_api_ms\":4843,\"num_turns\":1,\"result\":\"{\\\"answer\\\": \\\"Unknown\\\", \\\"confidence\\\": \\\"low\\\", \\\"sources_used\\\": []}\\n\\nI cannot find any specific information about the PCS-500 Companion Elite or its pricing in the provided context. The context describes the structure of the Soong-Daystrom Industries knowledge base and provides an overview of the company, but does not contain detailed product pricing information. To confidently answer this question, I would need to search through additional files in the corpus that might contain product details.\",\"session_id\":\"dcacf084-ffee-4884-9861-314ee93bf8f2\",\"total_cost_usd\":0.00494256,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":2313,\"cache_read_input_tokens\":18377,\"output_tokens\":106,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2313,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":143,\"outputTokens\":118,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000733,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":106,\"cacheReadInputTokens\":18377,\"cacheCreationInputTokens\":2313,\"webSearchRequests\":0,\"costUSD\":0.00420956,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"9d097000-6b99-48b5-9cb6-ceae0cd01810\"}",
+  "expected_answer": "$47,000",
+  "metadata": {
+    "duration_seconds": 4.133009155,
+    "timestamp": "2026-01-30T15:32:45-07:00"
+  }
+}

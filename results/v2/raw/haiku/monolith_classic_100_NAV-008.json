@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-008",
+  "question": "What is the current consciousness indicator score for Project Prometheus?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "monolith",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":2448,\"duration_api_ms\":3824,\"num_turns\":1,\"result\":\"{\\\"answer\\\": \\\"0.72\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/projects/prometheus\\\"]}\",\"session_id\":\"c59bbd55-5a07-44ae-9e57-6e826048f141\",\"total_cost_usd\":0.08728176,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":85071,\"cache_read_input_tokens\":18992,\"output_tokens\":29,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":85071,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":90,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000573,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":29,\"cacheReadInputTokens\":18992,\"cacheCreationInputTokens\":85071,\"webSearchRequests\":0,\"costUSD\":0.08670876,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"ed79df23-0961-4e07-9916-0f8028617b99\"}",
+  "expected_answer": "0.72",
+  "metadata": {
+    "duration_seconds": 11.780513766,
+    "timestamp": "2026-01-29T19:38:14-07:00"
+  }
+}

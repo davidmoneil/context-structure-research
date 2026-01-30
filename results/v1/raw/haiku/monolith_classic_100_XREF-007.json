@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-007",
+  "question": "What positions report directly to Dr. James Okonkwo?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "monolith",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":12463,\"duration_api_ms\":10507,\"num_turns\":3,\"result\":\"Based on the search results from the organization section, Dr. James Okonkwo's direct reports are:\\n- VP Research\\n- VP Product Development \\n- VP Engineering\\n- Chief Scientist\\n\\nI'll provide this as a JSON response:\\n\\n{\\\"answer\\\": [\\\"VP Research\\\", \\\"VP Product Development\\\", \\\"VP Engineering\\\", \\\"Chief Scientist\\\"], \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/company-documentation.md\\\"]}\",\"session_id\":\"c57c509d-1af1-4887-a05b-15cb34708ace\",\"total_cost_usd\":0.060547119999999996,\"usage\":{\"input_tokens\":13,\"cache_creation_input_tokens\":46576,\"cache_read_input_tokens\":149534,\"output_tokens\":335,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":46576,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":107,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000658,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":13,\"outputTokens\":335,\"cacheReadInputTokens\":149534,\"cacheCreationInputTokens\":46576,\"webSearchRequests\":0,\"costUSD\":0.05988912,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"9bac7957-8195-43e6-936d-3bc86fb70f07\"}",
+  "expected_answer": "VP Research, VP Product Development, VP Engineering, Chief Scientist",
+  "metadata": {
+    "duration_seconds": 17.040721030,
+    "timestamp": "2026-01-29T14:14:01-07:00"
+  }
+}

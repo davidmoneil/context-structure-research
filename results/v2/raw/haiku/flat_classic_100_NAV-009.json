@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-009",
+  "question": "How much did Soong-Daystrom pay to acquire NeuroSync Labs?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "flat",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":12807,\"duration_api_ms\":12286,\"num_turns\":3,\"result\":\"Based on the acquisition document, I can confidently answer:\\n\\n{\\\"answer\\\": \\\"$8.2 billion\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"history-acquisition-neurosync.md\\\"]}\\n\\nThe file specifically lists the \\\"Purchase Price\\\" as \\\"$8.2 billion (all cash)\\\" in the Transaction Overview section, and provides additional details about the acquisition financing, including $4.2 billion from cash on hand and $4.0 billion from a new debt facility.\",\"session_id\":\"61c37300-f30c-4646-bac1-cb5b2ac7ff0f\",\"total_cost_usd\":0.10911064,\"usage\":{\"input_tokens\":11,\"cache_creation_input_tokens\":89032,\"cache_read_input_tokens\":230048,\"output_tokens\":272,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":89032,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":91,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000578,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":11,\"outputTokens\":272,\"cacheReadInputTokens\":230048,\"cacheCreationInputTokens\":89032,\"webSearchRequests\":0,\"costUSD\":0.10853264,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"69404c76-f08d-41cc-a04d-91348cf65bd0\"}",
+  "expected_answer": "$8.2 billion",
+  "metadata": {
+    "duration_seconds": 14.729814319,
+    "timestamp": "2026-01-29T19:57:24-07:00"
+  }
+}

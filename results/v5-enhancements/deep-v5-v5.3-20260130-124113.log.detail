@@ -1,0 +1,410 @@
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  deep-v5-v5.3
+  Model:      haiku
+  Loading:    classic
+  Question:   XREF-002 (cross-reference)
+
+[1;33mQuestion:[0m
+  Who is the executive sponsor of Project Atlas, and what is their role?
+
+[1;33mExpected Answer:[0m
+  Marcus Williams, Chief Operating Officer (COO)
+
+[1;33mPartial Credit Keywords:[0m
+  Marcus Williams, COO, Operations
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Classic (cd into structure directory)
+  Directory: /home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v5-v5.3
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":false,"duration_ms":23782,"duration_api_ms":23758,"num_turns":2,"result":"Based on the exploration results, I can confidently provide the answer:\n\n{\"answer\": \"Dr. Ahmed Hassan, Vice President of Product Development, is the executive sponsor of Project Atlas. He provides technical authority for the project, oversees 1,284 engineers, and reports directly to the CTO, Dr. James Okonkwo.\", \"confidence\": \"high\", \"sources_used\": [\"/company/initiatives/projects/atlas-infrastructure.md\", \"/company/structure/organization/facilities.md\"]}","session_id":"92e37e04-d2d6-4501-b5c7-07a965449487","total_cost_usd":0.07685085,"usage":{"input_tokens":7,"cache_creation_input_tokens":22621,"cache_read_input_tokens":21740,"output_tokens":244,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":22621,"ephemeral_5m_input_tokens":0}},"modelUsage":{"claude-haiku-4-5-20251001":{"inputTokens":140,"outputTokens":1556,"cacheReadInputTokens":25103,"cacheCreationInputTokens":32863,"webSearchRequests":0,"costUSD":0.05150905,"contextWindow":200000,"maxOutputTokens":64000},"claude-3-5-haiku-latest":{"inputTokens":7,"outputTokens":244,"cacheReadInputTokens":21740,"cacheCreationInputTokens":22621,"webSearchRequests":0,"costUSD":0.025341799999999998,"contextWindow":200000,"maxOutputTokens":8192}},"permission_denials":[],"uuid":"85f135fd-1fb5-434b-8ef7-ef2368a0bf79"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 24.953873441s
+
+[1;33mQuick Score:[0m
+  [0;31m✗ No match found[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v5-enhancements/raw/haiku/deep-v5-v5.3_classic_100_XREF-002.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  deep-v5-v5.3
+  Model:      haiku
+  Loading:    classic
+  Question:   XREF-003 (cross-reference)
+
+[1;33mQuestion:[0m
+  How does Dr. Wei Zhang's background relate to the NIM product line?
+
+[1;33mExpected Answer:[0m
+  Dr. Wei Zhang came from NeuroSync Labs (acquired 2120) and leads neural architecture development, which is the core technology behind the Neural Interface Modules
+
+[1;33mPartial Credit Keywords:[0m
+  NeuroSync, acquisition, neural, NIM, interface
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Classic (cd into structure directory)
+  Directory: /home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v5-v5.3
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":false,"duration_ms":30607,"duration_api_ms":29141,"num_turns":2,"result":"Based on the comprehensive search results, I can now provide a concise answer:\n\n{\n    \"answer\": \"Dr. Wei Zhang is the inventor of the core neural encoding algorithm for the NIM product line, serving as Director of Neural Interface Research. He joined Soong-Daystrom through the NeuroSync acquisition in 2120, bringing breakthrough neural interface technology that now dominates the market with 67% market share and $7.2 billion in revenue.\",\n    \"confidence\": \"high\",\n    \"sources_used\": [\n        \"/company/people/directory/research-scientists.md\",\n        \"/company/offerings/products/nim-series.md\",\n        \"/company/people/directory/leadership-bios.md\"\n    ]\n}","session_id":"63e9c522-0405-4ccd-a177-04024374b49a","total_cost_usd":0.075263,"usage":{"input_tokens":7,"cache_creation_input_tokens":3804,"cache_read_input_tokens":40855,"output_tokens":323,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":3804,"ephemeral_5m_input_tokens":0}},"modelUsage":{"claude-haiku-4-5-20251001":{"inputTokens":147,"outputTokens":2066,"cacheReadInputTokens":84885,"cacheCreationInputTokens":38342,"webSearchRequests":0,"costUSD":0.066893,"contextWindow":200000,"maxOutputTokens":64000},"claude-3-5-haiku-latest":{"inputTokens":7,"outputTokens":323,"cacheReadInputTokens":40855,"cacheCreationInputTokens":3804,"webSearchRequests":0,"costUSD":0.00837,"contextWindow":200000,"maxOutputTokens":8192}},"permission_denials":[],"uuid":"8514588f-381e-4dc0-b8f3-d39d0c69f416"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 31.806183152s
+
+[1;33mQuick Score:[0m
+  [1;33m~ Partial match: 5/5 keywords[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v5-enhancements/raw/haiku/deep-v5-v5.3_classic_100_XREF-003.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  deep-v5-v5.3
+  Model:      haiku
+  Loading:    classic
+  Question:   XREF-006 (cross-reference)
+
+[1;33mQuestion:[0m
+  What is the relationship between Project Hermes and Project Prometheus?
+
+[1;33mExpected Answer:[0m
+  Project Hermes provides the communication interface/emotional layer that will integrate with Project Prometheus; Prometheus has a dependency on Hermes for Phase 3/4
+
+[1;33mPartial Credit Keywords:[0m
+  communication, integration, emotional, dependency, interface
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Classic (cd into structure directory)
+  Directory: /home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v5-v5.3
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":false,"duration_ms":38976,"duration_api_ms":41502,"num_turns":2,"result":"Based on the comprehensive exploration, I'll provide the answer in the requested JSON format:\n\n{\"answer\": \"Project Hermes and Project Prometheus are strategically interconnected AI initiatives at Soong-Daystrom Industries. Hermes provides the advanced communication and natural language interface, while Prometheus develops the artificial general intelligence (AGI) consciousness. They are planned for deep technical integration, with Hermes creating the 'voice' and communication layer for Prometheus's emerging consciousness system. The projects share leadership, technical resources, and are designed to complement each other in developing next-generation AI technologies.\", \"confidence\": \"high\", \"sources_used\": [\"@company/initiatives/hermes-documentation.md\", \"@company/initiatives/prometheus-documentation.md\", \"@company/engineering/project-integration-status.md\"]}","session_id":"bea04d11-f563-4f18-ad1e-ae2ce40c067b","total_cost_usd":0.12228249000000002,"usage":{"input_tokens":7,"cache_creation_input_tokens":7112,"cache_read_input_tokens":37738,"output_tokens":327,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":7112,"ephemeral_5m_input_tokens":0}},"modelUsage":{"claude-haiku-4-5-20251001":{"inputTokens":11952,"outputTokens":3498,"cacheReadInputTokens":186571,"cacheCreationInputTokens":50191,"webSearchRequests":0,"costUSD":0.11083785,"contextWindow":200000,"maxOutputTokens":64000},"claude-3-5-haiku-latest":{"inputTokens":7,"outputTokens":327,"cacheReadInputTokens":37738,"cacheCreationInputTokens":7112,"webSearchRequests":0,"costUSD":0.01144464,"contextWindow":200000,"maxOutputTokens":8192}},"permission_denials":[],"uuid":"f812a0d4-9503-4206-9c03-2c906025a710"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 40.690577913s
+
+[1;33mQuick Score:[0m
+  [1;33m~ Partial match: 3/5 keywords[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v5-enhancements/raw/haiku/deep-v5-v5.3_classic_100_XREF-006.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  deep-v5-v5.3
+  Model:      haiku
+  Loading:    classic
+  Question:   DEPTH-004 (depth)
+
+[1;33mQuestion:[0m
+  What risks does the company face with Project Prometheus, and what mitigations are in place?
+
+[1;33mExpected Answer:[0m
+  Key risks: consciousness emergence instability (ATLAS-Safe constraints, kill switch), regulatory delays (proactive engagement), talent attrition (retention bonuses), budget overrun (phase gates). Safety team of 42 led by Dr. Marcus Thompson
+
+[1;33mPartial Credit Keywords:[0m
+  instability, regulatory, safety, ATLAS-Safe, kill switch, retention
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Classic (cd into structure directory)
+  Directory: /home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v5-v5.3
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":false,"duration_ms":65218,"duration_api_ms":63522,"num_turns":2,"result":"Based on the comprehensive exploration, I can now provide a concise answer in the requested JSON format:\n\n{\n    \"answer\": \"Project Prometheus faces multiple critical risks, including consciousness emergence instability, regulatory challenges, talent attrition, and potential safety certification failures. Key mitigations include the ATLAS-Safe constraint system with 247 non-bypassable behavioral constraints, proactive regulatory engagement, comprehensive testing protocols (10,000+ test cases), multi-layered ethics oversight, and substantial contingency budgets ($240M+ reserved). The project maintains a risk status of AMBER (manageable), with sophisticated monitoring and intervention strategies across technical, ethical, and organizational domains.\",\n    \"confidence\": \"high\",\n    \"sources_used\": [\n        \"/company/initiatives/projects/prometheus-detailed.md\",\n        \"/company/records/meetings/prometheus-weekly-2024-10-21.md\",\n        \"/company/governance/policies/research-ethics.md\",\n        \"/company/records/meetings/ethics-committee.md\"\n    ]\n}","session_id":"3ec9b54b-f8cd-4f30-b493-5f0d568c8c77","total_cost_usd":0.12018538,"usage":{"input_tokens":7,"cache_creation_input_tokens":7021,"cache_read_input_tokens":40891,"output_tokens":372,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":7021,"ephemeral_5m_input_tokens":0}},"modelUsage":{"claude-haiku-4-5-20251001":{"inputTokens":1376,"outputTokens":5404,"cacheReadInputTokens":108735,"cacheCreationInputTokens":55304,"webSearchRequests":0,"costUSD":0.1083995,"contextWindow":200000,"maxOutputTokens":64000},"claude-3-5-haiku-latest":{"inputTokens":7,"outputTokens":372,"cacheReadInputTokens":40891,"cacheCreationInputTokens":7021,"webSearchRequests":0,"costUSD":0.01178588,"contextWindow":200000,"maxOutputTokens":8192}},"permission_denials":[],"uuid":"c1288190-0631-425e-bda2-4af9d0d95f7a"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 66.828989440s
+
+[1;33mQuick Score:[0m
+  [1;33m~ Partial match: 4/6 keywords[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v5-enhancements/raw/haiku/deep-v5-v5.3_classic_100_DEPTH-004.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  deep-v5-v5.3
+  Model:      haiku
+  Loading:    classic
+  Question:   DEPTH-005 (depth)
+
+[1;33mQuestion:[0m
+  How has CEO Dr. Maya Chen's background influenced the company's strategic direction?
+
+[1;33mExpected Answer:[0m
+  Her background as CTO of NeuroSync Labs (neural interface company) led to the 2120 acquisition, expansion into neural interfaces (NIM product line), and focus on consciousness research (Project Prometheus). This shifted the company from pure robotics to human-AI integration
+
+[1;33mPartial Credit Keywords:[0m
+  NeuroSync, neural, acquisition, consciousness, integration
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Classic (cd into structure directory)
+  Directory: /home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v5-v5.3
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":false,"duration_ms":36805,"duration_api_ms":33636,"num_turns":2,"result":"Based on the comprehensive information found, I'll provide a concise JSON response:\n\n{\"answer\": \"Dr. Maya Chen has profoundly shaped Soong-Daystrom Industries by transforming it from an industrial robotics company to a leader in companion robotics and consciousness technology. Her strategic vision 'From Robots to Relationships' expanded the company's market, drove significant revenue growth (from $8.7B to $47.3B), and established industry-leading AI ethics standards. She initiated Project Prometheus, advanced consciousness research, and set an ambitious long-term strategy focused on ethical, human-centered AI development.\", \"confidence\": \"high\", \"sources_used\": [\"@company/background/leadership-profiles.md\", \"@company/people/ceo-profile.md\", \"@company/business/strategic-vision.md\"]}","session_id":"dac1fafb-5a4f-47a8-9e09-7c2145bbfbbc","total_cost_usd":0.09495421000000001,"usage":{"input_tokens":7,"cache_creation_input_tokens":3919,"cache_read_input_tokens":40887,"output_tokens":328,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":3919,"ephemeral_5m_input_tokens":0}},"modelUsage":{"claude-haiku-4-5-20251001":{"inputTokens":13626,"outputTokens":2230,"cacheReadInputTokens":97369,"cacheCreationInputTokens":41547,"webSearchRequests":0,"costUSD":0.08644665,"contextWindow":200000,"maxOutputTokens":64000},"claude-3-5-haiku-latest":{"inputTokens":7,"outputTokens":328,"cacheReadInputTokens":40887,"cacheCreationInputTokens":3919,"webSearchRequests":0,"costUSD":0.00850756,"contextWindow":200000,"maxOutputTokens":8192}},"permission_denials":[],"uuid":"d563ab3e-eace-4ce9-99eb-c16c4588fc70"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 38.630891578s
+
+[1;33mQuick Score:[0m
+  [1;33m~ Partial match: 1/5 keywords[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v5-enhancements/raw/haiku/deep-v5-v5.3_classic_100_DEPTH-005.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  deep-v5-v5.3
+  Model:      haiku
+  Loading:    adddir
+  Question:   XREF-002 (cross-reference)
+
+[1;33mQuestion:[0m
+  Who is the executive sponsor of Project Atlas, and what is their role?
+
+[1;33mExpected Answer:[0m
+  Marcus Williams, Chief Operating Officer (COO)
+
+[1;33mPartial Credit Keywords:[0m
+  Marcus Williams, COO, Operations
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Add-dir (load from project root)
+  Add-dir: /home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v5-v5.3
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":false,"duration_ms":23462,"duration_api_ms":19669,"num_turns":2,"result":"Based on the search results, I can confidently answer your question:\n\n{\"answer\": \"Marcus Williams, the Chief Operating Officer (COO) of Soong-Daystrom Industries, is the executive sponsor of Project Atlas. In his role, he provides executive leadership, strategic oversight, and resource allocation for the project.\", \"confidence\": \"high\", \"sources_used\": [\"/soong-daystrom/_source-v4/projects/atlas.md\", \"/soong-daystrom/_source-v4/employees/key-personnel.md\"]}","session_id":"09629c4d-9e32-454e-8a8e-75964cc1ffdb","total_cost_usd":0.03641025,"usage":{"input_tokens":7,"cache_creation_input_tokens":3268,"cache_read_input_tokens":40800,"output_tokens":281,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":3268,"ephemeral_5m_input_tokens":0}},"modelUsage":{"claude-haiku-4-5-20251001":{"inputTokens":1111,"outputTokens":1179,"cacheReadInputTokens":58589,"cacheCreationInputTokens":12707,"webSearchRequests":0,"costUSD":0.02874865,"contextWindow":200000,"maxOutputTokens":64000},"claude-3-5-haiku-latest":{"inputTokens":7,"outputTokens":281,"cacheReadInputTokens":40800,"cacheCreationInputTokens":3268,"webSearchRequests":0,"costUSD":0.0076616,"contextWindow":200000,"maxOutputTokens":8192}},"permission_denials":[],"uuid":"03c23be7-8486-4fe8-b25b-021d13fad84e"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 25.581340798s
+
+[1;33mQuick Score:[0m
+  [1;33m~ Partial match: 2/3 keywords[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v5-enhancements/raw/haiku/deep-v5-v5.3_adddir_100_XREF-002.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  deep-v5-v5.3
+  Model:      haiku
+  Loading:    adddir
+  Question:   XREF-003 (cross-reference)
+
+[1;33mQuestion:[0m
+  How does Dr. Wei Zhang's background relate to the NIM product line?
+
+[1;33mExpected Answer:[0m
+  Dr. Wei Zhang came from NeuroSync Labs (acquired 2120) and leads neural architecture development, which is the core technology behind the Neural Interface Modules
+
+[1;33mPartial Credit Keywords:[0m
+  NeuroSync, acquisition, neural, NIM, interface
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Add-dir (load from project root)
+  Add-dir: /home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v5-v5.3
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":false,"duration_ms":21888,"duration_api_ms":19834,"num_turns":2,"result":"Based on the comprehensive exploration, I can now provide a structured JSON response:\n\n{\"answer\": \"Dr. Wei Zhang serves as the Division Head of the Neural Interface Division, directly overseeing the NIM (Neural Interface Modules) product line. As the leader of this division, Zhang manages a team of 169 employees and plays a critical strategic role in the development, research, and commercial success of the NIM product line, which holds a 67% market share and generates $7.2 billion in annual revenue.\", \"confidence\": \"high\", \"sources_used\": [\"@company/people/executives.md\", \"@company/engineering/divisions/neural-interface.md\", \"@company/offerings/nim-product-line.md\"]}","session_id":"c4ad074a-7b45-4511-86cb-bc51003c8e41","total_cost_usd":0.04384288,"usage":{"input_tokens":7,"cache_creation_input_tokens":3373,"cache_read_input_tokens":40801,"output_tokens":311,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":3373,"ephemeral_5m_input_tokens":0}},"modelUsage":{"claude-haiku-4-5-20251001":{"inputTokens":1101,"outputTokens":1087,"cacheReadInputTokens":39427,"cacheCreationInputTokens":20382,"webSearchRequests":0,"costUSD":0.0359562,"contextWindow":200000,"maxOutputTokens":64000},"claude-3-5-haiku-latest":{"inputTokens":7,"outputTokens":311,"cacheReadInputTokens":40801,"cacheCreationInputTokens":3373,"webSearchRequests":0,"costUSD":0.00788668,"contextWindow":200000,"maxOutputTokens":8192}},"permission_denials":[],"uuid":"848951e6-b3e0-4e23-a18f-9166c9fe790f"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 23.662123522s
+
+[1;33mQuick Score:[0m
+  [1;33m~ Partial match: 3/5 keywords[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v5-enhancements/raw/haiku/deep-v5-v5.3_adddir_100_XREF-003.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  deep-v5-v5.3
+  Model:      haiku
+  Loading:    adddir
+  Question:   XREF-006 (cross-reference)
+
+[1;33mQuestion:[0m
+  What is the relationship between Project Hermes and Project Prometheus?
+
+[1;33mExpected Answer:[0m
+  Project Hermes provides the communication interface/emotional layer that will integrate with Project Prometheus; Prometheus has a dependency on Hermes for Phase 3/4
+
+[1;33mPartial Credit Keywords:[0m
+  communication, integration, emotional, dependency, interface
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Add-dir (load from project root)
+  Add-dir: /home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v5-v5.3
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":false,"duration_ms":51190,"duration_api_ms":43617,"num_turns":2,"result":"Based on the comprehensive search results, I can now provide a concise answer:\n\n{\n    \"answer\": \"Project Hermes is developing the communication and safety interface for Project Prometheus's synthetic consciousness architecture. Hermes provides critical integration layers, including emotional intelligence, safety monitoring, and multi-modal processing that enables Prometheus's advanced AI development. The projects are tightly coupled, with Hermes specifically designed to facilitate human-AI interaction for the Prometheus consciousness system.\",\n    \"confidence\": \"high\",\n    \"sources_used\": [\n        \"/soong-daystrom/_source/projects/hermes.md\",\n        \"/soong-daystrom/_source/projects/prometheus.md\",\n        \"/soong-daystrom/_source/meetings/prometheus-weekly-2024-10-21.md\",\n        \"/soong-daystrom/_source/employees/team-prometheus.md\",\n        \"/soong-daystrom/_source/technical/architecture.md\"\n    ]\n}","session_id":"df6b93f9-11c4-45c0-b7d2-1ca35cb6d604","total_cost_usd":0.08839191999999998,"usage":{"input_tokens":7,"cache_creation_input_tokens":4075,"cache_read_input_tokens":40799,"output_tokens":379,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":4075,"ephemeral_5m_input_tokens":0}},"modelUsage":{"claude-haiku-4-5-20251001":{"inputTokens":2223,"outputTokens":2995,"cacheReadInputTokens":235459,"cacheCreationInputTokens":31030,"webSearchRequests":0,"costUSD":0.07953139999999999,"contextWindow":200000,"maxOutputTokens":64000},"claude-3-5-haiku-latest":{"inputTokens":7,"outputTokens":379,"cacheReadInputTokens":40799,"cacheCreationInputTokens":4075,"webSearchRequests":0,"costUSD":0.00886052,"contextWindow":200000,"maxOutputTokens":8192}},"permission_denials":[],"uuid":"4d1426c3-277a-4a50-bd7c-d8bdcb7cb16b"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 52.753432474s
+
+[1;33mQuick Score:[0m
+  [1;33m~ Partial match: 4/5 keywords[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v5-enhancements/raw/haiku/deep-v5-v5.3_adddir_100_XREF-006.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  deep-v5-v5.3
+  Model:      haiku
+  Loading:    adddir
+  Question:   DEPTH-004 (depth)
+
+[1;33mQuestion:[0m
+  What risks does the company face with Project Prometheus, and what mitigations are in place?
+
+[1;33mExpected Answer:[0m
+  Key risks: consciousness emergence instability (ATLAS-Safe constraints, kill switch), regulatory delays (proactive engagement), talent attrition (retention bonuses), budget overrun (phase gates). Safety team of 42 led by Dr. Marcus Thompson
+
+[1;33mPartial Credit Keywords:[0m
+  instability, regulatory, safety, ATLAS-Safe, kill switch, retention
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Add-dir (load from project root)
+  Add-dir: /home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v5-v5.3
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":false,"duration_ms":40814,"duration_api_ms":35584,"num_turns":2,"result":"Based on the comprehensive search, I'll provide the answer in the requested JSON format:\n\n```json\n{\n    \"answer\": \"Project Prometheus faces multiple risks including consciousness emergence instability, regulatory challenges, talent attrition, and potential technical integration failures. The primary mitigation strategy is the ATLAS-Safe constraint system with 847 core constraints, zero violations in 30 days, comprehensive testing (10,000 scenarios), a verified kill switch, and continuous monitoring by a dedicated 42-person safety team led by a former Anthropic AI Safety Director.\",\n    \"confidence\": \"high\",\n    \"sources_used\": [\n        \"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source-v4/projects/prometheus.md\",\n        \"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source-v4/meetings/prometheus-weekly-2024-10-21.md\",\n        \"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source-v4/meetings/board-q3-2124.md\"\n    ]\n}\n```","session_id":"acab8a3a-4401-4515-b92e-635f2dda71d3","total_cost_usd":0.0829844,"usage":{"input_tokens":7,"cache_creation_input_tokens":4081,"cache_read_input_tokens":40805,"output_tokens":404,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":4081,"ephemeral_5m_input_tokens":0}},"modelUsage":{"claude-haiku-4-5-20251001":{"inputTokens":7568,"outputTokens":2550,"cacheReadInputTokens":124469,"cacheCreationInputTokens":33002,"webSearchRequests":0,"costUSD":0.0740174,"contextWindow":200000,"maxOutputTokens":64000},"claude-3-5-haiku-latest":{"inputTokens":7,"outputTokens":404,"cacheReadInputTokens":40805,"cacheCreationInputTokens":4081,"webSearchRequests":0,"costUSD":0.008967000000000001,"contextWindow":200000,"maxOutputTokens":8192}},"permission_denials":[],"uuid":"4ace01d4-e9e1-401e-984b-db4d6fc43c57"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 42.448424394s
+
+[1;33mQuick Score:[0m
+  [1;33m~ Partial match: 5/6 keywords[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v5-enhancements/raw/haiku/deep-v5-v5.3_adddir_100_DEPTH-004.json
+
+
+[0;34m═══════════════════════════════════════════════════════════════[0m
+[0;34m  Context Structure Research - Single Test Execution[0m
+[0;34m═══════════════════════════════════════════════════════════════[0m
+
+[1;33mConfiguration:[0m
+  Structure:  deep-v5-v5.3
+  Model:      haiku
+  Loading:    adddir
+  Question:   DEPTH-005 (depth)
+
+[1;33mQuestion:[0m
+  How has CEO Dr. Maya Chen's background influenced the company's strategic direction?
+
+[1;33mExpected Answer:[0m
+  Her background as CTO of NeuroSync Labs (neural interface company) led to the 2120 acquisition, expansion into neural interfaces (NIM product line), and focus on consciousness research (Project Prometheus). This shifted the company from pure robotics to human-AI integration
+
+[1;33mPartial Credit Keywords:[0m
+  NeuroSync, neural, acquisition, consciousness, integration
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecuting test...[0m
+
+  Mode: Add-dir (load from project root)
+  Add-dir: /home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v5-v5.3
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mResponse:[0m
+{"type":"result","subtype":"success","is_error":false,"duration_ms":54732,"duration_api_ms":53034,"num_turns":2,"result":"Based on the exploration results, I'll provide the answer in the requested JSON format:\n\n{\"answer\": \"Dr. Maya Chen's neuroscience and business background has significantly shaped Soong-Daystrom Industries' strategic direction, driving the company towards advanced human-AI integration. Her leadership has focused on three key strategic pillars: neural interface technology development, conscious AI research through Project Prometheus, and global expansion. Leveraging her Ph.D. in Cognitive Neuroscience and MBA, she transformed the company from a traditional AI firm into a cutting-edge technology leader, growing revenue from $28 billion to $47.3 billion and positioning the company at the forefront of neural interface and artificial general intelligence research.\", \"confidence\": \"high\", \"sources_used\": [\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source/organization/executives.md\", \"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source/history/acquisition-neurosync.md\", \"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source/projects/prometheus.md\", \"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source/history/major-milestones.md\"]}","session_id":"7a987998-8b8e-481f-8be6-9b498582e7ae","total_cost_usd":0.14453598,"usage":{"input_tokens":7,"cache_creation_input_tokens":3882,"cache_read_input_tokens":40801,"output_tokens":442,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":3882,"ephemeral_5m_input_tokens":0}},"modelUsage":{"claude-haiku-4-5-20251001":{"inputTokens":6142,"outputTokens":3700,"cacheReadInputTokens":364068,"cacheCreationInputTokens":59654,"webSearchRequests":0,"costUSD":0.1356163,"contextWindow":200000,"maxOutputTokens":64000},"claude-3-5-haiku-latest":{"inputTokens":7,"outputTokens":442,"cacheReadInputTokens":40801,"cacheCreationInputTokens":3882,"webSearchRequests":0,"costUSD":0.00891968,"contextWindow":200000,"maxOutputTokens":8192}},"permission_denials":[{"tool_name":"Bash","tool_use_id":"toolu_018E1j7rBcwa5Chs1F8bWqJS","tool_input":{"command":"grep -r \"Maya Chen\" /home/davidmoneil/Code/context-structure-research/soong-daystrom/_source* 2>/dev/null | head -20","description":"Search for Maya Chen in source files"}}],"uuid":"311f8de5-9093-49af-9c40-82d1c058bee2"}
+
+[0;34m───────────────────────────────────────────────────────────────[0m
+
+[1;33mExecution Time:[0m 56.358959220s
+
+[1;33mQuick Score:[0m
+  [1;33m~ Partial match: 4/5 keywords[0m
+
+[0;32mResult saved to:[0m /home/davidmoneil/Code/context-structure-research/results/v5-enhancements/raw/haiku/deep-v5-v5.3_adddir_100_DEPTH-005.json
+

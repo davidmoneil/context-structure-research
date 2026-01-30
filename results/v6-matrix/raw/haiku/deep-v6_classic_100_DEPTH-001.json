@@ -1,0 +1,17 @@
+{
+  "question_id": "DEPTH-001",
+  "question": "Based on the company's R&D budget allocation and current project portfolio, what strategic priorities can you infer about Soong-Daystrom's direction?",
+  "question_type": "depth",
+  "config": {
+    "structure": "deep-v6",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":16434,\"duration_api_ms\":17820,\"num_turns\":4,\"result\":\"Based on the detailed R&D quarterly report, I'll provide a strategic analysis in JSON format:\\n\\n{\\n    \\\"answer\\\": \\\"Soong-Daystrom is pursuing an aggressive, multi-pronged R&D strategy focused on AI safety, infrastructure scalability, and advanced neural interfaces. The company is prioritizing three key strategic initiatives: Prometheus (AI safety), Atlas (infrastructure), and Hermes (autonomous logistics), with a strong emphasis on ethical AI development, computational efficiency, and commercial readiness. Key strategic priorities include: (1) Developing provably safe AI systems with advanced decision-making architectures, (2) Creating scalable, geographically redundant infrastructure, (3) Advancing neural interface and robotics technologies, and (4) Preparing for near-term commercialization of research outputs.\\\",\\n    \\\"confidence\\\": \\\"high\\\",\\n    \\\"sources_used\\\": [\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v6/rd-quarterly/rd-quarterly-doc-1.md\\\"\\n    ]\\n}\\n\\nThe analysis is based on the comprehensive Q2 2122 R&D report, which provides deep insights into the company's strategic research priorities, project allocations, and technological breakthroughs across multiple domains.\",\"session_id\":\"df8ed8d4-aef4-4749-9c39-81493de668bd\",\"total_cost_usd\":0.02192628,\"usage\":{\"input_tokens\":19,\"cache_creation_input_tokens\":12052,\"cache_read_input_tokens\":83226,\"output_tokens\":622,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":12052,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":143,\"outputTokens\":114,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000713,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":19,\"outputTokens\":622,\"cacheReadInputTokens\":83226,\"cacheCreationInputTokens\":12052,\"webSearchRequests\":0,\"costUSD\":0.02121328,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[{\"tool_name\":\"WebSearch\",\"tool_use_id\":\"toolu_01X9ixigM31doczVZ7ubHSRQ\",\"tool_input\":{\"query\":\"Soong-Daystrom Industries research programs Prometheus Hermes Odyssey strategic priorities\"}}],\"uuid\":\"55f93a74-9844-4159-9948-97b30c6f19e9\"}",
+  "expected_answer": "Focus on next-generation AI consciousness (Project Prometheus) and industrial automation expansion (Project Atlas), indicating a dual strategy of advancing core AI technology while expanding market applications",
+  "metadata": {
+    "duration_seconds": 17.464180793,
+    "timestamp": "2026-01-30T15:29:40-07:00"
+  }
+}

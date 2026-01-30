@@ -1,0 +1,53 @@
+[Fri Jan 30 10:57:28 AM MST 2026] Waiting for V4 to complete...
+[Fri Jan 30 11:12:29 AM MST 2026] V4 still running after 15 min, starting worker anyway
+Worker 2: Starting very-deep-v5 tests at Fri Jan 30 11:12:29 AM MST 2026
+[very-deep-v5 / classic]
+  very-deep-v5 classic NAV-001 ... ✓
+  very-deep-v5 classic NAV-002 ... ✓
+  very-deep-v5 classic NAV-003 ... ✓
+  very-deep-v5 classic NAV-004 ... ✓
+  very-deep-v5 classic NAV-005 ... ✓
+  very-deep-v5 classic NAV-006 ... ✓
+  very-deep-v5 classic NAV-007 ... ✓
+  very-deep-v5 classic NAV-008 ... ✓
+  very-deep-v5 classic NAV-009 ... ✓
+  very-deep-v5 classic NAV-010 ... ✓
+  very-deep-v5 classic XREF-001 ... ✓
+  very-deep-v5 classic XREF-002 ... ✓
+  very-deep-v5 classic XREF-003 ... ✓
+  very-deep-v5 classic XREF-004 ... ✓
+  very-deep-v5 classic XREF-005 ... ✓
+  very-deep-v5 classic XREF-006 ... ✓
+  very-deep-v5 classic XREF-007 ... ✓
+  very-deep-v5 classic XREF-008 ... ✓
+  very-deep-v5 classic DEPTH-001 ... ⏭ (exists)
+  very-deep-v5 classic DEPTH-002 ... ✓
+  very-deep-v5 classic DEPTH-003 ... ✓
+  very-deep-v5 classic DEPTH-004 ... ✓
+  very-deep-v5 classic DEPTH-005 ... ✓
+[very-deep-v5 / adddir]
+  very-deep-v5 adddir NAV-001 ... ✓
+  very-deep-v5 adddir NAV-002 ... ⏭ (exists)
+  very-deep-v5 adddir NAV-003 ... ⏭ (exists)
+  very-deep-v5 adddir NAV-004 ... ✓
+  very-deep-v5 adddir NAV-005 ... ✓
+  very-deep-v5 adddir NAV-006 ... ✓
+  very-deep-v5 adddir NAV-007 ... ✓
+  very-deep-v5 adddir NAV-008 ... ✓
+  very-deep-v5 adddir NAV-009 ... ✓
+  very-deep-v5 adddir NAV-010 ... ✓
+  very-deep-v5 adddir XREF-001 ... ✓
+  very-deep-v5 adddir XREF-002 ... ✓
+  very-deep-v5 adddir XREF-003 ... ✓
+  very-deep-v5 adddir XREF-004 ... ✓
+  very-deep-v5 adddir XREF-005 ... ✓
+  very-deep-v5 adddir XREF-006 ... ✓
+  very-deep-v5 adddir XREF-007 ... ⏭ (exists)
+  very-deep-v5 adddir XREF-008 ... ⏭ (exists)
+  very-deep-v5 adddir DEPTH-001 ... ✓
+  very-deep-v5 adddir DEPTH-002 ... ✓
+  very-deep-v5 adddir DEPTH-003 ... ✓
+  very-deep-v5 adddir DEPTH-004 ... ✓
+  very-deep-v5 adddir DEPTH-005 ... ✓
+Worker 2: Complete at Fri Jan 30 11:32:15 AM MST 2026
+[Fri Jan 30 11:32:15 AM MST 2026] Worker 2 finished

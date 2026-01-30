@@ -1,0 +1,17 @@
+{
+  "question_id": "DEPTH-005",
+  "question": "How has CEO Dr. Maya Chen's background influenced the company's strategic direction?",
+  "question_type": "depth",
+  "config": {
+    "structure": "deep-v5-v5.4",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":36207,\"duration_api_ms\":31546,\"num_turns\":2,\"result\":\"Based on the comprehensive search results, I'll provide a concise JSON-formatted response:\\n\\n{\\\"answer\\\": \\\"Dr. Maya Chen's background in AI research, technology consulting, and strategic leadership has profoundly shaped Soong-Daystrom Industries. Her technical expertise and vision have driven the company's expansion into companion robotics, established industry-leading AI ethics standards, and guided a transformational strategy focused on consciousness-enabled technology. Under her leadership, SDI has grown from $28 billion to $47.2 billion, with ambitious plans to deploy advanced AI technologies across major market segments by 2035.\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\n    \\\"@company/people/directory/leadership-bios.md\\\",\\n    \\\"@company/structure/organization/executives.md\\\", \\n    \\\"@company/background/history/founding.md\\\",\\n    \\\"@company/records/meetings/board-meetings-2124.md\\\",\\n    \\\"@company/initiatives/projects/prometheus-detailed.md\\\"\\n]}\",\"session_id\":\"0648d4a7-5fee-4bf5-a627-94d0deff0d64\",\"total_cost_usd\":0.09891881,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3748,\"cache_read_input_tokens\":40887,\"output_tokens\":392,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3748,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":188,\"outputTokens\":2259,\"cacheReadInputTokens\":139420,\"cacheCreationInputTokens\":51921,\"webSearchRequests\":0,\"costUSD\":0.09032625,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":392,\"cacheReadInputTokens\":40887,\"cacheCreationInputTokens\":3748,\"webSearchRequests\":0,\"costUSD\":0.008592559999999999,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[{\"tool_name\":\"Grep\",\"tool_use_id\":\"toolu_016jP9BqKyjqQyeT34mihWjE\",\"tool_input\":{\"pattern\":\"Maya Chen\",\"path\":\"/home/davidmoneil/Code/context-structure-research/soong-daystrom\"}}],\"uuid\":\"fd9d9560-e02b-4c2a-bf37-ef16b37582e8\"}",
+  "expected_answer": "Her background as CTO of NeuroSync Labs (neural interface company) led to the 2120 acquisition, expansion into neural interfaces (NIM product line), and focus on consciousness research (Project Prometheus). This shifted the company from pure robotics to human-AI integration",
+  "metadata": {
+    "duration_seconds": 37.865798270,
+    "timestamp": "2026-01-30T12:44:20-07:00"
+  }
+}

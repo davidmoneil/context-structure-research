@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-005",
+  "question": "Which pilot customer signed a contract for Project Atlas, and what is the contract value?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":31422,\"duration_api_ms\":27596,\"num_turns\":2,\"result\":\"Based on the exploration, I can confidently answer the question:\\n\\n{\\\"answer\\\": \\\"Rio Tinto signed the pilot contract for Project Atlas with a value of $47 million\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\n    \\\"/company/initiatives/projects/atlas.md\\\",\\n    \\\"/company/finance/reports/quarterly-report-q2-2124.md\\\",\\n    \\\"/company/finance/reports/quarterly-report-q3-2124.md\\\"\\n]}\",\"session_id\":\"56c57e56-32b5-4d4f-abcd-9de36ec8abe6\",\"total_cost_usd\":0.04190911,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3465,\"cache_read_input_tokens\":40607,\"output_tokens\":237,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3465,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":147,\"outputTokens\":1581,\"cacheReadInputTokens\":75387,\"cacheCreationInputTokens\":14921,\"webSearchRequests\":0,\"costUSD\":0.03424194999999999,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":237,\"cacheReadInputTokens\":40607,\"cacheCreationInputTokens\":3465,\"webSearchRequests\":0,\"costUSD\":0.007667159999999999,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"f79ce764-d6ca-4f63-83b0-99706081516f\"}",
+  "expected_answer": "Rio Tinto, $47 million",
+  "metadata": {
+    "duration_seconds": 33.118749151,
+    "timestamp": "2026-01-30T07:34:07-07:00"
+  }
+}

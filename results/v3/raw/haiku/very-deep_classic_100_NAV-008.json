@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-008",
+  "question": "What is the current consciousness indicator score for Project Prometheus?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "very-deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":20691,\"duration_api_ms\":21216,\"num_turns\":2,\"result\":\"Based on the exploration results, I can provide the answer in the requested JSON format:\\n\\n```json\\n{\\n    \\\"answer\\\": \\\"0.72\\\",\\n    \\\"confidence\\\": \\\"high\\\", \\n    \\\"sources_used\\\": [\\n        \\\"/soong-daystrom/company/initiatives/research/active-projects/prometheus.md\\\",\\n        \\\"/soong-daystrom/company/other/uncategorized/consciousness-research.md\\\"\\n    ]\\n}\\n```\\n\\nThe consciousness indicator score for Project Prometheus is currently 0.72, with a target of >0.87. The research team is actively working towards achieving higher scores, with recent milestones showing progression up to 0.94.\",\"session_id\":\"3677b496-fa30-40bf-b472-20aaa400993e\",\"total_cost_usd\":0.03769893,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3557,\"cache_read_input_tokens\":40741,\"output_tokens\":312,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3557,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":140,\"outputTokens\":1291,\"cacheReadInputTokens\":38478,\"cacheCreationInputTokens\":15349,\"webSearchRequests\":0,\"costUSD\":0.029629049999999997,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":312,\"cacheReadInputTokens\":40741,\"cacheCreationInputTokens\":3557,\"webSearchRequests\":0,\"costUSD\":0.00806988,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"cb325b34-1bca-4bc2-bfdb-00812efe33a6\"}",
+  "expected_answer": "0.72",
+  "metadata": {
+    "duration_seconds": 21.755565801,
+    "timestamp": "2026-01-30T07:56:11-07:00"
+  }
+}

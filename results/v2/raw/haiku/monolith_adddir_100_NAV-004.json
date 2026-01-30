@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-004",
+  "question": "How many employees does Soong-Daystrom Industries have?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "monolith",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":2821,\"duration_api_ms\":4093,\"num_turns\":1,\"result\":\"{\\\"answer\\\": \\\"12,847\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/organization/executives.md\\\", \\\"/financial/annual-report-2123.md\\\", \\\"/regions/north-america.md\\\"]}\",\"session_id\":\"27725e8e-c815-4e1d-a385-4c55d9420061\",\"total_cost_usd\":0.08716008,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":85074,\"cache_read_input_tokens\":18971,\"output_tokens\":52,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":85074,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":47,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.00035800000000000003,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":52,\"cacheReadInputTokens\":18971,\"cacheCreationInputTokens\":85074,\"webSearchRequests\":0,\"costUSD\":0.08680208,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"3d69bb93-a945-4882-9dbb-d30ebbf64b1d\"}",
+  "expected_answer": "12,847",
+  "metadata": {
+    "duration_seconds": 13.249622789,
+    "timestamp": "2026-01-29T19:47:31-07:00"
+  }
+}

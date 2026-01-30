@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-008",
+  "question": "How did the NeuroSync acquisition impact the NIM revenue trajectory?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep-v5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":4267,\"duration_api_ms\":6627,\"num_turns\":1,\"result\":\"I apologize, but I cannot confidently answer this specific question based on the provided context. The context files appear to be project instructions for a research project about context structure, but they do not contain any specific details about a NeuroSync acquisition or NIM revenue.\\n\\nHere's my response in the requested JSON format:\\n\\n{\\\"answer\\\": \\\"Insufficient information to determine the impact of the NeuroSync acquisition on NIM revenue\\\", \\\"confidence\\\": \\\"low\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/.claude/CLAUDE.md\\\", \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v5/CLAUDE.md\\\"]}\\n\\nTo find the actual answer, I would need to explore the research notes or source files in more detail. Would you like me to investigate further?\",\"session_id\":\"6cf5d6e0-1f26-4b0a-8def-574b399cbc4c\",\"total_cost_usd\":0.00529356,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":2621,\"cache_read_input_tokens\":19027,\"output_tokens\":190,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2621,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":53,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000388,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":190,\"cacheReadInputTokens\":19027,\"cacheCreationInputTokens\":2621,\"webSearchRequests\":0,\"costUSD\":0.00490556,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"db4e1070-15ac-4fab-b246-71a35bfa2d92\"}",
+  "expected_answer": "NIM revenue grew from $712M in 9 months post-acquisition (2120) to $7.2B in 2124, representing rapid growth enabled by NeuroSync's technology",
+  "metadata": {
+    "duration_seconds": 5.922094290,
+    "timestamp": "2026-01-30T11:10:17-07:00"
+  }
+}

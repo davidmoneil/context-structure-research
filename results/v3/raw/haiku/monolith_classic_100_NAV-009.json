@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-009",
+  "question": "How much did Soong-Daystrom pay to acquire NeuroSync Labs?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "monolith",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":3056,\"duration_api_ms\":4623,\"num_turns\":1,\"result\":\"{\\\"answer\\\": \\\"$8.2 billion\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/history/acquisition-neurosync.md\\\"]}\",\"session_id\":\"38954479-deaf-4409-bb60-6d3790ee2c70\",\"total_cost_usd\":0.16460832,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":162370,\"cache_read_input_tokens\":18999,\"output_tokens\":37,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":162370,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":89,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.0005679999999999999,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":37,\"cacheReadInputTokens\":18999,\"cacheCreationInputTokens\":162370,\"webSearchRequests\":0,\"costUSD\":0.16404032,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"a53cc94f-d426-4710-b126-2944b0fbc298\"}",
+  "expected_answer": "$8.2 billion",
+  "metadata": {
+    "duration_seconds": 30.338872999,
+    "timestamp": "2026-01-30T06:50:11-07:00"
+  }
+}

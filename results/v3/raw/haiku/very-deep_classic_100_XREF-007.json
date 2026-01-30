@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-007",
+  "question": "What positions report directly to Dr. James Okonkwo?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "very-deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":19091,\"duration_api_ms\":20569,\"num_turns\":3,\"result\":\"I'll prepare the JSON response based on the exploration results:\\n\\n{\\\"answer\\\": \\\"VP Research, VP Product Development, VP Engineering, and Chief Scientist\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/soong-daystrom/company/structure/leadership/executive-team/executives.md\\\"]}\",\"session_id\":\"fa16d6de-e975-4f74-a999-2e66c108b208\",\"total_cost_usd\":0.03141915,\"usage\":{\"input_tokens\":11,\"cache_creation_input_tokens\":3445,\"cache_read_input_tokens\":63035,\"output_tokens\":372,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3445,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":3363,\"outputTokens\":954,\"cacheReadInputTokens\":52303,\"cacheCreationInputTokens\":6457,\"webSearchRequests\":0,\"costUSD\":0.02143455,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":11,\"outputTokens\":372,\"cacheReadInputTokens\":63035,\"cacheCreationInputTokens\":3445,\"webSearchRequests\":0,\"costUSD\":0.0099846,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[{\"tool_name\":\"Glob\",\"tool_use_id\":\"toolu_01QfmWvvEZ4tyAoNoobpMQm1\",\"tool_input\":{\"pattern\":\"soong-daystrom/very-deep/company/structure/leadership/**/*\",\"path\":\"/home/davidmoneil/Code/context-structure-research\"}}],\"uuid\":\"fd00d9f7-aea4-4b03-855a-4eb158df37d1\"}",
+  "expected_answer": "VP Research, VP Product Development, VP Engineering, Chief Scientist",
+  "metadata": {
+    "duration_seconds": 20.265827639,
+    "timestamp": "2026-01-30T07:59:32-07:00"
+  }
+}

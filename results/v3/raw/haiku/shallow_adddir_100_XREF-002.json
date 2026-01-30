@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-002",
+  "question": "Who is the executive sponsor of Project Atlas, and what is their role?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "shallow",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":3648,\"duration_api_ms\":5111,\"num_turns\":1,\"result\":\"{\\n    \\\"answer\\\": \\\"Marcus Williams (COO) is the executive sponsor of Project Atlas, responsible for overseeing and supporting the project's strategic direction\\\",\\n    \\\"confidence\\\": \\\"high\\\", \\n    \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/shallow/projects/atlas.md\\\"]\\n}\",\"session_id\":\"c36dd14c-ae51-4036-99c7-dba2e85c77cb\",\"total_cost_usd\":0.07713648,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":74859,\"cache_read_input_tokens\":18976,\"output_tokens\":86,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":74859,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":58,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000413,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":86,\"cacheReadInputTokens\":18976,\"cacheCreationInputTokens\":74859,\"webSearchRequests\":0,\"costUSD\":0.07672348,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"29adee82-cfe3-4a5f-85bd-4cd48405b0bb\"}",
+  "expected_answer": "Marcus Williams, Chief Operating Officer (COO)",
+  "metadata": {
+    "duration_seconds": 5.118381295,
+    "timestamp": "2026-01-30T07:26:47-07:00"
+  }
+}

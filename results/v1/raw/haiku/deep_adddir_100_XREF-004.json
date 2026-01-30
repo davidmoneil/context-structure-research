@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-004",
+  "question": "What decision was made in the October 2124 board meeting regarding AI safety research funding?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":17420,\"duration_api_ms\":17679,\"num_turns\":2,\"result\":\"Based on the search results, I can provide the following answer:\\n\\n{\\n    \\\"answer\\\": \\\"The board approved a $10M external AI safety research fund, authorized the formation of a consciousness ethics sub-committee, and resolved to support external research addressing potential regulatory gaps and oversight of autonomous systems.\\\",\\n    \\\"confidence\\\": \\\"high\\\",\\n    \\\"sources_used\\\": [\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source/meetings/board-q3-2124.md\\\"\\n    ]\\n}\",\"session_id\":\"1b5022fa-aeaa-4fb6-a14a-cccdccace022\",\"total_cost_usd\":0.02336214,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3144,\"cache_read_input_tokens\":40543,\"output_tokens\":270,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3144,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":1110,\"outputTokens\":898,\"cacheReadInputTokens\":35691,\"cacheCreationInputTokens\":5376,\"webSearchRequests\":0,\"costUSD\":0.0158891,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":270,\"cacheReadInputTokens\":40543,\"cacheCreationInputTokens\":3144,\"webSearchRequests\":0,\"costUSD\":0.00747304,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"ca33c1a3-e74b-488c-a241-bd446af82be6\"}",
+  "expected_answer": "The board approved a $10 million external AI safety research fund",
+  "metadata": {
+    "duration_seconds": 18.910175808,
+    "timestamp": "2026-01-29T14:51:44-07:00"
+  }
+}

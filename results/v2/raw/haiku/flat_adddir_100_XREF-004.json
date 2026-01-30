@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-004",
+  "question": "What decision was made in the October 2124 board meeting regarding AI safety research funding?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "flat",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":8809,\"duration_api_ms\":9738,\"num_turns\":2,\"result\":\"Based on the board meeting minutes, I can confidently answer:\\n\\n{\\\"answer\\\": \\\"The board approved a $10 million external AI safety research fund\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"meetings-board-q3-2124.md\\\"]}\\n\\nThe specific details are found in the \\\"AI Ethics Advisory Board Report\\\" section (lines 134-140), which shows that the board explicitly resolved to fund $10 million in external AI safety research as part of recommendations from the AI Ethics Advisory Board.\",\"session_id\":\"c8dfb6ee-791f-44f1-868c-c4d47719e7e0\",\"total_cost_usd\":0.10065428000000001,\"usage\":{\"input_tokens\":8,\"cache_creation_input_tokens\":89233,\"cache_read_input_tokens\":124411,\"output_tokens\":216,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":89233,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":95,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000598,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":8,\"outputTokens\":216,\"cacheReadInputTokens\":124411,\"cacheCreationInputTokens\":89233,\"webSearchRequests\":0,\"costUSD\":0.10005628000000001,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"6c9eb4bf-457c-4a94-aaca-32429a9053bb\"}",
+  "expected_answer": "The board approved a $10 million external AI safety research fund",
+  "metadata": {
+    "duration_seconds": 10.689975470,
+    "timestamp": "2026-01-29T20:05:57-07:00"
+  }
+}

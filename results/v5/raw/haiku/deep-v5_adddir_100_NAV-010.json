@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-010",
+  "question": "Where is the Project Prometheus team located?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep-v5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":30697,\"duration_api_ms\":31936,\"num_turns\":2,\"result\":\"Based on the search results, I'll provide the answer in the requested JSON format:\\n\\n{\\\"answer\\\": \\\"Building 7 in San Francisco\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/soong-daystrom/_source-v5/employees/research-scientists.md\\\", \\\"/soong-daystrom/_source-v5/technical/security-protocols.md\\\", \\\"/soong-daystrom/_source-v5/meetings/prometheus-weekly-2024-10-21.md\\\"]}\",\"session_id\":\"195db3fa-a6db-4c4a-8321-dc85028d5ad2\",\"total_cost_usd\":0.05234056999999999,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3320,\"cache_read_input_tokens\":40669,\"output_tokens\":249,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3320,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":6061,\"outputTokens\":1812,\"cacheReadInputTokens\":103707,\"cacheCreationInputTokens\":15419,\"webSearchRequests\":0,\"costUSD\":0.04476545,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":249,\"cacheReadInputTokens\":40669,\"cacheCreationInputTokens\":3320,\"webSearchRequests\":0,\"costUSD\":0.007575119999999999,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"fba08488-ecac-490b-83dd-a596d5eb9fb7\"}",
+  "expected_answer": "San Francisco Secure Lab (Building 7)",
+  "metadata": {
+    "duration_seconds": 32.426353481,
+    "timestamp": "2026-01-30T11:06:07-07:00"
+  }
+}

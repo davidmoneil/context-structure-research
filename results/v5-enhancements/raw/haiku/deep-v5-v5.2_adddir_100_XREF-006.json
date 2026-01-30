@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-006",
+  "question": "What is the relationship between Project Hermes and Project Prometheus?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep-v5-v5.2",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":4194,\"duration_api_ms\":5413,\"num_turns\":1,\"result\":\"I apologize, but I cannot confidently answer this question. While I see the context for Soong-Daystrom Industries, there are no specific details about Project Hermes or Project Prometheus in the provided context. \\n\\nI'll respond in the requested JSON format:\\n\\n{\\\"answer\\\": \\\"Insufficient information to determine the relationship between Project Hermes and Project Prometheus\\\", \\\"confidence\\\": \\\"low\\\", \\\"sources_used\\\": []}\\n\\nTo find the answer, I would need to explore the contents of the research notes or project documentation further. Would you like me to use the Explore agent to search for more information about these projects?\",\"session_id\":\"41a223a5-1d94-4b6e-a5d7-174d2c63e348\",\"total_cost_usd\":0.00797304,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":5757,\"cache_read_input_tokens\":15983,\"output_tokens\":138,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":5757,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":52,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000383,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":138,\"cacheReadInputTokens\":15983,\"cacheCreationInputTokens\":5757,\"webSearchRequests\":0,\"costUSD\":0.00759004,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"8b203493-0e0a-4fad-ba28-a13c434733da\"}",
+  "expected_answer": "Project Hermes provides the communication interface/emotional layer that will integrate with Project Prometheus; Prometheus has a dependency on Hermes for Phase 3/4",
+  "metadata": {
+    "duration_seconds": 5.923001353,
+    "timestamp": "2026-01-30T12:54:05-07:00"
+  }
+}

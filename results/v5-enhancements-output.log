@@ -1,0 +1,38 @@
+=== Building V5 Enhancement Variants ===
+Start: Fri Jan 30 12:05:12 PM MST 2026
+Variant: all
+
+Building v5.1 for flat-v5 (2-sentence summaries)...
+  Processing: CLAUDE.md
+  Index created: /home/davidmoneil/Code/context-structure-research/soong-daystrom/flat-v5-v5.1/_index.md
+
+Building v5.1 for deep-v5 (2-sentence summaries)...
+  Processing: CLAUDE.md
+  Index created: /home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v5-v5.1/_index.md
+
+Building v5.2 for flat-v5 (5-sentence summaries)...
+  Processing: CLAUDE.md
+  Index created: /home/davidmoneil/Code/context-structure-research/soong-daystrom/flat-v5-v5.2/_index.md
+
+Building v5.2 for deep-v5 (5-sentence summaries)...
+  Processing: CLAUDE.md
+  Index created: /home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v5-v5.2/_index.md
+
+Building v5.3 for flat-v5 (10 keywords)...
+  Processing: CLAUDE.md
+  Index created: /home/davidmoneil/Code/context-structure-research/soong-daystrom/flat-v5-v5.3/_index.md
+
+Building v5.3 for deep-v5 (10 keywords)...
+  Processing: CLAUDE.md
+  Index created: /home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v5-v5.3/_index.md
+
+Building v5.4 for flat-v5 (2-sentence + keywords)...
+  Processing: CLAUDE.md
+  Index created: /home/davidmoneil/Code/context-structure-research/soong-daystrom/flat-v5-v5.4/_index.md
+
+Building v5.4 for deep-v5 (2-sentence + keywords)...
+  Processing: CLAUDE.md
+  Index created: /home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v5-v5.4/_index.md
+
+=== V5 Enhancements Complete ===
+End: Fri Jan 30 12:14:15 PM MST 2026

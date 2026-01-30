@@ -1,0 +1,279 @@
+===================================================
+  Context Structure Research - Haiku Full Matrix
+  Corpus Version: v4
+===================================================
+
+Configuration:
+  Structures: monolith flat shallow deep very-deep
+  Loading: classic adddir
+  Questions: 23
+  Total tests: 230
+  Results dir: /home/davidmoneil/Code/context-structure-research/results/v4/raw
+
+Log file: /home/davidmoneil/Code/context-structure-research/results/v4/haiku-matrix-20260130-100223.log
+
+Starting at Fri Jan 30 10:02:23 AM MST 2026
+---------------------------------------------------
+
+[monolith / classic]
+  [  1/230] monolith classic NAV-001    ... ⏭ (exists)
+  [  2/230] monolith classic NAV-002    ... ⏭ (exists)
+  [  3/230] monolith classic NAV-003    ... ⏭ (exists)
+  [  4/230] monolith classic NAV-004    ... ⏭ (exists)
+  [  5/230] monolith classic NAV-005    ... ⏭ (exists)
+  [  6/230] monolith classic NAV-006    ... ⏭ (exists)
+  [  7/230] monolith classic NAV-007    ... ⏭ (exists)
+  [  8/230] monolith classic NAV-008    ... ⏭ (exists)
+  [  9/230] monolith classic NAV-009    ... ⏭ (exists)
+  [ 10/230] monolith classic NAV-010    ... ⏭ (exists)
+  [ 11/230] monolith classic XREF-001   ... ⏭ (exists)
+  [ 12/230] monolith classic XREF-002   ... ⏭ (exists)
+  [ 13/230] monolith classic XREF-003   ... ⏭ (exists)
+  [ 14/230] monolith classic XREF-004   ... ⏭ (exists)
+  [ 15/230] monolith classic XREF-005   ... ⏭ (exists)
+  [ 16/230] monolith classic XREF-006   ... ⏭ (exists)
+  [ 17/230] monolith classic XREF-007   ... ⏭ (exists)
+  [ 18/230] monolith classic XREF-008   ... ⏭ (exists)
+  [ 19/230] monolith classic DEPTH-001  ... ⏭ (exists)
+  [ 20/230] monolith classic DEPTH-002  ... ⏭ (exists)
+  [ 21/230] monolith classic DEPTH-003  ... ⏭ (exists)
+  [ 22/230] monolith classic DEPTH-004  ... ⏭ (exists)
+  [ 23/230] monolith classic DEPTH-005  ... ⏭ (exists)
+
+[monolith / adddir]
+  [ 24/230] monolith adddir  NAV-001    ... ⏭ (exists)
+  [ 25/230] monolith adddir  NAV-002    ... ⏭ (exists)
+  [ 26/230] monolith adddir  NAV-003    ... ⏭ (exists)
+  [ 27/230] monolith adddir  NAV-004    ... ⏭ (exists)
+  [ 28/230] monolith adddir  NAV-005    ... ⏭ (exists)
+  [ 29/230] monolith adddir  NAV-006    ... ⏭ (exists)
+  [ 30/230] monolith adddir  NAV-007    ... ⏭ (exists)
+  [ 31/230] monolith adddir  NAV-008    ... ⏭ (exists)
+  [ 32/230] monolith adddir  NAV-009    ... ⏭ (exists)
+  [ 33/230] monolith adddir  NAV-010    ... ⏭ (exists)
+  [ 34/230] monolith adddir  XREF-001   ... ⏭ (exists)
+  [ 35/230] monolith adddir  XREF-002   ... ⏭ (exists)
+  [ 36/230] monolith adddir  XREF-003   ... ⏭ (exists)
+  [ 37/230] monolith adddir  XREF-004   ... ⏭ (exists)
+  [ 38/230] monolith adddir  XREF-005   ... ⏭ (exists)
+  [ 39/230] monolith adddir  XREF-006   ... ⏭ (exists)
+  [ 40/230] monolith adddir  XREF-007   ... ⏭ (exists)
+  [ 41/230] monolith adddir  XREF-008   (ETA: 0 min)... ✓
+  [ 42/230] monolith adddir  DEPTH-001  (ETA: 6 min)... ✓
+  [ 43/230] monolith adddir  DEPTH-002  (ETA: 12 min)... ✓
+  [ 44/230] monolith adddir  DEPTH-003  (ETA: 15 min)... ✓
+  [ 45/230] monolith adddir  DEPTH-004  (ETA: 21 min)... ✓
+  [ 46/230] monolith adddir  DEPTH-005  (ETA: 27 min)... ✓
+
+[flat / classic]
+  [ 47/230] flat     classic NAV-001    (ETA: 33 min)... ✓
+  [ 48/230] flat     classic NAV-002    (ETA: 30 min)... ✓
+  [ 49/230] flat     classic NAV-003    (ETA: 30 min)... ✓
+  [ 50/230] flat     classic NAV-004    (ETA: 30 min)... ✓
+  [ 51/230] flat     classic NAV-005    (ETA: 30 min)... ✓
+  [ 52/230] flat     classic NAV-006    (ETA: 29 min)... ✓
+  [ 53/230] flat     classic NAV-007    (ETA: 29 min)... ✓
+  [ 54/230] flat     classic NAV-008    (ETA: 29 min)... ✓
+  [ 55/230] flat     classic NAV-009    (ETA: 26 min)... ✓
+  [ 56/230] flat     classic NAV-010    (ETA: 26 min)... ✓
+  [ 57/230] flat     classic XREF-001   (ETA: 26 min)... ✓
+  [ 58/230] flat     classic XREF-002   (ETA: 25 min)... ✓
+  [ 59/230] flat     classic XREF-003   (ETA: 25 min)... ✓
+  [ 60/230] flat     classic XREF-004   (ETA: 25 min)... ✓
+  [ 61/230] flat     classic XREF-005   (ETA: 25 min)... ✓
+  [ 62/230] flat     classic XREF-006   (ETA: 25 min)... ✓
+  [ 63/230] flat     classic XREF-007   (ETA: 22 min)... ✓
+  [ 64/230] flat     classic XREF-008   (ETA: 22 min)... ✓
+  [ 65/230] flat     classic DEPTH-001  (ETA: 22 min)... ✓
+  [ 66/230] flat     classic DEPTH-002  (ETA: 22 min)... ✓
+  [ 67/230] flat     classic DEPTH-003  (ETA: 21 min)... ✓
+  [ 68/230] flat     classic DEPTH-004  (ETA: 21 min)... ✓
+  [ 69/230] flat     classic DEPTH-005  (ETA: 21 min)... ✓
+
+[flat / adddir]
+  [ 70/230] flat     adddir  NAV-001    (ETA: 21 min)... ✓
+  [ 71/230] flat     adddir  NAV-002    (ETA: 21 min)... ✓
+  [ 72/230] flat     adddir  NAV-003    (ETA: 21 min)... ✓
+  [ 73/230] flat     adddir  NAV-004    (ETA: 21 min)... ✓
+  [ 74/230] flat     adddir  NAV-005    (ETA: 20 min)... ✓
+  [ 75/230] flat     adddir  NAV-006    (ETA: 20 min)... ✓
+  [ 76/230] flat     adddir  NAV-007    (ETA: 18 min)... ✓
+  [ 77/230] flat     adddir  NAV-008    (ETA: 17 min)... ✓
+  [ 78/230] flat     adddir  NAV-009    (ETA: 17 min)... ✓
+  [ 79/230] flat     adddir  NAV-010    (ETA: 17 min)... ✓
+  [ 80/230] flat     adddir  XREF-001   (ETA: 17 min)... ✓
+  [ 81/230] flat     adddir  XREF-002   (ETA: 17 min)... ✓
+  [ 82/230] flat     adddir  XREF-003   (ETA: 17 min)... ✓
+  [ 83/230] flat     adddir  XREF-004   (ETA: 17 min)... ✓
+  [ 84/230] flat     adddir  XREF-005   (ETA: 17 min)... ✓
+  [ 85/230] flat     adddir  XREF-006   (ETA: 17 min)... ✓
+  [ 86/230] flat     adddir  XREF-007   (ETA: 16 min)... ✓
+  [ 87/230] flat     adddir  XREF-008   (ETA: 16 min)... ✓
+  [ 88/230] flat     adddir  DEPTH-001  (ETA: 16 min)... ✓
+  [ 89/230] flat     adddir  DEPTH-002  (ETA: 16 min)... ✓
+  [ 90/230] flat     adddir  DEPTH-003  (ETA: 16 min)... ✓
+  [ 91/230] flat     adddir  DEPTH-004  (ETA: 16 min)... ✓
+  [ 92/230] flat     adddir  DEPTH-005  (ETA: 16 min)... ✓
+
+[shallow / classic]
+  [ 93/230] shallow  classic NAV-001    (ETA: 16 min)... ✓
+  [ 94/230] shallow  classic NAV-002    (ETA: 15 min)... ✓
+  [ 95/230] shallow  classic NAV-003    (ETA: 15 min)... ✓
+  [ 96/230] shallow  classic NAV-004    (ETA: 15 min)... ✓
+  [ 97/230] shallow  classic NAV-005    (ETA: 15 min)... ✓
+  [ 98/230] shallow  classic NAV-006    (ETA: 15 min)... ✓
+  [ 99/230] shallow  classic NAV-007    (ETA: 15 min)... ✓
+  [100/230] shallow  classic NAV-008    (ETA: 15 min)... ✓
+  [101/230] shallow  classic NAV-009    (ETA: 15 min)... ✓
+  [102/230] shallow  classic NAV-010    (ETA: 15 min)... ✓
+  [103/230] shallow  classic XREF-001   (ETA: 14 min)... ✓
+  [104/230] shallow  classic XREF-002   (ETA: 14 min)... ✓
+  [105/230] shallow  classic XREF-003   (ETA: 14 min)... ✓
+  [106/230] shallow  classic XREF-004   (ETA: 14 min)... ✓
+  [107/230] shallow  classic XREF-005   (ETA: 14 min)... ✓
+  [108/230] shallow  classic XREF-006   (ETA: 14 min)... ✓
+  [109/230] shallow  classic XREF-007   (ETA: 14 min)... ✓
+  [110/230] shallow  classic XREF-008   (ETA: 14 min)... ✓
+  [111/230] shallow  classic DEPTH-001  (ETA: 14 min)... ✓
+  [112/230] shallow  classic DEPTH-002  (ETA: 13 min)... ✓
+  [113/230] shallow  classic DEPTH-003  (ETA: 13 min)... ✓
+  [114/230] shallow  classic DEPTH-004  (ETA: 13 min)... ✓
+  [115/230] shallow  classic DEPTH-005  (ETA: 13 min)... ✓
+
+[shallow / adddir]
+  [116/230] shallow  adddir  NAV-001    (ETA: 15 min)... ✓
+  [117/230] shallow  adddir  NAV-002    (ETA: 15 min)... ✓
+  [118/230] shallow  adddir  NAV-003    (ETA: 15 min)... ✓
+  [119/230] shallow  adddir  NAV-004    (ETA: 14 min)... ✓
+  [120/230] shallow  adddir  NAV-005    (ETA: 14 min)... ✓
+  [121/230] shallow  adddir  NAV-006    (ETA: 14 min)... ✓
+  [122/230] shallow  adddir  NAV-007    (ETA: 12 min)... ✓
+  [123/230] shallow  adddir  NAV-008    (ETA: 14 min)... ✓
+  [124/230] shallow  adddir  NAV-009    (ETA: 12 min)... ✓
+  [125/230] shallow  adddir  NAV-010    (ETA: 14 min)... ✓
+  [126/230] shallow  adddir  XREF-001   (ETA: 14 min)... ✓
+  [127/230] shallow  adddir  XREF-002   (ETA: 13 min)... ✓
+  [128/230] shallow  adddir  XREF-003   (ETA: 13 min)... ✓
+  [129/230] shallow  adddir  XREF-004   (ETA: 13 min)... ✓
+  [130/230] shallow  adddir  XREF-005   (ETA: 13 min)... ✓
+  [131/230] shallow  adddir  XREF-006   (ETA: 13 min)... ✓
+  [132/230] shallow  adddir  XREF-007   (ETA: 13 min)... ✓
+  [133/230] shallow  adddir  XREF-008   (ETA: 13 min)... ✓
+  [134/230] shallow  adddir  DEPTH-001  (ETA: 12 min)... ✓
+  [135/230] shallow  adddir  DEPTH-002  (ETA: 12 min)... ✓
+  [136/230] shallow  adddir  DEPTH-003  (ETA: 12 min)... ✓
+  [137/230] shallow  adddir  DEPTH-004  (ETA: 12 min)... ✓
+  [138/230] shallow  adddir  DEPTH-005  (ETA: 12 min)... ✓
+
+[deep / classic]
+  [139/230] deep     classic NAV-001    (ETA: 12 min)... ✓
+  [140/230] deep     classic NAV-002    (ETA: 12 min)... ✓
+  [141/230] deep     classic NAV-003    (ETA: 12 min)... ✓
+  [142/230] deep     classic NAV-004    (ETA: 11 min)... ✓
+  [143/230] deep     classic NAV-005    (ETA: 13 min)... ✓
+  [144/230] deep     classic NAV-006    (ETA: 13 min)... ✓
+  [145/230] deep     classic NAV-007    (ETA: 12 min)... ✓
+  [146/230] deep     classic NAV-008    (ETA: 12 min)... ✓
+  [147/230] deep     classic NAV-009    (ETA: 12 min)... ✓
+  [148/230] deep     classic NAV-010    (ETA: 12 min)... ✓
+  [149/230] deep     classic XREF-001   (ETA: 12 min)... ✓
+  [150/230] deep     classic XREF-002   (ETA: 12 min)... ✓
+  [151/230] deep     classic XREF-003   (ETA: 12 min)... ✓
+  [152/230] deep     classic XREF-004   (ETA: 11 min)... ✓
+  [153/230] deep     classic XREF-005   (ETA: 11 min)... ✓
+  [154/230] deep     classic XREF-006   (ETA: 12 min)... ✓
+  [155/230] deep     classic XREF-007   (ETA: 12 min)... ✓
+  [156/230] deep     classic XREF-008   (ETA: 12 min)... ✓
+  [157/230] deep     classic DEPTH-001  (ETA: 12 min)... ✓
+  [158/230] deep     classic DEPTH-002  (ETA: 12 min)... ✓
+  [159/230] deep     classic DEPTH-003  (ETA: 12 min)... ✓
+  [160/230] deep     classic DEPTH-004  (ETA: 11 min)... ✓
+  [161/230] deep     classic DEPTH-005  (ETA: 12 min)... ✓
+
+[deep / adddir]
+  [162/230] deep     adddir  NAV-001    (ETA: 12 min)... ✓
+  [163/230] deep     adddir  NAV-002    (ETA: 12 min)... ✓
+  [164/230] deep     adddir  NAV-003    (ETA: 12 min)... ✓
+  [165/230] deep     adddir  NAV-004    (ETA: 12 min)... ✓
+  [166/230] deep     adddir  NAV-005    (ETA: 11 min)... ✓
+  [167/230] deep     adddir  NAV-006    (ETA: 11 min)... ✓
+  [168/230] deep     adddir  NAV-007    (ETA: 11 min)... ✓
+  [169/230] deep     adddir  NAV-008    (ETA: 11 min)... ✓
+  [170/230] deep     adddir  NAV-009    (ETA: 11 min)... ✓
+  [171/230] deep     adddir  NAV-010    (ETA: 11 min)... ✓
+  [172/230] deep     adddir  XREF-001   (ETA: 11 min)... ✓
+  [173/230] deep     adddir  XREF-002   (ETA: 11 min)... ✓
+  [174/230] deep     adddir  XREF-003   (ETA: 11 min)... ✓
+  [175/230] deep     adddir  XREF-004   (ETA: 11 min)... ✓
+  [176/230] deep     adddir  XREF-005   (ETA: 11 min)... ✓
+  [177/230] deep     adddir  XREF-006   (ETA: 11 min)... ✓
+  [178/230] deep     adddir  XREF-007   (ETA: 11 min)... ✓
+  [179/230] deep     adddir  XREF-008   (ETA: 11 min)... ✓
+  [180/230] deep     adddir  DEPTH-001  (ETA: 11 min)... ✓
+  [181/230] deep     adddir  DEPTH-002  (ETA: 10 min)... ✓
+  [182/230] deep     adddir  DEPTH-003  (ETA: 11 min)... ✓
+  [183/230] deep     adddir  DEPTH-004  (ETA: 11 min)... ✓
+  [184/230] deep     adddir  DEPTH-005  (ETA: 10 min)... ✓
+
+[very-deep / classic]
+  [185/230] very-deep classic NAV-001    (ETA: 10 min)... ✓
+  [186/230] very-deep classic NAV-002    (ETA: 10 min)... ✓
+  [187/230] very-deep classic NAV-003    (ETA: 10 min)... ✓
+  [188/230] very-deep classic NAV-004    (ETA: 10 min)... ✓
+  [189/230] very-deep classic NAV-005    (ETA: 9 min)... ✓
+  [190/230] very-deep classic NAV-006    (ETA: 9 min)... ✓
+  [191/230] very-deep classic NAV-007    (ETA: 10 min)... ✓
+  [192/230] very-deep classic NAV-008    (ETA: 9 min)... ✓
+  [193/230] very-deep classic NAV-009    (ETA: 9 min)... ✓
+  [194/230] very-deep classic NAV-010    (ETA: 9 min)... ✓
+  [195/230] very-deep classic XREF-001   (ETA: 9 min)... ✓
+  [196/230] very-deep classic XREF-002   (ETA: 8 min)... ✓
+  [197/230] very-deep classic XREF-003   (ETA: 8 min)... ✓
+  [198/230] very-deep classic XREF-004   (ETA: 8 min)... ✓
+  [199/230] very-deep classic XREF-005   (ETA: 8 min)... ✓
+  [200/230] very-deep classic XREF-006   (ETA: 7 min)... ✓
+  [201/230] very-deep classic XREF-007   (ETA: 7 min)... ✓
+  [202/230] very-deep classic XREF-008   (ETA: 7 min)... ✓
+  [203/230] very-deep classic DEPTH-001  (ETA: 7 min)... ✓
+  [204/230] very-deep classic DEPTH-002  (ETA: 7 min)... ✓
+  [205/230] very-deep classic DEPTH-003  (ETA: 6 min)... ✓
+  [206/230] very-deep classic DEPTH-004  (ETA: 6 min)... ✓
+  [207/230] very-deep classic DEPTH-005  (ETA: 6 min)... ✓
+
+[very-deep / adddir]
+  [208/230] very-deep adddir  NAV-001    (ETA: 6 min)... ✓
+  [209/230] very-deep adddir  NAV-002    (ETA: 5 min)... ✓
+  [210/230] very-deep adddir  NAV-003    (ETA: 5 min)... ✓
+  [211/230] very-deep adddir  NAV-004    (ETA: 5 min)... ✓
+  [212/230] very-deep adddir  NAV-005    (ETA: 5 min)... ✓
+  [213/230] very-deep adddir  NAV-006    (ETA: 4 min)... ✓
+  [214/230] very-deep adddir  NAV-007    (ETA: 4 min)... ✓
+  [215/230] very-deep adddir  NAV-008    (ETA: 4 min)... ✓
+  [216/230] very-deep adddir  NAV-009    (ETA: 4 min)... ✓
+  [217/230] very-deep adddir  NAV-010    (ETA: 3 min)... ✓
+  [218/230] very-deep adddir  XREF-001   (ETA: 3 min)... ✓
+  [219/230] very-deep adddir  XREF-002   (ETA: 3 min)... ✓
+  [220/230] very-deep adddir  XREF-003   (ETA: 3 min)... ✓
+  [221/230] very-deep adddir  XREF-004   (ETA: 2 min)... ✓
+  [222/230] very-deep adddir  XREF-005   (ETA: 2 min)... ✓
+  [223/230] very-deep adddir  XREF-006   (ETA: 2 min)... ✓
+  [224/230] very-deep adddir  XREF-007   (ETA: 1 min)... ✓
+  [225/230] very-deep adddir  XREF-008   (ETA: 1 min)... ✓
+  [226/230] very-deep adddir  DEPTH-001  (ETA: 1 min)... ✓
+  [227/230] very-deep adddir  DEPTH-002  (ETA: 1 min)... ✓
+  [228/230] very-deep adddir  DEPTH-003  (ETA: 0 min)... ✓
+  [229/230] very-deep adddir  DEPTH-004  (ETA: 0 min)... ✓
+  [230/230] very-deep adddir  DEPTH-005  (ETA: 0 min)... ✓
+
+===================================================
+  Complete!
+===================================================
+  Total: 230
+  Skipped (already done): 40
+  Ran this session: 190
+  Failed: 0
+  Duration: 68 minutes
+  Results: /home/davidmoneil/Code/context-structure-research/results/v4/raw/haiku/
+
+  Total cost: $10.37
+

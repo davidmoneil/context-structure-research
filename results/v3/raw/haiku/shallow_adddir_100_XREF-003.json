@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-003",
+  "question": "How does Dr. Wei Zhang's background relate to the NIM product line?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "shallow",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":4477,\"duration_api_ms\":5908,\"num_turns\":1,\"result\":\"{\\\"answer\\\": \\\"Dr. Wei Zhang was part of the NeuroSync Labs team that was acquired by Soong-Daystrom in 2116. After the acquisition, he became the Director of Neural Architecture and played a key role in developing the Neural Interface Module (NIM) product line, leveraging his expertise in neuroscience and brain-computer interface algorithms from NeuroSync.\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/employees/key-personnel.md\\\", \\\"/history/acquisition-neurosync.md\\\", \\\"/products/nim-series.md\\\"]}\",\"session_id\":\"e8c010e1-d940-4ed7-bf69-578a08d34ce3\",\"total_cost_usd\":0.07731948,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":74860,\"cache_read_input_tokens\":18976,\"output_tokens\":129,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":74860,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":60,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.00042300000000000004,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":129,\"cacheReadInputTokens\":18976,\"cacheCreationInputTokens\":74860,\"webSearchRequests\":0,\"costUSD\":0.07689647999999999,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"a6b11fe3-5a22-4a33-93e9-be19206c0fed\"}",
+  "expected_answer": "Dr. Wei Zhang came from NeuroSync Labs (acquired 2120) and leads neural architecture development, which is the core technology behind the Neural Interface Modules",
+  "metadata": {
+    "duration_seconds": 5.967856896,
+    "timestamp": "2026-01-30T07:26:53-07:00"
+  }
+}

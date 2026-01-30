@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-009",
+  "question": "How much did Soong-Daystrom pay to acquire NeuroSync Labs?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep-v6-v5.5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":2873,\"duration_api_ms\":5630,\"num_turns\":1,\"result\":\"{\\\"answer\\\": \\\"Unable to determine\\\", \\\"confidence\\\": \\\"low\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v6-v5.5/CLAUDE.md\\\"]}\\n\\nI carefully reviewed the provided context, including both CLAUDE.md files, and found no specific information about a NeuroSync Labs acquisition or its financial details. The context provides a high-level overview of Soong-Daystrom Industries, listing key entities and organizational structure, but does not mention NeuroSync Labs or any acquisition details.\",\"session_id\":\"abd48d03-720b-4ebe-8404-5baaabb1415a\",\"total_cost_usd\":0.00614184,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":3025,\"cache_read_input_tokens\":18643,\"output_tokens\":135,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3025,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":143,\"outputTokens\":188,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.001083,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":135,\"cacheReadInputTokens\":18643,\"cacheCreationInputTokens\":3025,\"webSearchRequests\":0,\"costUSD\":0.00505884,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"f249c7be-c220-456d-9957-0bbd8717e614\"}",
+  "expected_answer": "$8.2 billion",
+  "metadata": {
+    "duration_seconds": 4.236657926,
+    "timestamp": "2026-01-30T16:09:42-07:00"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-007",
+  "question": "What positions report directly to Dr. James Okonkwo?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep-v6",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":3524,\"duration_api_ms\":5272,\"num_turns\":1,\"result\":\"I apologize, but I cannot confidently answer this question based on the provided context. While there is a mention of Dr. Amara Okonkwo as the CTO, there is no information about a Dr. James Okonkwo or his direct reports in the given documents.\\n\\n{\\\"answer\\\": null, \\\"confidence\\\": \\\"low\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v6/CLAUDE.md\\\"]}\\n\\nThe context provides limited information about the company's leadership, only mentioning Dr. Maya Chen as CEO and Dr. Amara Okonkwo as CTO. To accurately answer this question, I would need additional sources or documentation about the company's organizational structure.\",\"session_id\":\"3a19b8d2-59d9-440c-a0ec-7cdc5ff08c27\",\"total_cost_usd\":0.005112159999999999,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":2312,\"cache_read_input_tokens\":18397,\"output_tokens\":172,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2312,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":143,\"outputTokens\":99,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000638,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":172,\"cacheReadInputTokens\":18397,\"cacheCreationInputTokens\":2312,\"webSearchRequests\":0,\"costUSD\":0.00447416,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"a4bc17d0-6800-4187-a2c6-169d895d77c6\"}",
+  "expected_answer": "VP Research, VP Product Development, VP Engineering, Chief Scientist",
+  "metadata": {
+    "duration_seconds": 4.835181159,
+    "timestamp": "2026-01-30T15:29:17-07:00"
+  }
+}

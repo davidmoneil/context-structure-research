@@ -1,0 +1,17 @@
+{
+  "question_id": "DEPTH-001",
+  "question": "Based on the company's R&D budget allocation and current project portfolio, what strategic priorities can you infer about Soong-Daystrom's direction?",
+  "question_type": "depth",
+  "config": {
+    "structure": "monolith",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":5148,\"duration_api_ms\":6912,\"num_turns\":1,\"result\":\"{\\n    \\\"answer\\\": \\\"Soong-Daystrom is prioritizing artificial general intelligence and advanced neural technologies through significant R&D investments in consciousness research, AI safety, and human-machine interaction. Key strategic focus areas include: 1) developing synthetic consciousness (Project Prometheus), 2) creating advanced brain-computer interfaces (NIM series), 3) establishing robust AI safety frameworks, and 4) building enterprise AI platforms that integrate these technologies. The company is investing heavily in long-term, transformative technologies that aim to push the boundaries of AI capabilities while maintaining strict ethical and safety controls.\\\",\\n    \\\"confidence\\\": \\\"high\\\", \\n    \\\"sources_used\\\": [\\n        \\\"financial/budget\\\", \\n        \\\"projects/prometheus\\\", \\n        \\\"products/nim-series\\\", \\n        \\\"policies/ai-ethics-policy\\\"\\n    ]\\n}\",\"session_id\":\"7187b5f9-a222-494d-916f-8f860a22f476\",\"total_cost_usd\":0.049026520000000004,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":46168,\"cache_read_input_tokens\":18964,\"output_tokens\":189,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":46168,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":92,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000583,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":189,\"cacheReadInputTokens\":18964,\"cacheCreationInputTokens\":46168,\"webSearchRequests\":0,\"costUSD\":0.048443520000000004,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"a7f65b07-0802-4690-a29f-31c5b3f1d4cb\"}",
+  "expected_answer": "Focus on next-generation AI consciousness (Project Prometheus) and industrial automation expansion (Project Atlas), indicating a dual strategy of advancing core AI technology while expanding market applications",
+  "metadata": {
+    "duration_seconds": 8.181909982,
+    "timestamp": "2026-01-29T14:18:20-07:00"
+  }
+}

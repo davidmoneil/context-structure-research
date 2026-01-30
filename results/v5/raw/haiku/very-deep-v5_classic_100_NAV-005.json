@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-005",
+  "question": "What is the price of the PCS-500 Companion Elite?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "very-deep-v5",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":3511,\"duration_api_ms\":4836,\"num_turns\":1,\"result\":\"I apologize, but I cannot definitively answer the question about the price of the PCS-500 Companion Elite from the provided context. While the context describes the documentation structure for Soong-Daystrom Industries, it does not contain the specific product pricing information.\\n\\n{\\\"answer\\\": null, \\\"confidence\\\": \\\"low\\\", \\\"sources_used\\\": [\\\"@sdi/company/business/offerings/products/\\\", \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/very-deep-v5/CLAUDE.md\\\"]}\\n\\nTo find the exact price, I would need to:\\n1. Navigate to the products directory\\n2. Search for the specific PCS-500 Companion Elite product documentation\\n3. Look for pricing details\",\"session_id\":\"6f83a641-8002-4a4b-9baa-61dc634c6d0b\",\"total_cost_usd\":0.005412119999999999,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":2783,\"cache_read_input_tokens\":19059,\"output_tokens\":171,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2783,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":59,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000418,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":171,\"cacheReadInputTokens\":19059,\"cacheCreationInputTokens\":2783,\"webSearchRequests\":0,\"costUSD\":0.0049941199999999995,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"941c9c77-7c49-41d8-84a9-914959063071\"}",
+  "expected_answer": "$47,000",
+  "metadata": {
+    "duration_seconds": 4.624674606,
+    "timestamp": "2026-01-30T11:13:24-07:00"
+  }
+}

@@ -1,0 +1,19 @@
+===================================================
+  Context Structure Research - Haiku Full Matrix
+===================================================
+
+Configuration:
+  Structures: monolith flat shallow deep very-deep
+  Loading: classic adddir
+  Questions: 23
+  Total tests: 230
+
+Log file: /home/davidmoneil/Code/context-structure-research/results/haiku-matrix-20260129-191248.log
+
+Starting at Thu Jan 29 07:12:48 PM MST 2026
+---------------------------------------------------
+
+[monolith / classic]
+  [  1/230] monolith classic NAV-001    (ETA: ? min)... ✓
+  [  2/230] monolith classic NAV-002    (ETA: 114 min)... ✓
+  [  3/230] monolith classic NAV-003    (ETA: 125 min)... 

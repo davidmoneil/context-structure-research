@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-002",
+  "question": "In what year was Soong-Daystrom Industries founded?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "very-deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":3985,\"duration_api_ms\":5259,\"num_turns\":1,\"result\":\"I apologize, but I cannot find the specific founding year of Soong-Daystrom Industries in the provided context. While the context describes the structure of the documentation for this fictional company, it does not include the actual founding date.\\n\\n{\\\"answer\\\": null, \\\"confidence\\\": \\\"low\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/very-deep/CLAUDE.md\\\"]}\\n\\nTo get the precise founding year, I would need to explore additional files, particularly in the @soong-daystrom/company/background/corporate-history/timeline/ directory, which seems most likely to contain this information.\",\"session_id\":\"f07e2448-7b37-4ae0-8829-ab059dfea347\",\"total_cost_usd\":0.00529404,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":2746,\"cache_read_input_tokens\":18983,\"output_tokens\":151,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2746,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":60,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.00042300000000000004,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":151,\"cacheReadInputTokens\":18983,\"cacheCreationInputTokens\":2746,\"webSearchRequests\":0,\"costUSD\":0.00487104,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"66f59c86-04ae-48ee-bb49-9900a10d06bd\"}",
+  "expected_answer": "2089",
+  "metadata": {
+    "duration_seconds": 5.691861626,
+    "timestamp": "2026-01-29T14:57:32-07:00"
+  }
+}

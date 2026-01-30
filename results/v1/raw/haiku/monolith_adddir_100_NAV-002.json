@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-002",
+  "question": "In what year was Soong-Daystrom Industries founded?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "monolith",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":18350,\"duration_api_ms\":14499,\"num_turns\":2,\"result\":\"{\\n    \\\"answer\\\": \\\"2089\\\",\\n    \\\"confidence\\\": \\\"high\\\", \\n    \\\"sources_used\\\": [\\\"/history/founding\\\"]\\n}\",\"session_id\":\"0aae7d87-de3d-4268-ac2e-47024fed4ef5\",\"total_cost_usd\":0.13071156,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":46379,\"cache_read_input_tokens\":84077,\"output_tokens\":158,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":46379,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":135,\"outputTokens\":454,\"cacheReadInputTokens\":124888,\"cacheCreationInputTokens\":49660,\"webSearchRequests\":0,\"costUSD\":0.07696879999999999,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":158,\"cacheReadInputTokens\":84077,\"cacheCreationInputTokens\":46379,\"webSearchRequests\":0,\"costUSD\":0.05374276,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"fa652360-cf2e-4658-959c-c3719b5c128b\"}",
+  "expected_answer": "2089",
+  "metadata": {
+    "duration_seconds": 23.880363992,
+    "timestamp": "2026-01-29T14:16:04-07:00"
+  }
+}

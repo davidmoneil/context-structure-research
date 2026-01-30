@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-005",
+  "question": "What is the price of the PCS-500 Companion Elite?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep-v5-v5.5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":21697,\"duration_api_ms\":23047,\"num_turns\":2,\"result\":\"Based on the comprehensive search, I can confidently answer:\\n\\n{\\\"answer\\\": \\\"$47,000\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/soong-daystrom/_source-v4/products/pcs-series.md\\\", \\\"/pcs-500-manual.md\\\"]}\\n\\nThe pricing is specific to the base model of the PCS-500 Companion Elite, with optional skill packs and services available at additional costs. The high confidence stems from finding the price in multiple product documentation sources.\",\"session_id\":\"e2797738-71b3-4a9c-9401-826f4b9347e4\",\"total_cost_usd\":0.04862662,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3250,\"cache_read_input_tokens\":40974,\"output_tokens\":264,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3250,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":1074,\"outputTokens\":1232,\"cacheReadInputTokens\":65656,\"cacheCreationInputTokens\":21790,\"webSearchRequests\":0,\"costUSD\":0.0410371,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":264,\"cacheReadInputTokens\":40974,\"cacheCreationInputTokens\":3250,\"webSearchRequests\":0,\"costUSD\":0.007589519999999999,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"729f422b-0878-4268-9512-55bec44706ce\"}",
+  "expected_answer": "$47,000",
+  "metadata": {
+    "duration_seconds": 22.782921764,
+    "timestamp": "2026-01-30T14:37:29-07:00"
+  }
+}

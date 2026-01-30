@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-003",
+  "question": "What is the total budget for Project Prometheus?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "monolith",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":2800,\"duration_api_ms\":3871,\"num_turns\":1,\"result\":\"{\\\"answer\\\": \\\"$2.4 billion\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/projects/prometheus\\\"]}\",\"session_id\":\"2d43ce65-df65-4f18-aaab-a256b24ebd48\",\"total_cost_usd\":0.04814204,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":46144,\"cache_read_input_tokens\":18983,\"output_tokens\":31,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":46144,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":46,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000353,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":31,\"cacheReadInputTokens\":18983,\"cacheCreationInputTokens\":46144,\"webSearchRequests\":0,\"costUSD\":0.04778904,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"6dedb578-f9ec-48d7-8dea-b172852c0073\"}",
+  "expected_answer": "$2.4 billion",
+  "metadata": {
+    "duration_seconds": 7.602029035,
+    "timestamp": "2026-01-29T14:11:56-07:00"
+  }
+}

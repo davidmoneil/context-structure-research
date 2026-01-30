@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-007",
+  "question": "What positions report directly to Dr. James Okonkwo?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "very-deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":28286,\"duration_api_ms\":27043,\"num_turns\":3,\"result\":\"Based on the information found, I can confidently answer the question:\\n\\n{\\\"answer\\\": [\\\"Dr. Yuki Tanaka (SVP Advanced Research)\\\", \\\"Dr. Ahmed Hassan (VP Product Development)\\\", \\\"Jennifer Morrison (VP Engineering)\\\", \\\"Chief Scientist\\\"], \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/soong-daystrom/company/structure/leadership/executive-team/executives.md\\\"]}\\n\\nThe source document specifically lists Dr. James Okonkwo's direct reports on line 44 as: \\\"VP Research, VP Product Development, VP Engineering, Chief Scientist\\\". The additional details from the exploration task provided the specific names for these roles: Dr. Yuki Tanaka, Dr. Ahmed Hassan, Jennifer Morrison, and an unnamed Chief Scientist.\\n\\nThe high confidence comes from the clear, direct listing in the official executive team document, which provides an authoritative source for the organizational structure directly reporting to Dr. Okonkwo in his role as Chief Technology Officer.\",\"session_id\":\"c07fa6d3-87ca-4899-b4d5-a399cd6b7149\",\"total_cost_usd\":0.0420878,\"usage\":{\"input_tokens\":11,\"cache_creation_input_tokens\":6135,\"cache_read_input_tokens\":63655,\"output_tokens\":492,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":6135,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":7199,\"outputTokens\":1662,\"cacheReadInputTokens\":36046,\"cacheCreationInputTokens\":7816,\"webSearchRequests\":0,\"costUSD\":0.028883600000000002,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":11,\"outputTokens\":492,\"cacheReadInputTokens\":63655,\"cacheCreationInputTokens\":6135,\"webSearchRequests\":0,\"costUSD\":0.013204200000000001,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"5d6d72ad-7418-4cf2-b716-cf25a62d106c\"}",
+  "expected_answer": "VP Research, VP Product Development, VP Engineering, Chief Scientist",
+  "metadata": {
+    "duration_seconds": 29.929949306,
+    "timestamp": "2026-01-29T15:03:45-07:00"
+  }
+}

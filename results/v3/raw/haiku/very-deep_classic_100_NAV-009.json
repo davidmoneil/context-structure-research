@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-009",
+  "question": "How much did Soong-Daystrom pay to acquire NeuroSync Labs?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "very-deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":16022,\"duration_api_ms\":19640,\"num_turns\":2,\"result\":\"Based on the search results, I can confidently provide the following answer:\\n\\n{\\\"answer\\\": \\\"8.2 billion dollars\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/very-deep/soong-daystrom/company/background/corporate-history/timeline/acquisition-neurosync.md\\\"]}\",\"session_id\":\"0c2aad4b-e578-496c-b8da-d6a607256528\",\"total_cost_usd\":0.025814420000000005,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3392,\"cache_read_input_tokens\":40749,\"output_tokens\":235,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3392,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":1439,\"outputTokens\":1080,\"cacheReadInputTokens\":48429,\"cacheCreationInputTokens\":5228,\"webSearchRequests\":0,\"costUSD\":0.0182169,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":235,\"cacheReadInputTokens\":40749,\"cacheCreationInputTokens\":3392,\"webSearchRequests\":0,\"costUSD\":0.00759752,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[{\"tool_name\":\"Grep\",\"tool_use_id\":\"toolu_01VpMoJWx8QFa79eApdvu9e7\",\"tool_input\":{\"pattern\":\"NeuroSync\",\"path\":\"/home/davidmoneil/Code/context-structure-research/soong-daystrom\"}},{\"tool_name\":\"Grep\",\"tool_use_id\":\"toolu_015iAgjKSdtm5FdefZHMmJ1p\",\"tool_input\":{\"pattern\":\"acquisition.*price|acquisition.*financial|acquired.*NeuroSync\",\"path\":\"/home/davidmoneil/Code/context-structure-research/soong-daystrom\"}}],\"uuid\":\"d3f329fa-89f9-4251-bb10-2f7a33a912f1\"}",
+  "expected_answer": "$8.2 billion",
+  "metadata": {
+    "duration_seconds": 17.093331574,
+    "timestamp": "2026-01-30T07:56:28-07:00"
+  }
+}

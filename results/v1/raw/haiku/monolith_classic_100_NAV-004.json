@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-004",
+  "question": "How many employees does Soong-Daystrom Industries have?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "monolith",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":4814,\"duration_api_ms\":6241,\"num_turns\":1,\"result\":\"{\\n    \\\"answer\\\": \\\"12,847\\\",\\n    \\\"confidence\\\": \\\"high\\\", \\n    \\\"sources_used\\\": [\\n        \\\"/organization/executives\\\", \\n        \\\"/organization/departments\\\", \\n        \\\"/products/pcs-series\\\"\\n    ]\\n}\\n\\nThe number of 12,847 employees is consistently mentioned across multiple documents in the context, such as the executive overview and departmental breakdown sections. This appears to be the current total headcount for Soong-Daystrom Industries as of 2124.\",\"session_id\":\"de320ffc-1c3c-4248-ab94-fe47971c0720\",\"total_cost_usd\":0.04852004000000001,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":46149,\"cache_read_input_tokens\":18983,\"output_tokens\":118,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":46149,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":51,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000378,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":118,\"cacheReadInputTokens\":18983,\"cacheCreationInputTokens\":46149,\"webSearchRequests\":0,\"costUSD\":0.048142040000000004,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"626a5825-5f68-40e6-a203-e191b135aeb9\"}",
+  "expected_answer": "12,847",
+  "metadata": {
+    "duration_seconds": 10.385620378,
+    "timestamp": "2026-01-29T14:12:07-07:00"
+  }
+}

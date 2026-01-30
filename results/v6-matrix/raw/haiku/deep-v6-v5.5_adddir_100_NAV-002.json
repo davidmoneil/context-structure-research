@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-002",
+  "question": "In what year was Soong-Daystrom Industries founded?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep-v6-v5.5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":3243,\"duration_api_ms\":5361,\"num_turns\":1,\"result\":\"{\\\"answer\\\": null, \\\"confidence\\\": \\\"low\\\", \\\"sources_used\\\": []}\\n\\nI apologize, but I cannot find the founding year of Soong-Daystrom Industries in the provided context. The documents describe the fictional company's structure, key personnel, and research areas, but do not specify the year of founding. To provide an accurate answer, I would need additional sources or documentation that explicitly mentions the company's founding date.\",\"session_id\":\"49d3afba-bf4d-4c3e-aedf-e32ffcc71289\",\"total_cost_usd\":0.00534876,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":2696,\"cache_read_input_tokens\":18967,\"output_tokens\":95,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":2696,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":143,\"outputTokens\":122,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000753,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":95,\"cacheReadInputTokens\":18967,\"cacheCreationInputTokens\":2696,\"webSearchRequests\":0,\"costUSD\":0.00459576,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"fd3591eb-e79f-4a92-bb75-908f203d65e8\"}",
+  "expected_answer": "2089",
+  "metadata": {
+    "duration_seconds": 5.040985086,
+    "timestamp": "2026-01-30T16:08:15-07:00"
+  }
+}

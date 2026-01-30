@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-006",
+  "question": "Who leads the AI Safety team at Soong-Daystrom?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "monolith",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":3698,\"duration_api_ms\":5121,\"num_turns\":1,\"result\":\"{\\n    \\\"answer\\\": \\\"Dr. Marcus Thompson serves as the Director of Safety & Alignment for the AI Safety team\\\",\\n    \\\"confidence\\\": \\\"high\\\", \\n    \\\"sources_used\\\": [\\n        \\\"/research/consciousness-research.md\\\",\\n        \\\"/organization/executives.md\\\"\\n    ]\\n}\",\"session_id\":\"73c49249-3239-4ea6-89a7-94029e968730\",\"total_cost_usd\":0.16465032000000002,\"usage\":{\"input_tokens\":3,\"cache_creation_input_tokens\":162366,\"cache_read_input_tokens\":18999,\"output_tokens\":71,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":162366,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":123,\"outputTokens\":71,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.000478,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":3,\"outputTokens\":71,\"cacheReadInputTokens\":18999,\"cacheCreationInputTokens\":162366,\"webSearchRequests\":0,\"costUSD\":0.16417232,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"0d5281e5-4e6e-49aa-93c6-884d9172ec9e\"}",
+  "expected_answer": "Dr. Marcus Thompson",
+  "metadata": {
+    "duration_seconds": 28.982276661,
+    "timestamp": "2026-01-30T06:48:41-07:00"
+  }
+}

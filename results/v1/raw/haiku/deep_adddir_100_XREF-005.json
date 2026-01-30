@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-005",
+  "question": "Which pilot customer signed a contract for Project Atlas, and what is the contract value?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":21346,\"duration_api_ms\":20608,\"num_turns\":2,\"result\":\"Based on the comprehensive search, I can confidently provide the answer in the requested JSON format:\\n\\n{\\\"answer\\\": \\\"Rio Tinto, with a contract value of $47 million for 4 autonomous mining units\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\n    \\\"/soong-daystrom/_source/projects/atlas.md\\\",\\n    \\\"/soong-daystrom/_source/financial/quarterly-report-q3-2124.md\\\", \\n    \\\"/soong-daystrom/_source/meetings/board-q3-2124.md\\\", \\n    \\\"/research-notes/canon.md\\\"\\n]}\",\"session_id\":\"67199525-0877-4c7d-8436-ad76fd6a3f7e\",\"total_cost_usd\":0.039990529999999996,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3297,\"cache_read_input_tokens\":40541,\"output_tokens\":277,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3297,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":2820,\"outputTokens\":1243,\"cacheReadInputTokens\":55329,\"cacheCreationInputTokens\":14215,\"webSearchRequests\":0,\"costUSD\":0.03233665,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":277,\"cacheReadInputTokens\":40541,\"cacheCreationInputTokens\":3297,\"webSearchRequests\":0,\"costUSD\":0.00765388,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"643e64a0-2a09-46c3-a41a-10e299263885\"}",
+  "expected_answer": "Rio Tinto, $47 million",
+  "metadata": {
+    "duration_seconds": 22.991282153,
+    "timestamp": "2026-01-29T14:52:07-07:00"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-001",
+  "question": "Which department does the Project Prometheus team report to, and who leads that department?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "flat-v6-v5.5",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":37864,\"duration_api_ms\":39277,\"num_turns\":3,\"result\":\"{\\n    \\\"answer\\\": \\\"Project Prometheus reports to the Research & Development department, led by Dr. James Okonkwo (CTO), with Dr. Yuki Tanaka as the Program Director\\\",\\n    \\\"confidence\\\": \\\"high\\\",\\n    \\\"sources_used\\\": [\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/flat-v6-v5.5/projects-prometheus-detailed.md\\\",\\n        \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/flat-v6-v5.5/organization-executives.md\\\"\\n    ]\\n}\",\"session_id\":\"abc88923-a167-479d-a794-da3a96fee022\",\"total_cost_usd\":0.06650219,\"usage\":{\"input_tokens\":11,\"cache_creation_input_tokens\":4501,\"cache_read_input_tokens\":61843,\"output_tokens\":400,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":4501,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":2240,\"outputTokens\":2857,\"cacheReadInputTokens\":72337,\"cacheCreationInputTokens\":25349,\"webSearchRequests\":0,\"costUSD\":0.05544495,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":11,\"outputTokens\":400,\"cacheReadInputTokens\":61843,\"cacheCreationInputTokens\":4501,\"webSearchRequests\":0,\"costUSD\":0.01105724,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"de035712-0cea-4b71-a80d-9031865f59d9\"}",
+  "expected_answer": "Research & Development, led by Dr. James Okonkwo (CTO)",
+  "metadata": {
+    "duration_seconds": 39.181921305,
+    "timestamp": "2026-01-30T15:42:52-07:00"
+  }
+}

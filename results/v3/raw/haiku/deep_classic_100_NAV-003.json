@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-003",
+  "question": "What is the total budget for Project Prometheus?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":26819,\"duration_api_ms\":25211,\"num_turns\":3,\"result\":\"Based on the detailed budget document, I can confidently provide the answer:\\n\\n{\\\"answer\\\": \\\"740 million dollars\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/company/finance/reports/budget.md\\\"]}\\n\\nThe budget for Project Prometheus is specifically listed as $740 million for Phase 3 in the fiscal year 2124, as detailed in the budget document under the \\\"By Project\\\" section. This represents the current active phase of the project, with the total project lifecycle budget estimated at $2.4 billion across all planned phases.\",\"session_id\":\"1aa352d8-0ada-481c-b22d-80be7c0b63b2\",\"total_cost_usd\":0.04105106,\"usage\":{\"input_tokens\":11,\"cache_creation_input_tokens\":5619,\"cache_read_input_tokens\":62892,\"output_tokens\":361,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":5619,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":3699,\"outputTokens\":1442,\"cacheReadInputTokens\":55114,\"cacheCreationInputTokens\":10022,\"webSearchRequests\":0,\"costUSD\":0.0289479,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":11,\"outputTokens\":361,\"cacheReadInputTokens\":62892,\"cacheCreationInputTokens\":5619,\"webSearchRequests\":0,\"costUSD\":0.01210316,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"f915e8b3-e1a2-402a-a7ed-1a2a1045d304\"}",
+  "expected_answer": "$2.4 billion",
+  "metadata": {
+    "duration_seconds": 27.839708517,
+    "timestamp": "2026-01-30T07:29:20-07:00"
+  }
+}

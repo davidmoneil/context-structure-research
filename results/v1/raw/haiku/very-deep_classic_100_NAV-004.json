@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-004",
+  "question": "How many employees does Soong-Daystrom Industries have?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "very-deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":27204,\"duration_api_ms\":26052,\"num_turns\":2,\"result\":\"Based on the exploration results, I can provide the answer in the requested JSON format:\\n\\n{\\\"answer\\\": 12847, \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/very-deep/soong-daystrom/company/structure/organization/departments/departments.md\\\"]}\\n\\nThe answer includes the total number of employees at Soong-Daystrom Industries, with a high confidence level, sourced directly from the company's HR documentation.\",\"session_id\":\"c770e16f-3052-4cf5-aeb8-d104a6f340fc\",\"total_cost_usd\":0.05711691000000001,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3364,\"cache_read_input_tokens\":40712,\"output_tokens\":307,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3364,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":9040,\"outputTokens\":1603,\"cacheReadInputTokens\":107036,\"cacheCreationInputTokens\":17203,\"webSearchRequests\":0,\"costUSD\":0.04926235,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":307,\"cacheReadInputTokens\":40712,\"cacheCreationInputTokens\":3364,\"webSearchRequests\":0,\"costUSD\":0.00785456,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"c4023403-3f46-43e7-9f3c-1f3b3e1a7390\"}",
+  "expected_answer": "12,847",
+  "metadata": {
+    "duration_seconds": 28.953117195,
+    "timestamp": "2026-01-29T14:58:23-07:00"
+  }
+}

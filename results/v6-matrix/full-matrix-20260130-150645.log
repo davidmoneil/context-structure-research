@@ -1,0 +1,208 @@
+
+[flat-v6 / classic]
+  [  1/184] flat-v6            classic NAV-001    ... ✓
+  [  2/184] flat-v6            classic NAV-002    ... ✓
+  [  3/184] flat-v6            classic NAV-003    ... ✓
+  [  4/184] flat-v6            classic NAV-004    ... ✓
+  [  5/184] flat-v6            classic NAV-005    ... ✓
+  [  6/184] flat-v6            classic NAV-006    ... ✓
+  [  7/184] flat-v6            classic NAV-007    ... ✓
+  [  8/184] flat-v6            classic NAV-008    ... ✓
+  [  9/184] flat-v6            classic NAV-009    ... ✓
+  [ 10/184] flat-v6            classic NAV-010    ... ✓
+  [ 11/184] flat-v6            classic XREF-001   ... ✓
+  [ 12/184] flat-v6            classic XREF-002   ... ✓
+  [ 13/184] flat-v6            classic XREF-003   ... ✓
+  [ 14/184] flat-v6            classic XREF-004   ... ✓
+  [ 15/184] flat-v6            classic XREF-005   ... ✓
+  [ 16/184] flat-v6            classic XREF-006   ... ✓
+  [ 17/184] flat-v6            classic XREF-007   ... ✓
+  [ 18/184] flat-v6            classic XREF-008   ... ✓
+  [ 19/184] flat-v6            classic DEPTH-001  ... ✓
+  [ 20/184] flat-v6            classic DEPTH-002  ... ✓
+  [ 21/184] flat-v6            classic DEPTH-003  ... ✓
+  [ 22/184] flat-v6            classic DEPTH-004  ... ✓
+  [ 23/184] flat-v6            classic DEPTH-005  ... ✓
+
+[flat-v6 / adddir]
+  [ 24/184] flat-v6            adddir  NAV-001    ... ✓
+  [ 25/184] flat-v6            adddir  NAV-002    ... ✓
+  [ 26/184] flat-v6            adddir  NAV-003    ... ✓
+  [ 27/184] flat-v6            adddir  NAV-004    ... ✓
+  [ 28/184] flat-v6            adddir  NAV-005    ... ✓
+  [ 29/184] flat-v6            adddir  NAV-006    ... ✓
+  [ 30/184] flat-v6            adddir  NAV-007    ... ✓
+  [ 31/184] flat-v6            adddir  NAV-008    ... ✓
+  [ 32/184] flat-v6            adddir  NAV-009    ... ✓
+  [ 33/184] flat-v6            adddir  NAV-010    ... ✓
+  [ 34/184] flat-v6            adddir  XREF-001   ... ✓
+  [ 35/184] flat-v6            adddir  XREF-002   ... ✓
+  [ 36/184] flat-v6            adddir  XREF-003   ... ✓
+  [ 37/184] flat-v6            adddir  XREF-004   ... ✓
+  [ 38/184] flat-v6            adddir  XREF-005   ... ✓
+  [ 39/184] flat-v6            adddir  XREF-006   ... ✓
+  [ 40/184] flat-v6            adddir  XREF-007   ... ✓
+  [ 41/184] flat-v6            adddir  XREF-008   ... ✓
+  [ 42/184] flat-v6            adddir  DEPTH-001  ... ✓
+  [ 43/184] flat-v6            adddir  DEPTH-002  ... ✓
+  [ 44/184] flat-v6            adddir  DEPTH-003  ... ✓
+  [ 45/184] flat-v6            adddir  DEPTH-004  ... ✓
+  [ 46/184] flat-v6            adddir  DEPTH-005  ... ✓
+
+[deep-v6 / classic]
+  [ 47/184] deep-v6            classic NAV-001    ... ✓
+  [ 48/184] deep-v6            classic NAV-002    ... ✓
+  [ 49/184] deep-v6            classic NAV-003    ... ✓
+  [ 50/184] deep-v6            classic NAV-004    ... ✓
+  [ 51/184] deep-v6            classic NAV-005    ... ✓
+  [ 52/184] deep-v6            classic NAV-006    ... ✓
+  [ 53/184] deep-v6            classic NAV-007    ... ✓
+  [ 54/184] deep-v6            classic NAV-008    ... ✓
+  [ 55/184] deep-v6            classic NAV-009    ... ✓
+  [ 56/184] deep-v6            classic NAV-010    ... ✓
+  [ 57/184] deep-v6            classic XREF-001   ... ✓
+  [ 58/184] deep-v6            classic XREF-002   ... ✓
+  [ 59/184] deep-v6            classic XREF-003   ... ✓
+  [ 60/184] deep-v6            classic XREF-004   ... ✓
+  [ 61/184] deep-v6            classic XREF-005   ... ✓
+  [ 62/184] deep-v6            classic XREF-006   ... ✓
+  [ 63/184] deep-v6            classic XREF-007   ... ✓
+  [ 64/184] deep-v6            classic XREF-008   ... ✓
+  [ 65/184] deep-v6            classic DEPTH-001  ... ✓
+  [ 66/184] deep-v6            classic DEPTH-002  ... ✓
+  [ 67/184] deep-v6            classic DEPTH-003  ... ✓
+  [ 68/184] deep-v6            classic DEPTH-004  ... ✓
+  [ 69/184] deep-v6            classic DEPTH-005  ... ✓
+
+[deep-v6 / adddir]
+  [ 70/184] deep-v6            adddir  NAV-001    ... ✓
+  [ 71/184] deep-v6            adddir  NAV-002    ... ✓
+  [ 72/184] deep-v6            adddir  NAV-003    ... ✓
+  [ 73/184] deep-v6            adddir  NAV-004    ... ✓
+  [ 74/184] deep-v6            adddir  NAV-005    ... ✓
+  [ 75/184] deep-v6            adddir  NAV-006    ... ✓
+  [ 76/184] deep-v6            adddir  NAV-007    ... ✓
+  [ 77/184] deep-v6            adddir  NAV-008    ... ✓
+  [ 78/184] deep-v6            adddir  NAV-009    ... ✓
+  [ 79/184] deep-v6            adddir  NAV-010    ... ✓
+  [ 80/184] deep-v6            adddir  XREF-001   ... ✓
+  [ 81/184] deep-v6            adddir  XREF-002   ... ✓
+  [ 82/184] deep-v6            adddir  XREF-003   ... ✓
+  [ 83/184] deep-v6            adddir  XREF-004   ... ✓
+  [ 84/184] deep-v6            adddir  XREF-005   ... ✓
+  [ 85/184] deep-v6            adddir  XREF-006   ... ✓
+  [ 86/184] deep-v6            adddir  XREF-007   ... ✓
+  [ 87/184] deep-v6            adddir  XREF-008   ... ✓
+  [ 88/184] deep-v6            adddir  DEPTH-001  ... ✓
+  [ 89/184] deep-v6            adddir  DEPTH-002  ... ✓
+  [ 90/184] deep-v6            adddir  DEPTH-003  ... ✓
+  [ 91/184] deep-v6            adddir  DEPTH-004  ... ✓
+  [ 92/184] deep-v6            adddir  DEPTH-005  ... ✓
+
+[flat-v6-v5.5 / classic]
+  [ 93/184] flat-v6-v5.5       classic NAV-001    ... ✓
+  [ 94/184] flat-v6-v5.5       classic NAV-002    ... ✓
+  [ 95/184] flat-v6-v5.5       classic NAV-003    ... ✓
+  [ 96/184] flat-v6-v5.5       classic NAV-004    ... ✓
+  [ 97/184] flat-v6-v5.5       classic NAV-005    ... ✓
+  [ 98/184] flat-v6-v5.5       classic NAV-006    ... ✓
+  [ 99/184] flat-v6-v5.5       classic NAV-007    ... ✓
+  [100/184] flat-v6-v5.5       classic NAV-008    ... ✓
+  [101/184] flat-v6-v5.5       classic NAV-009    ... ✓
+  [102/184] flat-v6-v5.5       classic NAV-010    ... ✓
+  [103/184] flat-v6-v5.5       classic XREF-001   ... ✓
+  [104/184] flat-v6-v5.5       classic XREF-002   ... ✓
+  [105/184] flat-v6-v5.5       classic XREF-003   ... ✓
+  [106/184] flat-v6-v5.5       classic XREF-004   ... ✓
+  [107/184] flat-v6-v5.5       classic XREF-005   ... ✓
+  [108/184] flat-v6-v5.5       classic XREF-006   ... ✓
+  [109/184] flat-v6-v5.5       classic XREF-007   ... ✓
+  [110/184] flat-v6-v5.5       classic XREF-008   ... ✓
+  [111/184] flat-v6-v5.5       classic DEPTH-001  ... ✓
+  [112/184] flat-v6-v5.5       classic DEPTH-002  ... ✓
+  [113/184] flat-v6-v5.5       classic DEPTH-003  ... ✓
+  [114/184] flat-v6-v5.5       classic DEPTH-004  ... ✓
+  [115/184] flat-v6-v5.5       classic DEPTH-005  ... ✓
+
+[flat-v6-v5.5 / adddir]
+  [116/184] flat-v6-v5.5       adddir  NAV-001    ... ✓
+  [117/184] flat-v6-v5.5       adddir  NAV-002    ... ✓
+  [118/184] flat-v6-v5.5       adddir  NAV-003    ... ✓
+  [119/184] flat-v6-v5.5       adddir  NAV-004    ... ✓
+  [120/184] flat-v6-v5.5       adddir  NAV-005    ... ✓
+  [121/184] flat-v6-v5.5       adddir  NAV-006    ... ✓
+  [122/184] flat-v6-v5.5       adddir  NAV-007    ... ✓
+  [123/184] flat-v6-v5.5       adddir  NAV-008    ... ✓
+  [124/184] flat-v6-v5.5       adddir  NAV-009    ... ✓
+  [125/184] flat-v6-v5.5       adddir  NAV-010    ... ✓
+  [126/184] flat-v6-v5.5       adddir  XREF-001   ... ✓
+  [127/184] flat-v6-v5.5       adddir  XREF-002   ... ✓
+  [128/184] flat-v6-v5.5       adddir  XREF-003   ... ✓
+  [129/184] flat-v6-v5.5       adddir  XREF-004   ... ✓
+  [130/184] flat-v6-v5.5       adddir  XREF-005   ... ✓
+  [131/184] flat-v6-v5.5       adddir  XREF-006   ... ✓
+  [132/184] flat-v6-v5.5       adddir  XREF-007   ... ✓
+  [133/184] flat-v6-v5.5       adddir  XREF-008   ... ✓
+  [134/184] flat-v6-v5.5       adddir  DEPTH-001  ... ✓
+  [135/184] flat-v6-v5.5       adddir  DEPTH-002  ... ✓
+  [136/184] flat-v6-v5.5       adddir  DEPTH-003  ... ✓
+  [137/184] flat-v6-v5.5       adddir  DEPTH-004  ... ✓
+  [138/184] flat-v6-v5.5       adddir  DEPTH-005  ... ✓
+
+[deep-v6-v5.5 / classic]
+  [139/184] deep-v6-v5.5       classic NAV-001    ... ✓
+  [140/184] deep-v6-v5.5       classic NAV-002    ... ✓
+  [141/184] deep-v6-v5.5       classic NAV-003    ... ✓
+  [142/184] deep-v6-v5.5       classic NAV-004    ... ✓
+  [143/184] deep-v6-v5.5       classic NAV-005    ... ✓
+  [144/184] deep-v6-v5.5       classic NAV-006    ... ✓
+  [145/184] deep-v6-v5.5       classic NAV-007    ... ✓
+  [146/184] deep-v6-v5.5       classic NAV-008    ... ✓
+  [147/184] deep-v6-v5.5       classic NAV-009    ... ✓
+  [148/184] deep-v6-v5.5       classic NAV-010    ... ✓
+  [149/184] deep-v6-v5.5       classic XREF-001   ... ✓
+  [150/184] deep-v6-v5.5       classic XREF-002   ... ✓
+  [151/184] deep-v6-v5.5       classic XREF-003   ... ✓
+  [152/184] deep-v6-v5.5       classic XREF-004   ... ✓
+  [153/184] deep-v6-v5.5       classic XREF-005   ... ✓
+  [154/184] deep-v6-v5.5       classic XREF-006   ... ✓
+  [155/184] deep-v6-v5.5       classic XREF-007   ... ✓
+  [156/184] deep-v6-v5.5       classic XREF-008   ... ✓
+  [157/184] deep-v6-v5.5       classic DEPTH-001  ... ✓
+  [158/184] deep-v6-v5.5       classic DEPTH-002  ... ✓
+  [159/184] deep-v6-v5.5       classic DEPTH-003  ... ✓
+  [160/184] deep-v6-v5.5       classic DEPTH-004  ... ✓
+  [161/184] deep-v6-v5.5       classic DEPTH-005  ... ✓
+
+[deep-v6-v5.5 / adddir]
+  [162/184] deep-v6-v5.5       adddir  NAV-001    ... ✓
+  [163/184] deep-v6-v5.5       adddir  NAV-002    ... ✓
+  [164/184] deep-v6-v5.5       adddir  NAV-003    ... ✓
+  [165/184] deep-v6-v5.5       adddir  NAV-004    ... ✓
+  [166/184] deep-v6-v5.5       adddir  NAV-005    ... ✓
+  [167/184] deep-v6-v5.5       adddir  NAV-006    ... ✓
+  [168/184] deep-v6-v5.5       adddir  NAV-007    ... ✓
+  [169/184] deep-v6-v5.5       adddir  NAV-008    ... ✓
+  [170/184] deep-v6-v5.5       adddir  NAV-009    ... ✓
+  [171/184] deep-v6-v5.5       adddir  NAV-010    ... ✓
+  [172/184] deep-v6-v5.5       adddir  XREF-001   ... ✓
+  [173/184] deep-v6-v5.5       adddir  XREF-002   ... ✓
+  [174/184] deep-v6-v5.5       adddir  XREF-003   ... ✓
+  [175/184] deep-v6-v5.5       adddir  XREF-004   ... ✓
+  [176/184] deep-v6-v5.5       adddir  XREF-005   ... ✓
+  [177/184] deep-v6-v5.5       adddir  XREF-006   ... ✓
+  [178/184] deep-v6-v5.5       adddir  XREF-007   ... ✓
+  [179/184] deep-v6-v5.5       adddir  XREF-008   ... ✓
+  [180/184] deep-v6-v5.5       adddir  DEPTH-001  ... ✓
+  [181/184] deep-v6-v5.5       adddir  DEPTH-002  ... ✓
+  [182/184] deep-v6-v5.5       adddir  DEPTH-003  ... ✓
+  [183/184] deep-v6-v5.5       adddir  DEPTH-004  ... ✓
+  [184/184] deep-v6-v5.5       adddir  DEPTH-005  ... ✓
+
+===================================================
+  V6 Full Matrix Complete
+===================================================
+  Total tests: 184
+  Duration: 81 minutes
+  Results: /home/davidmoneil/Code/context-structure-research/results/v6-matrix/raw
+===================================================

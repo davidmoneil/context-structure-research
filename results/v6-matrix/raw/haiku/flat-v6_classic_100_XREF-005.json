@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-005",
+  "question": "Which pilot customer signed a contract for Project Atlas, and what is the contract value?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "flat-v6",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":19828,\"duration_api_ms\":20371,\"num_turns\":2,\"result\":\"Based on the search results, I can provide the answer in the requested JSON format:\\n\\n{\\\"answer\\\": \\\"Rio Tinto, with a contract value of $47 Million for 4 units of Project Atlas equipment\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\n    \\\"meetings-product-reviews.md\\\",\\n    \\\"financial-quarterly-report-q2-2124.md\\\", \\n    \\\"meetings-board-meetings-2124.md\\\",\\n    \\\"meetings-executive-committee-2024-10-14.md\\\"\\n]}\",\"session_id\":\"77f5af0c-ca5b-47bd-83b8-52ba9a72853f\",\"total_cost_usd\":0.058989150000000004,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3353,\"cache_read_input_tokens\":40625,\"output_tokens\":261,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3353,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":167,\"outputTokens\":1586,\"cacheReadInputTokens\":72508,\"cacheCreationInputTokens\":28791,\"webSearchRequests\":0,\"costUSD\":0.05133655000000001,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":261,\"cacheReadInputTokens\":40625,\"cacheCreationInputTokens\":3353,\"webSearchRequests\":0,\"costUSD\":0.007652600000000001,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"0a9bdf2a-100e-476f-bdde-083049337611\"}",
+  "expected_answer": "Rio Tinto, $47 million",
+  "metadata": {
+    "duration_seconds": 21.273551603,
+    "timestamp": "2026-01-30T15:11:35-07:00"
+  }
+}

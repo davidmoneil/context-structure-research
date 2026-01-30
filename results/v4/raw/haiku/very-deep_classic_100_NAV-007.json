@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-007",
+  "question": "What was the Q3 2124 revenue for Soong-Daystrom?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "very-deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":21011,\"duration_api_ms\":20783,\"num_turns\":3,\"result\":\"Based on the detailed quarterly report, I can confidently provide the following answer:\\n\\n{\\\"answer\\\": \\\"$12.4 billion\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/soong-daystrom/company/finance/accounting/reports/quarterly-report-q3-2124.md\\\"]}\\n\\nThe key details supporting this answer:\\n- Total Revenue for Q3 2124 is $12.4 billion\\n- This represents a 15.2% year-over-year increase from $10.8 billion in Q3 2123\\n- Revenue breakdown includes segments like PCS ($5.2B), IAP ($4.3B), NIM ($2.0B), and SCE ($0.9B)\",\"session_id\":\"63896130-631e-4ac7-b0d8-ad20650c5b4a\",\"total_cost_usd\":0.027043789999999998,\"usage\":{\"input_tokens\":11,\"cache_creation_input_tokens\":6081,\"cache_read_input_tokens\":63353,\"output_tokens\":430,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":6081,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":138,\"outputTokens\":930,\"cacheReadInputTokens\":35515,\"cacheCreationInputTokens\":4661,\"webSearchRequests\":0,\"costUSD\":0.01416575,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":11,\"outputTokens\":430,\"cacheReadInputTokens\":63353,\"cacheCreationInputTokens\":6081,\"webSearchRequests\":0,\"costUSD\":0.012878039999999999,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"e6824520-c1de-42a2-b7e2-df820788e2bd\"}",
+  "expected_answer": "$12.4 billion",
+  "metadata": {
+    "duration_seconds": 22.009305751,
+    "timestamp": "2026-01-30T10:50:29-07:00"
+  }
+}

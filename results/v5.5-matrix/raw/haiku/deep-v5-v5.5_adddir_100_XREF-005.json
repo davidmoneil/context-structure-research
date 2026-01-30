@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-005",
+  "question": "Which pilot customer signed a contract for Project Atlas, and what is the contract value?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "deep-v5-v5.5",
+    "model": "haiku",
+    "loading_method": "adddir",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":25948,\"duration_api_ms\":26210,\"num_turns\":2,\"result\":\"Based on the comprehensive search results, I can confidently answer the user's question:\\n\\n{\\\"answer\\\": \\\"Rio Tinto signed a $47 million contract for Project Atlas\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/_source/projects/atlas.md\\\", \\\"/home/davidmoneil/Code/context-structure-research/soong-daystrom/deep-v5-v5.5/company/initiatives/projects/atlas-infrastructure.md\\\"]}\",\"session_id\":\"e3f53fa5-25e2-41e1-8797-11c067bda8cc\",\"total_cost_usd\":0.060181689999999996,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":3781,\"cache_read_input_tokens\":40988,\"output_tokens\":262,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":3781,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":147,\"outputTokens\":1772,\"cacheReadInputTokens\":68498,\"cacheCreationInputTokens\":28969,\"webSearchRequests\":0,\"costUSD\":0.05206805,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":262,\"cacheReadInputTokens\":40988,\"cacheCreationInputTokens\":3781,\"webSearchRequests\":0,\"costUSD\":0.00811364,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"4bfe329f-673d-498e-bbab-a32868f4c57e\"}",
+  "expected_answer": "Rio Tinto, $47 million",
+  "metadata": {
+    "duration_seconds": 27.378597504,
+    "timestamp": "2026-01-30T14:41:55-07:00"
+  }
+}

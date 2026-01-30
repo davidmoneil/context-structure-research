@@ -1,0 +1,17 @@
+{
+  "question_id": "XREF-001",
+  "question": "Which department does the Project Prometheus team report to, and who leads that department?",
+  "question_type": "cross-reference",
+  "config": {
+    "structure": "monolith",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":40595,\"duration_api_ms\":38408,\"num_turns\":5,\"result\":\"Based on the exploration results, I can confidently provide the answer:\\n\\n{\\\"answer\\\": \\\"Project Prometheus reports to the Research & Development (R&D) Department, which is led by Dr. James Okonkwo (CTO)\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"technical/architecture.md\\\", \\\"organization/departments.md\\\", \\\"projects/prometheus.md\\\"]}\",\"session_id\":\"a91db5b7-2ca6-424e-b4cb-324e699fd74b\",\"total_cost_usd\":0.29843727999999997,\"usage\":{\"input_tokens\":24,\"cache_creation_input_tokens\":85876,\"cache_read_input_tokens\":435886,\"output_tokens\":444,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":85876,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":1023,\"outputTokens\":1250,\"cacheReadInputTokens\":585122,\"cacheCreationInputTokens\":88088,\"webSearchRequests\":0,\"costUSD\":0.17589519999999997,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":24,\"outputTokens\":444,\"cacheReadInputTokens\":435886,\"cacheCreationInputTokens\":85876,\"webSearchRequests\":0,\"costUSD\":0.12254208,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"b412160f-d9ca-4799-b87a-31a23de73d2c\"}",
+  "expected_answer": "Research & Development, led by Dr. James Okonkwo (CTO)",
+  "metadata": {
+    "duration_seconds": 49.604388258,
+    "timestamp": "2026-01-29T19:39:31-07:00"
+  }
+}

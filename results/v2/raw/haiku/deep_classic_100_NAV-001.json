@@ -1,0 +1,17 @@
+{
+  "question_id": "NAV-001",
+  "question": "Who is the current CEO of Soong-Daystrom Industries?",
+  "question_type": "navigation",
+  "config": {
+    "structure": "deep",
+    "model": "haiku",
+    "loading_method": "classic",
+    "load_percent": 100
+  },
+  "response": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":14247,\"duration_api_ms\":13782,\"num_turns\":2,\"result\":\"I'll format the response in JSON as requested:\\n\\n{\\\"answer\\\": \\\"Dr. Maya Chen\\\", \\\"confidence\\\": \\\"high\\\", \\\"sources_used\\\": [\\\"@company/structure/leadership/executives.md\\\"]}\",\"session_id\":\"3535b146-d740-4e48-8551-ab94d5e1aae8\",\"total_cost_usd\":0.021285000000000002,\"usage\":{\"input_tokens\":7,\"cache_creation_input_tokens\":6017,\"cache_read_input_tokens\":37585,\"output_tokens\":193,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":6017,\"ephemeral_5m_input_tokens\":0}},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":135,\"outputTokens\":504,\"cacheReadInputTokens\":33511,\"cacheCreationInputTokens\":4382,\"webSearchRequests\":0,\"costUSD\":0.0114836,\"contextWindow\":200000,\"maxOutputTokens\":64000},\"claude-3-5-haiku-latest\":{\"inputTokens\":7,\"outputTokens\":193,\"cacheReadInputTokens\":37585,\"cacheCreationInputTokens\":6017,\"webSearchRequests\":0,\"costUSD\":0.0098014,\"contextWindow\":200000,\"maxOutputTokens\":8192}},\"permission_denials\":[],\"uuid\":\"81ae37dd-765b-4106-9680-f129cfc7734b\"}",
+  "expected_answer": "Dr. Maya Chen",
+  "metadata": {
+    "duration_seconds": 15.955084528,
+    "timestamp": "2026-01-29T20:19:04-07:00"
+  }
+}
