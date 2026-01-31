@@ -1,17 +1,48 @@
-# Research notes - internal only, not published
+# ===========================================
+# Context Structure Research - Public Release
+# ===========================================
+
+# Research notes - internal only
 research-notes/
 
-# Results can be large
+# Raw API results contain session IDs, UUIDs, local paths
+# Exclude for privacy - keep analysis reports only
+results/*/raw/
 results/raw/
+results/v1/
+results/v2/
+results/v3/
+results/v6-build/
+results/v6-parallel/
+results/v6-extended/
+results/v5.5-build/
+results/consolidated/
+
+# Archive of old attempts
+archive/
+
+# Corpus versions (keep main soong-daystrom/)
+corpus-versions/
 
 # Python
 __pycache__/
 *.pyc
 .venv/
+.env
 
 # OS
 .DS_Store
+Thumbs.db
 
 # Editor
 *.swp
 *.swo
+*.swn
+.idea/
+.vscode/
+*.code-workspace
+
+# Temporary files
+*.tmp
+*.log
+*.bak

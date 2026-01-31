@@ -1,26 +1,46 @@
 # Context Structure Research: How File Organization Affects Claude Code Accuracy
 
-**A systematic study of Claude Code's @ reference system across 757 test configurations**
+**A systematic study of Claude Code's @ reference system across 849 test configurations**
 
 ---
 
 ## Executive Summary
 
-We tested how different context file organizations affect Claude Code's ability to answer questions accurately. Testing 746 configurations across corpora ranging from 120K to 622K words, we found:
+We tested how different context file organizations affect Claude Code's ability to answer questions accurately. Testing 849 configurations across corpora from 120K to 622K words, we found:
 
 ### Key Findings
 
-1. **Flat structure wins** — Files in a single directory achieve the highest accuracy (97-100%) across all corpus sizes tested
+1. **Flat structure wins** — Files in a single directory achieve 100% accuracy up to 302K words, and 97.35% at 622K words
 
-2. **Structure matters more than enhancements** — Adding keyword indexes or summaries provides diminishing returns, and actually *hurts* accuracy at scale (622K words)
+2. **One topic per file** — Topically cohesive files with descriptive names outperform all other organizational strategies
 
-3. **Deep nesting degrades gracefully** — Nested folder structures lose ~3-5% accuracy but remain viable even at 622K words
+3. **Enhancements hurt at scale** — Adding keyword indexes or summaries provides diminishing returns, and actually *hurts* accuracy at 622K words (-4.6%)
 
-4. **Scale is less impactful than expected** — Accuracy drops only ~4% when scaling from 120K to 622K words with proper structure
+4. **Nesting degrades gracefully** — Each level of folder nesting costs ~1-2% accuracy, but even 5 levels maintains 95%+ at 622K words
 
-### Quick Recommendation
+5. **Scale is less impactful than structure** — Accuracy drops only 2.65% when scaling from 302K to 622K words with flat structure
 
-For Claude Code projects under 600K words: **use flat structure, skip enhancement indexes.**
+### The Bottom Line
+
+For Claude Code projects: **use flat structure with descriptive filenames, skip enhancement indexes.**
+
+The simplest approach is the best approach.
+
+---
+
+## Why This Research Matters
+
+Claude Code users face a practical question: *How should I organize my context files?*
+
+Current guidance is limited to general best practices. No one has systematically tested what actually works. We filled that gap with controlled experiments measuring accuracy across:
+
+- **5 structure variants** (flat, shallow, deep, very-deep, monolith)
+- **6 enhancement strategies** (summaries, keywords, combinations)
+- **3 corpus sizes** (120K, 302K, 622K words)
+- **2 loading methods** (classic cd, --add-dir flag)
+- **23 question types** (navigation, cross-reference, depth)
+
+Total: **849 individual tests** with ground-truth evaluation.
 
 ---
 
@@ -37,42 +57,41 @@ A synthetic knowledge base for a fictional robotics company, containing:
 | Version | Words | Files | Purpose |
 |---------|-------|-------|---------|
 | V4 | 120,000 | 80 | Baseline |
-| V5 | 302,000 | 121 | Scale test |
+| V5 | 302,000 | 121 | Medium scale |
 | V6 | 622,561 | 277 | Large scale |
 
-### Question Types
+### Structure Variants
 
-23 questions across three categories:
+| Structure | Description | Nesting Depth |
+|-----------|-------------|---------------|
+| Flat | All files in root directory | 0 |
+| Shallow | One level of folders | 1 |
+| Deep | 3-4 levels of nesting | 3 |
+| Very-Deep | 5+ levels of nesting | 5 |
+| Monolith | Single combined file | 0 |
+
+### Enhancement Variants
+
+| Enhancement | Description |
+|-------------|-------------|
+| V5.1 | 2-sentence summary per file |
+| V5.2 | 5-sentence summary per file |
+| V5.3 | 10 keywords per file |
+| V5.4 | 5-sentence summary + keywords |
+| V5.5 | 2-sentence summary + keywords |
+
+### Question Types
 
 - **Navigation (10)**: Single-file lookups ("Who is the CEO?")
 - **Cross-reference (8)**: Multi-file connections ("What is the relationship between Project X and Y?")
 - **Depth (5)**: Specific detail extraction ("What safety protocols exist for ATLAS?")
 
-### Structure Variants
+### Evaluation
 
-| Structure | Description |
-|-----------|-------------|
-| Flat | All files in root directory |
-| Shallow | One level of folders |
-| Deep | 3-4 levels of nesting |
-| Very-Deep | 5+ levels of nesting |
-| Monolith | Single combined file |
-
-### Enhancement Variants (V5.5)
-
-| Enhancement | Description |
-|-------------|-------------|
-| V5.1 | 2-sentence summaries per file |
-| V5.2 | 5-sentence summaries per file |
-| V5.3 | 10 keywords per file |
-| V5.4 | 5-sentence + keywords |
-| V5.5 | 2-sentence + keywords |
-
-### Test Execution
-
-- Model: Claude 3.5 Haiku
-- Loading methods: Classic (cd into directory) and add-dir (--add-dir flag)
-- Total tests: 757 across all variants
+Each test received a score from 0-100 based on:
+- Exact match with ground truth answer
+- Acceptable variant matches
+- Partial credit for keyword presence
 
 ---
 
@@ -83,41 +102,88 @@ A synthetic knowledge base for a fictional robotics company, containing:
 | Structure | V4 (120K) | V5 (302K) | V6 (622K) |
 |-----------|-----------|-----------|-----------|
 | **Flat** | **100%** | **100%** | **97.35%** |
-| Shallow | 100% | 100% | n/a |
+| Shallow | 100% | 100% | 94.42% |
+| Monolith | 100% | 100% | N/A |
 | Deep | 96.78% | 92.04% | 95.00% |
-| Very-Deep | 95.65% | 96.04% | n/a |
+| Very-Deep | 95.65% | 96.04% | 96.04% |
 
 **Finding**: Flat structure maintains highest accuracy across all scales. First degradation appears at 600K+ words.
 
-### Enhancement Impact at Different Scales
+### Nesting Depth Impact
+
+| Depth | Description | Average Accuracy |
+|-------|-------------|------------------|
+| 0 | Flat | 99.12% |
+| 1 | Shallow | 98.14% |
+| 3 | Deep | 94.61% |
+| 5 | Very-Deep | 95.91% |
+
+**Finding**: Each level of nesting costs ~1-2% accuracy. Surprisingly, very-deep sometimes outperforms deep (inconsistent).
+
+**Recommendation**: Prefer flat. If nesting required, limit to 1-2 levels.
+
+### Enhancement Strategy Impact
+
+#### Recovery Rate on Previously Failed Questions
+
+| Enhancement | Description | Recovery Rate |
+|-------------|-------------|---------------|
+| V5.3 | Keywords only | **80%** (4/5) |
+| V5.4 | 5-sentence + keywords | 80% (4/5) |
+| V5.5 | 2-sentence + keywords | 80% (4/5) |
+| V5.1 | 2-sentence summary | 60% (3/5) |
+| V5.2 | 5-sentence summary | 40% (2/5) |
+
+**Finding**: Keywords alone match any combined approach. Summaries add no value when keywords present.
+
+#### Enhancement Impact at Scale
 
 | Variant | V5 (302K) | V6 (622K) | Delta |
 |---------|-----------|-----------|-------|
 | Base flat | 100% | 97.35% | -2.65% |
-| Flat + V5.5 | 100% | 92.74% | -7.26% |
+| Flat + V5.5 | 100% | 92.74% | **-7.26%** |
 | Base deep | 92.04% | 95.00% | +2.96% |
-| Deep + V5.5 | 89.83% | 89.88% | +0.05% |
+| Deep + V5.5 | 89.83% | 92.30% | +2.47% |
 
-**Finding**: Enhancement indexes help at 300K words but *hurt* at 600K+ words. The added index content appears to create noise rather than aid navigation.
+**Finding**: Enhancements HURT at 622K words. The ~27K words of index content becomes noise competing for context window space.
 
-### Question Type Analysis
+### Question Type Performance
 
-| Type | V4 | V5 | V6 |
-|------|-----|-----|-----|
-| Navigation | 99% | 100% | 97.5% |
-| Cross-reference | 97.78% | 93.44% | 92.69% |
-| Depth | 98.6% | 96.8% | 88.11% |
+| Type | V4 (120K) | V5 (302K) | V6 (622K) | Trend |
+|------|-----------|-----------|-----------|-------|
+| Navigation | 99% | 100% | 97.5% | Most robust |
+| Cross-reference | 97.78% | 93.44% | 93.38% | Stable degradation |
+| Depth | 98.6% | 96.8% | 89.59% | Steepest decline |
 
-**Finding**: Navigation questions (single-file) most robust. Cross-reference and depth questions degrade with scale.
+**Finding**: Navigation queries (single-file) most resilient. Depth queries (specific details) degrade most with scale.
 
 ### Loading Method Comparison
 
-| Metric | Classic | add-dir |
-|--------|---------|---------|
-| Overall wins | 15 | 14 |
-| Ties | 294 | - |
+| Method | Wins | Ties |
+|--------|------|------|
+| Classic (cd) | 15 | 294 |
+| Add-dir | 14 | 294 |
 
-**Finding**: Loading method has minimal impact. Use whichever fits your workflow.
+**Finding**: No meaningful difference. Use whichever fits your workflow.
+
+---
+
+## The "One Topic = One File" Principle
+
+This emerged as a key architectural insight:
+
+| Approach | Result |
+|----------|--------|
+| One file with multiple topics | Claude must read entire file to assess relevance |
+| One topic spread across files | Claude may miss connections |
+| **One topic per file** | Claude can assess relevance from filename alone |
+
+**Why it works**: Claude Code's discovery process lists directory contents first. If each filename clearly indicates its topic, Claude can select relevant files without reading them all.
+
+This explains why:
+- Flat structure wins (all filenames visible in one listing)
+- Descriptive filenames matter (they ARE the index)
+- Enhancement indexes hurt at scale (compete with actual content)
 
 ---
 
@@ -125,38 +191,44 @@ A synthetic knowledge base for a fictional robotics company, containing:
 
 ### By Project Size
 
-**Small Projects (<100K words)**
-- Any structure works
-- No enhancements needed
-- Monolith acceptable
-
-**Medium Projects (100-300K words)**
-- Use flat structure (guaranteed 100%)
-- Keyword index optional but helpful
-- Avoid >2 levels of nesting
-
-**Large Projects (300-600K words)**
-- Use flat structure (97%+ accuracy)
-- Skip enhancement indexes
-- Consider splitting by domain
-
-**Very Large Projects (600K+ words)**
-- Flat structure still best
-- Do NOT add keyword/summary indexes
-- Consider splitting into sub-corpora
+| Size | Recommendation |
+|------|----------------|
+| <100K words | Any structure works; monolith acceptable |
+| 100-300K words | Flat structure recommended; keyword index optional |
+| 300-600K words | Flat structure required; skip enhancement indexes |
+| 600K+ words | Flat structure; consider splitting into sub-corpora |
 
 ### Structure Guidelines
 
-1. **Prefer flat over nested** — Every level of nesting reduces accuracy slightly
-2. **Use descriptive filenames** — Include key entities in filename (e.g., `employees-leadership-bios.md`)
-3. **Keep CLAUDE.md minimal** — Brief overview, not comprehensive summary
-4. **Skip enhancement indexes at scale** — They hurt more than help above 300K words
+1. **Use flat structure** — All files in one directory
+2. **One topic per file** — Topically cohesive content
+3. **Descriptive filenames** — Include key entities (e.g., `employees-leadership-bios.md`)
+4. **Keep CLAUDE.md minimal** — Brief overview, not comprehensive summary
+5. **Skip enhancement indexes at scale** — They hurt more than help above 300K words
 
-### What Didn't Work
+### What Works
 
-- Long summaries (5-sentence) performed worse than short (2-sentence)
-- Combined enhancements (summary + keywords) often worse than single enhancement
-- Very deep nesting (5+ levels) showed inconsistent results
+- Flat file organization
+- Descriptive, entity-rich filenames
+- Topically cohesive files
+- Minimal CLAUDE.md
+
+### What Doesn't Work
+
+- Deep folder nesting (3+ levels)
+- Long summaries (5-sentence performed worse than 2-sentence)
+- Combined enhancements at scale
+- Monolith files approaching context limits
+
+---
+
+## Unsolved Cases
+
+### XREF-006: "What is the relationship between Project Hermes and Project Prometheus?"
+
+This question fails across ALL enhancement strategies on nested structures, but succeeds on flat. It requires connecting information across 2 files.
+
+**Implication**: Complex cross-references are inherently harder in nested structures where Claude must navigate rather than scan.
 
 ---
 
@@ -164,15 +236,17 @@ A synthetic knowledge base for a fictional robotics company, containing:
 
 ### Context Window Isn't the Bottleneck
 
-We expected accuracy to drop as corpus size approached Haiku's 200K context limit. Instead, accuracy remained high even with 622K words of source material, because Claude Code loads context selectively based on the question.
+We expected accuracy to drop as corpus size approached Haiku's 200K context limit. Instead, accuracy remained high even with 622K words of source material.
+
+**Why**: Claude Code loads context selectively based on the question. It doesn't dump everything into context.
 
 ### Structure Aids Discovery
 
-Flat structure works best because Claude can "see" all filenames in a single directory listing, making it easier to identify relevant files. Nested structures require navigation, increasing the chance of missing relevant content.
+Flat structure works best because Claude can "see" all filenames in a single directory listing. Nested structures require navigation, increasing the chance of missing relevant content.
 
 ### Enhancement Overhead
 
-At large scales, the ~27K words of index content in V5.5 variants added noise that competed with actual content for context window space. Simpler is better.
+At large scales, index content (~27K words in V5.5) competes with actual content for context window space. The overhead outweighs any discovery benefit.
 
 ---
 
@@ -184,52 +258,94 @@ At large scales, the ~27K words of index content in V5.5 variants added noise th
 
 ### Quick Start
 ```bash
-git clone https://github.com/your-repo/context-structure-research
+git clone https://github.com/YOUR-USERNAME/context-structure-research
 cd context-structure-research
 
 # Run a single test
 ./harness/run-test.sh --structure flat-v5 --question NAV-001
 
 # Run full matrix
-./harness/run-v6-matrix.sh
+./harness/run-haiku-matrix-v5-no-monolith.sh
 
 # Analyze results
-python3 harness/evaluator.py results/v6-matrix/raw/haiku --output results/analysis
+python3 harness/evaluator.py results/v5/raw/haiku --output results/v5/analysis
 ```
 
-### Test Corpus
-The Soong-Daystrom Industries corpus is included in `soong-daystrom/`. Structure variants are pre-built.
-
----
-
-## Raw Data
-
-All raw test results are available in `results/`:
-- `v4/` — 230 tests, 120K word corpus
-- `v5/` — 191 tests, 302K word corpus
-- `v5-enhancements/` — 60 targeted tests
-- `v5.5-matrix/` — 92 tests, enhanced structures
-- `v6-matrix/` — 184 tests, 622K word corpus
-
-Analysis reports in `results/*/analysis/report.md`.
+### Directory Structure
+```
+context-structure-research/
+├── README.md                    # This file
+├── PROJECT-CHARTER.md           # Research mission and scope
+├── docs/
+│   ├── methodology.md           # Full test methodology
+│   ├── phase-1-analysis-plan.md # Analysis planning
+│   ├── phase-2-indexing-strategies.md  # Code indexing strategies
+│   └── prior-art-research.md    # Industry research
+├── harness/
+│   ├── questions.json           # 23 test questions
+│   ├── run-test.sh              # Single test runner
+│   ├── evaluator.py             # Response evaluator
+│   └── *.sh                     # Various test scripts
+├── results/
+│   ├── analysis/                # Consolidated analysis
+│   ├── v4/, v5/, v6-*/          # Raw test results
+│   └── cross-variant-comparison.md
+├── soong-daystrom/              # Test corpus
+│   ├── _source-v4/, v5/, v6/    # Source content
+│   ├── flat-*, deep-*, etc.     # Structure variants
+│   └── *-v5.*/                  # Enhancement variants
+└── report/
+    ├── README.md                # Full report (this file)
+    └── executive-summary.md     # One-page summary
+```
 
 ---
 
 ## Limitations
 
 1. **Single model tested** — Results are for Claude 3.5 Haiku. Sonnet/Opus may differ.
-2. **Synthetic corpus** — Real-world codebases may behave differently.
-3. **Question design** — Questions designed to have clear answers; open-ended queries not tested.
-4. **One domain** — Corporate knowledge base; code-heavy repos may differ.
+2. **Synthetic corpus** — Real-world codebases may behave differently (Phase 2 planned).
+3. **Prose content** — Code-heavy repos may need different strategies.
+4. **Fixed question set** — 23 questions may not cover all query patterns.
+5. **Single domain** — Corporate knowledge base; other domains untested.
+
+---
+
+## Future Work
+
+### Phase 2: Code Repository Testing
+
+The next phase will test these findings against real codebases:
+
+- **Different content type**: Code vs prose
+- **Function-level indexing**: Do code indexes help?
+- **AST-based strategies**: Auto-generated function/class maps
+- **Real-world validation**: Test on open-source repos
+
+See `docs/phase-2-indexing-strategies.md` for the full plan.
 
 ---
 
 ## Conclusion
 
-For Claude Code projects, **flat file structure delivers the best accuracy** across all scales tested. Enhancement indexes (summaries, keywords) provide diminishing returns and should be skipped for projects over 300K words.
+For Claude Code projects, **flat file structure with descriptive filenames delivers the best accuracy** across all scales tested.
 
-The simplest approach is often the best: put your files in one directory with clear, descriptive names.
+Enhancement indexes provide diminishing returns and should be skipped for projects over 300K words.
+
+The simplest approach—files in one directory with clear names—is often the best.
 
 ---
 
-*Research conducted January 2026. Total API cost: ~$16 across 757 test runs.*
+## Citation
+
+If you use this research, please cite:
+
+```
+Context Structure Research: How File Organization Affects Claude Code Accuracy
+https://github.com/YOUR-USERNAME/context-structure-research
+January 2026
+```
+
+---
+
+*Research conducted January 2026. 849 test runs, ~$20 total API cost.*
