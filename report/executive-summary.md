@@ -12,7 +12,7 @@ How should you organize context files for Claude Code to maximize answer accurac
 
 ## The Study
 
-- **849 tests** across 5 structures, 6 enhancements, 3 corpus sizes
+- **849 tests** across 8 structures, 6 enhancements, 3 corpus sizes
 - **Corpus**: 120K → 302K → 622K words
 - **Model**: Claude 3.5 Haiku
 - **Ground-truth evaluation** against 23 known-answer questions
@@ -80,4 +80,4 @@ That's it. The simplest approach is the best approach.
 
 ---
 
-*849 tests. $20 API cost. January 2026.*
+*849 tests. $36.74 API cost. January-February 2026.*

@@ -159,12 +159,61 @@ Each test received a score from 0-100 based on:
 
 ### Loading Method Comparison
 
-| Method | Wins | Ties |
-|--------|------|------|
-| Classic (cd) | 15 | 294 |
-| Add-dir | 14 | 294 |
+| Method | Accuracy | Wins | Ties | Avg Cost/Correct |
+|--------|----------|------|------|-----------------|
+| adddir | 96.35% | 26 | 361 | $0.0638 |
+| classic | 95.69% | 31 | 361 | $0.0726 |
 
-**Finding**: No meaningful difference. Use whichever fits your workflow.
+**Finding**: Minimal accuracy difference. adddir saves ~12% per correct answer due to better caching.
+
+### Cost-Effectiveness
+
+*How much does it cost to get a correct answer?*
+
+Data source: 604/849 tests have token/cost data from raw API responses, joined with evaluator accuracy scores. See `results/analysis/cost-effectiveness.md` for full methodology.
+
+#### By Corpus Size
+
+| Corpus | Words | Accuracy | Cost/Test | Cost/Correct Answer | Tokens/Correct |
+|--------|-------|----------|-----------|---------------------|----------------|
+| V4 | 120K | 96.96% | $0.0751 | $0.0791 | 141,462 |
+| V5 | 302K | 90.96% | $0.0671 | $0.0801 | 147,871 |
+| **V6** | **622K** | **90.22%** | **$0.0494** | **$0.0547** | **106,419** |
+
+**Finding**: Larger corpora are *cheaper* per correct answer ($0.055 at 622K vs $0.079 at 120K). Better cache hit rates at scale (78% vs 65%) more than offset the larger corpus.
+
+#### By Question Type
+
+| Type | Accuracy | Cost/Correct | Avg Duration |
+|------|----------|-------------|--------------|
+| Navigation | 99.14% | $0.0452 | 17.8s |
+| Cross-reference | 87.34% | $0.0786 | 32.8s |
+| Depth | 88.14% | $0.0980 | 39.4s |
+
+**Finding**: Navigation questions are both cheapest and most accurate. Depth questions cost 2.2x more per correct answer and take 2.2x longer.
+
+#### Cheapest Structures per Correct Answer (min 20 tests with cost data)
+
+| Rank | Structure | Corpus | Cost/Correct | Accuracy | Tokens/Correct |
+|------|-----------|--------|-------------|----------|----------------|
+| 1 | deep-v6 | V6 | $0.0408 | 89.1% | 82,504 |
+| 2 | deep-v6-v5.5 | V6 | $0.0453 | 89.1% | 88,591 |
+| 3 | flat-v6 | V6 | $0.0532 | 93.5% | 90,153 |
+| 4 | deep (v4) | V4 | $0.0539 | 93.5% | 101,078 |
+| 5 | very-deep-v6 | V6 | $0.0563 | 93.5% | 107,937 |
+
+**Finding**: At V6 scale, deep structures are cheapest per correct answer ($0.041) but less accurate. flat-v6 costs $0.012 more per answer but gets 4.4% more answers right. The cost premium for accuracy is small.
+
+#### Total Research Cost
+
+| Metric | Value |
+|--------|-------|
+| Total tests | 849 |
+| Tests with cost data | 604 |
+| Total API cost | $36.74 |
+| Avg cost per test | $0.0608 |
+| Avg cost per correct answer | $0.0682 |
+| Avg cache hit rate | 74.2% |
 
 ---
 
@@ -282,13 +331,21 @@ context-structure-research/
 │   ├── phase-2-indexing-strategies.md  # Code indexing strategies
 │   └── prior-art-research.md    # Industry research
 ├── harness/
-│   ├── questions.json           # 23 test questions
-│   ├── run-test.sh              # Single test runner
-│   ├── evaluator.py             # Response evaluator
-│   └── *.sh                     # Various test scripts
+│   ├── questions.json           # 23 test questions with ground truth
+│   ├── run-test.sh              # Single test runner (headless Claude)
+│   ├── evaluator.py             # Scores responses against ground truth
+│   ├── consolidate-results.py   # Merges all suites into unified dataset
+│   ├── analyze-all.py           # Full Phase 1 analysis (uses evaluator scores)
+│   ├── cost-analyzer.py         # Token usage and API cost analysis
+│   ├── cost-effectiveness.py    # Joins accuracy + cost → cost/correct answer
+│   └── *.sh                     # Test matrix runner scripts
 ├── results/
-│   ├── analysis/                # Consolidated analysis
-│   ├── v4/, v5/, v6-*/          # Raw test results
+│   ├── analysis/                # Consolidated analysis output
+│   │   ├── phase-1-complete-analysis.md  # Structure/scale/nesting analysis
+│   │   ├── cost-report.md                # Token and API cost breakdown
+│   │   ├── cost-effectiveness.md         # Cost per correct answer (joined)
+│   │   └── *.json                        # Raw data for each report
+│   ├── v4/, v5/, v6-*/          # Per-suite raw results + evaluator output
 │   └── cross-variant-comparison.md
 ├── soong-daystrom/              # Test corpus
 │   ├── _source-v4/, v5/, v6/    # Source content
@@ -297,6 +354,78 @@ context-structure-research/
 └── report/
     ├── README.md                # Full report (this file)
     └── executive-summary.md     # One-page summary
+```
+
+### Analysis Pipeline
+
+The analysis pipeline runs in stages, each producing independent outputs:
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  Stage 1: Test Execution (run-test.sh / runner scripts)     │
+│  Input:  Corpus + questions.json                            │
+│  Output: results/*/raw/haiku/*.json (raw API responses)     │
+│          Each file = one question × one structure × one     │
+│          loading method. Contains full Claude response       │
+│          with answer text and API usage data.                │
+└─────────────────┬───────────────────────────────────────────┘
+                  │
+    ┌─────────────┴──────────────┐
+    ▼                            ▼
+┌─────────────────────┐  ┌────────────────────────┐
+│ Stage 2a: Evaluator  │  │ Stage 2b: Cost Analyzer │
+│ (evaluator.py)       │  │ (cost-analyzer.py)      │
+│                      │  │                          │
+│ Reads: raw responses │  │ Reads: raw responses     │
+│ Scores against       │  │ Extracts: input_tokens,  │
+│ questions.json       │  │ output_tokens, cache      │
+│ ground truth         │  │ tokens, cost_usd,         │
+│                      │  │ duration_ms               │
+│ Output: results/*/   │  │                          │
+│ analysis/results.json│  │ Output: results/analysis/ │
+│ (scores per test)    │  │ cost-report.md            │
+└─────────┬───────────┘  └──────────┬─────────────┘
+          │                         │
+          └────────────┬────────────┘
+                       ▼
+          ┌────────────────────────┐
+          │ Stage 3: Cost-         │
+          │ Effectiveness          │
+          │ (cost-effectiveness.py)│
+          │                        │
+          │ Joins evaluator scores │
+          │ with raw cost data by  │
+          │ composite key:         │
+          │ (suite, structure,     │
+          │  loading_method,       │
+          │  question_id)          │
+          │                        │
+          │ Output: results/       │
+          │ analysis/cost-         │
+          │ effectiveness.md       │
+          └────────────────────────┘
+```
+
+**Reproduction commands:**
+```bash
+cd context-structure-research
+
+# Stage 2a: Score all test suites
+for suite in v4 v5 v5-enhancements v5.5-matrix v6-matrix; do
+  python3 harness/evaluator.py results/$suite/raw/haiku --output results/$suite/analysis
+done
+python3 harness/evaluator.py results/v6-extended/raw/haiku/haiku --output results/v6-extended/analysis
+
+# Stage 2b: Consolidate + analyze
+python3 harness/consolidate-results.py
+python3 harness/analyze-all.py
+
+# Stage 2c: Cost analysis
+python3 harness/cost-analyzer.py results/*/raw/haiku results/v6-extended/raw/haiku/haiku \
+  --output results/analysis --format both
+
+# Stage 3: Cost-effectiveness (joins accuracy + cost)
+python3 harness/cost-effectiveness.py
 ```
 
 ---
@@ -348,4 +477,4 @@ January 2026
 
 ---
 
-*Research conducted January 2026. 849 test runs, ~$20 total API cost.*
+*Research conducted January-February 2026. 849 test runs, $36.74 total API cost.*

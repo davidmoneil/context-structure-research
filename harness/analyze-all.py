@@ -126,62 +126,59 @@ def get_structure_info(structure):
     return depth, enhancement
 
 def process_results():
-    """Process all result files."""
+    """Process all result files using pre-computed evaluator scores."""
     questions = load_questions()
 
-    # Define test suites
+    # Define test suites: (name, evaluator_results_path, corpus_version)
     suites = [
-        ("v4", RESULTS_DIR / "v4" / "raw" / "haiku", "v4"),
-        ("v5", RESULTS_DIR / "v5" / "raw" / "haiku", "v5"),
-        ("v5-enhancements", RESULTS_DIR / "v5-enhancements" / "raw" / "haiku", "v5"),
-        ("v5.5-matrix", RESULTS_DIR / "v5.5-matrix" / "raw" / "haiku", "v5"),
-        ("v6-matrix", RESULTS_DIR / "v6-matrix" / "raw" / "haiku", "v6"),
-        ("v6-extended", RESULTS_DIR / "v6-extended" / "raw" / "haiku" / "haiku", "v6"),
+        ("v4", RESULTS_DIR / "v4" / "analysis" / "results.json", "v4"),
+        ("v5", RESULTS_DIR / "v5" / "analysis" / "results.json", "v5"),
+        ("v5-enhancements", RESULTS_DIR / "v5-enhancements" / "analysis" / "results.json", "v5"),
+        ("v5.5-matrix", RESULTS_DIR / "v5.5-matrix" / "analysis" / "results.json", "v5"),
+        ("v6-matrix", RESULTS_DIR / "v6-matrix" / "analysis" / "results.json", "v6"),
+        ("v6-extended", RESULTS_DIR / "v6-extended" / "analysis" / "results.json", "v6"),
     ]
 
     all_results = []
 
-    for suite_name, suite_dir, corpus in suites:
-        if not suite_dir.exists():
-            print(f"Warning: {suite_dir} not found")
+    for suite_name, results_file, corpus in suites:
+        if not results_file.exists():
+            print(f"Warning: {results_file} not found")
             continue
 
-        for filepath in suite_dir.glob("*.json"):
-            try:
-                with open(filepath) as f:
-                    data = json.load(f)
+        with open(results_file) as f:
+            data = json.load(f)
 
-                # Parse filename: structure_method_100_question.json
-                parts = filepath.stem.rsplit("_", 3)
-                structure = parts[0] if len(parts) >= 4 else data.get("config", {}).get("structure", "unknown")
-                method = parts[1] if len(parts) >= 4 else data.get("config", {}).get("loading_method", "unknown")
-                question_id = parts[3] if len(parts) >= 4 else data.get("question_id", "unknown")
+        scores = data.get("scores", [])
+        print(f"  {suite_name}: {len(scores)} scored results")
 
-                # Score the result
-                score, exact, variant = score_result(data, questions)
+        for entry in scores:
+            config = entry.get("config", {})
+            structure = config.get("structure", "unknown")
+            method = config.get("loading_method", "unknown")
+            question_id = entry.get("question_id", "unknown")
+            points = entry.get("points", 0)
 
-                # Get structure info
-                depth, enhancement = get_structure_info(structure)
+            # Get structure info
+            depth, enhancement = get_structure_info(structure)
 
-                # Get question type
-                q_type = questions.get(question_id, {}).get("type", "unknown")
+            # Get question type
+            q_type = questions.get(question_id, {}).get("type", "unknown")
 
-                all_results.append({
-                    "suite": suite_name,
-                    "corpus": corpus,
-                    "corpus_words": CORPUS_INFO.get(corpus, {}).get("words", 0),
-                    "structure": structure,
-                    "nesting_depth": depth,
-                    "enhancement": enhancement,
-                    "loading_method": method,
-                    "question_id": question_id,
-                    "question_type": q_type,
-                    "score": score,
-                    "exact_match": exact,
-                    "variant_match": variant,
-                })
-            except Exception as e:
-                print(f"Error processing {filepath}: {e}")
+            all_results.append({
+                "suite": suite_name,
+                "corpus": corpus,
+                "corpus_words": CORPUS_INFO.get(corpus, {}).get("words", 0),
+                "structure": structure,
+                "nesting_depth": depth,
+                "enhancement": enhancement,
+                "loading_method": method,
+                "question_id": question_id,
+                "question_type": q_type,
+                "score": points * 100,  # Convert 0-1 to 0-100
+                "exact_match": entry.get("exact_match", False),
+                "variant_match": entry.get("variant_match", False),
+            })
 
     return all_results
 

@@ -1,7 +1,7 @@
 # Context Structure Research - Cross-Variant Comparison Report
 
-**Generated**: 2026-01-30 (Final V6 results)
-**Total Tests Analyzed**: 757 (V4: 230, V5: 191, V5-enhancements: 60, V5.5-matrix: 92, V6-matrix: 184)
+**Generated**: 2026-02-18 (Final Phase 1 results)
+**Total Tests Analyzed**: 849 (V4: 230, V5: 191, V5-enhancements: 60, V5.5-matrix: 92, V6-matrix: 184, V6-extended: 92)
 
 ---
 
@@ -9,7 +9,7 @@
 
 **Key Finding**: Flat structure achieves 100% accuracy across all corpus sizes. Nested structures degrade predictably with scale.
 
-**Recommendation**: Use flat or shallow structure with keyword index for corpora up to 300K words.
+**Recommendation**: Use flat or shallow structure for corpora up to 600K+ words. Skip enhancement indexes at scale.
 
 ---
 
@@ -20,7 +20,7 @@
 | V4 | 120,000 | 80 | **98.49%** | flat/shallow/monolith (100%) |
 | V5 | 302,000 | 121 | **97.13%** | flat/shallow/monolith (100%) |
 | V5.5 | 302,000 | 121 | **94.91%** | flat-v5-v5.5 (100%) |
-| **V6** | **622,561** | **277** | **94.35%** | **flat-v6 (97.35%)** |
+| **V6** | **622,561** | **277** | **94.64%** | **flat-v6 (97.35%)** |
 
 **Scale Effect**: ~1% accuracy drop per 100K words increase (diminishing impact at scale)
 
@@ -33,15 +33,19 @@
 | Structure | V4 (120K) | V5 (302K) | V5.5 (302K) | V6 (622K) |
 |-----------|-----------|-----------|-------------|-----------|
 | Flat | **100%** | **100%** | **100%** | **97.35%** |
-| Shallow | **100%** | **100%** | n/a | n/a |
+| Shallow | **100%** | **100%** | n/a | **94.42%** |
 | Monolith | **100%** | **100%** | n/a | n/a |
 | Deep | 96.78% | 92.04% | 89.83% | 95.00% |
+| Very Deep | 95.65% | 96.04% | n/a | **96.04%** |
 | Flat + V5.5 | n/a | n/a | 100% | 92.74% |
 | Deep + V5.5 | n/a | n/a | 89.83% | 92.30% |
 
-**Key V6 Finding**: At 622K words, flat-v6 (97.35%) outperforms flat-v6-v5.5 (92.74%). **Enhancement indexes hurt accuracy at scale!**
+**Key V6 Findings**:
+- Flat-v6 (97.35%) outperforms flat-v6-v5.5 (92.74%). **Enhancement indexes hurt accuracy at scale!**
+- Very-deep-v6 (96.04%) is surprisingly competitive — nearly matching flat at 622K words
+- Shallow-v6 (94.42%) underperforms expectations — first time shallow trails deep/very-deep
 
-**Observation**: Flat structure remains most reliable but shows first degradation at 600K+. Enhanced indexes (V5.5) provide diminishing returns at scale.
+**Observation**: Flat structure remains most reliable but shows first degradation at 600K+. Very deep structures are more resilient at scale than expected. Enhanced indexes (V5.5) provide diminishing returns at scale.
 
 ---
 
@@ -73,8 +77,10 @@ Testing on questions that failed in V5 baseline (deep structure):
 | V5 | 2 | 6 | 84 |
 | V5-enhancements | 5 | 4 | 21 |
 | V5.5-matrix | 3 | 1 | 42 |
+| V6-matrix | 7 | 7 | 78 |
+| V6-extended | 5 | 2 | 39 |
 
-**Observation**: Loading method has minimal impact overall. Slight advantage to adddir in deep structures (+4.72% in V5.5 deep).
+**Observation**: Loading method has minimal impact overall. adddir shows advantage in very-deep-v6 (+7.91%), particularly for depth questions. Overall across 849 tests: adddir 96.35% vs classic 95.69%.
 
 ### By Structure (V5.5 Full Matrix)
 
@@ -87,16 +93,17 @@ Testing on questions that failed in V5 baseline (deep structure):
 
 ## Question Type Analysis
 
-| Question Type | V4 | V5 | V5.5 | V6 |
-|---------------|-----|-----|------|-----|
-| Navigation | 99% | **100%** | **100%** | 97.50% |
-| Depth | 98.6% | 96.8% | 88.5% | 89.59% |
-| Cross-reference | 97.78% | 93.44% | 92.56% | 93.38% |
+| Question Type | V4 | V5 | V5.5 | V6 (all) |
+|---------------|-----|-----|------|----------|
+| Navigation | 99% | **100%** | **100%** | **98.33%** |
+| Depth | 98.6% | 96.8% | 88.5% | 88.51% |
+| Cross-reference | 97.78% | 93.44% | 92.56% | 93.85% |
 
 **Observation**:
-- Navigation questions (single-file lookups) remain most robust even at 622K words
+- Navigation questions (single-file lookups) remain most robust even at 622K words (98.33%)
 - Cross-reference questions show consistent ~93% at scale (V5, V5.5, V6)
-- Depth questions (specific detail extraction) degraded at V5.5 but stabilized at V6
+- Depth questions (specific detail extraction) degraded at V5.5 and stayed there at V6 (~88.5%)
+- V6-extended confirms these patterns: navigation 100%, cross-ref 94.81%, depth 86.36%
 
 ---
 
@@ -144,9 +151,13 @@ Testing on questions that failed in V5 baseline (deep structure):
 
 ## Next Steps
 
-1. [x] V6 testing (622K words) - **COMPLETE** (184 tests, 94.35% accuracy)
-2. [ ] Create `/context-grade` skill based on these findings
-3. [ ] Publish findings (GitHub repo + blog post)
+1. [x] V6 testing (622K words) - **COMPLETE** (276 tests across 6 structures, 94.64% accuracy)
+2. [x] V6-extended (shallow-v6, very-deep-v6) - **COMPLETE** (92 tests, 95.23% accuracy)
+3. [x] Full Phase 1 analysis with all 849 tests - **COMPLETE**
+4. [x] Cost/token analysis across all suites - **COMPLETE** ($36.74 total, 604 tests with cost data)
+5. [ ] Statistical significance testing
+6. [ ] Create `/context-grade` skill based on these findings
+7. [ ] Publish findings (GitHub repo + blog post)
 
 ---
 

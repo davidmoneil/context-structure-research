@@ -70,7 +70,7 @@ class CostAnalyzer:
     def _extract_corpus_version(self, file_path: Path) -> str:
         """Extract corpus version from file path."""
         path_str = str(file_path)
-        for version in ["v5", "v4", "v3", "v2", "v1"]:
+        for version in ["v6", "v5", "v4", "v3", "v2", "v1"]:
             if f"/{version}/" in path_str or f"results/{version}" in path_str:
                 return version
         return "unknown"
