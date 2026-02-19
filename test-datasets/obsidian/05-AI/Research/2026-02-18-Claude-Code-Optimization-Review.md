@@ -1,0 +1,743 @@
+# AIProjects Claude Code Optimization Review
+
+**Date**: 2026-02-18
+**Scope**: Full structural and design review of AIProjects Claude Code configuration
+**Method**: Deep research (22 sources, 14 official Anthropic) + comprehensive codebase analysis
+**Author**: Claude (requested by David Moneil)
+
+---
+
+## Executive Summary
+
+AIProjects is an ambitious, well-architected Claude Code setup that has grown organically into a sophisticated infrastructure hub. It is **more capable than 99% of Claude Code configurations** — but that capability has come at a cost. The system has accumulated significant context overhead, redundant instructions, dead code, and structural patterns that directly contradict current Anthropic best practices.
+
+**The core finding**: Your CLAUDE.md is **683 lines (~8,000 tokens)** — between 2x and 11x the recommended size. This file loads into every single conversation and is the single highest fixed-cost item in your system. Combined with MCP tool definitions (~13K tokens), your baseline context consumption is **~27K tokens (13.5% of the 200K window) before you type a single word**. When session-state.md loads (another ~10K tokens), you're at **~37K tokens (18.5%) of fixed overhead**.
+
+This matters because research shows **20-30% performance degradation** as context fills, with the final 20% of the window providing disproportionately poor value. Anthropic's own system prompt uses ~50 of the ~150-200 instructions LLMs can reliably follow — your CLAUDE.md alone may consume another 80-100 instruction slots, leaving very little room before instruction-following degrades.
+
+**The good news**: The architecture is sound. The problems are sizing and hygiene, not design. The skill system, hook architecture, agent framework, and MCP strategy are all well-conceived. The fixes are mostly about pruning, extracting, and cleaning — not rebuilding.
+
+### Top 5 Recommendations (Priority Order)
+
+| # | Action | Impact | Effort |
+|---|--------|--------|--------|
+| 1 | **Slim CLAUDE.md from 683 to ~200 lines** — extract Beads docs, MCP details, Quick Links, and operational procedures to referenced files | Saves ~5,000 tokens/session, improves instruction following | Medium |
+| 2 | **Fix broken hook + clean 27 orphaned hooks** — `plugin-sync-monitor.js` doesn't exist (silent errors on every Edit/Write); 27 dead hook files (170KB) | Eliminates silent errors, reduces maintenance surface | Low |
+| 3 | **Trim session-state.md** — currently 42.5KB, should be <5KB with rolling history | Saves ~8,000 tokens when loaded | Low |
+| 4 | **Consolidate UserPromptSubmit hooks** — 6 separate Node.js processes spawn per prompt, totaling 50KB of JavaScript | Reduces latency on every user message | Medium |
+| 5 | **Apply progressive disclosure to skills** — parallel-dev SKILL.md is 17.4KB (4,500+ tokens); upgrade is 16KB for 1 command | Reduces per-invocation context load | Medium |
+
+---
+
+## Part 1: Best Practices Benchmark
+
+*What does "good" look like according to Anthropic and the community?*
+
+### 1.1 CLAUDE.md Sizing
+
+| Source | Recommended Size | Notes |
+|--------|-----------------|-------|
+| HumanLayer (widely cited) | **~60 lines** | Their production CLAUDE.md |
+| Community consensus | **<300 lines** | Performance sweet spot |
+| Anthropic (implicit) | **<5K tokens** | System prompt uses ~50 instructions; leave room |
+| Steve Kinney course | **<200 lines** | Front-load critical rules |
+
+**The test for every line**: "Would removing this cause Claude to make mistakes?" If not, cut it.
+
+**Anti-pattern**: The "over-specified CLAUDE.md" — instructions that duplicate what linters/formatters enforce, verbose code examples inline, information that's only sometimes relevant.
+
+### 1.2 What CLAUDE.md Should Contain
+
+Per Anthropic's official best practices blog:
+
+1. **Project map** — what the codebase does, key architecture
+2. **Behavioral rules** — only rules Claude would otherwise violate
+3. **Common commands** — build, test, lint
+4. **Repository conventions** — naming patterns, file organization
+5. **Compaction instructions** — what to preserve during `/compact`
+
+**What it should NOT contain**: code style guidelines (use hooks/linters), things Claude already does correctly, verbose examples (put in separate files), information only relevant sometimes (progressive disclosure), anything duplicated from config files Claude can read.
+
+### 1.3 Context Window Budget
+
+| Component | Best Practice Budget |
+|-----------|---------------------|
+| System prompt + CLAUDE.md | <20K tokens (10%) |
+| MCP tool definitions | <10K tokens (auto-deferred above this) |
+| Working conversation | ~140-150K tokens |
+| Performance cliff | Last 20% (160-200K) — disproportionately poor value |
+
+**Key thresholds**: Manual `/compact` at 70-75% fill. Auto-compact fires at ~95%. Sessions >30K tokens for complex work see quality degradation.
+
+### 1.4 Hook Philosophy
+
+> "Unlike CLAUDE.md instructions which are advisory, hooks are deterministic." — HumanLayer
+
+**Best practice**: Convert enforcement rules to hooks. Code formatting → PostToolUse hook. File protection → PreToolUse hook. Commit conventions → PreToolUse hook. CLAUDE.md instructions are suggestions; hooks are guarantees.
+
+### 1.5 Skills Architecture
+
+Skills implement **progressive disclosure** — three-tier loading:
+1. **Metadata** (~100 tokens): loaded at startup
+2. **Full instructions** (<5K tokens): loaded on invocation
+3. **Bundled resources**: loaded only as needed
+
+**Budget**: All skill descriptions combined must fit in ~4,000 characters (2% of 200K context). Keep descriptions short and keyword-rich.
+
+**SKILL.md limit**: Under 500 lines. For complex skills, split into `references/` directory.
+
+### 1.6 MCP Management
+
+- Tool Search activates automatically when MCP definitions >10% of context
+- Anthropic reports 85% token reduction with Tool Search
+- Rule of thumb: >20K tokens on MCPs = crippled Claude
+- Only enable servers you're actively using per session
+
+---
+
+## Part 2: Current State Assessment
+
+*What does AIProjects actually look like today?*
+
+### 2.1 Token Budget (Current)
+
+| Component | Current Size | Tokens (est.) | % of 200K | Benchmark |
+|-----------|-------------|---------------|-----------|-----------|
+| CLAUDE.md | 30.7 KB / 683 lines | ~8,000 | 4.0% | Should be <2,500 |
+| Auto-memory MEMORY.md | 2.5 KB | ~600 | 0.3% | Good |
+| MCP tool definitions | ~50 KB | ~13,000 | 6.5% | Managed by Tool Search |
+| System prompt (built-in) | -- | ~2,000 | 1.0% | Fixed |
+| **Fixed baseline** | -- | **~23,600** | **11.8%** | Target: <15K |
+| session-state.md (if loaded) | 42.5 KB | ~10,000 | 5.0% | Should be <1,500 |
+| **Typical startup total** | -- | **~33,600** | **16.8%** | Target: <20K |
+
+### 2.2 CLAUDE.md Breakdown
+
+| Section | Lines (approx) | Should Be In CLAUDE.md? | Recommendation |
+|---------|----------------|------------------------|----------------|
+| Project Context + Key Principles | 25 | Yes | Keep (core identity) |
+| Project Management (Auto) | 40 | Partially | Keep 5-line summary, extract details |
+| **Task Management (Beads)** | **95** | **No** | Extract to `.claude/context/tools/beads-reference.md` |
+| Task Orchestration | 35 | Partially | Keep 5-line summary, rest is in orchestration README |
+| **Quick Links (30+ refs)** | **35** | **No** | Extract to `_index.md` (it already exists there) |
+| Workflow + Core Patterns | 70 | Partially | Keep PARC one-liner, extract automation routing |
+| Advanced Task Patterns | 20 | No | Extract to patterns/ |
+| **MCP Tools** | **45** | **No** | Extract — duplicates `mcp-servers.md` |
+| **Built-in Subagents** | **30** | **No** | Claude already knows its own subagents |
+| **Skills System** | **50** | **No** | Skills are self-describing via metadata |
+| Doc Synchronization | 15 | No | Hook handles this automatically |
+| Response Style | 10 | Yes | Keep |
+| **Clarification on Complex Requests** | **50** | **Partially** | Keep 5-line version, extract template |
+| Session Continuity | 40 | Partially | Keep 5-line summary, extract procedures |
+| **Audit Logging** | **30** | **No** | Hooks handle this automatically; no instructions needed |
+| **Priority Management** | **30** | **No** | Duplicates Beads section above |
+
+**Estimated removable content**: ~400 lines (~60% of the file)
+**Estimated token savings**: ~5,000 tokens per session
+
+### 2.3 Hooks System
+
+**Registered hooks**: 22 invocations across 7 events (17 unique JS files)
+**Unregistered hook files**: 27 files (170 KB of dead code)
+
+#### Per-Prompt Overhead (6 hooks on every user message)
+
+| Hook | Size | Purpose | Essential? |
+|------|------|---------|------------|
+| prompt-enhancer.js | 4.3 KB | Enhances prompts | Review — what does it actually do? |
+| skill-router.js | 7.7 KB | Routes slash commands to skills | Yes |
+| orchestration-detector.js | 11.1 KB | Scores prompt complexity | Questionable — triggers on simple prompts (we just saw it) |
+| self-correction-capture.js | 6.2 KB | Captures self-corrections | Nice-to-have, not essential |
+| fabric-suggester.js | 6.6 KB | Suggests Fabric commands | Low value — adds noise to every prompt |
+| project-detector.js | 4.9 KB | Detects GitHub URLs | Rare trigger, runs every time |
+
+**Total**: 6 Node.js processes, 50 KB of JavaScript, on every single user message.
+
+**Observation**: `orchestration-detector.js` just fired on your simple "ok" response and scored it at 11 (high complexity). It also suggested auto-orchestrating for a message that didn't need it. `fabric-suggester.js` suggested log analysis for a non-log-related prompt. These are false positives that add noise.
+
+#### Per-Tool-Call Overhead (3+ hooks minimum)
+
+| Event | Hook | Fires On |
+|-------|------|----------|
+| PreToolUse | audit-logger.js | Every tool call |
+| PostToolUse | file-access-tracker.js | Every tool call |
+| PostToolUse | cross-project-commit-tracker.js | Every tool call |
+
+**Total**: 3 Node.js processes per tool call, minimum. In a session with 50 tool calls, that's 150+ hook process spawns just for these three.
+
+#### Critical Bug
+
+`plugin-sync-monitor.js` is registered in settings.json for PostToolUse on Edit and Write operations, but **the file does not exist** in `.claude/hooks/`. This means every Edit and Write operation triggers a silent error for a missing hook.
+
+### 2.4 Skills System
+
+| Skill | SKILL.md Size | Commands | Assessment |
+|-------|--------------|----------|------------|
+| parallel-dev | **17.4 KB** | 17 | Oversized — should use references/ |
+| upgrade | **16.0 KB** | 1 | 16KB for 1 command is extreme |
+| structured-planning | 12.4 KB | 4 | Medium — could slim |
+| session-management | 9.8 KB | 7+ | Reasonable for scope |
+| obsidian | 8.9 KB | 7 | Reasonable |
+| ciso-expert | 8.3 KB | has node_modules! | `node_modules` should be gitignored |
+| orchestration | 7.2 KB | 4 | Reasonable |
+| infrastructure-ops | 7.3 KB | 5+ | Reasonable |
+| Others | 2-6 KB each | varies | Fine |
+
+**Total SKILL.md content**: ~112 KB across 14 skills. Per Anthropic's guidance, SKILL.md files should be <500 lines. The top 3 skills likely exceed this.
+
+### 2.5 Context Files
+
+**Total**: ~1.62 MB across ~200 files in `.claude/context/`
+
+| Concern | Size | Issue |
+|---------|------|-------|
+| session-state.md | **42.5 KB** | Unbounded growth — full session histories |
+| archive/ | 236 KB | Dead weight in active context tree |
+| projects/ | 350 KB | 39 files, most rarely accessed |
+| _index.md | 17 KB | Large table of contents |
+
+**session-state.md** is the most urgent problem in this category. At 42.5 KB, it's larger than CLAUDE.md. If loaded in full (which session-start instructions suggest), it consumes ~10,000 tokens for historical session data that's mostly irrelevant to the current session.
+
+### 2.6 Other Findings
+
+| Item | Finding |
+|------|---------|
+| **settings.local.json** | 17.8 KB with 238 accumulated permission entries, many one-off |
+| **n8n-MCP permissions** | Listed in settings.json allow-list despite being declared "On-Demand OFF" |
+| **audio-tools skill** | Stub with no commands |
+| **ciso-expert/obsidian skills** | Have `node_modules` in git |
+| **27 orphaned hooks** | 170 KB of dead JavaScript in `.claude/hooks/` |
+
+---
+
+## Part 3: Findings and Recommendations
+
+### Category A: CLAUDE.md Restructuring [HIGH IMPACT]
+
+**Finding**: At 683 lines / ~8,000 tokens, CLAUDE.md is 2-11x the recommended size and consumes instruction-following capacity on every conversation.
+
+**Root cause**: Organic growth — every new system (Beads, orchestration, skills, MCP) added its own documentation section. The file evolved into a comprehensive manual rather than a concise instruction set.
+
+**Recommendations**:
+
+**A1. Extract reference documentation to separate files** (saves ~4,000 tokens)
+
+| Section to Extract | Target Location | Lines Saved |
+|-------------------|----------------|-------------|
+| Beads CLI reference + labels + aliases | `.claude/context/tools/beads-reference.md` | ~95 |
+| Quick Links (30+ refs) | Already exists in `_index.md` — remove from CLAUDE.md | ~35 |
+| MCP server list + on-demand docs | Already exists in `mcp-servers.md` — remove from CLAUDE.md | ~45 |
+| Built-in subagents list | Remove entirely — Claude knows its own capabilities | ~30 |
+| Skills table + routing details | Skills are self-describing — remove | ~50 |
+| Audit logging details | Hooks handle automatically — remove | ~30 |
+| Priority Management section | Duplicates Beads — remove entirely | ~30 |
+| Automation routing decision tree | Extract to `patterns/automation-routing.md` | ~30 |
+| Clarification template | Extract to `patterns/clarification-template.md` | ~30 |
+
+**Replace each extracted section with a 1-2 line summary + `@` reference**:
+```markdown
+## Task Management
+Use Beads (`bd`) for all tasks. See @.claude/context/tools/beads-reference.md for CLI reference.
+```
+
+**A2. Apply the "Would removing this cause mistakes?" test**
+
+Lines that tell Claude things it already knows or does by default:
+- "Be concise and practical" — Claude Code's default behavior
+- "Ask clarifying questions about paths" — already in system prompt
+- "Think in terms of reusable patterns" — doesn't change behavior
+- Listing built-in subagents — Claude knows what subagents it has
+- Documenting the skill-router mechanism — Claude doesn't need to know how routing works, just that skills exist
+
+**A3. Add compaction instructions** (currently missing)
+
+```markdown
+## Compaction Instructions
+When compacting, preserve: current task IDs and status, file paths modified this session,
+key decisions made, and any unresolved blockers. Drop: session history, command output,
+exploration results already acted on.
+```
+
+**A4. Target structure** (~200 lines)
+
+```
+# AI Infrastructure Project Instructions (~5 lines)
+## Key Principles (~10 lines - only what changes behavior)
+## Project Structure (~10 lines - hub model, paths)
+## Task Management (~5 lines - bd commands, link to reference)
+## Session Lifecycle (~10 lines - start/exit essentials)
+## Response Style (~10 lines - voice of David link, key behaviors)
+## Compaction Instructions (~5 lines)
+## Quick Reference (~10 lines - most-used @references only)
+```
+
+---
+
+### Category B: Hooks Hygiene [HIGH IMPACT, LOW EFFORT]
+
+**B1. Fix the broken hook** (CRITICAL)
+
+`plugin-sync-monitor.js` is registered in `settings.json` for PostToolUse on Edit and Write but does not exist. Remove the registration or create the file.
+
+**B2. Clean orphaned hooks**
+
+27 hook files in `.claude/hooks/` are not registered in `settings.json`. Either:
+- Delete them (if truly abandoned)
+- Move to `.claude/hooks/archive/` (if potentially useful later)
+- Re-register (if they should be active)
+
+List of orphaned files:
+```
+amend-validator.js, compose-validator.js, context-reminder.js,
+context-usage-tracker.js, credential-guard.js, doc-sync-trigger.js,
+docker-validator.js, document-guard.config.js, env-validator.js,
+health-monitor.js, index-sync.js, mcp-enforcer.js, memory-maintenance.js,
+network-validator.js, paths-registry-sync.js, planning-mode-detector.js,
+port-conflict-detector.js, priority-validator.js, restart-loop-detector.js,
+service-registration-detector.js, session-exit-enforcer.js,
+session-tracker.js, worktree-manager.js
+```
+
+**B3. Consolidate UserPromptSubmit hooks**
+
+Currently 6 separate hooks spawn 6 Node.js processes per user message. Consider:
+- **Merge into a single entry point** (`prompt-pipeline.js`) that runs all checks sequentially in one process
+- **Remove low-value hooks**: `fabric-suggester.js` (suggests Fabric on unrelated prompts), `self-correction-capture.js` (nice-to-have, not essential)
+- **Add thresholds**: `orchestration-detector.js` triggered on a simple "ok" message — add minimum word count or complexity floor
+
+**B4. Audit per-tool-call hooks**
+
+3 hooks fire on every single tool call. `cross-project-commit-tracker.js` and `file-access-tracker.js` on every PostToolUse — are both providing enough value to justify running hundreds of times per session?
+
+---
+
+### Category C: Session State Management [HIGH IMPACT, LOW EFFORT]
+
+**C1. Implement rolling window for session-state.md**
+
+Current: 42.5 KB containing full histories of many past sessions.
+Target: <5 KB containing only:
+- Current status (idle/active/blocked)
+- Current session summary (what's being worked on NOW)
+- Previous session summary (ONE session, for continuity)
+- Active blockers
+
+Archive older sessions to `knowledge/notes/session-archive-YYYY-MM.md`.
+
+**C2. Automate session-state trimming**
+
+Add logic to the session-start hook or session-exit procedure that:
+1. Moves "Previous Session Summary" to archive
+2. Moves "Current Session Summary" to "Previous Session Summary"
+3. Creates fresh "Current Session Summary"
+
+This keeps the file perpetually small.
+
+---
+
+### Category D: Skills Optimization [MEDIUM IMPACT]
+
+**D1. Restructure oversized skills using references/**
+
+| Skill | Current | Action |
+|-------|---------|--------|
+| parallel-dev (17.4KB) | Monolithic SKILL.md | Split into SKILL.md (~5KB core) + `references/worktree-guide.md`, `references/merge-workflow.md` |
+| upgrade (16KB) | Single command, massive docs | Split into SKILL.md (~3KB) + `references/upgrade-logic.md` |
+| structured-planning (12.4KB) | Large but reasonable | Consider splitting if >500 lines |
+
+Per Anthropic: SKILL.md should be <500 lines. Complex details go in `references/` and load on-demand.
+
+**D2. Clean up stubs and artifacts**
+
+- Remove `audio-tools` skill (no commands, stub only) or complete it
+- Add `.gitignore` for `node_modules` in `ciso-expert` and `obsidian` skill directories
+
+---
+
+### Category E: MCP Configuration [LOW IMPACT — already well-managed]
+
+**E1. Resolve n8n-MCP discrepancy**
+
+CLAUDE.md says n8n-MCP is "On-Demand (default OFF)" but `settings.json` has n8n tools in the permissions allow-list. Align these.
+
+**E2. Clean settings.local.json**
+
+238 accumulated permission entries, many one-off. Review and prune entries for commands/paths that no longer exist or are covered by broader patterns.
+
+---
+
+### Category F: Context Directory Housekeeping [LOW IMPACT]
+
+**F1. Move archive/ out of active context tree**
+
+236 KB of archived plans and old documents in `.claude/context/archive/`. Move to `knowledge/archive/` to keep the context tree focused on active documentation.
+
+**F2. Audit projects/ context files**
+
+39 project context files at 350 KB total. Many may be stale. Run an audit against `paths-registry.yaml` to identify projects that no longer exist or are inactive.
+
+---
+
+## Part 4: Design Assessment
+
+*Beyond specific fixes — is the overall architecture sound?*
+
+### What's Working Well
+
+| Pattern | Assessment |
+|---------|------------|
+| **Hub architecture** | Excellent — AIProjects as orchestrator, code in ~/Code/. Clean separation. |
+| **Skill system with routing** | Well-designed. Automatic routing via hook + frontmatter is clever. Progressive disclosure model is correct. |
+| **Beads for task management** | Good choice — CLI-native, zero-token for viewing, structured labels. |
+| **Agent system** | Well-conceived — isolated context, persistent memory per agent, appropriate tool restrictions. |
+| **MCP loading strategy** | Good — Always-On/On-Demand/Isolated tiers are correct. Tool Search handles the rest. |
+| **Hook-based automation** | Right approach — deterministic enforcement beats CLAUDE.md instructions. |
+| **External paths via registry** | Smart — single source of truth for file locations. |
+
+### What Needs Rethinking
+
+| Pattern | Issue | Alternative |
+|---------|-------|-------------|
+| **CLAUDE.md as manual** | Evolved into comprehensive docs instead of concise instructions | Index-with-references model |
+| **Session-state as history** | Unbounded accumulation of past sessions | Rolling window with archive |
+| **6 hooks per prompt** | High latency overhead, frequent false positives | Single consolidated pipeline or remove low-value hooks |
+| **Audit logging everything** | 3 hooks per tool call for audit trail | Consider sampling or batch logging |
+| **30+ Quick Links in CLAUDE.md** | Table of contents that wastes tokens | Already exists in `_index.md` — don't duplicate |
+| **Documenting Claude's own features** | Sections explaining subagents, skills architecture | Claude knows these — remove |
+
+### The Maturity Curve
+
+Your system is at what the research calls the **"power user plateau"** — you've built sophisticated automation (hooks, skills, agents, orchestration) but haven't yet gone through the pruning phase where you ask "what's the minimum viable instruction set?"
+
+The research from production case studies (e.g., setec.rs rewriting 300K lines in 6 months) consistently shows that the highest-performing Claude Code setups are **aggressively minimal in their CLAUDE.md** and **lean heavily on hooks for enforcement**. The CLAUDE.md tells Claude *what* the project is and *what conventions to follow*. Everything else is progressive disclosure, hooks, or things Claude already knows.
+
+---
+
+## Part 5: Design Patterns to Follow
+
+*These are the guiding principles for all changes. Reference these when making decisions.*
+
+### Pattern 1: Index-with-References (CLAUDE.md Architecture)
+
+**Principle**: CLAUDE.md is an index, not a manual. It contains concise instructions that change Claude's behavior, with `@` references to detail files loaded on-demand.
+
+**Structure**:
+```
+CLAUDE.md (< 200 lines)
+  ├── Behavioral rules (things Claude would get wrong without them)
+  ├── Project identity (what this is, how it's organized)
+  ├── Key commands (bd, git, common ops)
+  ├── Compaction instructions
+  └── @references to detail files (loaded only when relevant)
+```
+
+**Test**: For every line in CLAUDE.md, ask: "Would removing this cause Claude to make a mistake in the next session?" If no, it doesn't belong here.
+
+**Anti-pattern**: Documenting how systems work internally (skill routing, hook execution order, audit log format). Claude doesn't need to understand the plumbing — it needs to know what to do and what not to do.
+
+### Pattern 2: Progressive Disclosure (Skills & Context)
+
+**Principle**: Information loads in tiers — metadata first, full content on demand, deep references only when needed.
+
+**Applied to skills**:
+- Tier 1: `description` field in frontmatter (~100 tokens, loaded at startup)
+- Tier 2: SKILL.md body (<5K tokens / <500 lines, loaded on invocation)
+- Tier 3: `references/` directory files (loaded only when skill explicitly reads them)
+
+**Applied to context files**:
+- Tier 1: Mentioned in CLAUDE.md with `@` reference (Claude knows it exists)
+- Tier 2: Read by Claude when relevant to current task
+- Tier 3: Deep-linked from other context files (discovered during exploration)
+
+**Anti-pattern**: Putting Tier 2/3 content directly in CLAUDE.md or SKILL.md. This forces loading regardless of relevance.
+
+### Pattern 3: Hooks for Enforcement, CLAUDE.md for Guidance
+
+**Principle**: If a rule MUST be followed every time, it's a hook. If it's guidance that shapes behavior, it's CLAUDE.md.
+
+| Rule Type | Implementation | Example |
+|-----------|---------------|---------|
+| Must always happen | Hook (deterministic) | File protection, commit conventions, secret scanning |
+| Should usually happen | CLAUDE.md instruction | "Check context files first", "Use Beads for tasks" |
+| Nice to have | Neither — trust Claude's judgment | "Be concise", "Think in patterns" |
+
+**Anti-pattern**: Putting enforcement rules in CLAUDE.md (advisory, can be ignored) or putting guidance in hooks (adds overhead, overly rigid).
+
+### Pattern 4: Rolling State, Not Accumulated History
+
+**Principle**: Session state files should have a fixed maximum size with automatic rotation. Only the current context and one level of history are relevant.
+
+**Structure**:
+```
+session-state.md (< 5KB, always)
+  ├── Current Status (1 line)
+  ├── Current Session Summary (< 20 lines)
+  ├── Previous Session Summary (< 20 lines)
+  └── Active Blockers (as needed)
+
+knowledge/notes/session-archive-YYYY-MM.md (unbounded, never loaded)
+  └── All older session histories
+```
+
+**Anti-pattern**: Appending session summaries without removing old ones. The file grows forever, and old sessions are rarely relevant.
+
+### Pattern 5: Single-Purpose Hook Registration
+
+**Principle**: Each hook should fire only when its trigger condition is actually possible. Wildcard matchers (`*`) should be avoided unless the hook genuinely applies to every tool.
+
+**Applied**:
+- `audit-logger.js` on `PreToolUse *` — acceptable (audit is universal)
+- `file-access-tracker.js` on `PostToolUse *` — questionable (not all tools access files)
+- `orchestration-detector.js` on `UserPromptSubmit` — should have a minimum word/complexity threshold
+
+**Anti-pattern**: Registering hooks on broad matchers when they only act on specific conditions. The hook still spawns a process, parses input, and returns — even when it does nothing.
+
+### Pattern 6: Separation of Concerns in Context
+
+**Principle**: Context files serve one purpose each. Don't mix reference documentation with active state with archived history.
+
+| Purpose | Location | Lifecycle |
+|---------|----------|-----------|
+| Active instructions | CLAUDE.md | Permanent, regularly pruned |
+| Reference documentation | `.claude/context/` | Updated when systems change |
+| Active state | session-state.md, Beads | Rolling, auto-trimmed |
+| Historical archive | `knowledge/notes/`, `knowledge/archive/` | Append-only, never auto-loaded |
+| Operational procedures | `.claude/context/workflows/` | On-demand via `@` reference |
+
+**Anti-pattern**: session-state.md containing historical archives. CLAUDE.md containing operational procedures. Context files containing both reference docs and session-specific notes.
+
+---
+
+## Part 6: Specific Change Plan
+
+*Every change is listed with exact source, destination, and action.*
+
+---
+
+### Phase 1: Critical Fixes & Cleanup (Low Risk, High Impact)
+
+#### 1.1 Fix Broken Hook Registration
+
+| Action | Detail |
+|--------|--------|
+| **DELETE registration** | Remove `plugin-sync-monitor.js` entries from `.claude/settings.json` (PostToolUse → Edit and Write) |
+| **Why** | File doesn't exist; causes silent error on every Edit/Write operation |
+
+#### 1.2 Archive Orphaned Hooks
+
+| Action | Source | Destination |
+|--------|--------|-------------|
+| **MOVE** | `.claude/hooks/amend-validator.js` | `.claude/hooks/archive/amend-validator.js` |
+| **MOVE** | `.claude/hooks/compose-validator.js` | `.claude/hooks/archive/compose-validator.js` |
+| **MOVE** | `.claude/hooks/context-reminder.js` | `.claude/hooks/archive/context-reminder.js` |
+| **MOVE** | `.claude/hooks/context-usage-tracker.js` | `.claude/hooks/archive/context-usage-tracker.js` |
+| **MOVE** | `.claude/hooks/credential-guard.js` | `.claude/hooks/archive/credential-guard.js` |
+| **MOVE** | `.claude/hooks/doc-sync-trigger.js` | `.claude/hooks/archive/doc-sync-trigger.js` |
+| **MOVE** | `.claude/hooks/docker-validator.js` | `.claude/hooks/archive/docker-validator.js` |
+| **MOVE** | `.claude/hooks/env-validator.js` | `.claude/hooks/archive/env-validator.js` |
+| **MOVE** | `.claude/hooks/health-monitor.js` | `.claude/hooks/archive/health-monitor.js` |
+| **MOVE** | `.claude/hooks/index-sync.js` | `.claude/hooks/archive/index-sync.js` |
+| **MOVE** | `.claude/hooks/mcp-enforcer.js` | `.claude/hooks/archive/mcp-enforcer.js` |
+| **MOVE** | `.claude/hooks/memory-maintenance.js` | `.claude/hooks/archive/memory-maintenance.js` |
+| **MOVE** | `.claude/hooks/network-validator.js` | `.claude/hooks/archive/network-validator.js` |
+| **MOVE** | `.claude/hooks/paths-registry-sync.js` | `.claude/hooks/archive/paths-registry-sync.js` |
+| **MOVE** | `.claude/hooks/planning-mode-detector.js` | `.claude/hooks/archive/planning-mode-detector.js` |
+| **MOVE** | `.claude/hooks/port-conflict-detector.js` | `.claude/hooks/archive/port-conflict-detector.js` |
+| **MOVE** | `.claude/hooks/priority-validator.js` | `.claude/hooks/archive/priority-validator.js` |
+| **MOVE** | `.claude/hooks/restart-loop-detector.js` | `.claude/hooks/archive/restart-loop-detector.js` |
+| **MOVE** | `.claude/hooks/service-registration-detector.js` | `.claude/hooks/archive/service-registration-detector.js` |
+| **MOVE** | `.claude/hooks/session-exit-enforcer.js` | `.claude/hooks/archive/session-exit-enforcer.js` |
+| **MOVE** | `.claude/hooks/session-tracker.js` | `.claude/hooks/archive/session-tracker.js` |
+| **MOVE** | `.claude/hooks/worktree-manager.js` | `.claude/hooks/archive/worktree-manager.js` |
+| **KEEP** | `.claude/hooks/document-guard.config.js` | Stay (config file for active document-guard.js hook) |
+
+**Note**: 27 files → archive. `document-guard.config.js` stays because it's a config for an active hook, not an orphan.
+
+#### 1.3 Trim session-state.md
+
+| Action | Detail |
+|--------|--------|
+| **MOVE** | All session histories older than the previous session → `knowledge/notes/session-archive-2026-02.md` |
+| **KEEP** | Current status, current session summary, previous session summary, active blockers |
+| **Target size** | < 5 KB (currently 42.5 KB) |
+
+#### 1.4 Remove Stubs
+
+| Action | Target |
+|--------|--------|
+| **DELETE** | `.claude/skills/audio-tools/` (stub skill, no commands) |
+
+---
+
+### Phase 2: CLAUDE.md Restructuring (Core Change)
+
+#### 2.1 Content to EXTRACT to New Files
+
+| Content (from CLAUDE.md) | New File Location | Action |
+|--------------------------|-------------------|--------|
+| Beads CLI commands, label convention, priority mapping, session provenance, when to create tasks, old-style detection, shell aliases, configuration (~95 lines) | **CREATE** `.claude/context/tools/beads-reference.md` | Extract full content, replace in CLAUDE.md with 3-line summary + `@` reference |
+| Automation routing decision tree + headless Claude commands + personas (~30 lines) | **CREATE** `.claude/context/patterns/automation-routing.md` | Extract full content, replace with 1-line `@` reference |
+| Clarification template + complexity indicators table + response template (~35 lines) | **CREATE** `.claude/context/patterns/clarification-pattern.md` | Extract full content, replace with 2-line summary |
+| Advanced task patterns (phases, severity usage) (~20 lines) | Already covered by `severity-status-system.md` and `workflow-patterns.md` | **DELETE** from CLAUDE.md (no extraction needed, already exists elsewhere) |
+
+#### 2.2 Content to DELETE from CLAUDE.md (Already Exists Elsewhere)
+
+| Section | Lines | Why Delete |
+|---------|-------|------------|
+| Quick Links (30+ `@` references) | ~35 | Duplicates `_index.md` which already serves this purpose |
+| MCP Tools (server list, on-demand list, docs) | ~45 | Duplicates `.claude/context/integrations/mcp-servers.md` |
+| Built-in Subagents (core, feature-dev, plugins, custom) | ~30 | Claude already knows its own subagent capabilities |
+| Skills System (table, routing, command mapping, when to use) | ~50 | Skills are self-describing via metadata; skill-router hook handles routing |
+| Documentation Synchronization | ~15 | doc-sync hook handles this automatically |
+| Audit Logging System (how it works, format, Loki) | ~30 | Hooks run automatically; Claude doesn't need to know internals |
+| Priority Management section | ~30 | Duplicates Beads section (which is being extracted anyway) |
+| Browser Automation quick pattern | ~5 | Niche — load from `playwright-workflows.md` when needed |
+
+**Total deleted**: ~240 lines
+
+#### 2.3 Content to SUMMARIZE in CLAUDE.md (Keep Essence, Cut Verbosity)
+
+| Current Section | Current Lines | Target Lines | What to Keep |
+|----------------|---------------|-------------|-------------|
+| Project Context + Key Principles | ~25 | ~15 | Cut principles 6-9 (MCP-first, LSP-first, Hub-not-container, compaction sync are either enforced by hooks or obvious from context) |
+| Project Management (Automatic) | ~40 | ~10 | Keep: "Hub model — code in ~/Code/, context in .claude/context/projects/. project-detector hook auto-registers GitHub URLs." Cut: step-by-step procedures, project locations table, related commands |
+| Task Management (Beads) | ~95 | ~5 | Keep: "Use `bd` CLI for all tasks. See @.claude/context/tools/beads-reference.md" |
+| Task Orchestration | ~35 | ~5 | Keep: "orchestration-detector hook auto-scores complexity. See @.claude/orchestration/README.md" |
+| Core Workflow Patterns | ~70 | ~10 | Keep: PARC one-liner, DDLA one-liner. Cut: automation routing (extracted), headless Claude, personas |
+| Clarification on Complex Requests | ~50 | ~5 | Keep: "For complex/ambiguous requests, clarify before implementing. See @.claude/context/patterns/clarification-pattern.md" |
+| Session Continuity | ~40 | ~10 | Keep: start checklist (check session-state + bd list), exit essentials (update Beads, update session-state, commit). Cut: full 19-step procedure (already in workflow file) |
+| Response Style | ~10 | ~8 | Keep most, cut "Reference context files when providing advice" (obvious) |
+
+#### 2.4 Content to ADD to CLAUDE.md
+
+| New Section | Lines | Content |
+|-------------|-------|---------|
+| Compaction Instructions | ~5 | What to preserve during `/compact`: task IDs, modified files, decisions, blockers |
+| Quick Reference (slim) | ~8 | Only the 5-6 most-used `@` references (session-state, _index, beads-reference, inventory, troubleshooting) |
+
+#### 2.5 Target CLAUDE.md Structure
+
+```markdown
+# AI Infrastructure Project Instructions                    (~5 lines)
+## Key Principles                                           (~10 lines)
+## Project Structure                                        (~10 lines)
+## Task Management                                          (~5 lines + @reference)
+## Orchestration                                            (~3 lines + @reference)
+## Workflow Patterns                                        (~10 lines)
+## Complex Requests                                         (~5 lines + @reference)
+## Session Lifecycle                                        (~10 lines)
+## Response Style                                           (~8 lines)
+## Compaction Instructions                                  (~5 lines)
+## Quick Reference                                          (~8 lines)
+---
+TOTAL                                                       ~79 lines
+```
+
+**Target**: ~80-120 lines (including blank lines and headers). Down from 683. Token savings: ~5,500 tokens per session.
+
+---
+
+### Phase 3: Hook Consolidation
+
+#### 3.1 UserPromptSubmit Hooks
+
+| Hook | Action | Reasoning |
+|------|--------|-----------|
+| `skill-router.js` | **KEEP** | Essential — routes slash commands to skills |
+| `prompt-enhancer.js` | **KEEP** (review) | Need to read what it does — if it adds session context, it's valuable |
+| `project-detector.js` | **KEEP** | Valuable when triggered — GitHub URL detection |
+| `orchestration-detector.js` | **MODIFY** | Add minimum threshold: skip if prompt <15 words or is a simple acknowledgment (yes/no/ok/sure/etc.) |
+| `fabric-suggester.js` | **REMOVE registration** | Too many false positives — suggests Fabric on unrelated prompts. Move to `.claude/hooks/archive/`. Can be re-enabled when Fabric is actively used. |
+| `self-correction-capture.js` | **REMOVE registration** | Nice-to-have analytics, not essential. Move to `.claude/hooks/archive/`. |
+
+**Result**: 6 hooks → 4 hooks per user prompt (33% reduction in process spawns)
+
+#### 3.2 Per-Tool-Call Hooks
+
+| Hook | Action | Reasoning |
+|------|--------|-----------|
+| `audit-logger.js` (PreToolUse *) | **KEEP** | Audit trail is valuable |
+| `file-access-tracker.js` (PostToolUse *) | **REVIEW** | What does it track? If for analytics only, consider sampling or moving to archive |
+| `cross-project-commit-tracker.js` (PostToolUse *) | **REVIEW** | Is tracking every tool call necessary? Could it only fire on Bash/git operations? |
+
+#### 3.3 Broken Registration Fix
+
+| Action | Detail |
+|--------|--------|
+| **REMOVE** | `plugin-sync-monitor.js` entries from settings.json PostToolUse (Edit, Write) |
+
+---
+
+### Phase 4: Skills & Context Cleanup
+
+#### 4.1 Skill Restructuring
+
+| Skill | Action | Detail |
+|-------|--------|--------|
+| `parallel-dev` (17.4KB) | **SPLIT** | Keep core workflow in SKILL.md (~5KB). Create `references/worktree-guide.md`, `references/merge-workflow.md`, `references/plan-format.md` for detailed procedures |
+| `upgrade` (16KB) | **SPLIT** | Keep upgrade overview in SKILL.md (~3KB). Create `references/upgrade-detection-logic.md`, `references/change-categories.md` for internals |
+| `structured-planning` (12.4KB) | **SPLIT** if >500 lines | Review line count; split if needed |
+
+#### 4.2 Skill Cleanup
+
+| Action | Target |
+|--------|--------|
+| **DELETE** | `.claude/skills/audio-tools/` (covered in Phase 1) |
+| **CREATE** | `.claude/skills/ciso-expert/.gitignore` containing `node_modules/` |
+| **CREATE** | `.claude/skills/obsidian/.gitignore` containing `node_modules/` |
+
+#### 4.3 Context Directory Cleanup
+
+| Action | Source | Destination |
+|--------|--------|-------------|
+| **MOVE** | `.claude/context/archive/` (entire dir, 236KB) | `knowledge/archive/context-archive/` |
+| **AUDIT** | `.claude/context/projects/` (39 files, 350KB) | Cross-reference against `paths-registry.yaml`. Archive stale project context files to `knowledge/archive/project-context/` |
+
+#### 4.4 Configuration Cleanup
+
+| Action | Target | Detail |
+|--------|--------|--------|
+| **REVIEW** | `.claude/settings.local.json` | Prune 238 permission entries — remove one-off commands for paths/tools no longer used |
+| **FIX** | `.claude/settings.json` or CLAUDE.md | Align n8n-MCP status — either remove from permissions allow-list or update CLAUDE.md to reflect it's active |
+
+---
+
+### Phase Summary
+
+| Phase | Changes | Files Affected | Risk | Token Savings |
+|-------|---------|---------------|------|---------------|
+| 1: Critical Fixes | 1 delete registration, 27 moves, 1 trim, 1 delete | ~30 | Low | ~8,000 (session-state) |
+| 2: CLAUDE.md Restructure | 3 creates, ~480 lines removed, ~40 lines added | ~5 | Medium | ~5,500 per session |
+| 3: Hook Consolidation | 2 removals, 1 modification, 1 fix | ~4 | Low | Latency reduction |
+| 4: Skills & Context | 2-3 splits, 2 gitignores, 1 dir move, 1 audit | ~10-15 | Low | Variable per invocation |
+| **Total** | | **~50-55 files** | | **~13,500 tokens/session** |
+
+---
+
+## Appendix: Sources
+
+### Official Anthropic (14 sources)
+1. [Best Practices for Agentic Coding](https://www.anthropic.com/engineering/claude-code-best-practices)
+2. [Best Practices - Claude Code Docs](https://code.claude.com/docs/en/best-practices)
+3. [Manage costs effectively](https://code.claude.com/docs/en/costs)
+4. [Automate workflows with hooks](https://code.claude.com/docs/en/hooks-guide)
+5. [Extend Claude with skills](https://code.claude.com/docs/en/skills)
+6. [Connect Claude Code to tools via MCP](https://code.claude.com/docs/en/mcp)
+7. [Create custom subagents](https://code.claude.com/docs/en/sub-agents)
+8. [How Anthropic teams use Claude Code](https://www.anthropic.com/news/how-anthropic-teams-use-claude-code)
+9. [Using CLAUDE.MD files](https://claude.com/blog/using-claude-md-files)
+10. [Introducing Agent Skills](https://www.anthropic.com/news/skills)
+11. [Introducing advanced tool use](https://www.anthropic.com/engineering/advanced-tool-use)
+12. [Skill authoring best practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices)
+13. [Compaction](https://platform.claude.com/docs/en/build-with-claude/compaction)
+14. [Manage Claude's memory](https://code.claude.com/docs/en/memory)
+
+### Community/Industry (8 sources)
+15. [Writing a good CLAUDE.md - HumanLayer](https://www.humanlayer.dev/blog/writing-a-good-claude-md)
+16. [How I Use Every Claude Code Feature - Shrivu Shankar](https://blog.sshh.io/p/how-i-use-every-claude-code-feature)
+17. [How Claude Code Got Better by Protecting More Context](https://hyperdev.matsuoka.com/p/how-claude-code-got-better-by-protecting)
+18. [Claude Code is a Beast: 300K Lines in 6 Months - setec.rs](https://claude-blog.setec.rs/blog/claude-code-beast-hardcore-workflow)
+19. [Claude Code Token Management - Richard Porter](https://richardporter.dev/blog/claude-code-token-management)
+20. [MCP Tool Search savings](https://medium.com/@joe.njenga/claude-code-just-cut-mcp-context-bloat-by-46-9-51k-tokens-down-to-8-5k-with-new-tool-search-ddf9e905f734)
+21. [awesome-claude-code - GitHub](https://github.com/hesreallyhim/awesome-claude-code)
+22. [everything-claude-code - GitHub](https://github.com/affaan-m/everything-claude-code)

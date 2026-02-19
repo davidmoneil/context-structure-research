@@ -1,0 +1,314 @@
+[
+  {
+    "id": "NAV-001",
+    "question": "What file describes the Restic backup system setup and configuration for AIServer?",
+    "type": "navigation",
+    "difficulty": "easy",
+    "ground_truth": {
+      "exact_answer": "05-AI/Claude-Knowledge/session-notes/2025.11.16_Restic-Backup-Setup.md",
+      "acceptable_variants": ["Restic-Backup-Setup.md", "session-notes/2025.11.16_Restic-Backup-Setup.md"],
+      "source_files": ["05-AI/Claude-Knowledge/session-notes/2025.11.16_Restic-Backup-Setup.md"]
+    },
+    "notes": "Basic file location for backup infrastructure"
+  },
+  {
+    "id": "NAV-002",
+    "question": "Where is the Project Loom concept document located?",
+    "type": "navigation",
+    "difficulty": "easy",
+    "ground_truth": {
+      "exact_answer": "05-AI/Projects/Loom/Project Loom.md",
+      "acceptable_variants": ["Projects/Loom/Project Loom.md", "Project Loom.md"],
+      "source_files": ["05-AI/Projects/Loom/Project Loom.md"]
+    },
+    "notes": "Key project document location"
+  },
+  {
+    "id": "NAV-003",
+    "question": "What file documents the PARC design review pattern?",
+    "type": "navigation",
+    "difficulty": "easy",
+    "ground_truth": {
+      "exact_answer": "05-AI/Claude-Knowledge/patterns/2026.01.01_Prompt-Design-Review.md",
+      "acceptable_variants": ["Prompt-Design-Review.md", "patterns/2026.01.01_Prompt-Design-Review.md"],
+      "source_files": ["05-AI/Claude-Knowledge/patterns/2026.01.01_Prompt-Design-Review.md"]
+    },
+    "notes": "Pattern documentation location"
+  },
+  {
+    "id": "NAV-004",
+    "question": "Where is the blog post about making Claude Code safer with Document Guard?",
+    "type": "navigation",
+    "difficulty": "easy",
+    "ground_truth": {
+      "exact_answer": "03-Professional/CISO-Expert/posts/How-I-Made-Claude-Code-Safer-And-You-Can-Too.md",
+      "acceptable_variants": ["How-I-Made-Claude-Code-Safer-And-You-Can-Too.md", "CISO-Expert/posts/How-I-Made-Claude-Code-Safer-And-You-Can-Too.md"],
+      "source_files": ["03-Professional/CISO-Expert/posts/How-I-Made-Claude-Code-Safer-And-You-Can-Too.md"]
+    },
+    "notes": "Published blog post location"
+  },
+  {
+    "id": "NAV-005",
+    "question": "What file contains the Kali Scanner database schema and quick reference queries?",
+    "type": "navigation",
+    "difficulty": "medium",
+    "ground_truth": {
+      "exact_answer": "05-AI/Projects/Recon Tool/Kali Scanner - Quick Reference.md",
+      "acceptable_variants": ["Kali Scanner - Quick Reference.md", "Recon Tool/Kali Scanner - Quick Reference.md"],
+      "source_files": ["05-AI/Projects/Recon Tool/Kali Scanner - Quick Reference.md"]
+    },
+    "notes": "Technical reference location"
+  },
+  {
+    "id": "NAV-006",
+    "question": "Where is the Headless Claude design specification document?",
+    "type": "navigation",
+    "difficulty": "easy",
+    "ground_truth": {
+      "exact_answer": "05-AI/Projects/Headless-Claude/Headless Claude - Design Specification.md",
+      "acceptable_variants": ["Headless Claude - Design Specification.md", "Headless-Claude/Headless Claude - Design Specification.md"],
+      "source_files": ["05-AI/Projects/Headless-Claude/Headless Claude - Design Specification.md"]
+    },
+    "notes": "Design document location"
+  },
+  {
+    "id": "NAV-007",
+    "question": "What file contains the Fabric integration analysis for AIProjects?",
+    "type": "navigation",
+    "difficulty": "medium",
+    "ground_truth": {
+      "exact_answer": "05-AI/Projects/2026-01-21-fabric-integration-analysis.md",
+      "acceptable_variants": ["2026-01-21-fabric-integration-analysis.md"],
+      "source_files": ["05-AI/Projects/2026-01-21-fabric-integration-analysis.md"]
+    },
+    "notes": "Analysis document location"
+  },
+  {
+    "id": "XREF-001",
+    "question": "What is the relationship between Project Loom and the context-structure-research project?",
+    "type": "cross-reference",
+    "difficulty": "medium",
+    "ground_truth": {
+      "exact_answer": "Loom is the product and context-structure-research is the experiment lab that feeds findings into Loom. Loom development is blocked on findings from context-structure-research Phases 2-3, which will determine the winning strategy for the orchestration engine's output format.",
+      "partial_credit_keywords": ["product", "experiment", "blocked", "research", "findings", "orchestration", "strategy"],
+      "source_files": ["05-AI/Projects/Loom/Project Loom.md", "05-AI/Research/2026.02.14- Research Project - Context Orchistration/Context Orchestration Research Project.md"]
+    },
+    "notes": "Key project dependency relationship"
+  },
+  {
+    "id": "XREF-002",
+    "question": "What is the relationship between Document Guard and the AIfred ecosystem?",
+    "type": "cross-reference",
+    "difficulty": "medium",
+    "ground_truth": {
+      "exact_answer": "Document Guard is part of the AIfred ecosystem. It is a Claude Code plugin that intercepts Edit and Write operations for content validation. AIfred is described as a configuration framework for Claude Code that includes hooks, skills, patterns, and automation.",
+      "partial_credit_keywords": ["AIfred", "plugin", "ecosystem", "hooks", "Edit", "Write", "intercept", "validation"],
+      "source_files": ["03-Professional/CISO-Expert/posts/How-I-Made-Claude-Code-Safer-And-You-Can-Too.md"]
+    },
+    "notes": "Plugin-to-ecosystem relationship"
+  },
+  {
+    "id": "XREF-003",
+    "question": "How does the Headless Claude system create tasks in Beads, and how do those tasks appear alongside manually created tasks?",
+    "type": "cross-reference",
+    "difficulty": "medium",
+    "ground_truth": {
+      "exact_answer": "Headless Claude jobs create Beads tasks with the source:headless label during autonomous execution (e.g., the abs-librarian job scans AudioBookShelf and creates tasks like 'Malformed author folder'). These tasks appear in the unified Beads task list alongside manually created tasks and orchestration-generated tasks, all queryable via 'bd list'.",
+      "partial_credit_keywords": ["source:headless", "label", "Beads", "autonomous", "unified", "bd list", "abs-librarian"],
+      "source_files": ["05-AI/Architecture/AIProjects-Question-Flow.md"]
+    },
+    "notes": "Headless dispatch to task system relationship"
+  },
+  {
+    "id": "XREF-004",
+    "question": "What three existing scripts were unified into the Headless Claude framework, and what was each script's limitation?",
+    "type": "cross-reference",
+    "difficulty": "hard",
+    "ground_truth": {
+      "exact_answer": "1) claude-scheduled.sh - jobs hardcoded in script, no human-in-the-loop, no question queue. 2) plex-troubleshoot.sh - one-off script, not reusable for other agents, no approval flow. 3) fresh-context-loop.sh - only for task lists, no scheduling, no async questions.",
+      "partial_credit_keywords": ["claude-scheduled", "plex-troubleshoot", "fresh-context-loop", "hardcoded", "one-off", "question queue", "scheduling"],
+      "source_files": ["05-AI/Projects/Headless-Claude/Headless Claude - Design Specification.md"]
+    },
+    "notes": "Framework unification details"
+  },
+  {
+    "id": "XREF-005",
+    "question": "How does the Agent Selection Pattern integrate with the PARC design review pattern?",
+    "type": "cross-reference",
+    "difficulty": "medium",
+    "ground_truth": {
+      "exact_answer": "During PARC's Assess phase, you should check agent selection: whether a built-in subagent exists for code/architecture work, whether a custom agent exists, whether a skill/slash command exists, or whether to use direct tools. The Agent Selection Pattern is explicitly referenced as part of the PARC Assess checklist.",
+      "partial_credit_keywords": ["Assess", "phase", "subagent", "custom agent", "skill", "direct tools", "checklist"],
+      "source_files": ["05-AI/Claude-Knowledge/patterns/2026.01.01_Agent-Selection-Pattern.md", "05-AI/Claude-Knowledge/patterns/2026.01.01_Prompt-Design-Review.md"]
+    },
+    "notes": "Pattern integration relationship"
+  },
+  {
+    "id": "XREF-006",
+    "question": "What security tools are mentioned in both the Kali Scanner pipeline planning document and the CISO Expert blog about open-source security tools?",
+    "type": "cross-reference",
+    "difficulty": "medium",
+    "ground_truth": {
+      "exact_answer": "NMAP (nmap) and OpenVAS are mentioned in the open-source security tools post. The Kali Scanner pipeline planning document mentions nmap, nikto, nuclei, and many others. NMAP/nmap is the common tool appearing in both documents.",
+      "partial_credit_keywords": ["nmap", "NMAP", "vulnerability", "scanning"],
+      "source_files": ["05-AI/Projects/Kali-Scanner-Pipeline.md", "03-Professional/CISO-Expert/drafts/Best-Open-Source-Security-Tools-for-your-Vulnerability-Management-Program.md"]
+    },
+    "notes": "Cross-domain reference between security project and blog content"
+  },
+  {
+    "id": "DEPTH-001",
+    "question": "What encryption algorithm does the Restic backup system use, and what is the full path to the backup repository?",
+    "type": "depth",
+    "difficulty": "easy",
+    "ground_truth": {
+      "exact_answer": "AES-256-CTR with Poly1305-AES encryption. Repository location: sftp:mediaserver:/D:/Restic/AIServer-Backups",
+      "partial_credit_keywords": ["AES-256", "Poly1305", "sftp", "mediaserver", "D:", "Restic", "AIServer-Backups"],
+      "source_files": ["05-AI/Claude-Knowledge/session-notes/2025.11.16_Restic-Backup-Setup.md"]
+    },
+    "notes": "Specific technical detail retrieval"
+  },
+  {
+    "id": "DEPTH-002",
+    "question": "What are the four tiers in Document Guard's content validation model, and what response does each tier trigger?",
+    "type": "depth",
+    "difficulty": "medium",
+    "ground_truth": {
+      "exact_answer": "Critical: Block the edit, require explicit user approval to override. High: Block the edit, require explicit override. Medium: Warn Claude (inject context), allow the edit. Low: Log it, no friction.",
+      "partial_credit_keywords": ["Critical", "block", "approval", "High", "override", "Medium", "warn", "allow", "Low", "log"],
+      "source_files": ["03-Professional/CISO-Expert/posts/How-I-Made-Claude-Code-Safer-And-You-Can-Too.md"]
+    },
+    "notes": "Graduated response model details"
+  },
+  {
+    "id": "DEPTH-003",
+    "question": "What are the six ranking signals used by Project Loom's orchestration engine, and what is each signal's default weight level?",
+    "type": "depth",
+    "difficulty": "hard",
+    "ground_truth": {
+      "exact_answer": "1) Semantic Relevance (High), 2) Hop Distance (High), 3) Staleness/Decay Curve (Medium), 4) Content Size (Medium), 5) Provenance Weight (Medium), 6) Link Density (Low-Medium)",
+      "partial_credit_keywords": ["Semantic Relevance", "Hop Distance", "Staleness", "Content Size", "Provenance", "Link Density"],
+      "source_files": ["05-AI/Projects/Loom/Project Loom.md"]
+    },
+    "notes": "Technical architecture detail"
+  },
+  {
+    "id": "DEPTH-004",
+    "question": "How does LLMLingua-2 differ from the original LLMLingua in its compression approach?",
+    "type": "depth",
+    "difficulty": "hard",
+    "ground_truth": {
+      "exact_answer": "LLMLingua-2 pivoted from perplexity-based pruning to token classification using XLM-RoBERTa fine-tuned on GPT-4 distillation data. It is 3-6x faster than the original, works better on out-of-domain data, and achieves 95-98% accuracy retention.",
+      "partial_credit_keywords": ["perplexity", "token classification", "XLM-RoBERTa", "GPT-4", "distillation", "3-6x faster"],
+      "source_files": ["05-AI/Claude-Knowledge/research/2026.02.14_Context-Forge-Llm-Orchestration.md"]
+    },
+    "notes": "Research detail comparison"
+  },
+  {
+    "id": "DEPTH-005",
+    "question": "What are the five functional domains in the AIProjects architecture taxonomy, and what is each domain's friendly name?",
+    "type": "depth",
+    "difficulty": "medium",
+    "ground_truth": {
+      "exact_answer": "1) STARTUP - Front Door (initialize the helper), 2) KNOWLEDGE - Memory & Reference (store & retrieve information), 3) EXECUTION - The Workshop (do the actual work), 4) TRACKING - The Planner (track complex multi-step work), 5) MONITORING - The Watchers (observe and record automatically). Plus SCAFFOLDING - Tools (support everything).",
+      "partial_credit_keywords": ["STARTUP", "Front Door", "KNOWLEDGE", "Memory", "EXECUTION", "Workshop", "TRACKING", "Planner", "MONITORING", "Watchers"],
+      "source_files": ["05-AI/Architecture/AIProjects-Architecture.md"]
+    },
+    "notes": "Architecture domain details"
+  },
+  {
+    "id": "DEPTH-006",
+    "question": "What are the three layers in the pre-selection hook architecture, and what does each layer do?",
+    "type": "depth",
+    "difficulty": "medium",
+    "ground_truth": {
+      "exact_answer": "Layer 1: Soft Guidance (prompt enhancement) - fires when prompt is submitted, pattern-matches the request and injects guidance before Claude starts reasoning. Layer 2: Hard Redirect (tool interception) - intercepts tool calls before execution, blocks inappropriate tool choices and returns redirect message. Layer 3: Advisory Tracking - encourages structured API calls over raw bash commands, advises rather than blocks, tracks usage patterns.",
+      "partial_credit_keywords": ["Soft Guidance", "prompt enhancement", "Hard Redirect", "tool interception", "blocks", "Advisory Tracking", "structured API"],
+      "source_files": ["03-Professional/CISO-Expert/posts/How-I-Made-Claude-Code-10-30x-Faster-With-Pre-Selection-Hooks.md"]
+    },
+    "notes": "Hook architecture layers"
+  },
+  {
+    "id": "DEPTH-007",
+    "question": "What algorithm does aider's repo-map use to rank files and symbols by importance, and what is its default token budget?",
+    "type": "depth",
+    "difficulty": "medium",
+    "ground_truth": {
+      "exact_answer": "Aider's repo-map uses the PageRank algorithm applied to a dependency graph where files are nodes and edges represent cross-references. The default token budget is 1,024 tokens.",
+      "partial_credit_keywords": ["PageRank", "dependency graph", "1024", "token budget", "tree-sitter"],
+      "source_files": ["05-AI/Claude-Knowledge/research/2026.02.18_Codebase-Indexing-For-Ai-Assistants.md"]
+    },
+    "notes": "External tool technical detail"
+  },
+  {
+    "id": "DEPTH-008",
+    "question": "According to the incident response blog post, what are the top 5 sections recommended for a successful IR plan?",
+    "type": "depth",
+    "difficulty": "medium",
+    "ground_truth": {
+      "exact_answer": "1) Terms & Definitions, 2) Signature Page for Executive Buy-in and Right-To-Act, 3) Roles and Responsibilities across the organization, 4) Security Incident Severity Matrix based on business impact, 5) High Level IR Workflow or Swimlane document.",
+      "partial_credit_keywords": ["Terms", "Definitions", "Signature", "Buy-in", "Right-To-Act", "Roles", "Responsibilities", "Severity Matrix", "Workflow", "Swimlane"],
+      "source_files": ["03-Professional/CISO-Expert/posts/Top-5-things-for-a-Successful-Cyber-Response-IR-Plan.md"]
+    },
+    "notes": "Professional security content detail"
+  },
+  {
+    "id": "SYNTH-001",
+    "question": "What common principle connects Document Guard's four-tier response model with the AIProjects orchestration-detector's scoring system?",
+    "type": "synthesis",
+    "difficulty": "hard",
+    "ground_truth": {
+      "exact_answer": "Both use graduated/proportional response rather than binary allow/deny. Document Guard escalates from log-only (Low) to blocking (Critical) based on violation severity. The orchestration-detector uses a scoring threshold (score 2 = simple query, pass through; score 7 = complex task, suggest orchestration). Both systems match their response intensity to the severity or complexity of the situation.",
+      "partial_credit_keywords": ["graduated", "proportional", "severity", "scoring", "threshold", "escalate", "binary"],
+      "source_files": ["03-Professional/CISO-Expert/posts/How-I-Made-Claude-Code-Safer-And-You-Can-Too.md", "05-AI/Architecture/AIProjects-Question-Flow.md"]
+    },
+    "notes": "Cross-domain pattern recognition"
+  },
+  {
+    "id": "SYNTH-002",
+    "question": "How does the concept of defense in depth from the security blog posts relate to the knowledge cascade architecture described in AIProjects?",
+    "type": "synthesis",
+    "difficulty": "hard",
+    "ground_truth": {
+      "exact_answer": "Both are layered architectures where multiple mechanisms provide increasing specificity. Defense in depth layers Access Control → Command Protection → Content Validation → Audit Trail. The knowledge cascade layers Always-Loaded (CLAUDE.md, memory) → Pattern Matching (PARC) → Project Knowledge (context files, Beads tasks) → Cross-Project Source (external code) → External Research (agents). Both operate on the principle that no single layer is sufficient and each layer catches what the previous one missed.",
+      "partial_credit_keywords": ["layered", "defense in depth", "cascade", "specificity", "no single layer", "Access Control", "Content Validation", "CLAUDE.md", "pattern", "project knowledge"],
+      "source_files": ["03-Professional/CISO-Expert/posts/How-I-Made-Claude-Code-Safer-And-You-Can-Too.md", "05-AI/Architecture/AIProjects-Question-Flow.md"]
+    },
+    "notes": "Security-to-architecture principle mapping"
+  },
+  {
+    "id": "SYNTH-003",
+    "question": "What approach to context management is shared between the Context Forge research thesis and Project Loom's architecture?",
+    "type": "synthesis",
+    "difficulty": "hard",
+    "ground_truth": {
+      "exact_answer": "Both operate on the principle that preprocessing and selectively loading context produces better results than sending everything. Context Forge tests strategies like keyword extraction, distillation, and structured reformat to compress/restructure context before inference. Loom implements this as a production system with a dual-node graph, multi-signal ranking engine, and budget-aware loading that determines the minimum relevant context needed for high-quality responses.",
+      "partial_credit_keywords": ["preprocessing", "selective", "compression", "keyword extraction", "distillation", "ranking", "budget", "minimum", "relevant"],
+      "source_files": ["05-AI/Research/2026.02.14- Research Project - Context Orchistration/Context Orchestration Research Project.md", "05-AI/Projects/Loom/Project Loom.md"]
+    },
+    "notes": "Research-to-product architecture comparison"
+  },
+  {
+    "id": "SYNTH-004",
+    "question": "How does Fabric's pattern concept compare to AIProjects' skills system in terms of structure and purpose?",
+    "type": "synthesis",
+    "difficulty": "hard",
+    "ground_truth": {
+      "exact_answer": "Both are structured task templates for common operations. Fabric's patterns use structured markdown with IDENTITY/PURPOSE, STEPS, OUTPUT SECTIONS, and OUTPUT INSTRUCTIONS to define expert personas for specific tasks (234 curated patterns). AIProjects' skills are multi-step workflow guides invoked via slash commands (11+ skills covering infrastructure, project management, etc.). Fabric focuses on text processing across many LLMs; AIProjects skills focus on infrastructure automation within the Claude Code environment.",
+      "partial_credit_keywords": ["structured", "templates", "IDENTITY", "PURPOSE", "STEPS", "slash commands", "workflow", "patterns", "234", "Fabric", "skills"],
+      "source_files": ["05-AI/Projects/2026-01-21-fabric-integration-analysis.md", "05-AI/Architecture/AIProjects-Architecture.md"]
+    },
+    "notes": "External tool to internal system comparison"
+  },
+  {
+    "id": "SYNTH-005",
+    "question": "What common themes emerge across the author's professional security content (incident response, document guard) and personal AI infrastructure projects (headless dispatch, AIProjects architecture)?",
+    "type": "synthesis",
+    "difficulty": "hard",
+    "ground_truth": {
+      "exact_answer": "Three common themes: 1) Layered controls with graduated response — IR severity matrix maps to team activation levels, Document Guard tiers map to block/warn/log, orchestration-detector scoring maps to simple/suggest. 2) Structured frameworks with defined roles — IR roles (Core/Extended/Executive teams), persona-based permissions in Headless Claude, domain-based architecture in AIProjects. 3) Proactive monitoring with audit trails — backup health checks, headless dispatch autonomous monitoring, Document Guard audit logging, Beads task tracking with provenance.",
+      "partial_credit_keywords": ["layered", "graduated", "severity", "structured", "roles", "persona", "monitoring", "audit", "proactive", "provenance"],
+      "source_files": ["03-Professional/CISO-Expert/posts/Top-5-things-for-a-Successful-Cyber-Response-IR-Plan.md", "03-Professional/CISO-Expert/posts/How-I-Made-Claude-Code-Safer-And-You-Can-Too.md", "05-AI/Architecture/AIProjects-Question-Flow.md", "05-AI/Projects/Headless-Claude/Headless Claude - Design Specification.md"]
+    },
+    "notes": "Cross-domain thematic analysis"
+  }
+]
