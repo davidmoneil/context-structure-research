@@ -16,7 +16,7 @@ We tested how different context file organizations affect Claude Code's ability 
 
 3. **Enhancements hurt at scale** — Adding keyword indexes or summaries provides diminishing returns, and actually *hurts* accuracy at 622K words (-4.6%)
 
-4. **Nesting degrades gracefully** — Each level of folder nesting costs ~1-2% accuracy, but even 5 levels maintains 95%+ at 622K words
+4. **Nesting degrades non-linearly** — Deep nesting (3 levels) is the worst performer; very-deep (5 levels) partially recovers. All nested structures maintain 92%+ at 622K words
 
 5. **Scale is less impactful than structure** — Accuracy drops only 2.65% when scaling from 302K to 622K words with flat structure
 
@@ -118,9 +118,9 @@ Each test received a score from 0-100 based on:
 | 3 | Deep | 94.61% |
 | 5 | Very-Deep | 95.91% |
 
-**Finding**: Each level of nesting costs ~1-2% accuracy. Surprisingly, very-deep sometimes outperforms deep (inconsistent).
+**Finding**: Nesting depth degradation is non-linear. Deep (3 levels) is the worst performer at 92.5%; very-deep (5 levels) recovers to 95.9%. The "each level costs 1-2%" model does not hold — something specific about 3 levels of nesting hurts more than deeper structures.
 
-**Recommendation**: Prefer flat. If nesting required, limit to 1-2 levels.
+**Recommendation**: Prefer flat. If nesting required, shallow (1 level) is nearly as good as flat.
 
 ### Enhancement Strategy Impact
 

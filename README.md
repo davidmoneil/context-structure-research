@@ -17,7 +17,7 @@ A systematic study of Claude Code's `@` reference system across 849 test configu
 | Deep (3 levels) | 95.00% |
 | Very Deep (5 levels) | 96.04% |
 
-Flat structure wins. Every level of nesting costs ~1-2% accuracy.
+Flat structure wins. Deep nesting (3 levels) hurts most; very-deep (5 levels) partially recovers.
 
 ---
 
@@ -33,7 +33,18 @@ Claude assesses relevance from filenames. If each file covers one topic with a d
 
 **Example**: `employees-leadership-bios.md` beats `docs/org/people/leaders.md`
 
-### 3. Skip Enhancement Indexes at Scale
+### 3. Nesting Depth Is Non-Linear
+
+| Depth | Accuracy (all scales) |
+|-------|----------------------|
+| 0 (flat) | 98.4% |
+| 1 (shallow) | 98.1% |
+| 3 (deep) | 92.5% |
+| 5 (very-deep) | 95.9% |
+
+Deep nesting (3 levels) is the worst performer. Very-deep (5 levels) partially recovers — the degradation is not linear.
+
+### 4. Skip Enhancement Indexes at Scale
 
 | Enhancement | At 302K | At 622K |
 |-------------|---------|---------|
@@ -42,7 +53,7 @@ Claude assesses relevance from filenames. If each file covers one topic with a d
 
 Adding keyword indexes or summaries **hurts** accuracy at 622K words (-4.6%). The overhead becomes noise.
 
-### 4. Scale Is Manageable
+### 5. Scale Is Manageable
 
 First meaningful accuracy drop appears around 600K words, and it's only 2.65%. Structure matters more than size.
 

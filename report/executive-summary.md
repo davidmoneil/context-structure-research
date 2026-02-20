@@ -30,7 +30,7 @@ How should you organize context files for Claude Code to maximize answer accurac
 | Deep (3 levels) | 92-96% |
 | Very Deep (5 levels) | 95-96% |
 
-**Use flat.** Every level of nesting costs ~1-2% accuracy.
+**Use flat.** Deep nesting (3 levels) hurts most (-6%); very-deep (5 levels) partially recovers. The degradation is non-linear.
 
 ### 2. One Topic Per File
 
