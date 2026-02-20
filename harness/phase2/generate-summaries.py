@@ -70,13 +70,14 @@ OLLAMA_URL = os.environ.get("OLLAMA_URL", "http://localhost:11434")
 
 # ─── Summarization backends ─────────────────────────────────────────
 
-def summarize_template(file_path: str, text: str, keywords: list[str], dataset: str) -> str:
+def summarize_template(file_path: str, text: str, keywords: list[str], dataset: str,
+                       num_keywords: int = 4) -> str:
     """Heuristic summary from filename + keywords (no LLM)."""
     parts = Path(file_path.replace("data/", "")).parts
     directory = parts[0] if len(parts) > 1 else ""
     filename = Path(parts[-1]).stem.replace("-", " ").replace("_", " ")
     filename = re.sub(r'^\d{4}[\.\-]\d{2}[\.\-]\d{2}[\s_\-]*', '', filename).strip()
-    kw = ", ".join(keywords[:4])
+    kw = ", ".join(keywords[:num_keywords])
     dir_label = directory.replace("-", " ").title()
 
     # Extract first heading
@@ -333,9 +334,12 @@ def _parse_existing_summaries(summary_path: Path) -> dict[str, str]:
 
 
 def build_i4_variant(model_name: str, dataset: str, source_dir: Path,
-                     retry_failures: bool = False):
+                     retry_failures: bool = False, num_keywords: int = None,
+                     strategy_override: str = None):
     """Build an I4 variant strategy folder with summaries from a specific model."""
     backend, model_id, strategy_name = MODELS[model_name]
+    if strategy_override:
+        strategy_name = strategy_override
     strategy_dir = STRATEGIES_DIR / dataset / strategy_name
 
     strategy_dir.mkdir(parents=True, exist_ok=True)
@@ -393,7 +397,9 @@ def build_i4_variant(model_name: str, dataset: str, source_dir: Path,
 
         if backend == "template":
             keywords = keyword_index.get(file_path, [])
-            summary = summarize_template(file_path, text, keywords, dataset)
+            nk = num_keywords if num_keywords is not None else 4
+            summary = summarize_template(file_path, text, keywords, dataset,
+                                         num_keywords=nk)
         elif backend == "ollama":
             summary = summarize_ollama(text, model_id)
             time.sleep(0.1)  # Light rate limiting for local
@@ -493,6 +499,8 @@ def main():
     parser.add_argument("--grep", action="store_true", help="Build I4-grep variant")
     parser.add_argument("--retry-failures", action="store_true",
                         help="Only regenerate 'Document at...' fallback entries")
+    parser.add_argument("--keywords", type=int,
+                        help="Number of keywords for template backend (creates I4-kw{N} variant)")
     args = parser.parse_args()
 
     if args.list:
@@ -510,6 +518,17 @@ def main():
         print("\n=== Building I4-grep variants ===")
         for dataset, source_dir in datasets.items():
             build_i4_grep(dataset, source_dir)
+        return
+
+    if args.keywords:
+        n = args.keywords
+        strategy_name = f"I4-kw{n}"
+        print(f"\n=== Generating template summaries with {n} keywords → {strategy_name} ===")
+        for dataset, source_dir in datasets.items():
+            print(f"\n--- {dataset} ---")
+            build_i4_variant("template", dataset, source_dir,
+                             num_keywords=n, strategy_override=strategy_name)
+        print(f"\n=== Done! Run tests with: bash harness/phase2/run-tests.sh --strategy {strategy_name} --resume ===")
         return
 
     if args.all_ollama:
