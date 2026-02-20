@@ -29,8 +29,8 @@ These results establish a practical design principle for Claude Code configurati
 | Parameter | Value |
 |-----------|-------|
 | **Model** | Haiku (`claude-haiku-4-5-20251001`) |
-| **Total tests** | 686 (14 strategies x 2 datasets x ~24 questions) |
-| **Total cost** | $23.37 |
+| **Total tests** | 1323 (14 strategies x 2 datasets x ~24 questions) |
+| **Total cost** | $53.44 |
 | **Execution mode** | `claude -p` headless, `--permission-mode bypassPermissions` |
 | **Tools available** | Read, Grep, Glob |
 | **Scoring** | Exact match (1.0), variant match (0.9), partial keyword credit (0.0-0.7) |
@@ -125,15 +125,28 @@ Ranked by average score across all 49 tests per strategy (both datasets combined
 
 |  Rank | Strategy                       | Family       | Avg Score | Exact Match | Cost/Correct Answer |
 | ----: | ------------------------------ | ------------ | --------: | ----------: | ------------------: |
-|     1 | **I4** (summary table)         | Index        |   71.2% |      18/49 |              $0.110 |
-|     2 | **I1** (keyword index)         | Index        |   68.1% |      17/49 |              $0.118 |
-|     3 | **I3** (semantic groups)       | Index        |   68.0% |      17/49 |              $0.119 |
-|     4 | **R1** (no context)            | Reference    |   66.7% |      16/49 |              $0.115 |
-|     5 | **R3** (sub-indexes)           | Reference    |   66.4% |      16/49 |              $0.122 |
-|     6 | **C3** (keyword + sub-index)   | Combined     |   66.0% |      17/49 |              $0.130 |
-|     7 | **I2** (relationship graph)    | Index        |   65.0% |      15/49 |              $0.193 |
-|     8 | **R4** (key files)             | Reference    |   33.9% |      10/49 |              $0.410 |
-|     9 | **C2** (key files + graph)     | Combined     |   33.8% |       9/49 |              $0.486 |
+|     1 | **I4** (summary table)         | Index        |   73.2% |      19/49 |              $0.104 |
+|     2 | **I4-grep2b**                  |              |   72.9% |      18/49 |              $0.129 |
+|     3 | **I4-grep**                    |              |   72.8% |      18/49 |              $0.130 |
+|     4 | **I4-template**                |              |   72.2% |      18/49 |              $0.117 |
+|     5 | **I4-kw2**                     |              |   71.4% |      18/49 |              $0.117 |
+|     6 | **I4-kw10**                    |              |   70.9% |      18/49 |              $0.121 |
+|     7 | **I4-kw7**                     |              |   70.6% |      18/49 |              $0.120 |
+|     8 | **I4-sonnet-verify**           |              |   70.5% |      17/49 |              $0.165 |
+|     9 | **I1** (keyword index)         | Index        |   70.1% |      18/49 |              $0.112 |
+|    10 | **I3** (semantic groups)       | Index        |   70.0% |      18/49 |              $0.112 |
+|    11 | **I4-grep2a**                  |              |   69.9% |      17/49 |              $0.137 |
+|    12 | **R1** (no context)            | Reference    |   68.8% |      17/49 |              $0.108 |
+|    13 | **I4-sonnet**                  |              |   68.6% |      17/49 |              $0.140 |
+|    14 | **R3** (sub-indexes)           | Reference    |   68.4% |      17/49 |              $0.114 |
+|    15 | **I4-geminiflash**             |              |   68.2% |      17/49 |              $0.127 |
+|    16 | **C3** (keyword + sub-index)   | Combined     |   68.0% |      18/49 |              $0.123 |
+|    17 | **I2** (relationship graph)    | Index        |   67.0% |      16/49 |              $0.181 |
+|    18 | **I4-gpt4omini**               |              |   65.5% |      16/49 |              $0.151 |
+|    19 | **I4-qwen7b**                  |              |   65.4% |      17/49 |              $0.143 |
+|    20 | **I4-qwen32b**                 |              |   62.5% |      17/49 |              $0.138 |
+|    21 | **R4** (key files)             | Reference    |   36.0% |      11/49 |              $0.373 |
+|    22 | **C2** (key files + graph)     | Combined     |   35.8% |      10/49 |              $0.437 |
 | 10-14 | **C1**, **R2.1**, **R2.2**, **R2.3**, **R2.4** | Ref/Combined |    0.0% |    0/49 |      N/A (overflow) |
 
 **Five strategies scored 0.0%** due to context window overflow. These all attempted to load the full file corpus into the 200K token window.
@@ -144,15 +157,28 @@ Performance varies significantly between the well-structured (soong-v5) and mess
 
 | Strategy          | soong-v5 (120 files) | obsidian (213 files) | Delta |
 | ----------------- | -------------------: | -------------------: | ----: |
-| **I4** |              72.8% |                69.8% |  -3.0 |
-| **I1** |              69.2% |                67.1% |  -2.1 |
-| **I3** |              73.9% |                62.7% | -11.2 |
-| **R1** |              70.7% |                63.2% |  -7.5 |
-| **R3** |              70.9% |                62.4% |  -8.4 |
-| **C3** |              70.9% |                61.7% |  -9.1 |
-| **I2** |              69.6% |                60.9% |  -8.8 |
-| **R4** |              72.3% |      0.0% (overflow) |    -- |
-| **C2** |              72.0% |      0.0% (overflow) |    -- |
+| **I4** |              77.1% |                69.8% |  -7.3 |
+| **I4-grep2b** |              74.9% |                71.1% |  -3.8 |
+| **I4-grep** |              70.0% |                75.2% |  +5.3 |
+| **I4-template** |              75.4% |                69.5% |  -5.9 |
+| **I4-kw2** |              76.3% |                67.0% |  -9.4 |
+| **I4-kw10** |              73.8% |                68.4% |  -5.4 |
+| **I4-kw7** |              75.2% |                66.5% |  -8.6 |
+| **I4-sonnet-verify** |              74.7% |                66.8% |  -7.9 |
+| **I1** |              73.5% |                67.1% |  -6.4 |
+| **I3** |              78.3% |                62.7% | -15.5 |
+| **I4-grep2a** |              70.1% |                69.7% |  -0.4 |
+| **R1** |              75.1% |                63.2% | -11.9 |
+| **I4-sonnet** |              72.0% |                65.6% |  -6.4 |
+| **R3** |              75.2% |                62.4% | -12.8 |
+| **I4-geminiflash** |              73.6% |                63.5% | -10.2 |
+| **C3** |              75.2% |                61.7% | -13.5 |
+| **I2** |              74.0% |                60.9% | -13.1 |
+| **I4-gpt4omini** |              67.6% |                63.7% |  -3.8 |
+| **I4-qwen7b** |              73.1% |                58.7% | -14.5 |
+| **I4-qwen32b** |              71.6% |                54.5% | -17.1 |
+| **R4** |              76.6% |      0.0% (overflow) |    -- |
+| **C2** |              76.3% |      0.0% (overflow) |    -- |
 | **R2.1-R2.4, C1** |               0.0% |                 0.0% |    -- |
 
 Notable observations:
@@ -171,7 +197,20 @@ Per-test averages for strategies that produced results (non-overflow tests only)
 | **I4** |           87,490 |       3.1 | $       0.040 | Low tokens, few turns                 |
 | **I1** |           91,472 |       3.3 | $       0.041 | Low tokens, few turns                 |
 | **I3** |          103,688 |       3.9 | $       0.041 | Moderate tokens, more turns           |
+| **I4-template** |           86,274 |       3.0 | $       0.043 |                                       |
+| **I4-kw2** |           95,930 |       3.3 | $       0.043 |                                       |
+| **I4-geminiflash** |           93,131 |       3.2 | $       0.044 |                                       |
+| **I4-kw7** |           94,117 |       3.1 | $       0.044 |                                       |
+| **I4-kw10** |           91,917 |       3.0 | $       0.045 |                                       |
 | **C3** |           88,410 |       2.8 | $       0.045 | Low tokens, fewest turns              |
+| **I4-grep2b** |          145,918 |       5.2 | $       0.047 |                                       |
+| **I4-grep2a** |          151,010 |       4.9 | $       0.048 |                                       |
+| **I4-qwen32b** |           85,313 |       2.2 | $       0.048 |                                       |
+| **I4-grep** |          139,658 |       4.8 | $       0.048 |                                       |
+| **I4-sonnet** |           83,269 |       1.9 | $       0.049 |                                       |
+| **I4-gpt4omini** |           84,982 |       2.0 | $       0.049 |                                       |
+| **I4-qwen7b** |           97,704 |       2.8 | $       0.050 |                                       |
+| **I4-sonnet-verify** |          112,344 |       2.9 | $       0.057 |                                       |
 | **I2** |          116,258 |       3.2 | $       0.059 | Higher tokens, few turns              |
 | **R4** |          160,498 |       1.0 | $       0.178 | Single turn, expensive (file loading) |
 | **C2** |          169,780 |       1.0 | $       0.190 | Single turn, most expensive           |
@@ -189,7 +228,20 @@ Average elapsed time per test, measured end-to-end (includes subprocess overhead
 | **I4** |    12.8s |       11.6s | 4.5s | 26.7s |       3.1 |    49 |
 | **I1** |    13.1s |       12.9s | 4.0s | 39.8s |       3.3 |    49 |
 | **I3** |    13.7s |       13.2s | 3.3s | 38.5s |       3.9 |    49 |
+| **I4-template** |    12.5s |       11.7s | 4.3s | 24.6s |       3.0 |    49 |
+| **I4-kw2** |    13.1s |       11.7s | 4.1s | 39.2s |       3.3 |    49 |
+| **I4-geminiflash** |    13.2s |       12.2s | 5.0s | 30.5s |       3.2 |    49 |
+| **I4-kw7** |    12.8s |       11.8s | 4.3s | 26.9s |       3.1 |    49 |
+| **I4-kw10** |    12.6s |       11.1s | 3.8s | 26.8s |       3.0 |    49 |
 | **C3** |    12.1s |       11.0s | 5.5s | 22.8s |       2.8 |    49 |
+| **I4-grep2b** |    20.5s |       16.9s | 8.4s | 45.6s |       5.2 |    49 |
+| **I4-grep2a** |    20.2s |       16.9s | 5.5s | 49.8s |       4.9 |    49 |
+| **I4-qwen32b** |    13.0s |       10.9s | 5.0s | 38.0s |       2.2 |    49 |
+| **I4-grep** |    16.8s |       15.7s | 6.1s | 39.8s |       4.8 |    49 |
+| **I4-sonnet** |    13.1s |       12.0s | 5.6s | 26.8s |       1.9 |    49 |
+| **I4-gpt4omini** |    16.9s |       12.3s | 5.2s | 146.9s |       2.0 |    49 |
+| **I4-qwen7b** |    13.9s |       13.7s | 5.6s | 34.9s |       2.8 |    49 |
+| **I4-sonnet-verify** |    15.1s |       13.2s | 5.9s | 33.5s |       2.9 |    49 |
 | **I2** |    13.5s |       13.0s | 4.8s | 32.5s |       3.2 |    49 |
 | **R4** |    12.6s |       11.5s | 7.4s | 23.9s |       1.0 |    23 |
 | **C2** |    12.6s |       11.3s | 7.6s | 32.8s |       1.0 |    23 |
@@ -202,10 +254,10 @@ Timing reinforces the turn-count story: R1 (6 turns avg) takes the longest wall 
 
 | Question Type | All Strategies | Working Strategies | Tests (All) | Tests (Working) |
 |---------------|---------------:|-------------------:|------------:|----------------:|
-| **Navigation** | 52.9% | 90.5% | 238 | 139 |
-| **Depth** | 32.6% | 58.7% | 182 | 101 |
-| **Cross-Reference** | 32.1% | 55.2% | 196 | 114 |
-| **Synthesis** | 23.1% | 46.1% | 70 | 35 |
+| **Navigation** | 76.6% | 97.7% | 459 | 360 |
+| **Depth** | 44.2% | 57.4% | 351 | 270 |
+| **Cross-Reference** | 42.9% | 54.8% | 378 | 296 |
+| **Synthesis** | 34.1% | 46.0% | 135 | 100 |
 
 When overflow noise is removed, navigation questions reach ~80%, showing Claude's strong file-finding ability with index guidance. Synthesis remains the hardest category even for working strategies.
 
@@ -213,9 +265,9 @@ When overflow noise is removed, navigation questions reach ~80%, showing Claude'
 
 | Difficulty | All Strategies | Working Strategies | Tests (All) | Tests (Working) |
 |------------|---------------:|-------------------:|------------:|----------------:|
-| **Easy** | 53.6% | 92.1% | 196 | 114 |
-| **Medium** | 34.8% | 62.4% | 280 | 156 |
-| **Hard** | 29.4% | 52.0% | 210 | 119 |
+| **Easy** | 72.9% | 93.1% | 378 | 296 |
+| **Medium** | 51.4% | 66.7% | 540 | 416 |
+| **Hard** | 40.0% | 51.6% | 405 | 314 |
 
 Hard questions score roughly half as well as easy ones. This gradient holds across all strategies, suggesting it reflects genuine question difficulty rather than strategy-specific weaknesses.
 
@@ -225,15 +277,28 @@ How each working strategy performs across question types.
 
 | Strategy | Navigation | Depth | Cross-ref | Synthesis | Overall |
 |----------|----------:|------:|----------:|----------:|--------:|
-| **I4** | 94% | 62% | 58% | 55% | 71% |
-| **I1** | 94% | 70% | 44% | 43% | 68% |
-| **I3** | 94% | 52% | 60% | 45% | 68% |
-| **R1** | 86% | 61% | 57% | 41% | 67% |
-| **R3** | 86% | 55% | 58% | 50% | 66% |
-| **C3** | 94% | 48% | 57% | 44% | 66% |
-| **I2** | 88% | 58% | 52% | 44% | 65% |
-| **R4** | 89% | 63% | 57% | N/A | 72% |
-| **C2** | 89% | 66% | 55% | N/A | 72% |
+| **I4** | 100% | 62% | 58% | 55% | 73% |
+| **I4-grep2b** | 99% | 63% | 58% | 52% | 73% |
+| **I4-grep** | 99% | 63% | 55% | 57% | 73% |
+| **I4-template** | 99% | 62% | 58% | 46% | 72% |
+| **I4-kw2** | 100% | 60% | 57% | 42% | 71% |
+| **I4-kw10** | 99% | 57% | 58% | 46% | 71% |
+| **I4-kw7** | 99% | 55% | 57% | 51% | 71% |
+| **I4-sonnet-verify** | 99% | 63% | 52% | 45% | 71% |
+| **I1** | 99% | 70% | 44% | 43% | 70% |
+| **I3** | 99% | 52% | 60% | 45% | 70% |
+| **I4-grep2a** | 94% | 60% | 56% | 56% | 70% |
+| **R1** | 92% | 61% | 57% | 41% | 69% |
+| **I4-sonnet** | 99% | 56% | 52% | 43% | 69% |
+| **R3** | 92% | 55% | 58% | 50% | 68% |
+| **I4-geminiflash** | 94% | 55% | 57% | 47% | 68% |
+| **C3** | 99% | 48% | 57% | 44% | 68% |
+| **I2** | 94% | 58% | 52% | 44% | 67% |
+| **I4-gpt4omini** | 94% | 54% | 52% | 39% | 66% |
+| **I4-qwen7b** | 99% | 54% | 45% | 38% | 65% |
+| **I4-qwen32b** | 100% | 37% | 51% | 35% | 63% |
+| **R4** | 99% | 63% | 57% | N/A | 77% |
+| **C2** | 99% | 66% | 55% | N/A | 76% |
 
 Note: R4 and C2 only show soong-v5 results (obsidian overflowed). Synthesis questions only appear in the obsidian dataset.
 
@@ -248,7 +313,20 @@ How effectively each strategy uses Anthropic's prompt caching (higher cache read
 | **I4** |         63,329 |           23,156 |             73% | $       0.040 |
 | **I1** |         67,201 |           23,199 |             74% | $       0.041 |
 | **I3** |         80,452 |           21,947 |             79% | $       0.041 |
+| **I4-template** |         59,581 |           25,624 |             70% | $       0.043 |
+| **I4-kw2** |         70,254 |           24,604 |             74% | $       0.043 |
+| **I4-geminiflash** |         66,233 |           25,805 |             72% | $       0.044 |
+| **I4-kw7** |         67,336 |           25,713 |             72% | $       0.044 |
+| **I4-kw10** |         64,446 |           26,456 |             71% | $       0.045 |
 | **C3** |         60,104 |           27,262 |             69% | $       0.045 |
+| **I4-grep2b** |        125,299 |           19,229 |             87% | $       0.047 |
+| **I4-grep2a** |        127,103 |           22,377 |             85% | $       0.048 |
+| **I4-qwen32b** |         54,282 |           29,911 |             64% | $       0.048 |
+| **I4-grep** |        114,333 |           23,864 |             83% | $       0.048 |
+| **I4-sonnet** |         51,556 |           30,702 |             63% | $       0.049 |
+| **I4-gpt4omini** |         52,703 |           30,842 |             63% | $       0.049 |
+| **I4-qwen7b** |         66,642 |           29,831 |             69% | $       0.050 |
+| **I4-sonnet-verify** |         76,115 |           35,047 |             68% | $       0.057 |
 | **I2** |         78,532 |           36,503 |             68% | $       0.059 |
 | **R4** |         22,551 |          136,936 |             14% | $       0.178 |
 | **C2** |         22,440 |          146,359 |             13% | $       0.190 |
@@ -261,21 +339,21 @@ Strategies with higher cache hit ratios benefit from prompt caching -- the share
 
 | Question | Avg Score | Tests | Type | Difficulty |
 |----------|----------:|------:|------|------------|
-| soong-v5/NAV-001 | 100% | 9 | navigation | easy |
-| soong-v5/NAV-002 | 100% | 9 | navigation | easy |
-| soong-v5/NAV-004 | 100% | 9 | navigation | easy |
-| soong-v5/NAV-005 | 100% | 9 | navigation | easy |
-| soong-v5/NAV-006 | 100% | 9 | navigation | medium |
+| soong-v5/NAV-001 | 100% | 22 | navigation | easy |
+| soong-v5/NAV-002 | 100% | 22 | navigation | easy |
+| soong-v5/NAV-004 | 100% | 22 | navigation | easy |
+| soong-v5/NAV-008 | 100% | 22 | navigation | medium |
+| soong-v5/NAV-009 | 100% | 22 | navigation | easy |
 
 **Top 5 Hardest** (lowest average score across working strategies):
 
 | Question | Avg Score | Tests | Type | Difficulty |
 |----------|----------:|------:|------|------------|
-| soong-v5/NAV-008 | 0% | 9 | navigation | medium |
-| obsidian/DEPTH-004 | 29% | 7 | depth | hard |
-| soong-v5/XREF-006 | 30% | 9 | cross-reference | hard |
-| soong-v5/XREF-002 | 36% | 9 | cross-reference | medium |
-| obsidian/SYNTH-003 | 36% | 7 | synthesis | hard |
+| soong-v5/XREF-002 | 17% | 22 | cross-reference | medium |
+| soong-v5/XREF-006 | 27% | 22 | cross-reference | hard |
+| obsidian/SYNTH-005 | 38% | 20 | synthesis | hard |
+| soong-v5/DEPTH-005 | 39% | 22 | depth | hard |
+| obsidian/SYNTH-003 | 41% | 20 | synthesis | hard |
 
 ### Confidence Calibration
 
@@ -283,9 +361,9 @@ How well does the model's self-reported confidence correlate with actual accurac
 
 | Confidence | Avg Score | Exact Match Rate | Tests |
 |------------|----------:|-----------------:|------:|
-| **High** | 69.8% | 35.4% | 362 |
-| **Medium** | 50.9% | 31.8% | 22 |
-| **Low** | 5.4% | 0.0% | 5 |
+| **High** | 72.4% | 37.8% | 949 |
+| **Medium** | 47.2% | 19.6% | 51 |
+| **Low** | 16.1% | 3.8% | 26 |
 
 ---
 
@@ -339,7 +417,7 @@ Index-only strategies (I1-I4) scale gracefully because their context footprint g
 
 ### Finding 8: Synthesis Remains the Hardest Question Type
 
-Even the best strategies struggle with synthesis questions (46.1% average for working strategies). Navigation questions (90.5%) are significantly easier. This suggests that current tool-based retrieval handles "find and read" well but struggles with "find, read, and combine" -- a known limitation of sequential tool use patterns.
+Even the best strategies struggle with synthesis questions (46.0% average for working strategies). Navigation questions (97.7%) are significantly easier. This suggests that current tool-based retrieval handles "find and read" well but struggles with "find, read, and combine" -- a known limitation of sequential tool use patterns.
 
 ---
 
@@ -409,15 +487,15 @@ This is especially important for Phase 2.2's model comparison, since smaller mod
 
 | Category | Value |
 |----------|------:|
-| Total experiment cost | $23.37 |
-| Total tests executed | 686 |
-| Tests producing results (non-overflow) | 389 |
+| Total experiment cost | $53.44 |
+| Total tests executed | 1323 |
+| Tests producing results (non-overflow) | 1026 |
 | Tests lost to overflow | 297 |
-| Average cost per productive test | $0.060 |
+| Average cost per productive test | $0.052 |
 | Cost of overflow tests | ~$0.00 (estimated, prompt-only charges) |
 
-| Total wall clock time (productive tests) | 88.6 minutes |
-| Average time per productive test | 13.7s |
+| Total wall clock time (productive tests) | 246.8 minutes |
+| Average time per productive test | 14.4s |
 
 ---
 
