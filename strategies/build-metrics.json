@@ -1,0 +1,194 @@
+{
+  "R1/soong-v5": {
+    "strategy_id": "R1",
+    "dataset": "soong-v5",
+    "index_build": {
+      "method": "automated_nlp",
+      "llm_calls": 0,
+      "llm_cost_usd": 0,
+      "build_time_seconds": 0.0,
+      "artifact_count": 0,
+      "artifact_size_bytes": 0
+    }
+  },
+  "R2.1/soong-v5": {
+    "strategy_id": "R2.1",
+    "dataset": "soong-v5",
+    "index_build": {
+      "method": "automated_nlp",
+      "llm_calls": 0,
+      "llm_cost_usd": 0,
+      "build_time_seconds": 0.0,
+      "artifact_count": 1,
+      "artifact_size_bytes": 4455
+    }
+  },
+  "R2.3/soong-v5": {
+    "strategy_id": "R2.3",
+    "dataset": "soong-v5",
+    "index_build": {
+      "method": "automated_nlp",
+      "llm_calls": 0,
+      "llm_cost_usd": 0,
+      "build_time_seconds": 0.11,
+      "artifact_count": 1,
+      "artifact_size_bytes": 14672
+    }
+  },
+  "R3/soong-v5": {
+    "strategy_id": "R3",
+    "dataset": "soong-v5",
+    "index_build": {
+      "method": "automated_nlp",
+      "llm_calls": 0,
+      "llm_cost_usd": 0,
+      "build_time_seconds": 0.01,
+      "artifact_count": 27,
+      "artifact_size_bytes": 5445
+    }
+  },
+  "R4/soong-v5": {
+    "strategy_id": "R4",
+    "dataset": "soong-v5",
+    "index_build": {
+      "method": "automated_nlp",
+      "llm_calls": 0,
+      "llm_cost_usd": 0,
+      "build_time_seconds": 0.01,
+      "artifact_count": 1,
+      "artifact_size_bytes": 825
+    }
+  },
+  "I1/soong-v5": {
+    "strategy_id": "I1",
+    "dataset": "soong-v5",
+    "index_build": {
+      "method": "automated_nlp",
+      "llm_calls": 0,
+      "llm_cost_usd": 0,
+      "build_time_seconds": 0.09,
+      "artifact_count": 2,
+      "artifact_size_bytes": 13969
+    }
+  },
+  "C1/soong-v5": {
+    "strategy_id": "C1",
+    "dataset": "soong-v5",
+    "index_build": {
+      "method": "automated_nlp",
+      "llm_calls": 0,
+      "llm_cost_usd": 0,
+      "build_time_seconds": 0.09,
+      "artifact_count": 2,
+      "artifact_size_bytes": 18325
+    }
+  },
+  "C3/soong-v5": {
+    "strategy_id": "C3",
+    "dataset": "soong-v5",
+    "index_build": {
+      "method": "automated_nlp",
+      "llm_calls": 0,
+      "llm_cost_usd": 0,
+      "build_time_seconds": 0.09,
+      "artifact_count": 28,
+      "artifact_size_bytes": 19251
+    }
+  },
+  "R1/obsidian": {
+    "strategy_id": "R1",
+    "dataset": "obsidian",
+    "index_build": {
+      "method": "automated_nlp",
+      "llm_calls": 0,
+      "llm_cost_usd": 0,
+      "build_time_seconds": 0.0,
+      "artifact_count": 0,
+      "artifact_size_bytes": 0
+    }
+  },
+  "R2.1/obsidian": {
+    "strategy_id": "R2.1",
+    "dataset": "obsidian",
+    "index_build": {
+      "method": "automated_nlp",
+      "llm_calls": 0,
+      "llm_cost_usd": 0,
+      "build_time_seconds": 0.01,
+      "artifact_count": 1,
+      "artifact_size_bytes": 15956
+    }
+  },
+  "R2.3/obsidian": {
+    "strategy_id": "R2.3",
+    "dataset": "obsidian",
+    "index_build": {
+      "method": "automated_nlp",
+      "llm_calls": 0,
+      "llm_cost_usd": 0,
+      "build_time_seconds": 0.08,
+      "artifact_count": 1,
+      "artifact_size_bytes": 32717
+    }
+  },
+  "R3/obsidian": {
+    "strategy_id": "R3",
+    "dataset": "obsidian",
+    "index_build": {
+      "method": "automated_nlp",
+      "llm_calls": 0,
+      "llm_cost_usd": 0,
+      "build_time_seconds": 0.01,
+      "artifact_count": 3,
+      "artifact_size_bytes": 16058
+    }
+  },
+  "R4/obsidian": {
+    "strategy_id": "R4",
+    "dataset": "obsidian",
+    "index_build": {
+      "method": "automated_nlp",
+      "llm_calls": 0,
+      "llm_cost_usd": 0,
+      "build_time_seconds": 0.02,
+      "artifact_count": 1,
+      "artifact_size_bytes": 2602
+    }
+  },
+  "I1/obsidian": {
+    "strategy_id": "I1",
+    "dataset": "obsidian",
+    "index_build": {
+      "method": "automated_nlp",
+      "llm_calls": 0,
+      "llm_cost_usd": 0,
+      "build_time_seconds": 0.09,
+      "artifact_count": 2,
+      "artifact_size_bytes": 31363
+    }
+  },
+  "C1/obsidian": {
+    "strategy_id": "C1",
+    "dataset": "obsidian",
+    "index_build": {
+      "method": "automated_nlp",
+      "llm_calls": 0,
+      "llm_cost_usd": 0,
+      "build_time_seconds": 0.1,
+      "artifact_count": 2,
+      "artifact_size_bytes": 47220
+    }
+  },
+  "C3/obsidian": {
+    "strategy_id": "C3",
+    "dataset": "obsidian",
+    "index_build": {
+      "method": "automated_nlp",
+      "llm_calls": 0,
+      "llm_cost_usd": 0,
+      "build_time_seconds": 0.1,
+      "artifact_count": 4,
+      "artifact_size_bytes": 47258
+    }
+  }
+}
