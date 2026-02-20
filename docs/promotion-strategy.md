@@ -174,7 +174,7 @@ Create shortened links to track traffic sources:
 
 ## Links to Include
 
-- **GitHub**: https://github.com/YOUR-USERNAME/context-structure-research
+- **GitHub**: https://github.com/davidmoneil/context-structure-research
 - **Blog**: https://cisoexpert.com/context-structure-research (or similar)
 - **Executive Summary**: Link to report/executive-summary.md
 

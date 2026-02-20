@@ -75,7 +75,7 @@ That's it. The simplest approach is the best approach.
 ## Links
 
 - **Full Report**: [report/README.md](README.md)
-- **GitHub**: [context-structure-research](https://github.com/YOUR-USERNAME/context-structure-research)
+- **GitHub**: [context-structure-research](https://github.com/davidmoneil/context-structure-research)
 - **Blog Post**: [cisoexpert.com](https://cisoexpert.com)
 
 ---

@@ -110,10 +110,11 @@ def get_structure_info(structure):
     base = structure.lower()
 
     # Determine nesting depth
+    # Check longer keys first to avoid "deep" matching before "very-deep"
     depth = -1
-    for key, d in NESTING_DEPTH.items():
+    for key in sorted(NESTING_DEPTH.keys(), key=len, reverse=True):
         if key in base:
-            depth = d
+            depth = NESTING_DEPTH[key]
             break
 
     # Check for enhancement

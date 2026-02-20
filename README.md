@@ -114,7 +114,7 @@ context-structure-research/
 │   └── executive-summary.md     # One-page summary
 ├── docs/
 │   ├── methodology.md           # Test methodology
-│   ├── phase-2-indexing-strategies.md  # Future: code indexing
+│   ├── phase-2-plan.md                # Phase 2 comprehensive plan
 │   └── prior-art-research.md    # Industry research
 ├── harness/
 │   ├── questions.json           # 23 test questions
@@ -142,7 +142,7 @@ context-structure-research/
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR-USERNAME/context-structure-research
+git clone https://github.com/davidmoneil/context-structure-research
 cd context-structure-research
 
 # Run a single test
@@ -213,7 +213,7 @@ The next phase will test these findings against real codebases:
 - **AST-based strategies**: Auto-generated function/class maps
 - **Real-world validation**: Test on open-source repos
 
-See [docs/phase-2-indexing-strategies.md](docs/phase-2-indexing-strategies.md) for the full plan.
+See [docs/phase-2-plan.md](docs/phase-2-plan.md) for the full plan.
 
 ---
 
@@ -227,7 +227,7 @@ If you use this research, please cite:
 
 ```
 Context Structure Research: How File Organization Affects Claude Code Accuracy
-https://github.com/YOUR-USERNAME/context-structure-research
+https://github.com/davidmoneil/context-structure-research
 January 2026
 ```
 
@@ -241,4 +241,4 @@ January 2026
 
 ---
 
-*Research conducted January 2026. 849 test runs, ~$20 total API cost.*
+*Research conducted January-February 2026. 849 test runs, $36.74 total API cost.*

@@ -82,9 +82,10 @@
     "type": "navigation",
     "difficulty": "medium",
     "ground_truth": {
-      "exact_answer": "0.72",
-      "acceptable_variants": ["72%", ".72"],
-      "source_files": ["projects/prometheus.md", "meetings/prometheus-weekly-2024-10-21.md"]
+      "exact_answer": "0.94",
+      "acceptable_variants": ["94%", ".94"],
+      "partial_credit_keywords": ["consciousness", "0.72", "prometheus"],
+      "source_files": ["projects/prometheus-detailed.md", "projects/prometheus.md", "meetings/prometheus-weekly-2024-10-21.md"]
     }
   },
   {

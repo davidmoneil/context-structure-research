@@ -140,6 +140,7 @@ class CostAnalyzer:
     def analyze_directory(self, results_dir: Path) -> list[TestResult]:
         """Analyze all results in a directory."""
         results = []
+        excluded_zero_cost = 0
         for file_path in results_dir.rglob("*.json"):
             # Skip analysis output files
             if "analysis" in str(file_path) or "report" in file_path.name:
@@ -147,6 +148,10 @@ class CostAnalyzer:
             result = self._parse_result_file(file_path)
             if result and result.success:
                 results.append(result)
+            elif result and not result.success:
+                excluded_zero_cost += 1
+        if excluded_zero_cost:
+            print(f"  Note: {excluded_zero_cost} results excluded (zero cost / no usage data)", file=sys.stderr)
         return results
 
 

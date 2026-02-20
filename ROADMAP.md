@@ -1,12 +1,12 @@
 # Context Structure Research - Roadmap
 
-**Last Updated**: 2026-02-19
+**Last Updated**: 2026-02-20
 
 ---
 
 ## Current State
 
-Phase 1 complete (849 tests). Phase 2 planning — comprehensive plan written, ready to execute.
+Phase 1 complete (849 tests). Phase 2.1 complete (686 tests). Phase 2.2 (I4 multi-model variants) in progress.
 
 ---
 
@@ -15,7 +15,7 @@ Phase 1 complete (849 tests). Phase 2 planning — comprehensive plan written, r
 | Phase | Focus | Status |
 |-------|-------|--------|
 | **Phase 1**: File Structure | How file organization affects LLM accuracy | **Complete** |
-| **Phase 2**: Context Strategies | `@` reference approaches + built index systems | **Planning** |
+| **Phase 2**: Context Strategies | `@` reference approaches + built index systems | **Phase 2.1 Complete, 2.2 In Progress** |
 | **Phase 3**: Code Strategies | Code-specific indexes (signatures, dependency graphs) | Designed |
 | **Phase 4**: External Tools | Third-party tooling (Aider, embeddings, SCIP) | Future |
 
@@ -39,16 +39,18 @@ Phase 1 complete (849 tests). Phase 2 planning — comprehensive plan written, r
 
 ---
 
-## Phase 2: Context Strategy Testing (Next)
+## Phase 2: Context Strategy Testing
 
 ### Execution Steps
 
-1. [ ] Design Obsidian vault test subset + ground truth questions
-2. [ ] Build strategy index artifacts for both datasets
-3. [ ] Build new Python harness (YAML config, streaming, provider-agnostic)
-4. [ ] Define result schema & validation
-5. [ ] Execute test matrix (~528 tests, ~$32 estimated)
-6. [ ] Analyze results and publish Phase 2 report
+1. [x] Design Obsidian vault test subset + ground truth questions
+2. [x] Build strategy index artifacts for both datasets
+3. [x] Build new Python harness (YAML config, streaming, provider-agnostic)
+4. [x] Define result schema & validation
+5. [x] Execute test matrix (686 tests, $23.37 actual cost)
+6. [x] Analyze results — enhanced report generated
+7. [ ] Phase 2.2: I4 multi-model variant testing (in progress)
+8. [ ] Publish Phase 2 report
 
 ### Strategies
 

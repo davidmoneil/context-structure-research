@@ -307,7 +307,7 @@ At large scales, index content (~27K words in V5.5) competes with actual content
 
 ### Quick Start
 ```bash
-git clone https://github.com/YOUR-USERNAME/context-structure-research
+git clone https://github.com/davidmoneil/context-structure-research
 cd context-structure-research
 
 # Run a single test
@@ -471,7 +471,7 @@ If you use this research, please cite:
 
 ```
 Context Structure Research: How File Organization Affects Claude Code Accuracy
-https://github.com/YOUR-USERNAME/context-structure-research
+https://github.com/davidmoneil/context-structure-research
 January 2026
 ```
 

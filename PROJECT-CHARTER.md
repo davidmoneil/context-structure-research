@@ -24,7 +24,7 @@ Test Claude Code's accuracy across different directory structures using a contro
 - **Six enhancement strategies**: summaries (2-sent, 5-sent), keywords, combinations
 
 ### What We Tested
-- 757 total test configurations
+- 849 total test configurations
 - 23 questions across 3 types (navigation, cross-reference, depth)
 - 2 loading methods (classic cd, --add-dir flag)
 - Claude 3.5 Haiku model

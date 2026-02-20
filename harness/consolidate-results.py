@@ -28,9 +28,10 @@ NESTING_DEPTH = {
 
 def get_nesting_depth(structure):
     """Extract nesting depth from structure name."""
-    for key, depth in NESTING_DEPTH.items():
+    # Check longer keys first to avoid "deep" matching before "very-deep"
+    for key in sorted(NESTING_DEPTH.keys(), key=len, reverse=True):
         if key in structure.lower():
-            return depth
+            return NESTING_DEPTH[key]
     return -1  # Unknown
 
 def get_corpus_version(structure):
@@ -170,12 +171,12 @@ def main():
     # Write CSV
     csv_path = OUTPUT_DIR / "all-results.csv"
     if all_results:
+        import csv as csv_module
         headers = list(all_results[0].keys())
-        with open(csv_path, "w") as f:
-            f.write(",".join(headers) + "\n")
-            for r in all_results:
-                row = [str(r.get(h, "")).replace(",", ";") for h in headers]
-                f.write(",".join(row) + "\n")
+        with open(csv_path, "w", newline="") as f:
+            writer = csv_module.DictWriter(f, fieldnames=headers)
+            writer.writeheader()
+            writer.writerows(all_results)
         print(f"CSV output: {csv_path}")
 
     # Print summary
@@ -187,7 +188,10 @@ def main():
     # Quick stats
     correct = sum(1 for r in all_results if r["correct"])
     print(f"\n=== Quick Stats ===")
-    print(f"  Overall accuracy: {correct}/{len(all_results)} ({100*correct/len(all_results):.1f}%)")
+    if all_results:
+        print(f"  Overall accuracy: {correct}/{len(all_results)} ({100*correct/len(all_results):.1f}%)")
+    else:
+        print("  No results to aggregate.")
 
 if __name__ == "__main__":
     main()
