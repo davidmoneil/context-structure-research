@@ -171,6 +171,12 @@ I4-grep2b (72.9%) instructs the model to grep the summary file rather than loadi
 This nearly matches the best @ref-loaded variants, suggesting the access method matters less
 than the summary content itself.
 
+**Note**: I4-grep2b is technically testing a different *retrieval method* (grep vs @ref), not a
+different *summary generation method*. It belongs conceptually with Phase 2.1's access-method
+comparisons (R-series) rather than Phase 2.2's generation-method comparisons. It is included
+here because it shares the I4 summary format, but its primary contribution is demonstrating
+that index access method doesn't matter — only index content does.
+
 ### 4. Local LLMs underperform cloud LLMs for summary generation
 
 | Model | Accuracy |
@@ -200,6 +206,7 @@ dataset difficulty rather than summary quality.
 - **Test conditions identical**: Same questions, same datasets, same runner, same permissions
 - **Single-shot**: Each question run once per variant (no repeats)
 - **NAV-008 ground truth**: Updated from 0.72 to 0.94 (corpus v5+ change)
+- **Scoring**: Exact match (1.0), variant match (0.9), partial keyword credit (0.1 + 0.6 × coverage). The partial credit formula is arbitrary and keywords are matched without context (keywords in refusal text earn credit). This affects absolute scores but not relative rankings since all strategies use identical scoring.
 
 ---
 

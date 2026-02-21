@@ -103,12 +103,14 @@ First meaningful accuracy drop appears around 600K words, and it's only 2.65%. S
 
 ### Enhancement Strategies Tested
 
-| Enhancement | Description | Recovery Rate |
-|-------------|-------------|---------------|
+| Enhancement | Description | Recovery Rate* |
+|-------------|-------------|----------------|
 | Keywords only | 10 keywords per file | **80%** |
 | 2-sentence summary | Brief summary | 60% |
 | 5-sentence summary | Detailed summary | 40% |
 | Summary + keywords | Combined | 80% |
+
+*\*Recovery Rate = % of 5 specific questions that failed without enhancements but succeeded with them. This is a targeted metric (denominator is 5 failed questions, not all questions); the overall accuracy improvement from keywords is 3.96%.*
 
 **Finding**: Keywords alone match any combined approach. Summaries add no value when keywords present.
 
@@ -210,6 +212,8 @@ This emerged as a key architectural insight:
 3. **Prose content** — Code-heavy repos may need different strategies.
 4. **Fixed question set** — 23 questions may not cover all query patterns.
 5. **Single domain** — Corporate knowledge base; other domains untested.
+6. **Partial credit scoring** — Non-exact matches scored by keyword coverage using an arbitrary formula (0.1 + 0.6 × coverage). Keywords are matched without context, so keywords appearing in refusal statements ("I couldn't find information about X") earn credit. This affects absolute accuracy numbers but not relative rankings, since all strategies use the same scoring.
+7. **@-ref annotation untested** — R2.1–R2.4 strategies (which tested @-ref with various annotation levels) all exceeded the context window, producing 0% accuracy. This means the research question "Do @-ref annotations (descriptions, nesting) improve accuracy?" remains unanswered. A future test with fewer files or a smaller corpus would be needed to isolate the annotation variable.
 
 ---
 

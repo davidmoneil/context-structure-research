@@ -42,6 +42,8 @@
 | R2.3 | 0.0% | 0/49 | 49 | N/A |
 | R2.4 | 0.0% | 0/49 | 49 | N/A |
 
+**Note**: R2.1–R2.4 (whole-file @-ref strategies with varying annotation levels) all exceeded the context window, producing 0% accuracy. The intended research question — whether @-ref annotations improve accuracy — remains unanswered due to overflow. A future test with fewer files would be needed to isolate this variable.
+
 ## By Dataset
 
 | Dataset | Avg Score | Tests |
