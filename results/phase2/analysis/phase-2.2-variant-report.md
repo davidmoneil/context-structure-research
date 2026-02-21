@@ -144,12 +144,18 @@ Simpler, cheaper summary generation produces better results than expensive LLM c
 
 ## Key Findings
 
+> **Statistical caveat**: With 49 tests per strategy, most ranking differences are not statistically significant.
+> Bootstrap analysis shows 15 of 22 working strategies fall within a single indistinguishable tier
+> (68.2%–73.2%, overlapping 95% CIs, permutation p > 0.05). Only the bottom tier (R4, C2 at ~36%)
+> is significantly worse. See `significance-report.md` for full analysis.
+
 ### 1. Heuristic templates beat LLM-generated summaries
 
 Template/extraction methods average **71.7%** vs LLM-generated **66.8%**.
 The most expensive summary generation (Sonnet, GPT-4o-mini) does not produce the best results.
 This suggests the model benefits more from structured metadata (file path, category, keywords)
-than from prose descriptions of content.
+than from prose descriptions of content. Note: this group-level difference is the most robust finding,
+though individual strategy rankings within groups are not statistically significant.
 
 ### 2. Keyword count has diminishing returns
 
