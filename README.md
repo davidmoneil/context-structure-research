@@ -86,10 +86,19 @@ First meaningful accuracy drop appears around 600K words, and it's only 2.65%. S
 
 ## The Study
 
-- **849 tests** across 5 structures, 6 enhancements, 3 corpus sizes
-- **Corpus**: 120K → 302K → 622K words (Soong-Daystrom Industries)
+### Phase 1: File Organization (849 tests)
+
+- 5 structures × 6 enhancements × 3 corpus sizes
+- **Corpus**: 120K → 302K → 622K words (Soong-Daystrom Industries, synthetic)
 - **Model**: Claude 3.5 Haiku
 - **Ground-truth evaluation** against 23 known-answer questions
+
+### Phase 2: Context Strategies (1,323 tests)
+
+- 27 strategies × 2 datasets × 49 questions
+- **Corpora**: Soong-v5 (120 files, synthetic) + Obsidian (213 files, real-world)
+- **Model**: Claude Haiku 4.5
+- **Strategies tested**: Index types (keyword, semantic, heuristic template), @-ref approaches, combinations, and I4 variant generation methods (heuristic, grep, LLM-generated)
 
 ### Structure Variants Tested
 
@@ -168,20 +177,26 @@ cd context-structure-research
 python3 harness/evaluator.py results/v5/raw/haiku --output results/v5/analysis
 ```
 
-### Test Corpus
+### Test Corpora
 
-The Soong-Daystrom Industries corpus is a synthetic knowledge base for a fictional robotics company:
+**Soong-Daystrom Industries** (synthetic) — a fictional robotics company knowledge base:
 
 - Employee directories and leadership bios
 - Project documentation (ATLAS, ARIA, Prometheus, Hermes)
 - Financial reports and governance documents
 - Technical specifications and incident reports
 
-| Version | Words | Files |
-|---------|-------|-------|
-| V4 | 120,000 | 80 |
-| V5 | 302,000 | 121 |
-| V6 | 622,561 | 277 |
+| Version | Words | Files | Used In |
+|---------|-------|-------|---------|
+| V4 | 120,000 | 80 | Phase 1 |
+| V5 | 302,000 | 121 | Phase 1, Phase 2 |
+| V6 | 622,561 | 277 | Phase 1 |
+
+**Obsidian vault** (real-world, Phase 2 only) — a personal knowledge base with 213 files across AI project notes, infrastructure docs, research, and blog drafts. Included in the repository for reproducibility, but note:
+
+- This is a snapshot of a real personal vault, not a synthetic benchmark
+- Results are specific to this vault's structure and content
+- The Soong-v5 dataset provides the controlled, reproducible comparison; the Obsidian dataset validates findings against messy real-world data
 
 ---
 
@@ -214,6 +229,7 @@ This emerged as a key architectural insight:
 5. **Single domain** — Corporate knowledge base; other domains untested.
 6. **Partial credit scoring** — Non-exact matches scored by keyword coverage using an arbitrary formula (0.1 + 0.6 × coverage). Keywords are matched without context, so keywords appearing in refusal statements ("I couldn't find information about X") earn credit. This affects absolute accuracy numbers but not relative rankings, since all strategies use the same scoring.
 7. **@-ref annotation untested** — R2.1–R2.4 strategies (which tested @-ref with various annotation levels) all exceeded the context window, producing 0% accuracy. This means the research question "Do @-ref annotations (descriptions, nesting) improve accuracy?" remains unanswered. A future test with fewer files or a smaller corpus would be needed to isolate the annotation variable.
+8. **Obsidian dataset specificity** — The Obsidian dataset is a personal vault snapshot. While included for reproducibility, results on it reflect this specific vault's structure and content. The Soong-v5 synthetic dataset provides the controlled benchmark.
 
 ---
 
@@ -256,4 +272,4 @@ January 2026
 
 ---
 
-*Research conducted January-February 2026. 849 test runs, $36.74 total API cost.*
+*Research conducted January-February 2026. 2,172 total tests (849 Phase 1 + 1,323 Phase 2), $90.18 total API cost.*
